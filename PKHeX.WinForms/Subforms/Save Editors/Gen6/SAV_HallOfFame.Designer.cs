@@ -81,6 +81,7 @@ namespace PKHeX.WinForms
             // 
             // LB_DataEntry
             // 
+            LB_DataEntry.AccessibleName = "Hall of Fame Entries";
             LB_DataEntry.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_DataEntry.FormattingEnabled = true;
             LB_DataEntry.ItemHeight = 15;
@@ -94,6 +95,7 @@ namespace PKHeX.WinForms
             // 
             // RTB
             // 
+            RTB.AccessibleName = "Entry Summary";
             RTB.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             RTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             RTB.Location = new System.Drawing.Point(84, 18);
@@ -130,6 +132,7 @@ namespace PKHeX.WinForms
             // 
             // NUP_PartyIndex
             // 
+            NUP_PartyIndex.AccessibleName = "Party Index";
             NUP_PartyIndex.Location = new System.Drawing.Point(89, 66);
             NUP_PartyIndex.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUP_PartyIndex.Maximum = new decimal(new int[] { 6, 0, 0, 0 });
@@ -152,6 +155,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.FormattingEnabled = true;
@@ -174,6 +178,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Nicknamed
             // 
+            CHK_Nicknamed.AccessibleName = "Has Nickname";
             CHK_Nicknamed.Location = new System.Drawing.Point(128, 96);
             CHK_Nicknamed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             CHK_Nicknamed.Name = "CHK_Nicknamed";
@@ -186,6 +191,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Nickname
             // 
+            TB_Nickname.AccessibleName = "Nickname";
             TB_Nickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Nickname.DisplayContext = EntityContext.Gen6;
             TB_Nickname.Location = new System.Drawing.Point(222, 93);
@@ -199,6 +205,7 @@ namespace PKHeX.WinForms
             // 
             // TB_EC
             // 
+            TB_EC.AccessibleName = "Encryption Constant";
             TB_EC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_EC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_EC.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -238,6 +245,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move4
             // 
+            CB_Move4.AccessibleName = "Move 4";
             CB_Move4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Move4.FormattingEnabled = true;
@@ -250,6 +258,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move3
             // 
+            CB_Move3.AccessibleName = "Move 3";
             CB_Move3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Move3.FormattingEnabled = true;
@@ -262,6 +271,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move2
             // 
+            CB_Move2.AccessibleName = "Move 2";
             CB_Move2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Move2.FormattingEnabled = true;
@@ -274,6 +284,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move1
             // 
+            CB_Move1.AccessibleName = "Move 1";
             CB_Move1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Move1.FormattingEnabled = true;
@@ -296,6 +307,7 @@ namespace PKHeX.WinForms
             // 
             // CB_HeldItem
             // 
+            CB_HeldItem.AccessibleName = "Held Item";
             CB_HeldItem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_HeldItem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_HeldItem.FormattingEnabled = true;
@@ -338,6 +350,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OT
             // 
+            TB_OT.AccessibleName = "Original Trainer Name";
             TB_OT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_OT.DisplayContext = EntityContext.Gen6;
             TB_OT.Location = new System.Drawing.Point(42, 53);
@@ -351,6 +364,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SID
             // 
+            TB_SID.AccessibleName = "Secret ID";
             TB_SID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SID.Location = new System.Drawing.Point(136, 23);
             TB_SID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -364,6 +378,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TID
             // 
+            TB_TID.AccessibleName = "Trainer ID";
             TB_TID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_TID.Location = new System.Drawing.Point(42, 23);
             TB_TID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -417,6 +432,7 @@ namespace PKHeX.WinForms
             // 
             // TB_VN
             // 
+            TB_VN.AccessibleName = "Victory Number";
             TB_VN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_VN.Location = new System.Drawing.Point(111, 25);
             TB_VN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -430,6 +446,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_MetDate
             // 
+            CAL_MetDate.AccessibleName = "Clear Date";
             CAL_MetDate.CustomFormat = "MM/dd/yyyy";
             CAL_MetDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_MetDate.Location = new System.Drawing.Point(237, 25);
@@ -478,6 +495,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Form
             // 
+            CB_Form.AccessibleName = "Form";
             CB_Form.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Form.DropDownWidth = 85;
             CB_Form.Enabled = false;
@@ -501,6 +519,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Shiny
             // 
+            CHK_Shiny.AccessibleName = "Shiny";
             CHK_Shiny.AutoSize = true;
             CHK_Shiny.Location = new System.Drawing.Point(63, 172);
             CHK_Shiny.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -522,6 +541,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Level
             // 
+            TB_Level.AccessibleName = "Level";
             TB_Level.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Level.Location = new System.Drawing.Point(63, 193);
             TB_Level.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
