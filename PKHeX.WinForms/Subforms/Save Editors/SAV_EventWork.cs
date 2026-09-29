@@ -91,6 +91,7 @@ public sealed partial class SAV_EventWork : Form
                 var chk = new CheckBox
                 {
                     Name = flagTag + f.RawIndex.ToString("0000"),
+                    AccessibleName = f.Name,
                     CheckAlign = ContentAlignment.MiddleLeft,
                     Margin = Padding.Empty,
                     Checked = f.Flag,
@@ -136,6 +137,7 @@ public sealed partial class SAV_EventWork : Form
                     Minimum = int.MinValue,
                     Value = f.Value,
                     Name = constTag + f.RawIndex.ToString("0000"),
+                    AccessibleName = $"{f.Name} Value",
                     Margin = Padding.Empty,
                     Width = 50,
                 };
@@ -144,6 +146,7 @@ public sealed partial class SAV_EventWork : Form
                     Margin = Padding.Empty,
                     Width = 150,
                     Name = constCBTag + f.RawIndex.ToString("0000"),
+                    AccessibleName = f.Name,
                     DropDownStyle = ComboBoxStyle.DropDownList,
                     BindingContext = BindingContext,
                     DropDownWidth = Width + 100,
@@ -255,6 +258,7 @@ public sealed partial class SAV_EventWork : Form
         var box = new TextBox
         {
             PlaceholderText = "Search...",
+            AccessibleName = "Search",
             Dock = DockStyle.Top,
             Margin = Padding.Empty,
         };
