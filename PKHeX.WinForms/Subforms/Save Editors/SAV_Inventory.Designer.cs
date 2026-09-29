@@ -215,6 +215,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Count
             // 
+            NUD_Count.AccessibleName = "Item Count for Give All and Modify";
             NUD_Count.Anchor = System.Windows.Forms.AnchorStyles.Left;
             NUD_Count.Location = new System.Drawing.Point(111, 38);
             NUD_Count.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
