@@ -68,6 +68,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OT
             // 
+            TB_OT.AccessibleName = "Trainer Name";
             TB_OT.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_OT.DisplayContext = EntityContext.Gen4;
             TB_OT.Location = new System.Drawing.Point(71, 0);
@@ -89,6 +90,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TID16
             // 
+            TB_TID16.AccessibleName = "Trainer ID";
             TB_TID16.Location = new System.Drawing.Point(71, 28);
             TB_TID16.Margin = new System.Windows.Forms.Padding(3, 0, 0, 3);
             TB_TID16.Name = "TB_TID16";
@@ -108,6 +110,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SID16
             // 
+            TB_SID16.AccessibleName = "Secret ID";
             TB_SID16.Location = new System.Drawing.Point(71, 56);
             TB_SID16.Margin = new System.Windows.Forms.Padding(3, 0, 0, 3);
             TB_SID16.Name = "TB_SID16";
@@ -127,6 +130,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Language
             // 
+            CB_Language.AccessibleName = "Language";
             CB_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Language.FormattingEnabled = true;
             CB_Language.Location = new System.Drawing.Point(71, 84);

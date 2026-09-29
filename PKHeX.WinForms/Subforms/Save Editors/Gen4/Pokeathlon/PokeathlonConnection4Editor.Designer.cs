@@ -100,6 +100,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Attempts
             // 
+            NUD_Attempts.AccessibleName = "Attempts";
             NUD_Attempts.Location = new System.Drawing.Point(69, 0);
             NUD_Attempts.Margin = new System.Windows.Forms.Padding(0);
             NUD_Attempts.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
@@ -109,6 +110,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record0
             // 
+            UC_Record0.AccessibleName = "Record 1";
+            UC_Record0.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record0.AutoSize = true;
             UC_Record0.Dock = System.Windows.Forms.DockStyle.Fill;
             UC_Record0.Location = new System.Drawing.Point(0, 37);
@@ -131,6 +134,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Trainer0
             // 
+            UC_Trainer0.AccessibleName = "Trainer 1";
+            UC_Trainer0.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Trainer0.AutoSize = true;
             UC_Trainer0.Location = new System.Drawing.Point(311, 25);
             UC_Trainer0.Margin = new System.Windows.Forms.Padding(0);
@@ -141,6 +146,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record1
             // 
+            UC_Record1.AccessibleName = "Record 2";
+            UC_Record1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record1.AutoSize = true;
             UC_Record1.Dock = System.Windows.Forms.DockStyle.Fill;
             UC_Record1.Location = new System.Drawing.Point(0, 197);
@@ -163,6 +170,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Trainer1
             // 
+            UC_Trainer1.AccessibleName = "Trainer 2";
+            UC_Trainer1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Trainer1.AutoSize = true;
             UC_Trainer1.Location = new System.Drawing.Point(311, 185);
             UC_Trainer1.Margin = new System.Windows.Forms.Padding(0);
@@ -173,6 +182,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record2
             // 
+            UC_Record2.AccessibleName = "Record 3";
+            UC_Record2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record2.AutoSize = true;
             UC_Record2.Dock = System.Windows.Forms.DockStyle.Fill;
             UC_Record2.Location = new System.Drawing.Point(0, 357);
@@ -195,6 +206,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Trainer2
             // 
+            UC_Trainer2.AccessibleName = "Trainer 3";
+            UC_Trainer2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Trainer2.AutoSize = true;
             UC_Trainer2.Location = new System.Drawing.Point(311, 345);
             UC_Trainer2.Margin = new System.Windows.Forms.Padding(0);
@@ -205,6 +218,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record3
             // 
+            UC_Record3.AccessibleName = "Record 4";
+            UC_Record3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record3.AutoSize = true;
             UC_Record3.Dock = System.Windows.Forms.DockStyle.Fill;
             UC_Record3.Location = new System.Drawing.Point(0, 517);
@@ -227,6 +242,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Trainer3
             // 
+            UC_Trainer3.AccessibleName = "Trainer 4";
+            UC_Trainer3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Trainer3.AutoSize = true;
             UC_Trainer3.Location = new System.Drawing.Point(311, 505);
             UC_Trainer3.Margin = new System.Windows.Forms.Padding(0);
@@ -237,6 +254,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record4
             // 
+            UC_Record4.AccessibleName = "Record 5";
+            UC_Record4.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record4.AutoSize = true;
             UC_Record4.Dock = System.Windows.Forms.DockStyle.Top;
             UC_Record4.Location = new System.Drawing.Point(0, 677);
@@ -259,6 +278,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Trainer4
             // 
+            UC_Trainer4.AccessibleName = "Trainer 5";
+            UC_Trainer4.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Trainer4.AutoSize = true;
             UC_Trainer4.Location = new System.Drawing.Point(311, 665);
             UC_Trainer4.Margin = new System.Windows.Forms.Padding(0);

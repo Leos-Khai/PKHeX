@@ -67,6 +67,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Attempts
             // 
+            NUD_Attempts.AccessibleName = "Attempts";
             NUD_Attempts.Location = new System.Drawing.Point(69, 0);
             NUD_Attempts.Margin = new System.Windows.Forms.Padding(0);
             NUD_Attempts.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
@@ -76,6 +77,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record0
             // 
+            UC_Record0.AccessibleName = "Record 1";
+            UC_Record0.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record0.AutoSize = true;
             TLP_Main.SetColumnSpan(UC_Record0, 2);
             UC_Record0.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -87,6 +90,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record1
             // 
+            UC_Record1.AccessibleName = "Record 2";
+            UC_Record1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record1.AutoSize = true;
             TLP_Main.SetColumnSpan(UC_Record1, 2);
             UC_Record1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -98,6 +103,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record2
             // 
+            UC_Record2.AccessibleName = "Record 3";
+            UC_Record2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record2.AutoSize = true;
             TLP_Main.SetColumnSpan(UC_Record2, 2);
             UC_Record2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -109,6 +116,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record3
             // 
+            UC_Record3.AccessibleName = "Record 4";
+            UC_Record3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record3.AutoSize = true;
             TLP_Main.SetColumnSpan(UC_Record3, 2);
             UC_Record3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -120,6 +129,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Record4
             // 
+            UC_Record4.AccessibleName = "Record 5";
+            UC_Record4.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Record4.AutoSize = true;
             TLP_Main.SetColumnSpan(UC_Record4, 2);
             UC_Record4.Location = new System.Drawing.Point(0, 677);

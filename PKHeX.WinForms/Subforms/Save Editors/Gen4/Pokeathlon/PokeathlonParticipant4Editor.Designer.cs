@@ -51,6 +51,8 @@ namespace PKHeX.WinForms
             // 
             // UC_SpeciesForm
             // 
+            UC_SpeciesForm.AccessibleName = "Pokémon";
+            UC_SpeciesForm.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_SpeciesForm.DisplayGender = 0;
             UC_SpeciesForm.DisplayShiny = false;
             UC_SpeciesForm.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -81,6 +83,7 @@ namespace PKHeX.WinForms
             // 
             // GT_Gender
             // 
+            GT_Gender.AccessibleName = "Gender";
             GT_Gender.AllowClick = true;
             GT_Gender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             GT_Gender.Gender = 255;
@@ -113,6 +116,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PID
             // 
+            TB_PID.AccessibleName = "Personality ID";
             TB_PID.Location = new System.Drawing.Point(128, 0);
             TB_PID.Margin = new System.Windows.Forms.Padding(3, 0, 12, 0);
             TB_PID.MaxLength = 8;
@@ -132,6 +136,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TID16
             // 
+            TB_TID16.AccessibleName = "Trainer ID";
             TB_TID16.Location = new System.Drawing.Point(265, 0);
             TB_TID16.Margin = new System.Windows.Forms.Padding(3, 0, 12, 0);
             TB_TID16.Name = "TB_TID16";
@@ -150,6 +155,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SID16
             // 
+            TB_SID16.AccessibleName = "Secret ID";
             TB_SID16.Location = new System.Drawing.Point(384, 0);
             TB_SID16.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             TB_SID16.Name = "TB_SID16";

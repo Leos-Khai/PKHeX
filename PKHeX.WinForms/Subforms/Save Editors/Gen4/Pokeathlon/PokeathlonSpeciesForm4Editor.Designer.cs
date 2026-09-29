@@ -55,6 +55,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -67,6 +68,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Form
             // 
+            CB_Form.AccessibleName = "Form";
             CB_Form.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Form.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Form.FormattingEnabled = true;
