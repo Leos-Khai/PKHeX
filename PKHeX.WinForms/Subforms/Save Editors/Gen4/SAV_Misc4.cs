@@ -4,6 +4,7 @@ using System.Drawing.Imaging;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
+using System.Windows.Forms.Automation;
 using PKHeX.Core;
 using static System.Buffers.Binary.BinaryPrimitives;
 using static PKHeX.WinForms.PoketchDotMatrix;
@@ -344,7 +345,11 @@ public partial class SAV_Misc4 : Form
             ReadOnlySpan<string> typeNames = GameInfo.Strings.types;
             ReadOnlySpan<byte> typenameIndex = [0, 9, 10, 12, 11, 14, 1, 3, 4, 2, 13, 6, 5, 7, 15, 16, 8];
             for (int i = 0; i < HallNUDA.Length; i++)
-                tip2.SetToolTip(HallNUDA[i], typeNames[typenameIndex[i]]);
+            {
+                var typeName = typeNames[typenameIndex[i]];
+                tip2.SetToolTip(HallNUDA[i], typeName);
+                HallNUDA[i].AccessibleName = $"{typeName} Type";
+            }
         }
         if (Hall is null)
             NUD_HallStreaks.Visible = NUD_HallStreaks.Enabled = false;
@@ -401,6 +406,15 @@ public partial class SAV_Misc4 : Form
             pb.BackColor = Color.Gold;
         else
             pb.ResetBackColor();
+
+        pb.AccessibleDescription = value switch
+        {
+            BattleFrontierPrintStatus4.FirstReady => "Silver print ready",
+            BattleFrontierPrintStatus4.FirstReceived => "Silver print received",
+            BattleFrontierPrintStatus4.SecondReady => "Gold print ready",
+            BattleFrontierPrintStatus4.SecondReceived => "Gold print received",
+            _ => "No print",
+        };
     }
 
     private void BTN_Print_Click(object sender, EventArgs e)
@@ -418,6 +432,9 @@ public partial class SAV_Misc4 : Form
         SAV.SetWork(index, current);
 
         SetPrintColor(b, (BattleFrontierPrintStatus4)current);
+        // The status is otherwise only shown by color, and focus doesn't move to re-read the description.
+        b.AccessibilityObject.RaiseAutomationNotification(AutomationNotificationKind.Other,
+            AutomationNotificationProcessing.All, b.AccessibleDescription ?? string.Empty);
     }
 
     private void ChangeStat1(object sender, EventArgs e)
@@ -455,6 +472,10 @@ public partial class SAV_Misc4 : Form
             StatLabelA[1].Text = StatLabelA[3].Text = "Trade";
         else if (facility == 3)
             StatLabelA[1].Text = StatLabelA[3].Text = "CP";
+
+        // The labels are re-texted per facility, so the spin boxes have to follow them.
+        for (int i = 0; i < StatLabelA.Length; i++)
+            StatNUDA[i].AccessibleName = StatLabelA[i].Text is "CP" ? "Castle Points" : StatLabelA[i].Text;
 
         GB_Hall.Visible = facility == 2;
         GB_Castle.Visible = facility == 3;
