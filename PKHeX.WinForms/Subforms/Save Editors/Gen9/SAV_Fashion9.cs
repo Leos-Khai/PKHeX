@@ -298,6 +298,7 @@ public sealed class FashionItem9Editor : IFashionBlockEditor
         var count = Block.Raw.Length / FashionItem9.SIZE;
         var dgv = new DoubleBufferedDataGridView
         {
+            AccessibleName = tab.Text,
             Dock = DockStyle.Fill,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
@@ -422,6 +423,7 @@ public sealed class FashionItem9aEditor : IFashionBlockEditor
         var count = Block.Raw.Length / FashionItem9a.SIZE;
         var dgv = new DoubleBufferedDataGridView
         {
+            AccessibleName = tab.Text,
             Dock = DockStyle.Fill,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
@@ -562,6 +564,7 @@ public sealed record HairMake9aEditor : IFashionBlockEditor
         var count = Block.Raw.Length / HairMakeItem9a.SIZE;
         var dgv = new DoubleBufferedDataGridView
         {
+            AccessibleName = tab.Text,
             Dock = DockStyle.Fill,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
