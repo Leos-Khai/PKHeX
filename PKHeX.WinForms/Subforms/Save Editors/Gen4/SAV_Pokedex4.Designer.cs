@@ -85,6 +85,7 @@
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species List";
             LB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Species.FormattingEnabled = true;
             LB_Species.ItemHeight = 15;
@@ -184,6 +185,7 @@
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go to Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -298,6 +300,7 @@
             // 
             // CB_DexUpgraded
             // 
+            CB_DexUpgraded.AccessibleName = "Dex Upgrade Mode";
             CB_DexUpgraded.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_DexUpgraded.Name = "CB_DexUpgraded";
             CB_DexUpgraded.Size = new System.Drawing.Size(112, 23);
@@ -316,6 +319,7 @@
             // 
             // LB_Gender
             // 
+            LB_Gender.AccessibleName = "Seen Genders";
             LB_Gender.FormattingEnabled = true;
             LB_Gender.ItemHeight = 15;
             LB_Gender.Location = new System.Drawing.Point(194, 61);
@@ -326,6 +330,7 @@
             // 
             // B_GUp
             // 
+            B_GUp.AccessibleName = "Move Seen Gender Up";
             B_GUp.Location = new System.Drawing.Point(170, 61);
             B_GUp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_GUp.Name = "B_GUp";
@@ -337,6 +342,7 @@
             // 
             // B_GDown
             // 
+            B_GDown.AccessibleName = "Move Seen Gender Down";
             B_GDown.Location = new System.Drawing.Point(170, 88);
             B_GDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_GDown.Name = "B_GDown";
@@ -348,6 +354,7 @@
             // 
             // B_GRight
             // 
+            B_GRight.AccessibleName = "Mark Selected Gender Not Seen";
             B_GRight.Location = new System.Drawing.Point(317, 88);
             B_GRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_GRight.Name = "B_GRight";
@@ -359,6 +366,7 @@
             // 
             // B_GLeft
             // 
+            B_GLeft.AccessibleName = "Mark Selected Gender Seen";
             B_GLeft.Location = new System.Drawing.Point(317, 61);
             B_GLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_GLeft.Name = "B_GLeft";
@@ -370,6 +378,7 @@
             // 
             // LB_NGender
             // 
+            LB_NGender.AccessibleName = "Not Seen Genders";
             LB_NGender.FormattingEnabled = true;
             LB_NGender.ItemHeight = 15;
             LB_NGender.Location = new System.Drawing.Point(348, 61);
@@ -380,6 +389,7 @@
             // 
             // LB_NForm
             // 
+            LB_NForm.AccessibleName = "Not Seen Forms";
             LB_NForm.FormattingEnabled = true;
             LB_NForm.ItemHeight = 15;
             LB_NForm.Location = new System.Drawing.Point(348, 119);
@@ -390,6 +400,7 @@
             // 
             // B_FRight
             // 
+            B_FRight.AccessibleName = "Mark Selected Form Not Seen";
             B_FRight.Location = new System.Drawing.Point(317, 145);
             B_FRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_FRight.Name = "B_FRight";
@@ -401,6 +412,7 @@
             // 
             // B_FLeft
             // 
+            B_FLeft.AccessibleName = "Mark Selected Form Seen";
             B_FLeft.Location = new System.Drawing.Point(317, 119);
             B_FLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_FLeft.Name = "B_FLeft";
@@ -412,6 +424,7 @@
             // 
             // B_FDown
             // 
+            B_FDown.AccessibleName = "Move Seen Form Down";
             B_FDown.Location = new System.Drawing.Point(170, 145);
             B_FDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_FDown.Name = "B_FDown";
@@ -423,6 +436,7 @@
             // 
             // B_FUp
             // 
+            B_FUp.AccessibleName = "Move Seen Form Up";
             B_FUp.Location = new System.Drawing.Point(170, 119);
             B_FUp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_FUp.Name = "B_FUp";
@@ -434,6 +448,7 @@
             // 
             // LB_Form
             // 
+            LB_Form.AccessibleName = "Seen Forms";
             LB_Form.FormattingEnabled = true;
             LB_Form.ItemHeight = 15;
             LB_Form.Location = new System.Drawing.Point(194, 119);
