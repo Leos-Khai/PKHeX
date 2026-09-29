@@ -50,6 +50,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Roamer Species";
             CB_Species.FormattingEnabled = true;
             CB_Species.Location = new System.Drawing.Point(15, 30);
             CB_Species.Name = "CB_Species";
@@ -68,6 +69,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_TimesEncountered
             // 
+            NUD_TimesEncountered.AccessibleName = "Times Encountered";
             NUD_TimesEncountered.Location = new System.Drawing.Point(150, 30);
             NUD_TimesEncountered.Maximum = new decimal(new int[] { 11, 0, 0, 0 });
             NUD_TimesEncountered.Name = "NUD_TimesEncountered";
@@ -86,6 +88,7 @@ namespace PKHeX.WinForms
             // 
             // CB_RoamState
             // 
+            CB_RoamState.AccessibleName = "Roam State";
             CB_RoamState.FormattingEnabled = true;
             CB_RoamState.Location = new System.Drawing.Point(280, 30);
             CB_RoamState.Name = "CB_RoamState";
