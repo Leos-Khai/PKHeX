@@ -293,6 +293,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BPEarned
             // 
+            NUD_BPEarned.AccessibleName = "Earned Battle Points";
             NUD_BPEarned.Location = new System.Drawing.Point(140, 31);
             NUD_BPEarned.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_BPEarned.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -320,6 +321,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TCM6
             // 
+            CB_TCM6.AccessibleName = "Trainer Card Pokémon Icon 6";
             CB_TCM6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TCM6.FormattingEnabled = true;
             CB_TCM6.Location = new System.Drawing.Point(196, 53);
@@ -330,6 +332,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TCM5
             // 
+            CB_TCM5.AccessibleName = "Trainer Card Pokémon Icon 5";
             CB_TCM5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TCM5.FormattingEnabled = true;
             CB_TCM5.Location = new System.Drawing.Point(102, 53);
@@ -340,6 +343,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TCM4
             // 
+            CB_TCM4.AccessibleName = "Trainer Card Pokémon Icon 4";
             CB_TCM4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TCM4.FormattingEnabled = true;
             CB_TCM4.Location = new System.Drawing.Point(7, 53);
@@ -350,6 +354,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TCM3
             // 
+            CB_TCM3.AccessibleName = "Trainer Card Pokémon Icon 3";
             CB_TCM3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TCM3.FormattingEnabled = true;
             CB_TCM3.Location = new System.Drawing.Point(196, 21);
@@ -360,6 +365,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TCM2
             // 
+            CB_TCM2.AccessibleName = "Trainer Card Pokémon Icon 2";
             CB_TCM2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TCM2.FormattingEnabled = true;
             CB_TCM2.Location = new System.Drawing.Point(102, 21);
@@ -370,6 +376,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TCM1
             // 
+            CB_TCM1.AccessibleName = "Trainer Card Pokémon Icon 1";
             CB_TCM1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TCM1.FormattingEnabled = true;
             CB_TCM1.Location = new System.Drawing.Point(7, 21);
@@ -380,6 +387,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Coins
             // 
+            NUD_Coins.AccessibleName = "Coins";
             NUD_Coins.Location = new System.Drawing.Point(140, 77);
             NUD_Coins.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Coins.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -400,6 +408,7 @@ namespace PKHeX.WinForms
             // 
             // TB_RivalName
             // 
+            TB_RivalName.AccessibleName = "Rival Name";
             TB_RivalName.DisplayContext = EntityContext.Gen3;
             TB_RivalName.Location = new System.Drawing.Point(140, 107);
             TB_RivalName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -422,6 +431,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BP
             // 
+            NUD_BP.AccessibleName = "Current Battle Points";
             NUD_BP.Location = new System.Drawing.Point(140, 7);
             NUD_BP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_BP.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -471,6 +481,7 @@ namespace PKHeX.WinForms
             // 
             // TB_BerryPowder
             // 
+            TB_BerryPowder.AccessibleName = "Berry Powder";
             TB_BerryPowder.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_BerryPowder.Location = new System.Drawing.Point(90, 154);
             TB_BerryPowder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -491,6 +502,7 @@ namespace PKHeX.WinForms
             // 
             // TB_J4
             // 
+            TB_J4.AccessibleName = "Pokémon Jump Max Players";
             TB_J4.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_J4.Location = new System.Drawing.Point(90, 110);
             TB_J4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -531,6 +543,7 @@ namespace PKHeX.WinForms
             // 
             // TB_B3
             // 
+            TB_B3.AccessibleName = "Berry Picking 5 In a Row";
             TB_B3.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_B3.Location = new System.Drawing.Point(215, 88);
             TB_B3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -541,6 +554,7 @@ namespace PKHeX.WinForms
             // 
             // TB_B2
             // 
+            TB_B2.AccessibleName = "Berry Picking High Score";
             TB_B2.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_B2.Location = new System.Drawing.Point(215, 66);
             TB_B2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -551,6 +565,7 @@ namespace PKHeX.WinForms
             // 
             // TB_B1
             // 
+            TB_B1.AccessibleName = "Berry Picking Caught";
             TB_B1.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_B1.Location = new System.Drawing.Point(215, 44);
             TB_B1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -591,6 +606,7 @@ namespace PKHeX.WinForms
             // 
             // TB_J3
             // 
+            TB_J3.AccessibleName = "Pokémon Jump 5 In a Row";
             TB_J3.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_J3.Location = new System.Drawing.Point(90, 88);
             TB_J3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -601,6 +617,7 @@ namespace PKHeX.WinForms
             // 
             // TB_J2
             // 
+            TB_J2.AccessibleName = "Pokémon Jump High Score";
             TB_J2.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_J2.Location = new System.Drawing.Point(90, 66);
             TB_J2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -611,6 +628,7 @@ namespace PKHeX.WinForms
             // 
             // TB_J1
             // 
+            TB_J1.AccessibleName = "Pokémon Jump In a Row";
             TB_J1.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_J1.Location = new System.Drawing.Point(90, 44);
             TB_J1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -692,6 +710,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_InitialSouthern
             // 
+            CHK_InitialSouthern.AccessibleName = "Initial Event Southern Island";
             CHK_InitialSouthern.AutoSize = true;
             CHK_InitialSouthern.Location = new System.Drawing.Point(7, 21);
             CHK_InitialSouthern.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -703,6 +722,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_InitialNavel
             // 
+            CHK_InitialNavel.AccessibleName = "Initial Event Navel Rock";
             CHK_InitialNavel.AutoSize = true;
             CHK_InitialNavel.Location = new System.Drawing.Point(7, 46);
             CHK_InitialNavel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -714,6 +734,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_InitialBirth
             // 
+            CHK_InitialBirth.AccessibleName = "Initial Event Birth Island";
             CHK_InitialBirth.AutoSize = true;
             CHK_InitialBirth.Location = new System.Drawing.Point(7, 72);
             CHK_InitialBirth.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -725,6 +746,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_InitialFaraway
             // 
+            CHK_InitialFaraway.AccessibleName = "Initial Event Faraway Island";
             CHK_InitialFaraway.AutoSize = true;
             CHK_InitialFaraway.Location = new System.Drawing.Point(7, 97);
             CHK_InitialFaraway.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -752,6 +774,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_ReachBF
             // 
+            CHK_ReachBF.AccessibleName = "Reachable Battle Frontier";
             CHK_ReachBF.AutoSize = true;
             CHK_ReachBF.Location = new System.Drawing.Point(7, 122);
             CHK_ReachBF.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -763,6 +786,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_ReachFaraway
             // 
+            CHK_ReachFaraway.AccessibleName = "Reachable Faraway Island";
             CHK_ReachFaraway.AutoSize = true;
             CHK_ReachFaraway.Location = new System.Drawing.Point(7, 97);
             CHK_ReachFaraway.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -774,6 +798,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_ReachBirth
             // 
+            CHK_ReachBirth.AccessibleName = "Reachable Birth Island";
             CHK_ReachBirth.AutoSize = true;
             CHK_ReachBirth.Location = new System.Drawing.Point(7, 72);
             CHK_ReachBirth.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -785,6 +810,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_ReachNavel
             // 
+            CHK_ReachNavel.AccessibleName = "Reachable Navel Rock";
             CHK_ReachNavel.AutoSize = true;
             CHK_ReachNavel.Location = new System.Drawing.Point(7, 46);
             CHK_ReachNavel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -796,6 +822,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_ReachSouthern
             // 
+            CHK_ReachSouthern.AccessibleName = "Reachable Southern Island";
             CHK_ReachSouthern.AutoSize = true;
             CHK_ReachSouthern.Location = new System.Drawing.Point(7, 21);
             CHK_ReachSouthern.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1179,6 +1206,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FameH
             // 
+            NUD_FameH.AccessibleName = "Record Time Hours";
             NUD_FameH.Location = new System.Drawing.Point(51, 68);
             NUD_FameH.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FameH.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -1189,6 +1217,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FameM
             // 
+            NUD_FameM.AccessibleName = "Record Time Minutes";
             NUD_FameM.Location = new System.Drawing.Point(124, 68);
             NUD_FameM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FameM.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
@@ -1199,6 +1228,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FameS
             // 
+            NUD_FameS.AccessibleName = "Record Time Seconds";
             NUD_FameS.Location = new System.Drawing.Point(178, 68);
             NUD_FameS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FameS.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
@@ -1209,6 +1239,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordValue
             // 
+            NUD_RecordValue.AccessibleName = "Record Value";
             NUD_RecordValue.Location = new System.Drawing.Point(86, 38);
             NUD_RecordValue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_RecordValue.Name = "NUD_RecordValue";
@@ -1217,6 +1248,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Record
             // 
+            CB_Record.AccessibleName = "Record";
             CB_Record.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Record.FormattingEnabled = true;
             CB_Record.Location = new System.Drawing.Point(7, 7);
