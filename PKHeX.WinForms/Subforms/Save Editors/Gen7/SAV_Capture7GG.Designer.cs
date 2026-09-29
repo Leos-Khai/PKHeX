@@ -41,10 +41,10 @@
             NUD_SpeciesTransferred = new System.Windows.Forms.NumericUpDown();
             NUD_TotalTransferred = new System.Windows.Forms.NumericUpDown();
             NUD_TotalCaptured = new System.Windows.Forms.NumericUpDown();
-            L_SpeciesCaptured = new System.Windows.Forms.Label();
-            L_SpeciesTransferred = new System.Windows.Forms.Label();
-            L_TotalTransferred = new System.Windows.Forms.Label();
-            L_TotalCaptured = new System.Windows.Forms.Label();
+            L_SpeciesCaptured = new PKHeX.WinForms.Controls.SelectableLabel();
+            L_SpeciesTransferred = new PKHeX.WinForms.Controls.SelectableLabel();
+            L_TotalTransferred = new PKHeX.WinForms.Controls.SelectableLabel();
+            L_TotalCaptured = new PKHeX.WinForms.Controls.SelectableLabel();
             GB_Species = new System.Windows.Forms.GroupBox();
             B_SumTotal = new System.Windows.Forms.Button();
             GB_Total = new System.Windows.Forms.GroupBox();
@@ -192,6 +192,7 @@
             // 
             // L_SpeciesCaptured
             // 
+            L_SpeciesCaptured.AccessibleName = "Toggle Max Species Captured";
             L_SpeciesCaptured.Location = new System.Drawing.Point(5, 20);
             L_SpeciesCaptured.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_SpeciesCaptured.Name = "L_SpeciesCaptured";
@@ -203,6 +204,7 @@
             // 
             // L_SpeciesTransferred
             // 
+            L_SpeciesTransferred.AccessibleName = "Toggle Max Species Transferred";
             L_SpeciesTransferred.Location = new System.Drawing.Point(5, 44);
             L_SpeciesTransferred.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_SpeciesTransferred.Name = "L_SpeciesTransferred";
@@ -214,6 +216,7 @@
             // 
             // L_TotalTransferred
             // 
+            L_TotalTransferred.AccessibleName = "Toggle Max Total Transferred";
             L_TotalTransferred.Location = new System.Drawing.Point(2, 46);
             L_TotalTransferred.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_TotalTransferred.Name = "L_TotalTransferred";
@@ -225,6 +228,7 @@
             // 
             // L_TotalCaptured
             // 
+            L_TotalCaptured.AccessibleName = "Toggle Max Total Captured";
             L_TotalCaptured.Location = new System.Drawing.Point(2, 22);
             L_TotalCaptured.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_TotalCaptured.Name = "L_TotalCaptured";
@@ -322,10 +326,10 @@
         private System.Windows.Forms.NumericUpDown NUD_SpeciesTransferred;
         private System.Windows.Forms.NumericUpDown NUD_TotalTransferred;
         private System.Windows.Forms.NumericUpDown NUD_TotalCaptured;
-        private System.Windows.Forms.Label L_SpeciesCaptured;
-        private System.Windows.Forms.Label L_SpeciesTransferred;
-        private System.Windows.Forms.Label L_TotalTransferred;
-        private System.Windows.Forms.Label L_TotalCaptured;
+        private PKHeX.WinForms.Controls.SelectableLabel L_SpeciesCaptured;
+        private PKHeX.WinForms.Controls.SelectableLabel L_SpeciesTransferred;
+        private PKHeX.WinForms.Controls.SelectableLabel L_TotalTransferred;
+        private PKHeX.WinForms.Controls.SelectableLabel L_TotalCaptured;
         private System.Windows.Forms.GroupBox GB_Species;
         private System.Windows.Forms.Button B_SumTotal;
         private System.Windows.Forms.GroupBox GB_Total;
