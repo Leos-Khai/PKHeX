@@ -97,6 +97,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species";
             LB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Species.FormattingEnabled = true;
             LB_Species.Location = new System.Drawing.Point(14, 46);
@@ -119,6 +120,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_P2
             // 
+            CHK_P2.AccessibleName = "Seen Male";
             CHK_P2.AutoSize = true;
             CHK_P2.Location = new System.Drawing.Point(7, 17);
             CHK_P2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -131,6 +133,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_P3
             // 
+            CHK_P3.AccessibleName = "Seen Female";
             CHK_P3.AutoSize = true;
             CHK_P3.Location = new System.Drawing.Point(7, 33);
             CHK_P3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -143,6 +146,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_P4
             // 
+            CHK_P4.AccessibleName = "Seen Shiny Male";
             CHK_P4.AutoSize = true;
             CHK_P4.Location = new System.Drawing.Point(7, 50);
             CHK_P4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -155,6 +159,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_P5
             // 
+            CHK_P5.AccessibleName = "Seen Shiny Female";
             CHK_P5.AutoSize = true;
             CHK_P5.Location = new System.Drawing.Point(7, 66);
             CHK_P5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -167,6 +172,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_P6
             // 
+            CHK_P6.AccessibleName = "Displayed Male";
             CHK_P6.AutoSize = true;
             CHK_P6.Location = new System.Drawing.Point(6, 16);
             CHK_P6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -179,6 +185,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_P7
             // 
+            CHK_P7.AccessibleName = "Displayed Female";
             CHK_P7.AutoSize = true;
             CHK_P7.Location = new System.Drawing.Point(6, 32);
             CHK_P7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -191,6 +198,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_P8
             // 
+            CHK_P8.AccessibleName = "Displayed Shiny Male";
             CHK_P8.AutoSize = true;
             CHK_P8.Location = new System.Drawing.Point(6, 48);
             CHK_P8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -203,6 +211,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_P9
             // 
+            CHK_P9.AccessibleName = "Displayed Shiny Female";
             CHK_P9.AutoSize = true;
             CHK_P9.Location = new System.Drawing.Point(6, 65);
             CHK_P9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -302,6 +311,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go to Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -340,6 +350,7 @@ namespace PKHeX.WinForms
             // 
             // B_Modify
             // 
+            B_Modify.AccessibleName = "Modify Seen and Caught";
             B_Modify.Location = new System.Drawing.Point(370, 13);
             B_Modify.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Modify.Name = "B_Modify";
@@ -452,6 +463,7 @@ namespace PKHeX.WinForms
             // 
             // B_ModifyForms
             // 
+            B_ModifyForms.AccessibleName = "Modify Seen Forms";
             B_ModifyForms.Location = new System.Drawing.Point(662, 13);
             B_ModifyForms.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ModifyForms.Name = "B_ModifyForms";
@@ -473,6 +485,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormDisplayed
             // 
+            CLB_FormDisplayed.AccessibleName = "Displayed Form";
             CLB_FormDisplayed.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             CLB_FormDisplayed.FormattingEnabled = true;
             CLB_FormDisplayed.Location = new System.Drawing.Point(593, 70);
@@ -494,6 +507,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormsSeen
             // 
+            CLB_FormsSeen.AccessibleName = "Seen Forms";
             CLB_FormsSeen.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             CLB_FormsSeen.FormattingEnabled = true;
             CLB_FormsSeen.Location = new System.Drawing.Point(447, 70);
@@ -542,6 +556,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PID
             // 
+            TB_PID.AccessibleName = "Spinda Personality Value";
             TB_PID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_PID.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             TB_PID.Location = new System.Drawing.Point(664, 224);
