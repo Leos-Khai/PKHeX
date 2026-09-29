@@ -34,6 +34,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Five
             // 
+            TB_Five.AccessibleName = "Secret ID";
             TB_Five.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Five.Location = new System.Drawing.Point(0, 0);
             TB_Five.Margin = new System.Windows.Forms.Padding(0);
@@ -47,6 +48,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Four
             // 
+            TB_Four.AccessibleName = "Secret ID";
             TB_Four.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Four.Location = new System.Drawing.Point(0, 0);
             TB_Four.Margin = new System.Windows.Forms.Padding(0);

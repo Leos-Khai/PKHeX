@@ -34,6 +34,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Five
             // 
+            TB_Five.AccessibleName = "Trainer ID";
             TB_Five.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Five.Location = new System.Drawing.Point(0, 0);
             TB_Five.Margin = new System.Windows.Forms.Padding(0);
@@ -47,6 +48,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Six
             // 
+            TB_Six.AccessibleName = "Trainer ID";
             TB_Six.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Six.Location = new System.Drawing.Point(0, 0);
             TB_Six.Margin = new System.Windows.Forms.Padding(0);
