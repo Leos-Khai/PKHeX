@@ -83,6 +83,7 @@ namespace PKHeX.WinForms
             // 
             // dgDataRecent
             // 
+            dgDataRecent.AccessibleName = "Recent Save Files";
             dgDataRecent.AllowUserToAddRows = false;
             dgDataRecent.AllowUserToDeleteRows = false;
             dgDataRecent.AllowUserToOrderColumns = true;
@@ -115,6 +116,7 @@ namespace PKHeX.WinForms
             // 
             // dgDataBackup
             // 
+            dgDataBackup.AccessibleName = "Backup Save Files";
             dgDataBackup.AllowUserToAddRows = false;
             dgDataBackup.AllowUserToDeleteRows = false;
             dgDataBackup.AllowUserToOrderColumns = true;
@@ -146,6 +148,7 @@ namespace PKHeX.WinForms
             // 
             // CB_FilterColumn
             // 
+            CB_FilterColumn.AccessibleName = "Filter Column";
             CB_FilterColumn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FilterColumn.Location = new Point(327, 0);
             CB_FilterColumn.Name = "CB_FilterColumn";
@@ -155,6 +158,7 @@ namespace PKHeX.WinForms
             // 
             // TB_FilterTextContains
             // 
+            TB_FilterTextContains.AccessibleName = "Filter Text";
             TB_FilterTextContains.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_FilterTextContains.Location = new Point(449, 0);
             TB_FilterTextContains.Name = "TB_FilterTextContains";
