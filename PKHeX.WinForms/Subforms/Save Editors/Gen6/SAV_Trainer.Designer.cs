@@ -1181,7 +1181,7 @@ namespace PKHeX.WinForms
             // 
             // MT_TID
             // 
-            MT_TID.AccessibleName = "TID16";
+            MT_TID.AccessibleName = "Trainer ID";
             MT_TID.Location = new System.Drawing.Point(62, 35);
             MT_TID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_TID.Mask = "00000";
@@ -1194,7 +1194,7 @@ namespace PKHeX.WinForms
             // 
             // MT_SID
             // 
-            MT_SID.AccessibleName = "SID16";
+            MT_SID.AccessibleName = "Secret ID";
             MT_SID.Location = new System.Drawing.Point(62, 59);
             MT_SID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_SID.Mask = "00000";
@@ -1282,7 +1282,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Region
             // 
-            CB_Region.AccessibleName = "Sub Region";
+            CB_Region.AccessibleName = "State/Province";
             CB_Region.DropDownWidth = 180;
             CB_Region.FormattingEnabled = true;
             CB_Region.Location = new System.Drawing.Point(335, 33);
