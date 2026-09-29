@@ -524,6 +524,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_BST
             // 
+            TB_BST.AccessibleName = "Base Stat Total";
             TB_BST.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_BST.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_BST.Enabled = false;
@@ -623,6 +624,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_IVTotal
             // 
+            TB_IVTotal.AccessibleName = "IV Total";
             TB_IVTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_IVTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_IVTotal.Location = new System.Drawing.Point(124, 180);
@@ -721,6 +723,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_EVTotal
             // 
+            TB_EVTotal.AccessibleName = "EV Total";
             TB_EVTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_EVTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_EVTotal.Location = new System.Drawing.Point(156, 180);
@@ -819,6 +822,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_AVTotal
             // 
+            TB_AVTotal.AccessibleName = "AV Total";
             TB_AVTotal.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_AVTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_AVTotal.Location = new System.Drawing.Point(196, 180);
@@ -1044,6 +1048,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_HPType
             // 
+            CB_HPType.AccessibleName = "Hidden Power Type";
             CB_HPType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_HPType.DropDownWidth = 80;
             CB_HPType.FormattingEnabled = true;
@@ -1172,6 +1177,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_TeraTypeOriginal
             // 
+            CB_TeraTypeOriginal.AccessibleName = "Original Tera Type";
             CB_TeraTypeOriginal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TeraTypeOriginal.DropDownWidth = 80;
             CB_TeraTypeOriginal.FormattingEnabled = true;
@@ -1195,6 +1201,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_TeraTypeOverride
             // 
+            CB_TeraTypeOverride.AccessibleName = "Override Tera Type";
             CB_TeraTypeOverride.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TeraTypeOverride.DropDownWidth = 80;
             CB_TeraTypeOverride.FormattingEnabled = true;
@@ -1306,6 +1313,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_DynamaxLevel
             // 
+            CB_DynamaxLevel.AccessibleName = "Dynamax Level";
             CB_DynamaxLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_DynamaxLevel.FormattingEnabled = true;
             CB_DynamaxLevel.Items.AddRange(new object[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
