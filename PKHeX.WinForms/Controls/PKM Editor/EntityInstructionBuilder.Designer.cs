@@ -63,6 +63,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // B_Require
             // 
+            B_Require.AccessibleName = "Instruction Type";
             B_Require.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             B_Require.Location = new System.Drawing.Point(236, 0);
             B_Require.Margin = new System.Windows.Forms.Padding(4);
@@ -75,6 +76,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Property
             // 
+            CB_Property.AccessibleName = "Property Name";
             CB_Property.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Property.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Property.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -89,6 +91,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Format
             // 
+            CB_Format.AccessibleName = "Entity Format";
             CB_Format.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Format.FormattingEnabled = true;
             CB_Format.Location = new System.Drawing.Point(0, 0);
