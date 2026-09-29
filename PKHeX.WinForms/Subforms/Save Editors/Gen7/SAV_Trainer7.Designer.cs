@@ -1143,6 +1143,7 @@ namespace PKHeX.WinForms
             // 
             // B_AllMapUnmask
             // 
+            B_AllMapUnmask.AccessibleName = "Check All Map Unmask";
             B_AllMapUnmask.Location = new System.Drawing.Point(6, 24);
             B_AllMapUnmask.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_AllMapUnmask.Name = "B_AllMapUnmask";
@@ -1154,6 +1155,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_MapUnmask
             // 
+            CLB_MapUnmask.AccessibleName = "Map Unmask";
             CLB_MapUnmask.CheckOnClick = true;
             CLB_MapUnmask.FormattingEnabled = true;
             CLB_MapUnmask.Location = new System.Drawing.Point(7, 62);
@@ -1177,6 +1179,7 @@ namespace PKHeX.WinForms
             // 
             // B_AllFlyDest
             // 
+            B_AllFlyDest.AccessibleName = "Check All Fly Destinations";
             B_AllFlyDest.Location = new System.Drawing.Point(6, 24);
             B_AllFlyDest.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_AllFlyDest.Name = "B_AllFlyDest";
@@ -1188,6 +1191,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FlyDest
             // 
+            CLB_FlyDest.AccessibleName = "Fly Destinations";
             CLB_FlyDest.CheckOnClick = true;
             CLB_FlyDest.FormattingEnabled = true;
             CLB_FlyDest.Location = new System.Drawing.Point(7, 62);
@@ -1382,6 +1386,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_UnlockSuperMulti
             // 
+            CHK_UnlockSuperMulti.AccessibleName = "Unlock Super Multi";
             CHK_UnlockSuperMulti.AutoSize = true;
             CHK_UnlockSuperMulti.Location = new System.Drawing.Point(168, 21);
             CHK_UnlockSuperMulti.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1393,6 +1398,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_UnlockSuperDoubles
             // 
+            CHK_UnlockSuperDoubles.AccessibleName = "Unlock Super Doubles";
             CHK_UnlockSuperDoubles.AutoSize = true;
             CHK_UnlockSuperDoubles.Location = new System.Drawing.Point(85, 21);
             CHK_UnlockSuperDoubles.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1404,6 +1410,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_UnlockSuperSingles
             // 
+            CHK_UnlockSuperSingles.AccessibleName = "Unlock Super Singles";
             CHK_UnlockSuperSingles.AutoSize = true;
             CHK_UnlockSuperSingles.Location = new System.Drawing.Point(7, 21);
             CHK_UnlockSuperSingles.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1435,6 +1442,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SMStreak2
             // 
+            NUD_SMStreak2.AccessibleName = "Super Max Streak Multi";
             NUD_SMStreak2.Location = new System.Drawing.Point(293, 225);
             NUD_SMStreak2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SMStreak2.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1445,6 +1453,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SCStreak2
             // 
+            NUD_SCStreak2.AccessibleName = "Super Current Streak Multi";
             NUD_SCStreak2.Location = new System.Drawing.Point(293, 201);
             NUD_SCStreak2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SCStreak2.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1455,6 +1464,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SMStreak1
             // 
+            NUD_SMStreak1.AccessibleName = "Super Max Streak Doubles";
             NUD_SMStreak1.Location = new System.Drawing.Point(293, 159);
             NUD_SMStreak1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SMStreak1.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1465,6 +1475,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SCStreak1
             // 
+            NUD_SCStreak1.AccessibleName = "Super Current Streak Doubles";
             NUD_SCStreak1.Location = new System.Drawing.Point(293, 135);
             NUD_SCStreak1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SCStreak1.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1475,6 +1486,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SMStreak0
             // 
+            NUD_SMStreak0.AccessibleName = "Super Max Streak Singles";
             NUD_SMStreak0.Location = new System.Drawing.Point(293, 93);
             NUD_SMStreak0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SMStreak0.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1485,6 +1497,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SCStreak0
             // 
+            NUD_SCStreak0.AccessibleName = "Super Current Streak Singles";
             NUD_SCStreak0.Location = new System.Drawing.Point(293, 69);
             NUD_SCStreak0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SCStreak0.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1495,6 +1508,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RMStreak2
             // 
+            NUD_RMStreak2.AccessibleName = "Regular Max Streak Multi";
             NUD_RMStreak2.Location = new System.Drawing.Point(216, 225);
             NUD_RMStreak2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_RMStreak2.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1515,6 +1529,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RCStreak2
             // 
+            NUD_RCStreak2.AccessibleName = "Regular Current Streak Multi";
             NUD_RCStreak2.Location = new System.Drawing.Point(216, 201);
             NUD_RCStreak2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_RCStreak2.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1535,6 +1550,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RMStreak1
             // 
+            NUD_RMStreak1.AccessibleName = "Regular Max Streak Doubles";
             NUD_RMStreak1.Location = new System.Drawing.Point(216, 159);
             NUD_RMStreak1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_RMStreak1.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1555,6 +1571,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RCStreak1
             // 
+            NUD_RCStreak1.AccessibleName = "Regular Current Streak Doubles";
             NUD_RCStreak1.Location = new System.Drawing.Point(216, 135);
             NUD_RCStreak1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_RCStreak1.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1575,6 +1592,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RMStreak0
             // 
+            NUD_RMStreak0.AccessibleName = "Regular Max Streak Singles";
             NUD_RMStreak0.Location = new System.Drawing.Point(216, 93);
             NUD_RMStreak0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_RMStreak0.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1595,6 +1613,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RCStreak0
             // 
+            NUD_RCStreak0.AccessibleName = "Regular Current Streak Singles";
             NUD_RCStreak0.Location = new System.Drawing.Point(216, 69);
             NUD_RCStreak0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_RCStreak0.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1676,6 +1695,7 @@ namespace PKHeX.WinForms
             // 
             // CB_BallThrowType
             // 
+            CB_BallThrowType.AccessibleName = "Ball Throw Type";
             CB_BallThrowType.FormattingEnabled = true;
             CB_BallThrowType.Location = new System.Drawing.Point(312, 59);
             CB_BallThrowType.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1685,6 +1705,7 @@ namespace PKHeX.WinForms
             // 
             // CB_BallThrowTypeListMode
             // 
+            CB_BallThrowTypeListMode.AccessibleName = "Ball Throw Type List";
             CB_BallThrowTypeListMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BallThrowTypeListMode.FormattingEnabled = true;
             CB_BallThrowTypeListMode.Items.AddRange(new object[] { "unlocked list", "learned list" });
@@ -1697,6 +1718,7 @@ namespace PKHeX.WinForms
             // 
             // LB_BallThrowTypeUnlocked
             // 
+            LB_BallThrowTypeUnlocked.AccessibleName = "Unlocked Ball Throw Types";
             LB_BallThrowTypeUnlocked.FormattingEnabled = true;
             LB_BallThrowTypeUnlocked.ItemHeight = 15;
             LB_BallThrowTypeUnlocked.Location = new System.Drawing.Point(312, 85);
@@ -1709,6 +1731,7 @@ namespace PKHeX.WinForms
             // 
             // LB_BallThrowTypeLearned
             // 
+            LB_BallThrowTypeLearned.AccessibleName = "Learned Ball Throw Types";
             LB_BallThrowTypeLearned.FormattingEnabled = true;
             LB_BallThrowTypeLearned.ItemHeight = 15;
             LB_BallThrowTypeLearned.Location = new System.Drawing.Point(312, 85);
@@ -1733,6 +1756,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Stamps
             // 
+            LB_Stamps.AccessibleName = "Stamps";
             LB_Stamps.FormattingEnabled = true;
             LB_Stamps.ItemHeight = 15;
             LB_Stamps.Location = new System.Drawing.Point(253, 224);
@@ -1754,6 +1778,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_DaysFromRefreshed
             // 
+            NUD_DaysFromRefreshed.AccessibleName = "Days from Refreshed";
             NUD_DaysFromRefreshed.Location = new System.Drawing.Point(312, 35);
             NUD_DaysFromRefreshed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_DaysFromRefreshed.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -1775,6 +1800,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PlazaName
             // 
+            TB_PlazaName.AccessibleName = "Festival Plaza Name";
             TB_PlazaName.DisplayContext = EntityContext.Gen7;
             TB_PlazaName.Location = new System.Drawing.Point(253, 173);
             TB_PlazaName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1786,6 +1812,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Fashion
             // 
+            CB_Fashion.AccessibleName = "Fashion Items to Give";
             CB_Fashion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Fashion.FormattingEnabled = true;
             CB_Fashion.Items.AddRange(new object[] { "New Game", "All Legal", "Everything" });
@@ -1807,6 +1834,7 @@ namespace PKHeX.WinForms
             // 
             // CB_SkinColor
             // 
+            CB_SkinColor.AccessibleName = "Skin Color";
             CB_SkinColor.FormattingEnabled = true;
             CB_SkinColor.Location = new System.Drawing.Point(312, 8);
             CB_SkinColor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1847,6 +1875,7 @@ namespace PKHeX.WinForms
             // 
             // CB_CameraVersion
             // 
+            CB_CameraVersion.AccessibleName = "Camera Version";
             CB_CameraVersion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_CameraVersion.FormattingEnabled = true;
             CB_CameraVersion.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
@@ -1868,6 +1897,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SnapCount
             // 
+            NUD_SnapCount.AccessibleName = "Snap Count";
             NUD_SnapCount.Location = new System.Drawing.Point(150, 91);
             NUD_SnapCount.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SnapCount.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
@@ -1888,6 +1918,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ThumbsRecord
             // 
+            NUD_ThumbsRecord.AccessibleName = "Record Thumbs-Ups";
             NUD_ThumbsRecord.Location = new System.Drawing.Point(150, 46);
             NUD_ThumbsRecord.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_ThumbsRecord.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
@@ -1908,6 +1939,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ThumbsTotal
             // 
+            NUD_ThumbsTotal.AccessibleName = "Total Thumbs-Ups";
             NUD_ThumbsTotal.Location = new System.Drawing.Point(150, 21);
             NUD_ThumbsTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_ThumbsTotal.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
@@ -1969,6 +2001,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_RotoLoto2
             // 
+            CHK_RotoLoto2.AccessibleName = "Rotom Loto 2";
             CHK_RotoLoto2.AutoSize = true;
             CHK_RotoLoto2.Location = new System.Drawing.Point(86, 95);
             CHK_RotoLoto2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1980,6 +2013,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_RotoLoto1
             // 
+            CHK_RotoLoto1.AccessibleName = "Rotom Loto 1";
             CHK_RotoLoto1.AutoSize = true;
             CHK_RotoLoto1.Location = new System.Drawing.Point(86, 77);
             CHK_RotoLoto1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -2001,6 +2035,7 @@ namespace PKHeX.WinForms
             // 
             // TB_RotomOT
             // 
+            TB_RotomOT.AccessibleName = "Rotom OT Name";
             TB_RotomOT.DisplayContext = EntityContext.Gen7;
             TB_RotomOT.Location = new System.Drawing.Point(86, 22);
             TB_RotomOT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -2013,6 +2048,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RotomAffection
             // 
+            NUD_RotomAffection.AccessibleName = "Rotom Affection";
             NUD_RotomAffection.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_RotomAffection.Location = new System.Drawing.Point(86, 52);
             NUD_RotomAffection.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -2097,6 +2133,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Surf3
             // 
+            NUD_Surf3.AccessibleName = "Poni Surf Score";
             NUD_Surf3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_Surf3.Location = new System.Drawing.Point(103, 90);
             NUD_Surf3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -2107,6 +2144,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Surf2
             // 
+            NUD_Surf2.AccessibleName = "Ula'ula Surf Score";
             NUD_Surf2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_Surf2.Location = new System.Drawing.Point(103, 66);
             NUD_Surf2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -2117,6 +2155,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Surf1
             // 
+            NUD_Surf1.AccessibleName = "Akala Surf Score";
             NUD_Surf1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_Surf1.Location = new System.Drawing.Point(103, 42);
             NUD_Surf1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -2127,6 +2166,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Surf0
             // 
+            NUD_Surf0.AccessibleName = "Melemele Surf Score";
             NUD_Surf0.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_Surf0.Location = new System.Drawing.Point(103, 17);
             NUD_Surf0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
