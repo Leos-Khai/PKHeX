@@ -24,6 +24,19 @@ public partial class StatEditor : UserControl
         TB_BST.ResetForeColor();
         TB_IVTotal.ForeColor = TB_EVTotal.ForeColor = MT_EVs[0].ForeColor;
 
+        // Row and column headers are separate labels, so screen readers can't infer which stat/column a field edits.
+        ReadOnlySpan<string> statNames = ["HP", "Attack", "Defense", "Speed", "Special Attack", "Special Defense"];
+        for (int i = 0; i < statNames.Length; i++)
+        {
+            var stat = statNames[i];
+            MT_Base[i].AccessibleName = $"{stat} Base";
+            MT_IVs[i].AccessibleName = $"{stat} IV";
+            MT_EVs[i].AccessibleName = $"{stat} EV";
+            MT_AVs[i].AccessibleName = $"{stat} AV";
+            MT_GVs[i].AccessibleName = $"{stat} GV";
+            MT_Stats[i].AccessibleName = $"{stat} Stat";
+        }
+
         foreach (var iv in MT_IVs)
             iv.MouseWheel += WinFormsUtil.MouseWheelIncrement1;
         foreach (var ev in MT_EVs)
