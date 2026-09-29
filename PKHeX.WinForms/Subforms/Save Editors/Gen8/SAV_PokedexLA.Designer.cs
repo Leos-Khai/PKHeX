@@ -136,6 +136,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go To Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -189,6 +190,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_G
             // 
+            CHK_G.AccessibleName = "Displayed Female";
             CHK_G.AutoSize = true;
             CHK_G.Location = new System.Drawing.Point(6, 54);
             CHK_G.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -200,6 +202,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S
             // 
+            CHK_S.AccessibleName = "Displayed Shiny";
             CHK_S.AutoSize = true;
             CHK_S.Location = new System.Drawing.Point(6, 35);
             CHK_S.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -211,6 +214,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_A
             // 
+            CHK_A.AccessibleName = "Displayed Alpha";
             CHK_A.AutoSize = true;
             CHK_A.Location = new System.Drawing.Point(6, 15);
             CHK_A.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -222,6 +226,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Forms
             // 
+            LB_Forms.AccessibleName = "Forms";
             LB_Forms.FormattingEnabled = true;
             LB_Forms.Location = new System.Drawing.Point(14, 366);
             LB_Forms.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -251,6 +256,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S7
             // 
+            CHK_S7.AccessibleName = "Seen in the Wild Shiny Alpha Female";
             CHK_S7.AutoSize = true;
             CHK_S7.Location = new System.Drawing.Point(7, 160);
             CHK_S7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -262,6 +268,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S6
             // 
+            CHK_S6.AccessibleName = "Seen in the Wild Shiny Alpha Male";
             CHK_S6.AutoSize = true;
             CHK_S6.Location = new System.Drawing.Point(7, 141);
             CHK_S6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -273,6 +280,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S5
             // 
+            CHK_S5.AccessibleName = "Seen in the Wild Shiny Female";
             CHK_S5.AutoSize = true;
             CHK_S5.Location = new System.Drawing.Point(7, 120);
             CHK_S5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -284,6 +292,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S4
             // 
+            CHK_S4.AccessibleName = "Seen in the Wild Shiny Male";
             CHK_S4.AutoSize = true;
             CHK_S4.Location = new System.Drawing.Point(7, 100);
             CHK_S4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -295,6 +304,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S3
             // 
+            CHK_S3.AccessibleName = "Seen in the Wild Alpha Female";
             CHK_S3.AutoSize = true;
             CHK_S3.Location = new System.Drawing.Point(7, 81);
             CHK_S3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -306,6 +316,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S2
             // 
+            CHK_S2.AccessibleName = "Seen in the Wild Alpha Male";
             CHK_S2.AutoSize = true;
             CHK_S2.Location = new System.Drawing.Point(7, 61);
             CHK_S2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -317,6 +328,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S1
             // 
+            CHK_S1.AccessibleName = "Seen in the Wild Female";
             CHK_S1.AutoSize = true;
             CHK_S1.Location = new System.Drawing.Point(7, 40);
             CHK_S1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -328,6 +340,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_S0
             // 
+            CHK_S0.AccessibleName = "Seen in the Wild Male";
             CHK_S0.AutoSize = true;
             CHK_S0.Location = new System.Drawing.Point(7, 21);
             CHK_S0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -369,6 +382,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_O7
             // 
+            CHK_O7.AccessibleName = "Obtained Shiny Alpha Female";
             CHK_O7.AutoSize = true;
             CHK_O7.Location = new System.Drawing.Point(7, 160);
             CHK_O7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -381,6 +395,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_O6
             // 
+            CHK_O6.AccessibleName = "Obtained Shiny Alpha Male";
             CHK_O6.AutoSize = true;
             CHK_O6.Location = new System.Drawing.Point(7, 141);
             CHK_O6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -393,6 +408,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_O5
             // 
+            CHK_O5.AccessibleName = "Obtained Shiny Female";
             CHK_O5.AutoSize = true;
             CHK_O5.Location = new System.Drawing.Point(7, 120);
             CHK_O5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -405,6 +421,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_O4
             // 
+            CHK_O4.AccessibleName = "Obtained Shiny Male";
             CHK_O4.AutoSize = true;
             CHK_O4.Location = new System.Drawing.Point(7, 100);
             CHK_O4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -417,6 +434,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_O3
             // 
+            CHK_O3.AccessibleName = "Obtained Alpha Female";
             CHK_O3.AutoSize = true;
             CHK_O3.Location = new System.Drawing.Point(7, 81);
             CHK_O3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -429,6 +447,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_O2
             // 
+            CHK_O2.AccessibleName = "Obtained Alpha Male";
             CHK_O2.AutoSize = true;
             CHK_O2.Location = new System.Drawing.Point(7, 61);
             CHK_O2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -441,6 +460,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_O1
             // 
+            CHK_O1.AccessibleName = "Obtained Female";
             CHK_O1.AutoSize = true;
             CHK_O1.Location = new System.Drawing.Point(7, 40);
             CHK_O1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -453,6 +473,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_O0
             // 
+            CHK_O0.AccessibleName = "Obtained Male";
             CHK_O0.AutoSize = true;
             CHK_O0.Location = new System.Drawing.Point(7, 21);
             CHK_O0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -484,6 +505,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_C7
             // 
+            CHK_C7.AccessibleName = "Caught in the Wild Shiny Alpha Female";
             CHK_C7.AutoSize = true;
             CHK_C7.Location = new System.Drawing.Point(7, 160);
             CHK_C7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -495,6 +517,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_C6
             // 
+            CHK_C6.AccessibleName = "Caught in the Wild Shiny Alpha Male";
             CHK_C6.AutoSize = true;
             CHK_C6.Location = new System.Drawing.Point(7, 141);
             CHK_C6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -506,6 +529,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_C5
             // 
+            CHK_C5.AccessibleName = "Caught in the Wild Shiny Female";
             CHK_C5.AutoSize = true;
             CHK_C5.Location = new System.Drawing.Point(7, 120);
             CHK_C5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -517,6 +541,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_C4
             // 
+            CHK_C4.AccessibleName = "Caught in the Wild Shiny Male";
             CHK_C4.AutoSize = true;
             CHK_C4.Location = new System.Drawing.Point(7, 100);
             CHK_C4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -528,6 +553,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_C3
             // 
+            CHK_C3.AccessibleName = "Caught in the Wild Alpha Female";
             CHK_C3.AutoSize = true;
             CHK_C3.Location = new System.Drawing.Point(7, 81);
             CHK_C3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -539,6 +565,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_C2
             // 
+            CHK_C2.AccessibleName = "Caught in the Wild Alpha Male";
             CHK_C2.AutoSize = true;
             CHK_C2.Location = new System.Drawing.Point(7, 61);
             CHK_C2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -550,6 +577,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_C1
             // 
+            CHK_C1.AccessibleName = "Caught in the Wild Female";
             CHK_C1.AutoSize = true;
             CHK_C1.Location = new System.Drawing.Point(7, 40);
             CHK_C1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -561,6 +589,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_C0
             // 
+            CHK_C0.AccessibleName = "Caught in the Wild Male";
             CHK_C0.AutoSize = true;
             CHK_C0.Location = new System.Drawing.Point(7, 21);
             CHK_C0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -622,6 +651,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MaxWeight
             // 
+            TB_MaxWeight.AccessibleName = "Maximum Weight";
             TB_MaxWeight.Location = new System.Drawing.Point(98, 18);
             TB_MaxWeight.Margin = new System.Windows.Forms.Padding(0);
             TB_MaxWeight.Name = "TB_MaxWeight";
@@ -631,6 +661,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MinWeight
             // 
+            TB_MinWeight.AccessibleName = "Minimum Weight";
             TB_MinWeight.Location = new System.Drawing.Point(5, 18);
             TB_MinWeight.Margin = new System.Windows.Forms.Padding(0);
             TB_MinWeight.Name = "TB_MinWeight";
@@ -665,6 +696,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MaxHeight
             // 
+            TB_MaxHeight.AccessibleName = "Maximum Height";
             TB_MaxHeight.Location = new System.Drawing.Point(98, 18);
             TB_MaxHeight.Margin = new System.Windows.Forms.Padding(0);
             TB_MaxHeight.Name = "TB_MaxHeight";
@@ -674,6 +706,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MinHeight
             // 
+            TB_MinHeight.AccessibleName = "Minimum Height";
             TB_MinHeight.Location = new System.Drawing.Point(5, 18);
             TB_MinHeight.Margin = new System.Windows.Forms.Padding(0);
             TB_MinHeight.Name = "TB_MinHeight";
@@ -703,6 +736,7 @@ namespace PKHeX.WinForms
             // 
             // CB_DisplayForm
             // 
+            CB_DisplayForm.AccessibleName = "Displayed Form";
             CB_DisplayForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_DisplayForm.FormattingEnabled = true;
             CB_DisplayForm.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -746,6 +780,7 @@ namespace PKHeX.WinForms
             // 
             // MTB_UpdateIndex
             // 
+            MTB_UpdateIndex.AccessibleName = "Update Index";
             MTB_UpdateIndex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MTB_UpdateIndex.Enabled = false;
             MTB_UpdateIndex.Location = new System.Drawing.Point(52, 276);
@@ -907,6 +942,7 @@ namespace PKHeX.WinForms
             // 
             // MTB_ResearchLevelUnreported
             // 
+            MTB_ResearchLevelUnreported.AccessibleName = "Unreported Research Level";
             MTB_ResearchLevelUnreported.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MTB_ResearchLevelUnreported.Enabled = false;
             MTB_ResearchLevelUnreported.Location = new System.Drawing.Point(280, 276);
@@ -930,6 +966,7 @@ namespace PKHeX.WinForms
             // 
             // MTB_ResearchLevelReported
             // 
+            MTB_ResearchLevelReported.AccessibleName = "Reported Research Level";
             MTB_ResearchLevelReported.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MTB_ResearchLevelReported.Enabled = false;
             MTB_ResearchLevelReported.Location = new System.Drawing.Point(169, 276);
@@ -965,6 +1002,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species";
             LB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Species.FormattingEnabled = true;
             LB_Species.Location = new System.Drawing.Point(14, 38);
