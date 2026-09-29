@@ -118,9 +118,9 @@ namespace PKHeX.WinForms
             L_Z = new System.Windows.Forms.Label();
             L_X = new System.Windows.Forms.Label();
             Tab_Images = new System.Windows.Forms.TabPage();
-            P_InitialIcon = new System.Windows.Forms.PictureBox();
-            P_CurrIcon = new System.Windows.Forms.PictureBox();
-            P_CurrPhoto = new System.Windows.Forms.PictureBox();
+            P_InitialIcon = new PKHeX.WinForms.Controls.SelectablePictureBox();
+            P_CurrIcon = new PKHeX.WinForms.Controls.SelectablePictureBox();
+            P_CurrPhoto = new PKHeX.WinForms.Controls.SelectablePictureBox();
             Tab_Blueberry = new System.Windows.Forms.TabPage();
             GB_BBQ = new System.Windows.Forms.GroupBox();
             L_BP = new System.Windows.Forms.Label();
@@ -183,6 +183,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OTName
             // 
+            TB_OTName.AccessibleName = "Trainer Name";
             TB_OTName.DisplayContext = EntityContext.Gen9;
             TB_OTName.Location = new System.Drawing.Point(170, 14);
             TB_OTName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -206,6 +207,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Money
             // 
+            MT_Money.AccessibleName = "Money";
             MT_Money.Location = new System.Drawing.Point(170, 68);
             MT_Money.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Money.Mask = "0000000";
@@ -317,6 +319,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Seconds
             // 
+            MT_Seconds.AccessibleName = "Play Time Seconds";
             MT_Seconds.Location = new System.Drawing.Point(326, 178);
             MT_Seconds.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Seconds.Mask = "00";
@@ -328,6 +331,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Minutes
             // 
+            MT_Minutes.AccessibleName = "Play Time Minutes";
             MT_Minutes.Location = new System.Drawing.Point(265, 178);
             MT_Minutes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Minutes.Mask = "00";
@@ -349,6 +353,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Hours
             // 
+            MT_Hours.AccessibleName = "Play Time Hours";
             MT_Hours.Location = new System.Drawing.Point(170, 178);
             MT_Hours.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Hours.Mask = "00000";
@@ -369,6 +374,7 @@ namespace PKHeX.WinForms
             // 
             // B_MaxCash
             // 
+            B_MaxCash.AccessibleName = "Max Money";
             B_MaxCash.Location = new System.Drawing.Point(241, 68);
             B_MaxCash.Margin = new System.Windows.Forms.Padding(0);
             B_MaxCash.Name = "B_MaxCash";
@@ -379,6 +385,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Language
             // 
+            CB_Language.AccessibleName = "Language";
             CB_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Language.FormattingEnabled = true;
             CB_Language.Location = new System.Drawing.Point(170, 150);
@@ -389,6 +396,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Game
             // 
+            CB_Game.AccessibleName = "Game";
             CB_Game.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Game.FormattingEnabled = true;
             CB_Game.Items.AddRange(new object[] { "Scarlet", "Violet" });
@@ -400,6 +408,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Gender
             // 
+            CB_Gender.AccessibleName = "Gender";
             CB_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Gender.FormattingEnabled = true;
             CB_Gender.Items.AddRange(new object[] { "♂", "♀" });
@@ -698,6 +707,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_LastSavedDate
             // 
+            CAL_LastSavedDate.AccessibleName = "Last Saved Date";
             CAL_LastSavedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_LastSavedDate.Location = new System.Drawing.Point(170, 232);
             CAL_LastSavedDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -727,6 +737,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_LastSavedTime
             // 
+            CAL_LastSavedTime.AccessibleName = "Last Saved Time";
             CAL_LastSavedTime.CustomFormat = "HH:mm:ss";
             CAL_LastSavedTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             CAL_LastSavedTime.Location = new System.Drawing.Point(205, 254);
@@ -751,6 +762,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_AdventureStartDate
             // 
+            CAL_AdventureStartDate.AccessibleName = "Game Started Date";
             CAL_AdventureStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_AdventureStartDate.Location = new System.Drawing.Point(170, 205);
             CAL_AdventureStartDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -763,6 +775,7 @@ namespace PKHeX.WinForms
             // 
             // MT_LP
             // 
+            MT_LP.AccessibleName = "League Points";
             MT_LP.Location = new System.Drawing.Point(170, 95);
             MT_LP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_LP.Mask = "0000000";
@@ -773,6 +786,7 @@ namespace PKHeX.WinForms
             // 
             // B_MaxLP
             // 
+            B_MaxLP.AccessibleName = "Max League Points";
             B_MaxLP.Location = new System.Drawing.Point(241, 95);
             B_MaxLP.Margin = new System.Windows.Forms.Padding(0);
             B_MaxLP.Name = "B_MaxLP";
@@ -883,6 +897,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_R
             // 
+            NUD_R.AccessibleName = "Rotation";
             NUD_R.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_R.DecimalPlaces = 6;
             NUD_R.Location = new System.Drawing.Point(113, 128);
@@ -907,6 +922,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Z
             // 
+            NUD_Z.AccessibleName = "Z Coordinate";
             NUD_Z.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_Z.DecimalPlaces = 6;
             NUD_Z.Location = new System.Drawing.Point(113, 56);
@@ -921,6 +937,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Y
             // 
+            NUD_Y.AccessibleName = "Y Coordinate";
             NUD_Y.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_Y.DecimalPlaces = 6;
             NUD_Y.Location = new System.Drawing.Point(113, 92);
@@ -935,6 +952,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_X
             // 
+            NUD_X.AccessibleName = "X Coordinate";
             NUD_X.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_X.DecimalPlaces = 6;
             NUD_X.Location = new System.Drawing.Point(113, 21);
@@ -991,6 +1009,8 @@ namespace PKHeX.WinForms
             // 
             // P_InitialIcon
             // 
+            P_InitialIcon.AccessibleName = "Save Initial Icon";
+            P_InitialIcon.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             P_InitialIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             P_InitialIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             P_InitialIcon.Location = new System.Drawing.Point(385, 135);
@@ -998,11 +1018,13 @@ namespace PKHeX.WinForms
             P_InitialIcon.Size = new System.Drawing.Size(90, 90);
             P_InitialIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             P_InitialIcon.TabIndex = 79;
-            P_InitialIcon.TabStop = false;
             P_InitialIcon.Click += P_InitialIcon_Click;
+            P_InitialIcon.KeyDown += P_InitialIcon_KeyDown;
             // 
             // P_CurrIcon
             // 
+            P_CurrIcon.AccessibleName = "Save Current Icon";
+            P_CurrIcon.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             P_CurrIcon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             P_CurrIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             P_CurrIcon.Location = new System.Drawing.Point(385, 16);
@@ -1010,11 +1032,13 @@ namespace PKHeX.WinForms
             P_CurrIcon.Size = new System.Drawing.Size(90, 90);
             P_CurrIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             P_CurrIcon.TabIndex = 78;
-            P_CurrIcon.TabStop = false;
             P_CurrIcon.Click += P_CurrIcon_Click;
+            P_CurrIcon.KeyDown += P_CurrIcon_KeyDown;
             // 
             // P_CurrPhoto
             // 
+            P_CurrPhoto.AccessibleName = "Save Current Photo";
+            P_CurrPhoto.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             P_CurrPhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             P_CurrPhoto.Cursor = System.Windows.Forms.Cursors.Hand;
             P_CurrPhoto.Location = new System.Drawing.Point(13, 16);
@@ -1022,8 +1046,8 @@ namespace PKHeX.WinForms
             P_CurrPhoto.Size = new System.Drawing.Size(362, 210);
             P_CurrPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             P_CurrPhoto.TabIndex = 77;
-            P_CurrPhoto.TabStop = false;
             P_CurrPhoto.Click += P_CurrPhoto_Click;
+            P_CurrPhoto.KeyDown += P_CurrPhoto_KeyDown;
             // 
             // Tab_Blueberry
             // 
@@ -1064,6 +1088,7 @@ namespace PKHeX.WinForms
             // 
             // B_MaxBP
             // 
+            B_MaxBP.AccessibleName = "Max Blueberry Points";
             B_MaxBP.Location = new System.Drawing.Point(67, 0);
             B_MaxBP.Margin = new System.Windows.Forms.Padding(0);
             B_MaxBP.Name = "B_MaxBP";
@@ -1074,6 +1099,7 @@ namespace PKHeX.WinForms
             // 
             // MT_BP
             // 
+            MT_BP.AccessibleName = "Blueberry Points";
             MT_BP.Location = new System.Drawing.Point(0, 0);
             MT_BP.Margin = new System.Windows.Forms.Padding(0);
             MT_BP.Mask = "0000000";
@@ -1108,6 +1134,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BBQSolo
             // 
+            NUD_BBQSolo.AccessibleName = "BBQ Solo Quests";
             NUD_BBQSolo.Location = new System.Drawing.Point(92, 25);
             NUD_BBQSolo.Margin = new System.Windows.Forms.Padding(0);
             NUD_BBQSolo.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -1117,6 +1144,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BBQGroup
             // 
+            NUD_BBQGroup.AccessibleName = "BBQ Group Quests";
             NUD_BBQGroup.Location = new System.Drawing.Point(92, 50);
             NUD_BBQGroup.Margin = new System.Windows.Forms.Padding(0);
             NUD_BBQGroup.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -1159,6 +1187,7 @@ namespace PKHeX.WinForms
             // 
             // CB_ThrowStyle
             // 
+            CB_ThrowStyle.AccessibleName = "Throw Style";
             CB_ThrowStyle.FormattingEnabled = true;
             CB_ThrowStyle.Location = new System.Drawing.Point(153, 139);
             CB_ThrowStyle.Name = "CB_ThrowStyle";
@@ -1330,9 +1359,9 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.DateTimePicker CAL_AdventureStartDate;
         private Controls.TrainerID trainerID1;
         private System.Windows.Forms.TabPage Tab_Images;
-        private System.Windows.Forms.PictureBox P_InitialIcon;
-        private System.Windows.Forms.PictureBox P_CurrIcon;
-        private System.Windows.Forms.PictureBox P_CurrPhoto;
+        private PKHeX.WinForms.Controls.SelectablePictureBox P_InitialIcon;
+        private PKHeX.WinForms.Controls.SelectablePictureBox P_CurrIcon;
+        private PKHeX.WinForms.Controls.SelectablePictureBox P_CurrPhoto;
         private System.Windows.Forms.Button B_UnlockClothing;
         private System.Windows.Forms.NumericUpDown NUD_R;
         private System.Windows.Forms.Label L_R;

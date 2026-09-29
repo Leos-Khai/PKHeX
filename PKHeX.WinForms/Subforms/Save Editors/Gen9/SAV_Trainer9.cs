@@ -410,6 +410,11 @@ public partial class SAV_Trainer9 : Form
     private void P_CurrIcon_Click(object sender, EventArgs e) => IMG_Save(P_CurrIcon.Image!, "current_icon");
     private void P_InitialIcon_Click(object sender, EventArgs e) => IMG_Save(P_InitialIcon.Image!, "initial_icon");
 
+    // Lets keyboard-only users save the images, as the picture boxes are otherwise mouse-only.
+    private void P_CurrPhoto_KeyDown(object sender, KeyEventArgs e) { if (e.KeyCode is Keys.Enter or Keys.Space) P_CurrPhoto_Click(sender, e); }
+    private void P_CurrIcon_KeyDown(object sender, KeyEventArgs e) { if (e.KeyCode is Keys.Enter or Keys.Space) P_CurrIcon_Click(sender, e); }
+    private void P_InitialIcon_KeyDown(object sender, KeyEventArgs e) { if (e.KeyCode is Keys.Enter or Keys.Space) P_InitialIcon_Click(sender, e); }
+
     private void B_UnlockClothing_Click(object sender, EventArgs e)
     {
         var accessor = SAV.Accessor;
