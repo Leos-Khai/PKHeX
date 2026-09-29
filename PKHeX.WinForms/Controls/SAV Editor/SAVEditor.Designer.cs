@@ -168,6 +168,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // B_PopoutBox
             // 
+            B_PopoutBox.AccessibleName = "Open Box Viewer";
             B_PopoutBox.ContextMenuStrip = PopoutMenu;
             B_PopoutBox.Image = Properties.Resources.popout;
             B_PopoutBox.Location = new System.Drawing.Point(3, 15);
@@ -202,6 +203,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // B_SearchBox
             // 
+            B_SearchBox.AccessibleName = "Search Boxes";
             B_SearchBox.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             B_SearchBox.Image = Properties.Resources.other;
             B_SearchBox.Location = new System.Drawing.Point(414, 15);
