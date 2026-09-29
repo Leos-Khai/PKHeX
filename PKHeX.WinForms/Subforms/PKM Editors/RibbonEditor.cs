@@ -146,6 +146,7 @@ public partial class RibbonEditor : Form
     private void AddRibbonSprite(RibbonInfo rib)
     {
         var name = rib.Name;
+        var display = RibbonStrings.GetName(name);
         var pb = new SelectablePictureBox
         {
             AutoSize = false,
@@ -153,17 +154,28 @@ public partial class RibbonEditor : Form
             BackgroundImageLayout = ImageLayout.Center,
             Visible = false,
             Name = PrefixPB + name,
-            AccessibleName = name,
-            AccessibleDescription = name,
+            // The internal property name ("RibbonChampionBattle") is not meant to be read aloud; narrate the translated ribbon name.
+            AccessibleName = display,
+            AccessibleDescription = display,
             AccessibleRole = AccessibleRole.Graphic,
         };
         var img = RibbonSpriteUtil.GetRibbonSprite(name);
         pb.BackgroundImage = img;
 
-        var display = RibbonStrings.GetName(name);
         pb.MouseEnter += (_, _) => tipName.SetToolTip(pb, display);
         if (Entity is IRibbonSetAffixed)
-            pb.Click += (_, _) => CB_Affixed.Text = RibbonStrings.GetName(name);
+        {
+            // Clicking the sprite affixes it, so it has to be operable from the keyboard too.
+            pb.AccessibleRole = AccessibleRole.PushButton;
+            pb.Click += (_, _) => CB_Affixed.Text = display;
+            pb.KeyDown += (_, e) =>
+            {
+                if (e.KeyCode is not (Keys.Enter or Keys.Space))
+                    return;
+                CB_Affixed.Text = display;
+                e.Handled = true;
+            };
+        }
         FLP_Ribbons.Controls.Add(pb);
     }
 
@@ -199,6 +211,7 @@ public partial class RibbonEditor : Form
         {
             Anchor = AnchorStyles.Right,
             Name = PrefixNUD + rib.Name,
+            AccessibleName = label.Text,
             Minimum = 0,
             Width = 35,
             Increment = 1,
@@ -234,6 +247,7 @@ public partial class RibbonEditor : Form
         {
             Anchor = AnchorStyles.Right,
             Name = PrefixCHK + rib.Name,
+            AccessibleName = label.Text,
             AutoSize = true,
             Padding = Padding.Empty,
             Margin = Padding.Empty,
