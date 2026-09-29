@@ -59,6 +59,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // ExperienceBar
             // 
+            AccessibleName = "Experience progress";
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.SystemColors.ControlLight;

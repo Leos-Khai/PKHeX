@@ -319,13 +319,16 @@ public partial class ExperienceBar : UserControl
         Growth = growth;
         Level = level;
 
+        // The bar can only be dragged with a mouse; the EXP text box is the keyboard equivalent.
         if (level >= Experience.MaxLevel)
         {
             PAN_ExpPercent.Width = 0;
+            AccessibleDescription = "Maximum level reached";
             return;
         }
 
         SetSizePercentFull();
+        AccessibleDescription = $"{CurrentPercent:P0} of the way to the next level";
     }
 
     private void SetSizePercentFull()
