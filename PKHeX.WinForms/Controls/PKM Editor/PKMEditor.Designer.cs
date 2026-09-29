@@ -107,7 +107,7 @@ namespace PKHeX.WinForms.Controls
             FLP_Ball = new System.Windows.Forms.FlowLayoutPanel();
             FLP_BallLeft = new System.Windows.Forms.FlowLayoutPanel();
             Label_Ball = new System.Windows.Forms.Label();
-            PB_Ball = new System.Windows.Forms.PictureBox();
+            PB_Ball = new SelectablePictureBox();
             CB_Ball = new System.Windows.Forms.ComboBox();
             FLP_MetDate = new System.Windows.Forms.FlowLayoutPanel();
             Label_MetDate = new System.Windows.Forms.Label();
@@ -167,19 +167,19 @@ namespace PKHeX.WinForms.Controls
             Hidden_Cosmetic = new System.Windows.Forms.TabPage();
             FLP_CosmeticTop = new System.Windows.Forms.FlowLayoutPanel();
             GB_Markings = new System.Windows.Forms.GroupBox();
-            PB_Mark6 = new System.Windows.Forms.PictureBox();
-            PB_Mark3 = new System.Windows.Forms.PictureBox();
-            PB_Mark5 = new System.Windows.Forms.PictureBox();
-            PB_MarkCured = new System.Windows.Forms.PictureBox();
-            PB_Mark2 = new System.Windows.Forms.PictureBox();
-            PB_MarkShiny = new System.Windows.Forms.PictureBox();
-            PB_Mark1 = new System.Windows.Forms.PictureBox();
-            PB_Mark4 = new System.Windows.Forms.PictureBox();
-            PB_Affixed = new System.Windows.Forms.PictureBox();
+            PB_Mark6 = new SelectablePictureBox();
+            PB_Mark3 = new SelectablePictureBox();
+            PB_Mark5 = new SelectablePictureBox();
+            PB_MarkCured = new SelectablePictureBox();
+            PB_Mark2 = new SelectablePictureBox();
+            PB_MarkShiny = new SelectablePictureBox();
+            PB_Mark1 = new SelectablePictureBox();
+            PB_Mark4 = new SelectablePictureBox();
+            PB_Affixed = new SelectablePictureBox();
             FLP_BigMarkings = new System.Windows.Forms.FlowLayoutPanel();
-            PB_Favorite = new System.Windows.Forms.PictureBox();
-            PB_Origin = new System.Windows.Forms.PictureBox();
-            PB_BattleVersion = new System.Windows.Forms.PictureBox();
+            PB_Favorite = new SelectablePictureBox();
+            PB_Origin = new SelectablePictureBox();
+            PB_BattleVersion = new SelectablePictureBox();
             FLP_Spirit7b = new System.Windows.Forms.FlowLayoutPanel();
             L_Spirit7b = new System.Windows.Forms.Label();
             NUD_Spirit7b = new System.Windows.Forms.NumericUpDown();
@@ -1384,13 +1384,14 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_Ball
             // 
+            PB_Ball.AccessibleName = "Open ball browser";
+            PB_Ball.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Ball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             PB_Ball.Location = new System.Drawing.Point(62, 0);
             PB_Ball.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             PB_Ball.Name = "PB_Ball";
             PB_Ball.Size = new System.Drawing.Size(24, 24);
             PB_Ball.TabIndex = 3;
-            PB_Ball.TabStop = false;
             PB_Ball.Click += ClickBall;
             // 
             // CB_Ball
@@ -2141,7 +2142,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_Mark6
             // 
-            PB_Mark6.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Mark6.AccessibleName = "Marking Diamond";
+            PB_Mark6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Mark6.Image = Properties.Resources.box_mark_06;
             PB_Mark6.InitialImage = Properties.Resources.box_mark_06;
             PB_Mark6.Location = new System.Drawing.Point(128, 40);
@@ -2150,12 +2152,12 @@ namespace PKHeX.WinForms.Controls
             PB_Mark6.Size = new System.Drawing.Size(24, 24);
             PB_Mark6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Mark6.TabIndex = 5;
-            PB_Mark6.TabStop = false;
             PB_Mark6.Click += ClickMarking;
             // 
             // PB_Mark3
             // 
-            PB_Mark3.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Mark3.AccessibleName = "Marking Square";
+            PB_Mark3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Mark3.Image = Properties.Resources.box_mark_03;
             PB_Mark3.InitialImage = Properties.Resources.box_mark_03;
             PB_Mark3.Location = new System.Drawing.Point(56, 40);
@@ -2164,12 +2166,12 @@ namespace PKHeX.WinForms.Controls
             PB_Mark3.Size = new System.Drawing.Size(24, 24);
             PB_Mark3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Mark3.TabIndex = 2;
-            PB_Mark3.TabStop = false;
             PB_Mark3.Click += ClickMarking;
             // 
             // PB_Mark5
             // 
-            PB_Mark5.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Mark5.AccessibleName = "Marking Star";
+            PB_Mark5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Mark5.Image = Properties.Resources.box_mark_05;
             PB_Mark5.InitialImage = Properties.Resources.box_mark_05;
             PB_Mark5.Location = new System.Drawing.Point(104, 40);
@@ -2178,12 +2180,12 @@ namespace PKHeX.WinForms.Controls
             PB_Mark5.Size = new System.Drawing.Size(24, 24);
             PB_Mark5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Mark5.TabIndex = 4;
-            PB_Mark5.TabStop = false;
             PB_Mark5.Click += ClickMarking;
             // 
             // PB_MarkCured
             // 
-            PB_MarkCured.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_MarkCured.AccessibleName = "Pokérus Cured";
+            PB_MarkCured.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_MarkCured.Image = Properties.Resources.anti_pokerus_icon;
             PB_MarkCured.InitialImage = Properties.Resources.anti_pokerus_icon;
             PB_MarkCured.Location = new System.Drawing.Point(80, 16);
@@ -2192,12 +2194,12 @@ namespace PKHeX.WinForms.Controls
             PB_MarkCured.Size = new System.Drawing.Size(24, 24);
             PB_MarkCured.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_MarkCured.TabIndex = 7;
-            PB_MarkCured.TabStop = false;
             PB_MarkCured.Click += PB_MarkCured_Click;
             // 
             // PB_Mark2
             // 
-            PB_Mark2.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Mark2.AccessibleName = "Marking Triangle";
+            PB_Mark2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Mark2.Image = Properties.Resources.box_mark_02;
             PB_Mark2.InitialImage = Properties.Resources.box_mark_02;
             PB_Mark2.Location = new System.Drawing.Point(32, 40);
@@ -2206,12 +2208,12 @@ namespace PKHeX.WinForms.Controls
             PB_Mark2.Size = new System.Drawing.Size(24, 24);
             PB_Mark2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Mark2.TabIndex = 1;
-            PB_Mark2.TabStop = false;
             PB_Mark2.Click += ClickMarking;
             // 
             // PB_MarkShiny
             // 
-            PB_MarkShiny.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_MarkShiny.AccessibleName = "Shiny";
+            PB_MarkShiny.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_MarkShiny.Image = Properties.Resources.rare_icon;
             PB_MarkShiny.InitialImage = Properties.Resources.rare_icon;
             PB_MarkShiny.Location = new System.Drawing.Point(56, 16);
@@ -2220,12 +2222,12 @@ namespace PKHeX.WinForms.Controls
             PB_MarkShiny.Size = new System.Drawing.Size(24, 24);
             PB_MarkShiny.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_MarkShiny.TabIndex = 6;
-            PB_MarkShiny.TabStop = false;
             PB_MarkShiny.Click += PB_MarkShiny_Click;
             // 
             // PB_Mark1
             // 
-            PB_Mark1.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Mark1.AccessibleName = "Marking Circle";
+            PB_Mark1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Mark1.Image = Properties.Resources.box_mark_01;
             PB_Mark1.InitialImage = Properties.Resources.box_mark_01;
             PB_Mark1.Location = new System.Drawing.Point(8, 40);
@@ -2234,12 +2236,12 @@ namespace PKHeX.WinForms.Controls
             PB_Mark1.Size = new System.Drawing.Size(24, 24);
             PB_Mark1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Mark1.TabIndex = 0;
-            PB_Mark1.TabStop = false;
             PB_Mark1.Click += ClickMarking;
             // 
             // PB_Mark4
             // 
-            PB_Mark4.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Mark4.AccessibleName = "Marking Heart";
+            PB_Mark4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Mark4.Image = Properties.Resources.box_mark_04;
             PB_Mark4.InitialImage = Properties.Resources.box_mark_04;
             PB_Mark4.Location = new System.Drawing.Point(80, 40);
@@ -2248,12 +2250,12 @@ namespace PKHeX.WinForms.Controls
             PB_Mark4.Size = new System.Drawing.Size(24, 24);
             PB_Mark4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Mark4.TabIndex = 3;
-            PB_Mark4.TabStop = false;
             PB_Mark4.Click += ClickMarking;
             // 
             // PB_Affixed
             // 
-            PB_Affixed.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Affixed.AccessibleName = "Affixed Ribbon";
+            PB_Affixed.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Affixed.Anchor = System.Windows.Forms.AnchorStyles.None;
             PB_Affixed.Location = new System.Drawing.Point(240, 30);
             PB_Affixed.Margin = new System.Windows.Forms.Padding(8, 4, 0, 0);
@@ -2261,7 +2263,6 @@ namespace PKHeX.WinForms.Controls
             PB_Affixed.Size = new System.Drawing.Size(40, 40);
             PB_Affixed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Affixed.TabIndex = 13;
-            PB_Affixed.TabStop = false;
             PB_Affixed.Click += OpenRibbons;
             // 
             // FLP_BigMarkings
@@ -2280,7 +2281,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_Favorite
             // 
-            PB_Favorite.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Favorite.AccessibleName = "Favorite";
+            PB_Favorite.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Favorite.Anchor = System.Windows.Forms.AnchorStyles.None;
             PB_Favorite.Image = Properties.Resources.icon_favo;
             PB_Favorite.InitialImage = Properties.Resources.icon_favo;
@@ -2290,12 +2292,12 @@ namespace PKHeX.WinForms.Controls
             PB_Favorite.Size = new System.Drawing.Size(48, 48);
             PB_Favorite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Favorite.TabIndex = 10;
-            PB_Favorite.TabStop = false;
             PB_Favorite.Click += ClickFavorite;
             // 
             // PB_Origin
             // 
-            PB_Origin.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_Origin.AccessibleName = "Origin Mark";
+            PB_Origin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Origin.Anchor = System.Windows.Forms.AnchorStyles.None;
             PB_Origin.Location = new System.Drawing.Point(48, 0);
             PB_Origin.Margin = new System.Windows.Forms.Padding(0);
@@ -2303,12 +2305,12 @@ namespace PKHeX.WinForms.Controls
             PB_Origin.Size = new System.Drawing.Size(48, 48);
             PB_Origin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Origin.TabIndex = 11;
-            PB_Origin.TabStop = false;
             PB_Origin.Click += ClickVersionMarking;
             // 
             // PB_BattleVersion
             // 
-            PB_BattleVersion.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
+            PB_BattleVersion.AccessibleName = "Battle Version";
+            PB_BattleVersion.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_BattleVersion.Anchor = System.Windows.Forms.AnchorStyles.None;
             PB_BattleVersion.Image = Properties.Resources.icon_btlrom;
             PB_BattleVersion.InitialImage = Properties.Resources.icon_btlrom;
@@ -2318,7 +2320,6 @@ namespace PKHeX.WinForms.Controls
             PB_BattleVersion.Size = new System.Drawing.Size(48, 48);
             PB_BattleVersion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_BattleVersion.TabIndex = 12;
-            PB_BattleVersion.TabStop = false;
             PB_BattleVersion.Click += ClickVersionMarking;
             // 
             // FLP_Spirit7b
@@ -3455,7 +3456,7 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.FlowLayoutPanel FLP_Ball;
         private System.Windows.Forms.FlowLayoutPanel FLP_BallLeft;
         private System.Windows.Forms.Label Label_Ball;
-        private System.Windows.Forms.PictureBox PB_Ball;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Ball;
         private System.Windows.Forms.ComboBox CB_Ball;
         private System.Windows.Forms.FlowLayoutPanel FLP_MetLevel;
         private System.Windows.Forms.Label Label_MetLevel;
@@ -3492,14 +3493,14 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.Label Label_PrevOT;
         private System.Windows.Forms.Button BTN_RerollEC;
         private System.Windows.Forms.GroupBox GB_Markings;
-        private System.Windows.Forms.PictureBox PB_Mark6;
-        private System.Windows.Forms.PictureBox PB_Mark3;
-        private System.Windows.Forms.PictureBox PB_Mark5;
-        private System.Windows.Forms.PictureBox PB_MarkCured;
-        private System.Windows.Forms.PictureBox PB_Mark2;
-        private System.Windows.Forms.PictureBox PB_MarkShiny;
-        private System.Windows.Forms.PictureBox PB_Mark1;
-        private System.Windows.Forms.PictureBox PB_Mark4;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Mark6;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Mark3;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Mark5;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_MarkCured;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Mark2;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_MarkShiny;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Mark1;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Mark4;
         private System.Windows.Forms.MaskedTextBox TB_ExtraByte;
         private System.Windows.Forms.ComboBox CB_ExtraBytes;
         private PKHeX.WinForms.Controls.RenderedString TB_OT;
@@ -3509,10 +3510,10 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.Label L_CatchRate;
         private CatchRate CR_PK1;
         public SizeCP SizeCP;
-        private System.Windows.Forms.PictureBox PB_Favorite;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Favorite;
         private System.Windows.Forms.Label L_StatAlignment;
         private System.Windows.Forms.ComboBox CB_StatAlignment;
-        private System.Windows.Forms.PictureBox PB_Origin;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Origin;
         private System.Windows.Forms.ComboBox CB_HTLanguage;
         private System.Windows.Forms.Button B_RelearnFlags;
         private System.Windows.Forms.TextBox TB_HomeTracker;
@@ -3520,7 +3521,7 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.FlowLayoutPanel FLP_BattleVersion;
         private System.Windows.Forms.Label L_BattleVersion;
         private System.Windows.Forms.ComboBox CB_BattleVersion;
-        private System.Windows.Forms.PictureBox PB_BattleVersion;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_BattleVersion;
         private System.Windows.Forms.Button B_MoveShop;
         private System.Windows.Forms.FlowLayoutPanel FLP_MoveFlags;
         private System.Windows.Forms.Label L_AlphaMastered;
@@ -3560,7 +3561,7 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.FlowLayoutPanel FLP_Handler;
         private System.Windows.Forms.Label L_CurrentHandler;
         private System.Windows.Forms.ComboBox CB_Handler;
-        private global::System.Windows.Forms.PictureBox PB_Affixed;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Affixed;
         private System.Windows.Forms.Button BTN_NicknameWarn;
         private System.Windows.Forms.Button BTN_OTNameWarn;
         private System.Windows.Forms.FlowLayoutPanel FLP_EncryptionConstant;

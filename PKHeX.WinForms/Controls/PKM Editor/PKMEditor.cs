@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Forms.Automation;
 using static PKHeX.Core.MessageStrings;
 
 namespace PKHeX.WinForms.Controls;
@@ -32,6 +33,17 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             Moves[i].SetAccessibleSlot($"Move {i + 1}");
         Relearn = [CB_RelearnMove1, CB_RelearnMove2, CB_RelearnMove3, CB_RelearnMove4];
         Markings = [PB_Mark1, PB_Mark2, PB_Mark3, PB_Mark4, PB_Mark5, PB_Mark6];
+
+        // Clickable pictures must also react to the keyboard, as they are the only way to change these values.
+        foreach (var pb in Markings)
+            ActivateOnKey(pb, ClickMarking);
+        ActivateOnKey(PB_Favorite, ClickFavorite);
+        ActivateOnKey(PB_MarkShiny, PB_MarkShiny_Click);
+        ActivateOnKey(PB_MarkCured, PB_MarkCured_Click);
+        ActivateOnKey(PB_Origin, ClickVersionMarking);
+        ActivateOnKey(PB_BattleVersion, ClickVersionMarking);
+        ActivateOnKey(PB_Affixed, OpenRibbons);
+        ActivateOnKey(PB_Ball, ClickBall);
 
         // Legality Indicators
         relearnPB = [PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4];
@@ -216,7 +228,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
     private readonly MoveChoice[] Moves;
     private readonly ComboBox[] Relearn;
     private readonly ValidationRequiredSet[] ValidatedControls;
-    private readonly PictureBox[] Markings;
+    private readonly SelectablePictureBox[] Markings;
 
     private bool forceValidation;
 
@@ -529,19 +541,44 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         SetMarkings();
     }
 
+    private static readonly string[] MarkingNames = ["Circle", "Triangle", "Square", "Heart", "Star", "Diamond"];
+
+    /// <summary>
+    /// Lets keyboard users trigger a picture's click action; the handlers ignore the event arguments.
+    /// </summary>
+    private static void ActivateOnKey(SelectablePictureBox pb, Action<object, EventArgs> click) => pb.KeyDown += (sender, e) =>
+    {
+        if (e.KeyCode is not (Keys.Enter or Keys.Space))
+            return;
+        click(sender!, e);
+        e.Handled = true;
+    };
+
+    private static void Announce(Control c, string text) => c.AccessibilityObject.RaiseAutomationNotification(
+        AutomationNotificationKind.Other, AutomationNotificationProcessing.MostRecent, text);
+
     private void SetMarkings()
     {
-        PB_MarkShiny.Image = GetMarkSprite(PB_MarkShiny, !BTN_Shinytize.Enabled);
-        PB_MarkCured.Image = GetMarkSprite(PB_MarkCured, CHK_Cured.Checked);
+        var shiny = !BTN_Shinytize.Enabled;
+        PB_MarkShiny.Image = GetMarkSprite(PB_MarkShiny, shiny);
+        PB_MarkShiny.AccessibleName = $"Shiny: {(shiny ? "Yes" : "No")}";
+        var cured = CHK_Cured.Checked;
+        PB_MarkCured.Image = GetMarkSprite(PB_MarkCured, cured);
+        PB_MarkCured.AccessibleName = $"Pokérus Cured: {(cured ? "Yes" : "No")}";
 
-        PB_Favorite.Image = GetMarkSprite(PB_Favorite, Entity is IFavorite { IsFavorite: true });
-        PB_Origin.Image = GetOriginSprite(Entity);
+        var favorite = Entity is IFavorite { IsFavorite: true };
+        PB_Favorite.Image = GetMarkSprite(PB_Favorite, favorite);
+        PB_Favorite.AccessibleName = $"Favorite: {(favorite ? "On" : "Off")}";
+        UpdateOriginMark();
 
         var pba = Markings;
         if (Entity is IAppliedMarkings<bool> b)
         {
             for (int i = 0; i < b.MarkingCount; i++)
-                SetMarkingImage(pba[i], Draw.MarkDefault, b.GetMarking(i));
+            {
+                var active = b.GetMarking(i);
+                SetMarkingImage(pba[i], Draw.MarkDefault, active, active ? "On" : "Off");
+            }
         }
         else if (Entity is IAppliedMarkings<MarkingColor> c)
         {
@@ -549,12 +586,12 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             {
                 var state = c.GetMarking(i);
                 _ = Draw.GetMarkingColor(state, out var color);
-                SetMarkingImage(pba[i], color, state != MarkingColor.None);
+                SetMarkingImage(pba[i], color, state != MarkingColor.None, state == MarkingColor.None ? "Off" : state.ToString());
             }
         }
         return;
 
-        static void SetMarkingImage(PictureBox pb, Color color, bool active)
+        static void SetMarkingImage(SelectablePictureBox pb, Color color, bool active, string state)
         {
             var bmp = pb.InitialImage as Bitmap;
             ArgumentNullException.ThrowIfNull(bmp);
@@ -564,8 +601,34 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             if (!active)
                 bmp = ImageUtil.CopyChangeOpacity(bmp, 1 / 8f);
             pb.Image = bmp;
+
+            // Opacity and colour are the only visual difference between states; spell them out.
+            var index = pb.Name[^1] - '1';
+            pb.AccessibleName = $"Marking {MarkingNames[index]}: {state}";
         }
     }
+
+    private void UpdateOriginMark()
+    {
+        var pk = Entity;
+        PB_Origin.Image = GetOriginSprite(pk);
+        PB_Origin.AccessibleName = $"Origin Mark: {GetOriginMarkName(pk)}";
+    }
+
+    private static string GetOriginMarkName(PKM pk) => OriginMarkUtil.GetOriginMark(pk) switch
+    {
+        OriginMark.Gen6Pentagon => "Pentagon",
+        OriginMark.Gen7Clover => "Clover",
+        OriginMark.Gen8Galar => "Galar",
+        OriginMark.Gen8Trio => "Brilliant Diamond and Shining Pearl",
+        OriginMark.Gen8Arc => "Legends Arceus",
+        OriginMark.Gen9Paldea => "Paldea",
+        OriginMark.Gen9ZA => "Legends Z-A",
+        OriginMark.GameBoy => "Game Boy",
+        OriginMark.GO => "Pokémon GO",
+        OriginMark.LetsGo => "Let's Go",
+        _ => "None",
+    };
 
     private static Bitmap? GetOriginSprite(PKM pk)
     {
@@ -676,9 +739,10 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
 
     private void ClickMarking(object sender, EventArgs e)
     {
-        int index = Markings.IndexOf((PictureBox)sender);
+        int index = Markings.IndexOf((SelectablePictureBox)sender);
         Entity.ToggleMarking(index);
         SetMarkings();
+        Announce(Markings[index], Markings[index].AccessibleName!);
     }
 
     private void ClickFavorite(object sender, EventArgs e)
@@ -686,6 +750,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         if (Entity is IFavorite pb7)
             pb7.IsFavorite ^= true;
         SetMarkings();
+        Announce(PB_Favorite, PB_Favorite.AccessibleName!);
     }
 
     private void ClickOT(object sender, EventArgs e) => SetDetailsOT(SaveFileRequested.Invoke(this, e));
@@ -1279,7 +1344,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         if (!FieldsLoaded)
             return;
 
-        PB_Origin.Image = GetOriginSprite(Entity);
+        UpdateOriginMark();
         TID_Trainer.LoadTrainer(Entity, Entity.Format);
         UpdateLegality();
     }
@@ -1944,6 +2009,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
                 if (pk is IRibbonSetMarks { RibbonMarkCount: > 1 } y)
                     name += Environment.NewLine + GetRibbonAffixCount(y);
                 AffixedTip.SetToolTip(PB_Affixed, name);
+                PB_Affixed.AccessibleName = $"Affixed Ribbon: {name.ReplaceLineEndings(". ")}";
                 return;
             }
             if (pk is IRibbonSetMarks { RibbonMarkCount: not 0 } x)
@@ -1951,6 +2017,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
                 PB_Affixed.Image = Properties.Resources.ribbon_affix_none;
                 PB_Affixed.Visible = true;
                 AffixedTip.SetToolTip(PB_Affixed, GetRibbonAffixCount(x));
+                PB_Affixed.AccessibleName = $"Affixed Ribbon: None. {GetRibbonAffixCount(x)}";
                 return;
             }
             static string GetRibbonAffixCount(IRibbonSetMarks x) => $"{x.RibbonMarkCount} available to affix.";
@@ -2243,6 +2310,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         if (Application.IsDarkModeEnabled)
             sprite = WinFormsUtil.BlackToWhite(sprite);
         PB_BattleVersion.Image = sprite;
+        PB_BattleVersion.AccessibleName = $"Battle Version: {(value == 0 ? "None" : CB_BattleVersion.Text)}";
     }
 
     private static Bitmap GetMarkSprite(PictureBox p, bool opaque, double trans = 0.175)
