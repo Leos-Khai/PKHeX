@@ -60,6 +60,7 @@ namespace PKHeX.WinForms
             // 
             // PG_Raid
             // 
+            PG_Raid.AccessibleName = "Raid Details";
             PG_Raid.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_Raid.Location = new System.Drawing.Point(14, 37);
             PG_Raid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -71,6 +72,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Raid
             // 
+            CB_Raid.AccessibleName = "Raid";
             CB_Raid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Raid.FormattingEnabled = true;
             CB_Raid.Location = new System.Drawing.Point(14, 6);
