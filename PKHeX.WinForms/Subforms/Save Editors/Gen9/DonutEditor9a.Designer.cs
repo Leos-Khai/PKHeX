@@ -150,6 +150,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry8
             // 
+            CB_Berry8.AccessibleName = "Berry 8";
             CB_Berry8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -162,6 +163,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry7
             // 
+            CB_Berry7.AccessibleName = "Berry 7";
             CB_Berry7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -174,6 +176,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry6
             // 
+            CB_Berry6.AccessibleName = "Berry 6";
             CB_Berry6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -186,6 +189,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry5
             // 
+            CB_Berry5.AccessibleName = "Berry 5";
             CB_Berry5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -198,6 +202,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry4
             // 
+            CB_Berry4.AccessibleName = "Berry 4";
             CB_Berry4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -210,6 +215,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry3
             // 
+            CB_Berry3.AccessibleName = "Berry 3";
             CB_Berry3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -222,6 +228,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry2
             // 
+            CB_Berry2.AccessibleName = "Berry 2";
             CB_Berry2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -234,6 +241,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry1
             // 
+            CB_Berry1.AccessibleName = "Berry 1";
             CB_Berry1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -246,6 +254,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Berry0
             // 
+            CB_Berry0.AccessibleName = "Berry (Name)";
             CB_Berry0.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Berry0.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Berry0.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -525,6 +534,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Milliseconds
             // 
+            TB_Milliseconds.AccessibleName = "Milliseconds";
             TB_Milliseconds.Location = new System.Drawing.Point(106, 194);
             TB_Milliseconds.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_Milliseconds.Name = "TB_Milliseconds";
@@ -533,6 +543,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Stars
             // 
+            NUD_Stars.AccessibleName = "Stars";
             NUD_Stars.Location = new System.Drawing.Point(106, 2);
             NUD_Stars.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Stars.Maximum = new decimal(new int[] { 6, 0, 0, 0 });
@@ -553,6 +564,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_LevelBoost
             // 
+            NUD_LevelBoost.AccessibleName = "Level Boost";
             NUD_LevelBoost.Location = new System.Drawing.Point(106, 50);
             NUD_LevelBoost.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_LevelBoost.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -628,6 +640,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Flavor0
             // 
+            CB_Flavor0.AccessibleName = "Flavor 1";
             CB_Flavor0.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Flavor0.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Flavor0.FormattingEnabled = true;
@@ -639,6 +652,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Flavor1
             // 
+            CB_Flavor1.AccessibleName = "Flavor 2";
             CB_Flavor1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Flavor1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Flavor1.FormattingEnabled = true;
@@ -650,6 +664,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Flavor2
             // 
+            CB_Flavor2.AccessibleName = "Flavor 3";
             CB_Flavor2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Flavor2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Flavor2.FormattingEnabled = true;
@@ -661,6 +676,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Calories
             // 
+            NUD_Calories.AccessibleName = "Calories";
             NUD_Calories.Location = new System.Drawing.Point(106, 26);
             NUD_Calories.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Calories.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -670,6 +686,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Donut
             // 
+            CB_Donut.AccessibleName = "Donut";
             CB_Donut.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Donut.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Donut.FormattingEnabled = true;
@@ -681,6 +698,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_Date
             // 
+            CAL_Date.AccessibleName = "Donut Date";
             CAL_Date.CustomFormat = "ddd MMMM dd, yyyy hh:mm:ss";
             CAL_Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             CAL_Date.Location = new System.Drawing.Point(106, 170);
