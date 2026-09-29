@@ -76,6 +76,7 @@ public partial class PokeGrid : UserControl
                 var name = $"Pokémon Grid Row {row:00} Column {column:00}";
                 var x = padEdge + (column * (colWidth + border));
                 var pb = GetControl(sizeW, sizeH, name);
+                pb.AccessibleName = $"Slot {(row * width) + column + 1}, row {row + 1}, column {column + 1}";
                 pb.Location = new Point(x, y);
                 Entries.Add(pb);
             }
