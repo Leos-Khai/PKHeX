@@ -863,6 +863,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Nature
             // 
+            CB_Nature.AccessibleName = "Nature";
             CB_Nature.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Nature.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Nature.FormattingEnabled = true;
@@ -901,6 +902,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_EXP
             // 
+            TB_EXP.AccessibleName = "Experience Points";
             TB_EXP.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_EXP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_EXP.Location = new System.Drawing.Point(0, 0);
@@ -924,6 +926,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Level
             // 
+            TB_Level.AccessibleName = "Level";
             TB_Level.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_Level.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Level.Location = new System.Drawing.Point(120, 0);
@@ -989,6 +992,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.FormattingEnabled = true;
@@ -1014,6 +1018,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Nickname
             // 
+            TB_Nickname.AccessibleName = "Nickname";
             TB_Nickname.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_Nickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Nickname.Location = new System.Drawing.Point(0, 0);
