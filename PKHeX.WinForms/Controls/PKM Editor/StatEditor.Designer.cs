@@ -99,9 +99,9 @@ namespace PKHeX.WinForms.Controls
             FLP_TeraTypeDefaultPane = new System.Windows.Forms.FlowLayoutPanel();
             PB_TeraType2 = new TypePictureBox();
             PB_TeraType1 = new TypePictureBox();
-            L_TeraTypeOriginal = new System.Windows.Forms.Label();
+            L_TeraTypeOriginal = new PKHeX.WinForms.Controls.SelectableLabel();
             CB_TeraTypeOriginal = new System.Windows.Forms.ComboBox();
-            L_TeraTypeOverride = new System.Windows.Forms.Label();
+            L_TeraTypeOverride = new PKHeX.WinForms.Controls.SelectableLabel();
             CB_TeraTypeOverride = new System.Windows.Forms.ComboBox();
             PB_TeraType = new System.Windows.Forms.PictureBox();
             PAN_BTN = new System.Windows.Forms.Panel();
@@ -110,7 +110,7 @@ namespace PKHeX.WinForms.Controls
             BTN_RandomEVs = new System.Windows.Forms.Button();
             BTN_RandomAVs = new System.Windows.Forms.Button();
             FLP_DynamaxLevel = new System.Windows.Forms.FlowLayoutPanel();
-            L_DynamaxLevel = new System.Windows.Forms.Label();
+            L_DynamaxLevel = new PKHeX.WinForms.Controls.SelectableLabel();
             CB_DynamaxLevel = new System.Windows.Forms.ComboBox();
             CHK_Gigantamax = new System.Windows.Forms.CheckBox();
             FLP_AlphaNoble = new System.Windows.Forms.FlowLayoutPanel();
@@ -1168,6 +1168,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // L_TeraTypeOriginal
             // 
+            L_TeraTypeOriginal.AccessibleName = "Suggest Original Tera Type";
             L_TeraTypeOriginal.Location = new System.Drawing.Point(0, 8);
             L_TeraTypeOriginal.Margin = new System.Windows.Forms.Padding(0);
             L_TeraTypeOriginal.Name = "L_TeraTypeOriginal";
@@ -1192,6 +1193,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // L_TeraTypeOverride
             // 
+            L_TeraTypeOverride.AccessibleName = "Reset Tera Type Override";
             L_TeraTypeOverride.Location = new System.Drawing.Point(0, 33);
             L_TeraTypeOverride.Margin = new System.Windows.Forms.Padding(0);
             L_TeraTypeOverride.Name = "L_TeraTypeOverride";
@@ -1306,6 +1308,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // L_DynamaxLevel
             // 
+            L_DynamaxLevel.AccessibleName = "Toggle Max Dynamax Level";
             L_DynamaxLevel.Location = new System.Drawing.Point(0, 0);
             L_DynamaxLevel.Margin = new System.Windows.Forms.Padding(0);
             L_DynamaxLevel.Name = "L_DynamaxLevel";
@@ -1466,7 +1469,7 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.TextBox TB_AVTotal;
         private System.Windows.Forms.Button BTN_RandomAVs;
         private System.Windows.Forms.FlowLayoutPanel FLP_DynamaxLevel;
-        private System.Windows.Forms.Label L_DynamaxLevel;
+        private PKHeX.WinForms.Controls.SelectableLabel L_DynamaxLevel;
         public System.Windows.Forms.ComboBox CB_DynamaxLevel;
         public System.Windows.Forms.CheckBox CHK_Gigantamax;
         private System.Windows.Forms.Label Label_GVs;
@@ -1480,10 +1483,10 @@ namespace PKHeX.WinForms.Controls
         public System.Windows.Forms.CheckBox CHK_IsAlpha;
         public System.Windows.Forms.CheckBox CHK_IsNoble;
         private System.Windows.Forms.FlowLayoutPanel FLP_TeraType;
-        private System.Windows.Forms.Label L_TeraTypeOriginal;
+        private PKHeX.WinForms.Controls.SelectableLabel L_TeraTypeOriginal;
         public System.Windows.Forms.ComboBox CB_TeraTypeOriginal;
         private System.Windows.Forms.FlowLayoutPanel FLP_TeraInner;
-        private System.Windows.Forms.Label L_TeraTypeOverride;
+        private PKHeX.WinForms.Controls.SelectableLabel L_TeraTypeOverride;
         public System.Windows.Forms.ComboBox CB_TeraTypeOverride;
         private System.Windows.Forms.PictureBox PB_TeraType;
         private System.Windows.Forms.FlowLayoutPanel FLP_TeraTypeDefaultPane;
