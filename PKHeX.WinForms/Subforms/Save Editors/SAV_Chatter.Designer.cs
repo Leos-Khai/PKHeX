@@ -94,6 +94,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Confusion
             // 
+            MT_Confusion.AccessibleName = "Confusion Percentage";
             MT_Confusion.Anchor = System.Windows.Forms.AnchorStyles.Left;
             tableLayoutPanel1.SetColumnSpan(MT_Confusion, 2);
             MT_Confusion.Enabled = false;
