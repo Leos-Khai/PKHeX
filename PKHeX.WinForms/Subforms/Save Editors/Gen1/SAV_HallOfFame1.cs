@@ -146,9 +146,15 @@ public partial class SAV_HallOfFame1 : Form
 
         CHK_Nicknamed.Checked = IsNicknamed(pk.Species, nick);
         TB_Nickname.ReadOnly = !CHK_Nicknamed.Checked;
-        PB_Sprite.Image = GetSprite(pk.Species);
+        SetSprite(pk.Species);
 
         LoadingFields = false;
+    }
+
+    private void SetSprite(ushort species)
+    {
+        PB_Sprite.Image = GetSprite(species);
+        PB_Sprite.AccessibleName = GameInfo.Strings.specieslist[species];
     }
 
     private static Bitmap GetSprite(ushort species)
@@ -262,7 +268,7 @@ public partial class SAV_HallOfFame1 : Form
         var species = pk.Species;
         if (!CHK_Nicknamed.Checked)
             TB_Nickname.Text = SpeciesName.GetSpeciesNameGeneration(species, SAV.Language, 1);
-        PB_Sprite.Image = GetSprite(species);
+        SetSprite(species);
     }
 
     private void TB_Nickname_TextChanged(object sender, EventArgs e)

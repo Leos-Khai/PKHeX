@@ -59,6 +59,7 @@ namespace PKHeX.WinForms
             // 
             // LB_DataEntry
             // 
+            LB_DataEntry.AccessibleName = "Hall of Fame Team";
             LB_DataEntry.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             LB_DataEntry.FormattingEnabled = true;
             LB_DataEntry.Location = new System.Drawing.Point(8, 14);
@@ -70,6 +71,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Team
             // 
+            RTB_Team.AccessibleName = "Team Summary";
             RTB_Team.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             RTB_Team.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             RTB_Team.Location = new System.Drawing.Point(136, 14);
@@ -106,6 +108,7 @@ namespace PKHeX.WinForms
             // 
             // NUP_PartyIndex
             // 
+            NUP_PartyIndex.AccessibleName = "Party Index";
             NUP_PartyIndex.Location = new System.Drawing.Point(120, 25);
             NUP_PartyIndex.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUP_PartyIndex.Maximum = new decimal(new int[] { 6, 0, 0, 0 });
@@ -128,6 +131,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.FormattingEnabled = true;
@@ -162,6 +166,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Nickname
             // 
+            TB_Nickname.AccessibleName = "Nickname";
             TB_Nickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Nickname.DisplayContext = EntityContext.Gen1;
             TB_Nickname.Location = new System.Drawing.Point(120, 82);
@@ -241,6 +246,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Level
             // 
+            NUD_Level.AccessibleName = "Level";
             NUD_Level.Location = new System.Drawing.Point(223, 25);
             NUD_Level.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_Level.Name = "NUD_Level";
@@ -261,6 +267,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Clears
             // 
+            NUD_Clears.AccessibleName = "Hall of Fame Team Count";
             NUD_Clears.Location = new System.Drawing.Point(349, 309);
             NUD_Clears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_Clears.Name = "NUD_Clears";
