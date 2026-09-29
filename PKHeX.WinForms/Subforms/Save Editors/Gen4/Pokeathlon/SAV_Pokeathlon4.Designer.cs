@@ -169,6 +169,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Points
             // 
+            NUD_Points.AccessibleName = "Points";
             NUD_Points.Location = new System.Drawing.Point(84, 8);
             NUD_Points.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Points.Maximum = new decimal(new int[] { 99999, 0, 0, 0 });
@@ -211,6 +212,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop0
             // 
+            CHK_DailyShop0.AccessibleName = "Daily Shop Slot 1";
             CHK_DailyShop0.AutoSize = true;
             CHK_DailyShop0.Location = new System.Drawing.Point(3, 3);
             CHK_DailyShop0.Name = "CHK_DailyShop0";
@@ -220,6 +222,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop1
             // 
+            CHK_DailyShop1.AccessibleName = "Daily Shop Slot 2";
             CHK_DailyShop1.AutoSize = true;
             CHK_DailyShop1.Location = new System.Drawing.Point(24, 3);
             CHK_DailyShop1.Name = "CHK_DailyShop1";
@@ -229,6 +232,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop2
             // 
+            CHK_DailyShop2.AccessibleName = "Daily Shop Slot 3";
             CHK_DailyShop2.AutoSize = true;
             CHK_DailyShop2.Location = new System.Drawing.Point(45, 3);
             CHK_DailyShop2.Name = "CHK_DailyShop2";
@@ -238,6 +242,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop3
             // 
+            CHK_DailyShop3.AccessibleName = "Daily Shop Slot 4";
             CHK_DailyShop3.AutoSize = true;
             CHK_DailyShop3.Location = new System.Drawing.Point(66, 3);
             CHK_DailyShop3.Name = "CHK_DailyShop3";
@@ -247,6 +252,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop4
             // 
+            CHK_DailyShop4.AccessibleName = "Daily Shop Slot 5";
             CHK_DailyShop4.AutoSize = true;
             CHK_DailyShop4.Location = new System.Drawing.Point(87, 3);
             CHK_DailyShop4.Name = "CHK_DailyShop4";
@@ -256,6 +262,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop5
             // 
+            CHK_DailyShop5.AccessibleName = "Daily Shop Slot 6";
             CHK_DailyShop5.AutoSize = true;
             CHK_DailyShop5.Location = new System.Drawing.Point(108, 3);
             CHK_DailyShop5.Name = "CHK_DailyShop5";
@@ -265,6 +272,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop6
             // 
+            CHK_DailyShop6.AccessibleName = "Daily Shop Slot 7";
             CHK_DailyShop6.AutoSize = true;
             CHK_DailyShop6.Location = new System.Drawing.Point(129, 3);
             CHK_DailyShop6.Name = "CHK_DailyShop6";
@@ -274,6 +282,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop7
             // 
+            CHK_DailyShop7.AccessibleName = "Daily Shop Slot 8";
             CHK_DailyShop7.AutoSize = true;
             CHK_DailyShop7.Location = new System.Drawing.Point(150, 3);
             CHK_DailyShop7.Name = "CHK_DailyShop7";
@@ -283,6 +292,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop8
             // 
+            CHK_DailyShop8.AccessibleName = "Daily Shop Slot 9";
             CHK_DailyShop8.AutoSize = true;
             CHK_DailyShop8.Location = new System.Drawing.Point(171, 3);
             CHK_DailyShop8.Name = "CHK_DailyShop8";
@@ -292,6 +302,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop9
             // 
+            CHK_DailyShop9.AccessibleName = "Daily Shop Slot 10";
             CHK_DailyShop9.AutoSize = true;
             CHK_DailyShop9.Location = new System.Drawing.Point(192, 3);
             CHK_DailyShop9.Name = "CHK_DailyShop9";
@@ -301,6 +312,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop10
             // 
+            CHK_DailyShop10.AccessibleName = "Daily Shop Slot 11";
             CHK_DailyShop10.AutoSize = true;
             CHK_DailyShop10.Location = new System.Drawing.Point(213, 3);
             CHK_DailyShop10.Name = "CHK_DailyShop10";
@@ -310,6 +322,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DailyShop11
             // 
+            CHK_DailyShop11.AccessibleName = "Daily Shop Slot 12";
             CHK_DailyShop11.AutoSize = true;
             CHK_DailyShop11.Location = new System.Drawing.Point(234, 3);
             CHK_DailyShop11.Name = "CHK_DailyShop11";
@@ -330,6 +343,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_DataCards
             // 
+            CLB_DataCards.AccessibleName = "Data Cards";
             CLB_DataCards.CheckOnClick = true;
             CLB_DataCards.Dock = System.Windows.Forms.DockStyle.Fill;
             CLB_DataCards.FormattingEnabled = true;
@@ -367,6 +381,7 @@ namespace PKHeX.WinForms
             // 
             // B_MedalsGiveAll
             // 
+            B_MedalsGiveAll.AccessibleName = "Give All Medals";
             B_MedalsGiveAll.AutoSize = true;
             B_MedalsGiveAll.Location = new System.Drawing.Point(11, 11);
             B_MedalsGiveAll.Name = "B_MedalsGiveAll";
@@ -378,6 +393,7 @@ namespace PKHeX.WinForms
             // 
             // B_MedalsClearAll
             // 
+            B_MedalsClearAll.AccessibleName = "Clear All Medals";
             B_MedalsClearAll.AutoSize = true;
             B_MedalsClearAll.Location = new System.Drawing.Point(78, 11);
             B_MedalsClearAll.Name = "B_MedalsClearAll";
@@ -389,6 +405,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Medals
             // 
+            DGV_Medals.AccessibleName = "Medals";
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ControlLight;
             DGV_Medals.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             DGV_Medals.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -508,6 +525,7 @@ namespace PKHeX.WinForms
             // 
             // CB_CourseIndex
             // 
+            CB_CourseIndex.AccessibleName = "Course Index";
             CB_CourseIndex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_CourseIndex.FormattingEnabled = true;
             CB_CourseIndex.Location = new System.Drawing.Point(128, 8);
@@ -555,6 +573,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_CourseScore0
             // 
+            NUD_CourseScore0.AccessibleName = "Score 1";
             NUD_CourseScore0.Location = new System.Drawing.Point(51, 0);
             NUD_CourseScore0.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_CourseScore0.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -575,6 +594,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_CourseScore1
             // 
+            NUD_CourseScore1.AccessibleName = "Score 2";
             NUD_CourseScore1.Location = new System.Drawing.Point(220, 0);
             NUD_CourseScore1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_CourseScore1.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -595,6 +615,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_CourseScore2
             // 
+            NUD_CourseScore2.AccessibleName = "Score 3";
             NUD_CourseScore2.Location = new System.Drawing.Point(51, 26);
             NUD_CourseScore2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_CourseScore2.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -615,6 +636,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_CourseScoreMax
             // 
+            NUD_CourseScoreMax.AccessibleName = "Max Score";
             NUD_CourseScoreMax.Location = new System.Drawing.Point(220, 26);
             NUD_CourseScoreMax.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_CourseScoreMax.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -635,6 +657,8 @@ namespace PKHeX.WinForms
             // 
             // UC_CourseParticipant0
             // 
+            UC_CourseParticipant0.AccessibleName = "Participant 1";
+            UC_CourseParticipant0.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_CourseParticipant0.AutoSize = true;
             TLP_Courses.SetColumnSpan(UC_CourseParticipant0, 2);
             UC_CourseParticipant0.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -657,6 +681,8 @@ namespace PKHeX.WinForms
             // 
             // UC_CourseParticipant1
             // 
+            UC_CourseParticipant1.AccessibleName = "Participant 2";
+            UC_CourseParticipant1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_CourseParticipant1.AutoSize = true;
             TLP_Courses.SetColumnSpan(UC_CourseParticipant1, 2);
             UC_CourseParticipant1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -679,6 +705,8 @@ namespace PKHeX.WinForms
             // 
             // UC_CourseParticipant2
             // 
+            UC_CourseParticipant2.AccessibleName = "Participant 3";
+            UC_CourseParticipant2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_CourseParticipant2.AutoSize = true;
             TLP_Courses.SetColumnSpan(UC_CourseParticipant2, 2);
             UC_CourseParticipant2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -731,6 +759,7 @@ namespace PKHeX.WinForms
             // 
             // CB_SelfEventIndex
             // 
+            CB_SelfEventIndex.AccessibleName = "Self Event Index";
             CB_SelfEventIndex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_SelfEventIndex.FormattingEnabled = true;
             CB_SelfEventIndex.Location = new System.Drawing.Point(53, 8);
@@ -742,6 +771,8 @@ namespace PKHeX.WinForms
             // 
             // UC_SelfEventData
             // 
+            UC_SelfEventData.AccessibleName = "Self Event Data";
+            UC_SelfEventData.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_SelfEventData.AutoSize = true;
             UC_SelfEventData.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             TLP_SelfEvent.SetColumnSpan(UC_SelfEventData, 2);
@@ -795,6 +826,7 @@ namespace PKHeX.WinForms
             // 
             // CB_ConnectionIndex
             // 
+            CB_ConnectionIndex.AccessibleName = "Connection Index";
             CB_ConnectionIndex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_ConnectionIndex.FormattingEnabled = true;
             CB_ConnectionIndex.Location = new System.Drawing.Point(53, 8);
@@ -806,6 +838,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Connection
             // 
+            UC_Connection.AccessibleName = "Connection Data";
+            UC_Connection.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             UC_Connection.AutoSize = true;
             TLP_Connection.SetColumnSpan(UC_Connection, 2);
             UC_Connection.Dock = System.Windows.Forms.DockStyle.Fill;
