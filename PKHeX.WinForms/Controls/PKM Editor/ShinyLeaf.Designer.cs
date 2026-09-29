@@ -55,6 +55,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_1
             // 
+            CHK_1.AccessibleName = "Shiny Leaf 1";
             CHK_1.Image = Properties.Resources.leaf;
             CHK_1.Location = new System.Drawing.Point(0, 0);
             CHK_1.Margin = new System.Windows.Forms.Padding(0);
@@ -66,6 +67,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_2
             // 
+            CHK_2.AccessibleName = "Shiny Leaf 2";
             CHK_2.Image = Properties.Resources.leaf;
             CHK_2.Location = new System.Drawing.Point(40, 0);
             CHK_2.Margin = new System.Windows.Forms.Padding(0);
@@ -77,6 +79,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_3
             // 
+            CHK_3.AccessibleName = "Shiny Leaf 3";
             CHK_3.Image = Properties.Resources.leaf;
             CHK_3.Location = new System.Drawing.Point(80, 0);
             CHK_3.Margin = new System.Windows.Forms.Padding(0);
@@ -88,6 +91,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_4
             // 
+            CHK_4.AccessibleName = "Shiny Leaf 4";
             CHK_4.Image = Properties.Resources.leaf;
             CHK_4.Location = new System.Drawing.Point(120, 0);
             CHK_4.Margin = new System.Windows.Forms.Padding(0);
@@ -99,6 +103,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_5
             // 
+            CHK_5.AccessibleName = "Shiny Leaf 5";
             CHK_5.Image = Properties.Resources.leaf;
             CHK_5.Location = new System.Drawing.Point(160, 0);
             CHK_5.Margin = new System.Windows.Forms.Padding(0);
@@ -110,6 +115,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_C
             // 
+            CHK_C.AccessibleName = "Shiny Crown";
             CHK_C.Image = Properties.Resources.crown;
             CHK_C.Location = new System.Drawing.Point(0, 32);
             CHK_C.Margin = new System.Windows.Forms.Padding(0);
