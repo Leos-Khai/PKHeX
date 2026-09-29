@@ -67,12 +67,16 @@ public partial class GenderToggle : UserControl, IGenderToggle
             return value;
         BackgroundImage = GenderImages[value];
         if (!IsAncestorSiteInDesignMode && !DesignMode)
-        {
-            AccessibleName = (InitialAccessible ??= AccessibleName) + $" ({value})";
-            AccessibleDescription = (InitialAccessible ??= AccessibleName) + $" ({value})";
-        }
+            AccessibleName = AccessibleDescription = $"{InitialAccessible ??= AccessibleName ?? "Gender"}: {GetGenderName(value)}";
         return value;
     }
+
+    private static string GetGenderName(int value) => value switch
+    {
+        0 => "Male",
+        1 => "Female",
+        _ => "Genderless",
+    };
 
     private void GenderToggle_Click(object sender, EventArgs e)
     {
@@ -86,7 +90,9 @@ public partial class GenderToggle : UserControl, IGenderToggle
         if (e.KeyCode is not (Keys.Enter or Keys.Space))
             return;
 
-        TryToggle();
+        // Route through Click so owners that listen for it (e.g. PKMEditor updating the PID and form) react to keyboard toggles too.
+        OnClick(EventArgs.Empty);
+        e.Handled = true;
     }
 
     private void TryToggle()
@@ -94,11 +100,11 @@ public partial class GenderToggle : UserControl, IGenderToggle
         if (AllowClick && ToggleGender().CanToggle)
         {
             AccessibilityObject.RaiseAutomationNotification(AutomationNotificationKind.Other,
-                AutomationNotificationProcessing.All, $"Gender changed to {Gender}.");
+                AutomationNotificationProcessing.All, $"Gender changed to {GetGenderName(Gender)}.");
             return;
         }
         AccessibilityObject.RaiseAutomationNotification(AutomationNotificationKind.Other,
-            AutomationNotificationProcessing.All, $"Cannot change gender. Current value is {Gender}.");
+            AutomationNotificationProcessing.All, $"Cannot change gender. Current value is {GetGenderName(Gender)}.");
     }
 
     public (bool CanToggle, int Value) ToggleGender()
