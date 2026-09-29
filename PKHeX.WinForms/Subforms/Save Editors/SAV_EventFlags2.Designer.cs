@@ -64,6 +64,7 @@ namespace PKHeX.WinForms
             // 
             // c_CustomFlag
             // 
+            c_CustomFlag.AccessibleName = "Flag Set";
             c_CustomFlag.AutoSize = true;
             c_CustomFlag.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             c_CustomFlag.Location = new System.Drawing.Point(161, 23);
@@ -105,6 +106,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Flag
             // 
+            NUD_Flag.AccessibleName = "Flag Number";
             NUD_Flag.Location = new System.Drawing.Point(102, 20);
             NUD_Flag.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Flag.Maximum = new decimal(new int[] { 3072, 0, 0, 0 });
@@ -116,6 +118,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Stat
             // 
+            MT_Stat.AccessibleName = "Constant Value";
             MT_Stat.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             MT_Stat.Location = new System.Drawing.Point(186, 51);
             MT_Stat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -138,6 +141,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Stats
             // 
+            CB_Stats.AccessibleName = "Constant";
             CB_Stats.DropDownHeight = 156;
             CB_Stats.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Stats.DropDownWidth = 180;
@@ -214,6 +218,7 @@ namespace PKHeX.WinForms
             // 
             // TB_NewSAV
             // 
+            TB_NewSAV.AccessibleName = "New Save File";
             TB_NewSAV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_NewSAV.Location = new System.Drawing.Point(108, 54);
             TB_NewSAV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -225,6 +230,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OldSAV
             // 
+            TB_OldSAV.AccessibleName = "Old Save File";
             TB_OldSAV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_OldSAV.Location = new System.Drawing.Point(108, 24);
             TB_OldSAV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -236,6 +242,7 @@ namespace PKHeX.WinForms
             // 
             // TB_UnSet
             // 
+            TB_UnSet.AccessibleName = "Unset Flags";
             TB_UnSet.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_UnSet.Location = new System.Drawing.Point(65, 108);
             TB_UnSet.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -246,6 +253,7 @@ namespace PKHeX.WinForms
             // 
             // TB_IsSet
             // 
+            TB_IsSet.AccessibleName = "Set Flags";
             TB_IsSet.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_IsSet.Location = new System.Drawing.Point(65, 84);
             TB_IsSet.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -290,6 +298,7 @@ namespace PKHeX.WinForms
             // 
             // tabControl1
             // 
+            tabControl1.AccessibleName = "Event Editor Sections";
             tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             tabControl1.Controls.Add(GB_Flags);
             tabControl1.Controls.Add(GB_Constants);
@@ -314,6 +323,7 @@ namespace PKHeX.WinForms
             // 
             // TC_Flags
             // 
+            TC_Flags.AccessibleName = "Event Flag Groups";
             TC_Flags.Dock = System.Windows.Forms.DockStyle.Fill;
             TC_Flags.Location = new System.Drawing.Point(0, 0);
             TC_Flags.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -337,6 +347,7 @@ namespace PKHeX.WinForms
             // 
             // TC_Const
             // 
+            TC_Const.AccessibleName = "Event Constant Groups";
             TC_Const.Dock = System.Windows.Forms.DockStyle.Fill;
             TC_Const.Location = new System.Drawing.Point(4, 3);
             TC_Const.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
