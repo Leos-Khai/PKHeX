@@ -29,7 +29,7 @@ namespace PKHeX.WinForms
             MedalSettingsPanel = new System.Windows.Forms.TableLayoutPanel();
             L_PinnedMedal = new System.Windows.Forms.Label();
             CB_PinnedMedal = new System.Windows.Forms.ComboBox();
-            L_Rank = new System.Windows.Forms.Label();
+            L_Rank = new PKHeX.WinForms.Controls.SelectableLabel();
             CB_Rank = new System.Windows.Forms.ComboBox();
             CHK_TutorialComplete = new System.Windows.Forms.CheckBox();
             MedalButtonPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -214,6 +214,8 @@ namespace PKHeX.WinForms
             // 
             // L_Rank
             // 
+            L_Rank.AccessibleDescription = "Sets the rank from the obtained medals.";
+            L_Rank.AccessibleName = "Calculate Rank";
             L_Rank.Anchor = System.Windows.Forms.AnchorStyles.Right;
             L_Rank.AutoSize = true;
             L_Rank.Location = new System.Drawing.Point(514, 15);
@@ -611,7 +613,7 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.TableLayoutPanel MedalSettingsPanel;
         private System.Windows.Forms.Label L_PinnedMedal;
         private System.Windows.Forms.ComboBox CB_PinnedMedal;
-        private System.Windows.Forms.Label L_Rank;
+        private PKHeX.WinForms.Controls.SelectableLabel L_Rank;
         private System.Windows.Forms.ComboBox CB_Rank;
         private System.Windows.Forms.CheckBox CHK_TutorialComplete;
         private System.Windows.Forms.TabPage Tab_Habitat;
