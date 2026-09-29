@@ -609,6 +609,7 @@ public partial class SAV_Misc5 : Form
     private void SetSprite(EntreeSlot slot)
     {
         PB_SlotPreview.Image = SpriteUtil.GetSprite(slot.Species, slot.Form, slot.Gender, 0, 0, false, Shiny.Never, EntityContext.Gen5);
+        PB_SlotPreview.AccessibleName = $"Slot Preview: {GetSpeciesName(slot.Species)}";
     }
 
     private void SetGenders(EntreeSlot slot)
@@ -690,21 +691,21 @@ public partial class SAV_Misc5 : Form
 
         // Current Run Checks
         CHK_SingleSet.Checked = sw.SingleSet == ((sw.SinglePast / 7) + 1);
-        L_SinglePast.Text = CHK_SingleSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SinglePast, NUD_SinglePast, "Singles", CHK_SingleSet.Checked);
         CHK_DoubleSet.Checked = sw.DoubleSet == ((sw.DoublePast / 7) + 1);
-        L_DoublePast.Text = CHK_DoubleSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_DoublePast, NUD_DoublePast, "Doubles", CHK_DoubleSet.Checked);
         CHK_MultiNPCSet.Checked = sw.MultiNPCSet == ((sw.MultiNPCPast / 7) + 1);
-        L_MultiNpcPast.Text = CHK_MultiNPCSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_MultiNpcPast, NUD_MultiNpcPast, "Multi NPC", CHK_MultiNPCSet.Checked);
         CHK_MultiFriendsSet.Checked = sw.MultiFriendsSet == ((sw.MultiFriendsPast / 7) + 1);
-        L_MultiFriendsPast.Text = CHK_MultiFriendsSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_MultiFriendsPast, NUD_MultiFriendsPast, "Multi Friends", CHK_MultiFriendsSet.Checked);
         CHK_SuperSingleSet.Checked = sw.SuperSingleSet == ((sw.SuperSinglePast / 7) + 1);
-        L_SSinglePast.Text = CHK_SuperSingleSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SSinglePast, NUD_SSinglePast, "Super Singles", CHK_SuperSingleSet.Checked);
         CHK_SuperDoubleSet.Checked = sw.SuperDoubleSet == ((sw.SuperDoublePast / 7) + 1);
-        L_SDoublePast.Text = CHK_SuperDoubleSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SDoublePast, NUD_SDoublePast, "Super Doubles", CHK_SuperDoubleSet.Checked);
         CHK_SuperMultiNPCSet.Checked = sw.SuperMultiNPCSet == ((sw.SuperMultiNPCPast / 7) + 1);
-        L_SMultiNpcPast.Text = CHK_SuperMultiNPCSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SMultiNpcPast, NUD_SMultiNpcPast, "Super Multi NPC", CHK_SuperMultiNPCSet.Checked);
         CHK_SuperMultiFriendsSet.Checked = sw.SuperMultiFriendsSet == ((sw.SuperMultiFriendsPast / 7) + 1);
-        L_SMultiFriendsPast.Text = CHK_SuperMultiFriendsSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SMultiFriendsPast, NUD_SMultiFriendsPast, "Super Multi Friends", CHK_SuperMultiFriendsSet.Checked);
 
         // Normal
         // Single
@@ -863,42 +864,50 @@ public partial class SAV_Misc5 : Form
 
     private void CHK_SingleSet_CheckedChanged(object sender, EventArgs e)
     {
-        L_SinglePast.Text = CHK_SingleSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SinglePast, NUD_SinglePast, "Singles", CHK_SingleSet.Checked);
     }
 
     private void CHK_DoubleSet_CheckedChanged(object sender, EventArgs e)
     {
-        L_DoublePast.Text = CHK_DoubleSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_DoublePast, NUD_DoublePast, "Doubles", CHK_DoubleSet.Checked);
     }
 
     private void CHK_MultiNPCSet_CheckedChanged(object sender, EventArgs e)
     {
-        L_MultiNpcPast.Text = CHK_MultiNPCSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_MultiNpcPast, NUD_MultiNpcPast, "Multi NPC", CHK_MultiNPCSet.Checked);
     }
 
     private void CHK_MultiFriendsSet_CheckedChanged(object sender, EventArgs e)
     {
-        L_MultiFriendsPast.Text = CHK_MultiFriendsSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_MultiFriendsPast, NUD_MultiFriendsPast, "Multi Friends", CHK_MultiFriendsSet.Checked);
     }
 
     private void CHK_SuperSingleSet_CheckedChanged(object sender, EventArgs e)
     {
-        L_SSinglePast.Text = CHK_SuperSingleSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SSinglePast, NUD_SSinglePast, "Super Singles", CHK_SuperSingleSet.Checked);
     }
 
     private void CHK_SuperDoubleSet_CheckedChanged(object sender, EventArgs e)
     {
-        L_SDoublePast.Text = CHK_SuperDoubleSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SDoublePast, NUD_SDoublePast, "Super Doubles", CHK_SuperDoubleSet.Checked);
     }
 
     private void CHK_SuperMultiNPCSet_CheckedChanged(object sender, EventArgs e)
     {
-        L_SMultiNpcPast.Text = CHK_SuperMultiNPCSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SMultiNpcPast, NUD_SMultiNpcPast, "Super Multi NPC", CHK_SuperMultiNPCSet.Checked);
     }
 
     private void CHK_SuperMultiFriendsSet_CheckedChanged(object sender, EventArgs e)
     {
-        L_SMultiFriendsPast.Text = CHK_SuperMultiFriendsSet.Checked ? "Current" : "Past";
+        SetPastLabel(L_SMultiFriendsPast, NUD_SMultiFriendsPast, "Super Multi Friends", CHK_SuperMultiFriendsSet.Checked);
+    }
+
+    // The label flips between "Past" and "Current"; keep the numeric box's accessible name in step with it.
+    private static void SetPastLabel(Label label, NumericUpDown nud, string group, bool current)
+    {
+        var text = current ? "Current" : "Past";
+        label.Text = text;
+        nud.AccessibleName = $"{group} {text}";
     }
 
     private void B_UnlockAllProps_Click(object sender, EventArgs e)
