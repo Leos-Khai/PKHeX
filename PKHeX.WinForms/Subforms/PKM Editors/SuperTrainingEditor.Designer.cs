@@ -182,6 +182,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Bag
             // 
+            CB_Bag.AccessibleName = "Last Used Training Bag";
             CB_Bag.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Bag.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Bag.FormattingEnabled = true;
@@ -204,6 +205,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BagHits
             // 
+            NUD_BagHits.AccessibleName = "Training Bag Hits Remaining";
             NUD_BagHits.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_BagHits.Location = new System.Drawing.Point(185, 91);
             NUD_BagHits.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
