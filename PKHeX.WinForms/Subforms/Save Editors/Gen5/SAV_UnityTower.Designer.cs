@@ -157,6 +157,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Geonet
             // 
+            DGV_Geonet.AccessibleName = "Geonet Locations";
             DGV_Geonet.AllowUserToAddRows = false;
             DGV_Geonet.AllowUserToDeleteRows = false;
             DGV_Geonet.AllowUserToResizeColumns = false;
@@ -178,6 +179,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_UnityTower
             // 
+            DGV_UnityTower.AccessibleName = "Unity Tower Floors";
             DGV_UnityTower.AllowUserToAddRows = false;
             DGV_UnityTower.AllowUserToDeleteRows = false;
             DGV_UnityTower.AllowUserToResizeColumns = false;
