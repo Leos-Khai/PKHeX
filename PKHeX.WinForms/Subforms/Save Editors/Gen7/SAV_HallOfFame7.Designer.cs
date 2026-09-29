@@ -96,6 +96,7 @@ namespace PKHeX.WinForms
             // 
             // CB_F1
             // 
+            CB_F1.AccessibleName = "First Team Pokemon 1";
             CB_F1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_F1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_F1.FormattingEnabled = true;
@@ -107,6 +108,7 @@ namespace PKHeX.WinForms
             // 
             // CB_F2
             // 
+            CB_F2.AccessibleName = "First Team Pokemon 2";
             CB_F2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_F2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_F2.FormattingEnabled = true;
@@ -128,6 +130,7 @@ namespace PKHeX.WinForms
             // 
             // CB_F3
             // 
+            CB_F3.AccessibleName = "First Team Pokemon 3";
             CB_F3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_F3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_F3.FormattingEnabled = true;
@@ -149,6 +152,7 @@ namespace PKHeX.WinForms
             // 
             // CB_F4
             // 
+            CB_F4.AccessibleName = "First Team Pokemon 4";
             CB_F4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_F4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_F4.FormattingEnabled = true;
@@ -170,6 +174,7 @@ namespace PKHeX.WinForms
             // 
             // CB_F5
             // 
+            CB_F5.AccessibleName = "First Team Pokemon 5";
             CB_F5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_F5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_F5.FormattingEnabled = true;
@@ -191,6 +196,7 @@ namespace PKHeX.WinForms
             // 
             // CB_F6
             // 
+            CB_F6.AccessibleName = "First Team Pokemon 6";
             CB_F6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_F6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_F6.FormattingEnabled = true;
@@ -212,6 +218,7 @@ namespace PKHeX.WinForms
             // 
             // CB_C6
             // 
+            CB_C6.AccessibleName = "Current Team Pokemon 6";
             CB_C6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_C6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_C6.FormattingEnabled = true;
@@ -233,6 +240,7 @@ namespace PKHeX.WinForms
             // 
             // CB_C5
             // 
+            CB_C5.AccessibleName = "Current Team Pokemon 5";
             CB_C5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_C5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_C5.FormattingEnabled = true;
@@ -254,6 +262,7 @@ namespace PKHeX.WinForms
             // 
             // CB_C4
             // 
+            CB_C4.AccessibleName = "Current Team Pokemon 4";
             CB_C4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_C4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_C4.FormattingEnabled = true;
@@ -275,6 +284,7 @@ namespace PKHeX.WinForms
             // 
             // CB_C3
             // 
+            CB_C3.AccessibleName = "Current Team Pokemon 3";
             CB_C3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_C3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_C3.FormattingEnabled = true;
@@ -296,6 +306,7 @@ namespace PKHeX.WinForms
             // 
             // CB_C2
             // 
+            CB_C2.AccessibleName = "Current Team Pokemon 2";
             CB_C2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_C2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_C2.FormattingEnabled = true;
@@ -317,6 +328,7 @@ namespace PKHeX.WinForms
             // 
             // CB_C1
             // 
+            CB_C1.AccessibleName = "Current Team Pokemon 1";
             CB_C1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_C1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_C1.FormattingEnabled = true;
@@ -358,6 +370,7 @@ namespace PKHeX.WinForms
             // 
             // TB_EC
             // 
+            TB_EC.AccessibleName = "Starter Encryption Constant";
             TB_EC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_EC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_EC.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
