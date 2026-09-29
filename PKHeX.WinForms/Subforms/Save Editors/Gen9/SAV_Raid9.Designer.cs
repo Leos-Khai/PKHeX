@@ -65,6 +65,7 @@ namespace PKHeX.WinForms
             // 
             // PG_Raid
             // 
+            PG_Raid.AccessibleName = "Raid Details";
             PG_Raid.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_Raid.Location = new System.Drawing.Point(8, 40);
             PG_Raid.Margin = new System.Windows.Forms.Padding(0);
@@ -76,6 +77,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Raid
             // 
+            CB_Raid.AccessibleName = "Raid";
             CB_Raid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Raid.FormattingEnabled = true;
             CB_Raid.Location = new System.Drawing.Point(8, 8);
@@ -87,6 +89,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SeedTomorrow
             // 
+            TB_SeedTomorrow.AccessibleName = "Tomorrow's Seed";
             TB_SeedTomorrow.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             TB_SeedTomorrow.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_SeedTomorrow.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -100,6 +103,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SeedToday
             // 
+            TB_SeedToday.AccessibleName = "Current Seed";
             TB_SeedToday.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             TB_SeedToday.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_SeedToday.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
