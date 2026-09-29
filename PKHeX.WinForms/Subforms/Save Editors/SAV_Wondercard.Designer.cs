@@ -103,6 +103,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Received
             // 
+            LB_Received.AccessibleName = "Received Card IDs";
             LB_Received.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Received.ContextMenuStrip = mnuDel;
             LB_Received.FormattingEnabled = true;
@@ -141,6 +142,7 @@ namespace PKHeX.WinForms
             // 
             // RTB
             // 
+            RTB.AccessibleName = "Gift Details";
             RTB.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             RTB.Location = new System.Drawing.Point(130, 68);
             RTB.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -173,6 +175,7 @@ namespace PKHeX.WinForms
             // 
             // PB_Preview
             // 
+            PB_Preview.AccessibleName = "Gift Preview";
             PB_Preview.BackColor = System.Drawing.Color.Transparent;
             PB_Preview.Location = new System.Drawing.Point(344, 2);
             PB_Preview.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
