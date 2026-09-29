@@ -38,6 +38,7 @@ namespace PKHeX.WinForms
             // 
             // T_ExceptionDetails
             // 
+            T_ExceptionDetails.AccessibleName = "Error Details";
             T_ExceptionDetails.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             T_ExceptionDetails.Location = new System.Drawing.Point(14, 60);
             T_ExceptionDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
