@@ -72,6 +72,7 @@ namespace PKHeX.WinForms
             // 
             // SCR_Box
             // 
+            SCR_Box.AccessibleName = "Results Scroll";
             SCR_Box.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             SCR_Box.LargeChange = 1;
             SCR_Box.Location = new System.Drawing.Point(299, 3);
@@ -371,6 +372,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Instructions
             // 
+            RTB_Instructions.AccessibleName = "Advanced Filter Instructions";
             RTB_Instructions.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             RTB_Instructions.Location = new System.Drawing.Point(0, 59);
             RTB_Instructions.Margin = new System.Windows.Forms.Padding(0);
