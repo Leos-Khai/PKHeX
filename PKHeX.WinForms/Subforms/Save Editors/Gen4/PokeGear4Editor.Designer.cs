@@ -36,6 +36,7 @@
             // 
             // B_DeleteAll
             // 
+            B_DeleteAll.AccessibleName = "Delete All Phone Numbers";
             B_DeleteAll.Location = new System.Drawing.Point(4, 40);
             B_DeleteAll.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_DeleteAll.Name = "B_DeleteAll";
@@ -47,6 +48,7 @@
             // 
             // B_GiveAll
             // 
+            B_GiveAll.AccessibleName = "Give All Phone Numbers";
             B_GiveAll.Location = new System.Drawing.Point(4, 3);
             B_GiveAll.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_GiveAll.Name = "B_GiveAll";
@@ -58,6 +60,7 @@
             // 
             // PG_Rolodex
             // 
+            PG_Rolodex.AccessibleName = "Phone Numbers";
             PG_Rolodex.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_Rolodex.HelpVisible = false;
             PG_Rolodex.Location = new System.Drawing.Point(106, 2);
@@ -71,6 +74,7 @@
             // 
             // B_GiveAllNoTrainers
             // 
+            B_GiveAllNoTrainers.AccessibleName = "Give All Non-Trainer Phone Numbers";
             B_GiveAllNoTrainers.Location = new System.Drawing.Point(4, 77);
             B_GiveAllNoTrainers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_GiveAllNoTrainers.Name = "B_GiveAllNoTrainers";
