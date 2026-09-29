@@ -116,6 +116,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Geonet
             // 
+            DGV_Geonet.AccessibleName = "Geonet Locations";
             DGV_Geonet.AllowUserToAddRows = false;
             DGV_Geonet.AllowUserToDeleteRows = false;
             DGV_Geonet.AllowUserToResizeColumns = false;
