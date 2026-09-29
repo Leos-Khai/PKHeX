@@ -36,6 +36,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // B_BoxRight
             // 
+            B_BoxRight.AccessibleName = "Next Box";
             B_BoxRight.Image = Properties.Resources.right;
             B_BoxRight.Location = new System.Drawing.Point(194, 0);
             B_BoxRight.Margin = new System.Windows.Forms.Padding(0);
@@ -47,6 +48,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // B_BoxLeft
             // 
+            B_BoxLeft.AccessibleName = "Previous Box";
             B_BoxLeft.Image = Properties.Resources.left;
             B_BoxLeft.Location = new System.Drawing.Point(30, 0);
             B_BoxLeft.Margin = new System.Windows.Forms.Padding(0);
@@ -58,6 +60,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_BoxSelect
             // 
+            CB_BoxSelect.AccessibleName = "Current Box";
             CB_BoxSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BoxSelect.FormattingEnabled = true;
             CB_BoxSelect.Items.AddRange(new object[] { "Box 1", "Box 2", "Box 3", "Box 4", "Box 5", "Box 6", "Box 7", "Box 8", "Box 9", "Box 10", "Box 11", "Box 12", "Box 13", "Box 14", "Box 15", "Box 16", "Box 17", "Box 18", "Box 19", "Box 20", "Box 21", "Box 22", "Box 23", "Box 24", "Box 25", "Box 26", "Box 27", "Box 28", "Box 29", "Box 30", "Box 31" });
