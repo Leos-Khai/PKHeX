@@ -21,6 +21,8 @@ public partial class SAV_PokeBlockORAS : Form
         for (int i = 0; i < lbl_spec.Length; i++)
         {
             lbl_spec[i].Text = $"{GameInfo.Strings.pokeblocks[94 + i]}:";
+            // "+" is dropped by screen readers, which would make the Plus rows sound identical to the plain ones.
+            nup_spec[i].AccessibleName = GameInfo.Strings.pokeblocks[94 + i].Replace("+", "Plus");
             nup_spec[i].Value = contest.GetBlockCount(i);
         }
     }
