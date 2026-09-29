@@ -82,6 +82,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPDIV
             // 
+            TB_SPDIV.AccessibleName = "Special Defense IV";
             TB_SPDIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPDIV.Location = new System.Drawing.Point(70, 103);
             TB_SPDIV.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
@@ -93,6 +94,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPAIV
             // 
+            TB_SPAIV.AccessibleName = "Special Attack IV";
             TB_SPAIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPAIV.Location = new System.Drawing.Point(70, 80);
             TB_SPAIV.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
@@ -104,6 +106,7 @@ namespace PKHeX.WinForms
             // 
             // TB_DEFIV
             // 
+            TB_DEFIV.AccessibleName = "Defense IV";
             TB_DEFIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_DEFIV.Location = new System.Drawing.Point(70, 57);
             TB_DEFIV.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
@@ -115,6 +118,7 @@ namespace PKHeX.WinForms
             // 
             // TB_ATKIV
             // 
+            TB_ATKIV.AccessibleName = "Attack IV";
             TB_ATKIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_ATKIV.Location = new System.Drawing.Point(70, 33);
             TB_ATKIV.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
@@ -126,6 +130,7 @@ namespace PKHeX.WinForms
             // 
             // TB_HPIV
             // 
+            TB_HPIV.AccessibleName = "HP IV";
             TB_HPIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_HPIV.Location = new System.Drawing.Point(70, 10);
             TB_HPIV.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
@@ -197,6 +202,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPEIV
             // 
+            TB_SPEIV.AccessibleName = "Speed IV";
             TB_SPEIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPEIV.Location = new System.Drawing.Point(70, 126);
             TB_SPEIV.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
@@ -208,6 +214,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PID
             // 
+            TB_PID.AccessibleName = "PID";
             TB_PID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_PID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_PID.Font = new System.Drawing.Font("Courier New", 8.25F);
@@ -233,6 +240,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.FormattingEnabled = true;
@@ -278,6 +286,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Level
             // 
+            NUD_Level.AccessibleName = "Level";
             NUD_Level.Location = new System.Drawing.Point(182, 117);
             NUD_Level.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Level.Name = "NUD_Level";
@@ -286,6 +295,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_HP
             // 
+            NUD_HP.AccessibleName = "Current HP";
             NUD_HP.Location = new System.Drawing.Point(182, 90);
             NUD_HP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_HP.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
