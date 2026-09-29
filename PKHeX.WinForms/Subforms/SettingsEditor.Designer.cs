@@ -67,6 +67,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Blank
             // 
+            CB_Blank.AccessibleName = "Blank Save Version";
             CB_Blank.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             CB_Blank.AutoCompleteSource = AutoCompleteSource.ListItems;
             CB_Blank.FormattingEnabled = true;
@@ -87,6 +88,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Tabs
             // 
+            LB_Tabs.AccessibleName = "Settings Category";
             LB_Tabs.Dock = DockStyle.Fill;
             LB_Tabs.FormattingEnabled = true;
             LB_Tabs.Location = new System.Drawing.Point(0, 0);
@@ -115,6 +117,7 @@ namespace PKHeX.WinForms
             // 
             // PG_Editor
             // 
+            PG_Editor.AccessibleName = "Settings";
             PG_Editor.BackColor = System.Drawing.SystemColors.Control;
             PG_Editor.Dock = DockStyle.Fill;
             PG_Editor.Location = new System.Drawing.Point(0, 0);
