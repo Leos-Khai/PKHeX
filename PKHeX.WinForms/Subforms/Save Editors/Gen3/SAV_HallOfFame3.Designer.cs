@@ -56,6 +56,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Entries
             // 
+            LB_Entries.AccessibleName = "Hall of Fame Entry";
             LB_Entries.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Entries.FormattingEnabled = true;
             LB_Entries.Location = new System.Drawing.Point(12, 14);
@@ -65,6 +66,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.FormattingEnabled = true;
             CB_Species.Location = new System.Drawing.Point(223, 87);
             CB_Species.Name = "CB_Species";
@@ -73,6 +75,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Members
             // 
+            NUD_Members.AccessibleName = "Team Member Index";
             NUD_Members.Location = new System.Drawing.Point(181, 14);
             NUD_Members.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
             NUD_Members.Name = "NUD_Members";
@@ -81,6 +84,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PID
             // 
+            TB_PID.AccessibleName = "PID";
             TB_PID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_PID.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             TB_PID.Location = new System.Drawing.Point(223, 175);
@@ -93,6 +97,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Nickname
             // 
+            TB_Nickname.AccessibleName = "Nickname";
             TB_Nickname.DisplayContext = EntityContext.Gen3;
             TB_Nickname.Location = new System.Drawing.Point(223, 117);
             TB_Nickname.MaxLength = 10;
@@ -148,6 +153,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Level
             // 
+            NUD_Level.AccessibleName = "Level";
             NUD_Level.Location = new System.Drawing.Point(223, 146);
             NUD_Level.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_Level.Name = "NUD_Level";
@@ -179,6 +185,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TID
             // 
+            TB_TID.AccessibleName = "Trainer ID";
             TB_TID.Location = new System.Drawing.Point(223, 198);
             TB_TID.Mask = "00000";
             TB_TID.Name = "TB_TID";
@@ -189,6 +196,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SID
             // 
+            TB_SID.AccessibleName = "Secret ID";
             TB_SID.Location = new System.Drawing.Point(223, 222);
             TB_SID.Mask = "00000";
             TB_SID.Name = "TB_SID";
