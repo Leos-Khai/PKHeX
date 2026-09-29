@@ -321,7 +321,19 @@ public partial class SAV_FestivalPlaza : Form
     private void LoadPictureBox()
     {
         for (int i = 0; i < 3; i++)
+        {
             PBs[i].Image = p[i].Sprite(SAV, visibility: GetFlags(p[i]));
+            PBs[i].AccessibleName = $"Battle Agency Pokemon {i + 1}: {GetSpeciesNameFromPKM(p[i])}";
+        }
+    }
+
+    // The sprites only offer a right-click menu; give keyboard users the same menu via Enter/Space.
+    private void ppkx_KeyDown(object? sender, KeyEventArgs e)
+    {
+        if (e.KeyCode is not (Keys.Enter or Keys.Space) || sender is not PictureBox pb)
+            return;
+        mnu.Show(pb, Point.Empty);
+        e.Handled = e.SuppressKeyPress = true;
     }
 
     private SlotVisibilityType GetFlags(PKM pk, bool ignoreLegality = false)
@@ -410,6 +422,7 @@ public partial class SAV_FestivalPlaza : Form
     private void LoadOTlabel(int b)
     {
         Label_OTGender.Text = gendersymbols[b & 1];
+        Label_OTGender.AccessibleName = $"Visitor Gender: {((b & 1) == 0 ? "Male" : "Female")}";
         Label_OTGender.ForeColor = b == 1 ? Color.Red : Color.Blue;
     }
 

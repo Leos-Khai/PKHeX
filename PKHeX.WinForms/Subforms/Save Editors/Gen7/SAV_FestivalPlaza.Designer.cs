@@ -107,14 +107,14 @@ namespace PKHeX.WinForms
             NUD_Grade = new System.Windows.Forms.NumericUpDown();
             CHK_TrainerInvited = new System.Windows.Forms.CheckBox();
             CHK_Choosed = new System.Windows.Forms.CheckBox();
-            ppkx1 = new System.Windows.Forms.PictureBox();
+            ppkx1 = new PKHeX.WinForms.Controls.SelectablePictureBox();
             mnu = new System.Windows.Forms.ContextMenuStrip(components);
             mnuSave = new System.Windows.Forms.ToolStripMenuItem();
             L_Grade = new System.Windows.Forms.Label();
             B_ImportParty = new System.Windows.Forms.Button();
             GB_Others = new System.Windows.Forms.GroupBox();
-            ppkx3 = new System.Windows.Forms.PictureBox();
-            ppkx2 = new System.Windows.Forms.PictureBox();
+            ppkx3 = new PKHeX.WinForms.Controls.SelectablePictureBox();
+            ppkx2 = new PKHeX.WinForms.Controls.SelectablePictureBox();
             ((System.ComponentModel.ISupportInitialize)NUD_FC_Current).BeginInit();
             GB_FC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)NUD_FC_Used).BeginInit();
@@ -151,6 +151,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FC_Current
             // 
+            NUD_FC_Current.AccessibleName = "Festa Coins Current";
             NUD_FC_Current.Location = new System.Drawing.Point(96, 23);
             NUD_FC_Current.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FC_Current.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
@@ -209,6 +210,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FC_Used
             // 
+            NUD_FC_Used.AccessibleName = "Festa Coins Used";
             NUD_FC_Used.Location = new System.Drawing.Point(96, 54);
             NUD_FC_Used.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FC_Used.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
@@ -267,6 +269,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_Phrases
             // 
+            CLB_Phrases.AccessibleName = "Common Phrases";
             CLB_Phrases.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CLB_Phrases.CheckOnClick = true;
             CLB_Phrases.FormattingEnabled = true;
@@ -279,6 +282,7 @@ namespace PKHeX.WinForms
             // 
             // B_AllPhrases
             // 
+            B_AllPhrases.AccessibleName = "Check All Phrases";
             B_AllPhrases.Location = new System.Drawing.Point(10, 27);
             B_AllPhrases.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_AllPhrases.Name = "B_AllPhrases";
@@ -290,6 +294,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OTName
             // 
+            TB_OTName.AccessibleName = "Visitor Name";
             TB_OTName.DisplayContext = EntityContext.Gen7;
             TB_OTName.Location = new System.Drawing.Point(368, 92);
             TB_OTName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -334,6 +339,7 @@ namespace PKHeX.WinForms
             // 
             // TB_UsedStats
             // 
+            TB_UsedStats.AccessibleName = "Used Stats";
             TB_UsedStats.Location = new System.Drawing.Point(153, 138);
             TB_UsedStats.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_UsedStats.MaxLength = 8;
@@ -356,6 +362,7 @@ namespace PKHeX.WinForms
             // 
             // TB_UsedFlags
             // 
+            TB_UsedFlags.AccessibleName = "Used Flags";
             TB_UsedFlags.Location = new System.Drawing.Point(153, 107);
             TB_UsedFlags.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_UsedFlags.MaxLength = 8;
@@ -377,6 +384,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Exchangable
             // 
+            NUD_Exchangable.AccessibleName = "Exchange Left Count";
             NUD_Exchangable.Location = new System.Drawing.Point(202, 170);
             NUD_Exchangable.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Exchangable.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -388,6 +396,7 @@ namespace PKHeX.WinForms
             // 
             // LB_FacilityIndex
             // 
+            LB_FacilityIndex.AccessibleName = "Facility List";
             LB_FacilityIndex.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             LB_FacilityIndex.FormattingEnabled = true;
             LB_FacilityIndex.ItemHeight = 24;
@@ -422,6 +431,7 @@ namespace PKHeX.WinForms
             // 
             // TB_FacilityID
             // 
+            TB_FacilityID.AccessibleName = "Unknown Value or Visitor Festival ID";
             TB_FacilityID.Location = new System.Drawing.Point(270, 201);
             TB_FacilityID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_FacilityID.MaxLength = 24;
@@ -447,6 +457,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FacilityMessage
             // 
+            NUD_FacilityMessage.AccessibleName = "Visitor Message Value";
             NUD_FacilityMessage.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_FacilityMessage.Location = new System.Drawing.Point(114, 27);
             NUD_FacilityMessage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -459,6 +470,7 @@ namespace PKHeX.WinForms
             // 
             // CB_FacilityMessage
             // 
+            CB_FacilityMessage.AccessibleName = "Visitor Message Type";
             CB_FacilityMessage.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_FacilityMessage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FacilityMessage.DropDownWidth = 102;
@@ -505,6 +517,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FacilityColor
             // 
+            NUD_FacilityColor.AccessibleName = "Facility Color";
             NUD_FacilityColor.Location = new System.Drawing.Point(110, 44);
             NUD_FacilityColor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FacilityColor.Maximum = new decimal(new int[] { 7, 0, 0, 0 });
@@ -536,6 +549,7 @@ namespace PKHeX.WinForms
             // 
             // CB_FacilityNPC
             // 
+            CB_FacilityNPC.AccessibleName = "Facility NPC";
             CB_FacilityNPC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FacilityNPC.FormattingEnabled = true;
             CB_FacilityNPC.Location = new System.Drawing.Point(110, 75);
@@ -546,6 +560,7 @@ namespace PKHeX.WinForms
             // 
             // CB_FacilityType
             // 
+            CB_FacilityType.AccessibleName = "Facility Type";
             CB_FacilityType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FacilityType.DropDownWidth = 180;
             CB_FacilityType.FormattingEnabled = true;
@@ -558,6 +573,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_FestaStartDate
             // 
+            CAL_FestaStartDate.AccessibleName = "Latest Start Date";
             CAL_FestaStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_FestaStartDate.Location = new System.Drawing.Point(10, 27);
             CAL_FestaStartDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -570,6 +586,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_FestaStartTime
             // 
+            CAL_FestaStartTime.AccessibleName = "Latest Start Time";
             CAL_FestaStartTime.CustomFormat = "HH:mm:ss";
             CAL_FestaStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             CAL_FestaStartTime.Location = new System.Drawing.Point(10, 58);
@@ -611,6 +628,7 @@ namespace PKHeX.WinForms
             // 
             // B_AllReadyReward
             // 
+            B_AllReadyReward.AccessibleName = "Set All Rewards Ready to Receive";
             B_AllReadyReward.Location = new System.Drawing.Point(10, 62);
             B_AllReadyReward.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_AllReadyReward.Name = "B_AllReadyReward";
@@ -622,6 +640,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_Reward
             // 
+            CLB_Reward.AccessibleName = "RankUP Rewards";
             CLB_Reward.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CLB_Reward.CheckOnClick = true;
             CLB_Reward.FormattingEnabled = true;
@@ -635,6 +654,7 @@ namespace PKHeX.WinForms
             // 
             // B_AllReceiveReward
             // 
+            B_AllReceiveReward.AccessibleName = "Set All Rewards Received";
             B_AllReceiveReward.Location = new System.Drawing.Point(10, 27);
             B_AllReceiveReward.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_AllReceiveReward.Name = "B_AllReceiveReward";
@@ -646,6 +666,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Rank
             // 
+            NUD_Rank.AccessibleName = "Festival Plaza Rank";
             NUD_Rank.Location = new System.Drawing.Point(75, 143);
             NUD_Rank.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Rank.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
@@ -726,6 +747,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MyMessageDissapointed
             // 
+            NUD_MyMessageDissapointed.AccessibleName = "Message Disappointed";
             NUD_MyMessageDissapointed.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_MyMessageDissapointed.Location = new System.Drawing.Point(90, 145);
             NUD_MyMessageDissapointed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -738,6 +760,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MyMessageMoved
             // 
+            NUD_MyMessageMoved.AccessibleName = "Message Moved";
             NUD_MyMessageMoved.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_MyMessageMoved.Location = new System.Drawing.Point(90, 89);
             NUD_MyMessageMoved.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -750,6 +773,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MyMessagePart
             // 
+            NUD_MyMessagePart.AccessibleName = "Message Part";
             NUD_MyMessagePart.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_MyMessagePart.Location = new System.Drawing.Point(90, 58);
             NUD_MyMessagePart.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -762,6 +786,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MyMessageMeet
             // 
+            NUD_MyMessageMeet.AccessibleName = "Message Meet";
             NUD_MyMessageMeet.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_MyMessageMeet.Location = new System.Drawing.Point(90, 27);
             NUD_MyMessageMeet.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -818,6 +843,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PlazaName
             // 
+            TB_PlazaName.AccessibleName = "Festival Plaza Name";
             TB_PlazaName.DisplayContext = EntityContext.Gen7;
             TB_PlazaName.Location = new System.Drawing.Point(14, 200);
             TB_PlazaName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -896,6 +922,7 @@ namespace PKHeX.WinForms
             // 
             // CB_LuckyResult
             // 
+            CB_LuckyResult.AccessibleName = "Lucky Result";
             CB_LuckyResult.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_LuckyResult.DropDownWidth = 120;
             CB_LuckyResult.FormattingEnabled = true;
@@ -945,6 +972,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Trainer3
             // 
+            NUD_Trainer3.AccessibleName = "Upcoming Trainer 3";
             NUD_Trainer3.Location = new System.Drawing.Point(456, 117);
             NUD_Trainer3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Trainer3.Maximum = new decimal(new int[] { 210, 0, 0, 0 });
@@ -955,6 +983,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Trainer2
             // 
+            NUD_Trainer2.AccessibleName = "Upcoming Trainer 2";
             NUD_Trainer2.Location = new System.Drawing.Point(399, 117);
             NUD_Trainer2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Trainer2.Maximum = new decimal(new int[] { 210, 0, 0, 0 });
@@ -965,6 +994,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Trainer1
             // 
+            NUD_Trainer1.AccessibleName = "Upcoming Trainer 1";
             NUD_Trainer1.Location = new System.Drawing.Point(342, 117);
             NUD_Trainer1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Trainer1.Maximum = new decimal(new int[] { 210, 0, 0, 0 });
@@ -985,6 +1015,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_DefeatMon
             // 
+            NUD_DefeatMon.AccessibleName = "Today's Defeated Pokemon Count";
             NUD_DefeatMon.Location = new System.Drawing.Point(443, 81);
             NUD_DefeatMon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_DefeatMon.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -1015,6 +1046,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Defeated
             // 
+            NUD_Defeated.AccessibleName = "Defeated Trainer Count for Next Grade";
             NUD_Defeated.Increment = new decimal(new int[] { 3, 0, 0, 0 });
             NUD_Defeated.Location = new System.Drawing.Point(458, 46);
             NUD_Defeated.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1025,6 +1057,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Grade
             // 
+            NUD_Grade.AccessibleName = "Grade";
             NUD_Grade.Location = new System.Drawing.Point(458, 12);
             NUD_Grade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Grade.Maximum = new decimal(new int[] { 50, 0, 0, 0 });
@@ -1036,6 +1069,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_TrainerInvited
             // 
+            CHK_TrainerInvited.AccessibleName = "Trainer Invited";
             CHK_TrainerInvited.Location = new System.Drawing.Point(105, 50);
             CHK_TrainerInvited.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             CHK_TrainerInvited.Name = "CHK_TrainerInvited";
@@ -1056,6 +1090,8 @@ namespace PKHeX.WinForms
             // 
             // ppkx1
             // 
+            ppkx1.AccessibleName = "Battle Agency Pokemon 1";
+            ppkx1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             ppkx1.ContextMenuStrip = mnu;
             ppkx1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             ppkx1.Location = new System.Drawing.Point(21, 12);
@@ -1064,7 +1100,7 @@ namespace PKHeX.WinForms
             ppkx1.Size = new System.Drawing.Size(70, 58);
             ppkx1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             ppkx1.TabIndex = 3;
-            ppkx1.TabStop = false;
+            ppkx1.KeyDown += ppkx_KeyDown;
             // 
             // mnu
             // 
@@ -1115,6 +1151,8 @@ namespace PKHeX.WinForms
             // 
             // ppkx3
             // 
+            ppkx3.AccessibleName = "Battle Agency Pokemon 3";
+            ppkx3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             ppkx3.ContextMenuStrip = mnu;
             ppkx3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             ppkx3.Location = new System.Drawing.Point(10, 84);
@@ -1123,10 +1161,12 @@ namespace PKHeX.WinForms
             ppkx3.Size = new System.Drawing.Size(70, 58);
             ppkx3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             ppkx3.TabIndex = 5;
-            ppkx3.TabStop = false;
+            ppkx3.KeyDown += ppkx_KeyDown;
             // 
             // ppkx2
             // 
+            ppkx2.AccessibleName = "Battle Agency Pokemon 2";
+            ppkx2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             ppkx2.ContextMenuStrip = mnu;
             ppkx2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             ppkx2.Location = new System.Drawing.Point(10, 16);
@@ -1135,7 +1175,7 @@ namespace PKHeX.WinForms
             ppkx2.Size = new System.Drawing.Size(70, 58);
             ppkx2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             ppkx2.TabIndex = 4;
-            ppkx2.TabStop = false;
+            ppkx2.KeyDown += ppkx_KeyDown;
             // 
             // SAV_FestivalPlaza
             // 
@@ -1253,9 +1293,9 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.Label L_MyMessageDisappointed;
         private System.Windows.Forms.Label L_MyMessageMoved;
         private System.Windows.Forms.TabPage Tab_BattleAgency;
-        private System.Windows.Forms.PictureBox ppkx1;
-        private System.Windows.Forms.PictureBox ppkx2;
-        private System.Windows.Forms.PictureBox ppkx3;
+        private PKHeX.WinForms.Controls.SelectablePictureBox ppkx1;
+        private PKHeX.WinForms.Controls.SelectablePictureBox ppkx2;
+        private PKHeX.WinForms.Controls.SelectablePictureBox ppkx3;
         private System.Windows.Forms.CheckBox CHK_Choosed;
         private System.Windows.Forms.Label L_Grade;
         private System.Windows.Forms.Button B_ImportParty;
