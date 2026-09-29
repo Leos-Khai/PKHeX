@@ -99,6 +99,7 @@ public sealed partial class SAV_EventFlags : Form
             };
 
             var grid = CreateFlagGrid();
+            grid.AccessibleName = $"{tab.Text} Flags";
             var search = CreateSearchBox(text => ApplyGridFilter(grid, text));
             var host = CreateSearchHost(search, grid);
             tab.Controls.Add(host);
@@ -107,6 +108,7 @@ public sealed partial class SAV_EventFlags : Form
             var cFlag = new DataGridViewCheckBoxColumn
             {
                 DisplayIndex = 0,
+                HeaderText = "Flag",
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells,
                 SortMode = DataGridViewColumnSortMode.NotSortable,
             };
@@ -114,6 +116,7 @@ public sealed partial class SAV_EventFlags : Form
             var cLabel = new DataGridViewTextBoxColumn
             {
                 DisplayIndex = 1,
+                HeaderText = "Description",
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                 ReadOnly = true,
                 SortMode = DataGridViewColumnSortMode.NotSortable,
@@ -247,6 +250,7 @@ public sealed partial class SAV_EventFlags : Form
                 var lbl = new Label { Text = entry.Name, Margin = Padding.Empty, AutoSize = true };
                 var mtb = new NumericUpDown
                 {
+                    AccessibleName = $"{entry.Name} Value",
                     Maximum = ushort.MaxValue,
                     Minimum = ushort.MinValue,
                     Margin = Padding.Empty,
@@ -256,6 +260,7 @@ public sealed partial class SAV_EventFlags : Form
                 var map = entry.PredefinedValues.Select(z => new ComboItem(z.Name, z.Value)).ToList();
                 var cb = new ComboBox
                 {
+                    AccessibleName = entry.Name,
                     Margin = Padding.Empty,
                     Width = 150,
                     DropDownStyle = ComboBoxStyle.DropDownList,
@@ -337,6 +342,7 @@ public sealed partial class SAV_EventFlags : Form
         var box = new TextBox
         {
             PlaceholderText = "Search...",
+            AccessibleName = "Search",
             Dock = DockStyle.Top,
             Margin = Padding.Empty,
         };
