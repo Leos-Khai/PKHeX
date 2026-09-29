@@ -50,6 +50,7 @@ namespace PKHeX.WinForms
             // 
             // LB_BoxSelect
             // 
+            LB_BoxSelect.AccessibleName = "Box";
             LB_BoxSelect.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_BoxSelect.FormattingEnabled = true;
             LB_BoxSelect.Items.AddRange(new object[] { "Boxes" });
@@ -62,6 +63,7 @@ namespace PKHeX.WinForms
             // 
             // TB_BoxName
             // 
+            TB_BoxName.AccessibleName = "Box Name";
             TB_BoxName.Location = new System.Drawing.Point(184, 40);
             TB_BoxName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_BoxName.MaxLength = 15;
@@ -107,6 +109,7 @@ namespace PKHeX.WinForms
             // 
             // CB_BG
             // 
+            CB_BG.AccessibleName = "Wallpaper";
             CB_BG.Anchor = System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_BG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BG.FormattingEnabled = true;
@@ -189,6 +192,7 @@ namespace PKHeX.WinForms
             // 
             // B_Up
             // 
+            B_Up.AccessibleName = "Move Box Up";
             B_Up.Location = new System.Drawing.Point(145, 15);
             B_Up.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Up.Name = "B_Up";
@@ -200,6 +204,7 @@ namespace PKHeX.WinForms
             // 
             // B_Down
             // 
+            B_Down.AccessibleName = "Move Box Down";
             B_Down.Location = new System.Drawing.Point(145, 40);
             B_Down.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Down.Name = "B_Down";
