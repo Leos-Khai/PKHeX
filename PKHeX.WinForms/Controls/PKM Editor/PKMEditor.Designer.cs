@@ -1123,7 +1123,7 @@ namespace PKHeX.WinForms.Controls
             // BTN_Shinytize
             // 
             BTN_Shinytize.AccessibleDescription = "When pressed, makes the entity shiny.";
-            BTN_Shinytize.AccessibleName = "Shiny Button";
+            BTN_Shinytize.AccessibleName = "Shiny Button, currently not shiny";
             BTN_Shinytize.Anchor = System.Windows.Forms.AnchorStyles.Right;
             BTN_Shinytize.Location = new System.Drawing.Point(66, 0);
             BTN_Shinytize.Margin = new System.Windows.Forms.Padding(0);
@@ -1136,8 +1136,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_ShinyStar
             // 
-            PB_ShinyStar.AccessibleDescription = "Currently Shiny";
-            PB_ShinyStar.AccessibleName = "Currently Shiny";
+            PB_ShinyStar.AccessibleDescription = "Currently Shiny (Star)";
+            PB_ShinyStar.AccessibleName = "Currently Shiny (Star)";
             PB_ShinyStar.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_ShinyStar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             PB_ShinyStar.Image = Properties.Resources.rare_icon;
@@ -1148,13 +1148,12 @@ namespace PKHeX.WinForms.Controls
             PB_ShinyStar.Size = new System.Drawing.Size(24, 24);
             PB_ShinyStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_ShinyStar.TabIndex = 62;
-            PB_ShinyStar.TabStop = false;
             PB_ShinyStar.Visible = false;
             // 
             // PB_ShinySquare
             // 
-            PB_ShinySquare.AccessibleDescription = "Currently Xor0 Square Shiny";
-            PB_ShinySquare.AccessibleName = "Currently Xor0 Square Shiny";
+            PB_ShinySquare.AccessibleDescription = "Currently Shiny (Square)";
+            PB_ShinySquare.AccessibleName = "Currently Shiny (Square)";
             PB_ShinySquare.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_ShinySquare.Anchor = System.Windows.Forms.AnchorStyles.Right;
             PB_ShinySquare.Image = Properties.Resources.rare_icon_2;
@@ -1165,7 +1164,6 @@ namespace PKHeX.WinForms.Controls
             PB_ShinySquare.Size = new System.Drawing.Size(24, 24);
             PB_ShinySquare.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_ShinySquare.TabIndex = 62;
-            PB_ShinySquare.TabStop = false;
             PB_ShinySquare.Visible = false;
             // 
             // NUD_ShadowID
