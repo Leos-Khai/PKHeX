@@ -158,6 +158,7 @@ public partial class SAV_PokedexResearchEditorLA : Form
         for (int i = 0; i < taskLabels.Length; i++)
         {
             taskLabels[i].Text = PokedexResearchTask8aExtensions.GetGenericTaskLabelString(TaskTypes[i], TaskIndexes[i], TaskParameters[i], tasks, timeTasks);
+            TaskNUPs[i].AccessibleName = taskLabels[i].Text; // every label is generic until this point, so the box needs the task's own text
 
             Dex.GetResearchTaskProgressByForce(Species, TaskTypes[i], TaskIndexes[i], out var curValue);
             TaskNUPs[i].Value = curValue;
