@@ -19,12 +19,27 @@ public class SelectablePictureBox : PictureBox
         Focus();
         base.OnMouseDown(e);
     }
+    // Claim Enter so a form's AcceptButton doesn't swallow it before KeyDown handlers see it.
+    protected override bool IsInputKey(Keys keyData) => (keyData & Keys.KeyCode) == Keys.Enter || base.IsInputKey(keyData);
+
     protected override void OnEnter(EventArgs e)
     {
         Invalidate();
         base.OnEnter(e);
         AccessibilityObject.RaiseAutomationNotification(AutomationNotificationKind.Other,
-            AutomationNotificationProcessing.All, AccessibleDescription ?? AccessibleName ?? string.Empty);
+            AutomationNotificationProcessing.All, GetNarration());
+    }
+
+    // Lead with the name (e.g. the slot position) unless the description already starts with it.
+    private string GetNarration()
+    {
+        var name = AccessibleName;
+        var description = AccessibleDescription;
+        if (string.IsNullOrEmpty(description))
+            return name ?? string.Empty;
+        if (string.IsNullOrEmpty(name) || description.StartsWith(name, StringComparison.Ordinal))
+            return description;
+        return $"{name}: {description}";
     }
     protected override void OnLeave(EventArgs e)
     {
