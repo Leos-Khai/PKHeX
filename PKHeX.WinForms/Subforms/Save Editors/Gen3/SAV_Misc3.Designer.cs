@@ -1330,6 +1330,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Desk
             // 
+            DGV_Desk.AccessibleName = "Desk Decorations";
             DGV_Desk.AllowUserToAddRows = false;
             DGV_Desk.AllowUserToDeleteRows = false;
             DGV_Desk.AllowUserToResizeColumns = false;
@@ -1371,6 +1372,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Chair
             // 
+            DGV_Chair.AccessibleName = "Chair Decorations";
             DGV_Chair.AllowUserToAddRows = false;
             DGV_Chair.AllowUserToDeleteRows = false;
             DGV_Chair.AllowUserToResizeColumns = false;
@@ -1412,6 +1414,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Plant
             // 
+            DGV_Plant.AccessibleName = "Plant Decorations";
             DGV_Plant.AllowUserToAddRows = false;
             DGV_Plant.AllowUserToDeleteRows = false;
             DGV_Plant.AllowUserToResizeColumns = false;
@@ -1453,6 +1456,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Ornament
             // 
+            DGV_Ornament.AccessibleName = "Ornament Decorations";
             DGV_Ornament.AllowUserToAddRows = false;
             DGV_Ornament.AllowUserToDeleteRows = false;
             DGV_Ornament.AllowUserToResizeColumns = false;
@@ -1494,6 +1498,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Mat
             // 
+            DGV_Mat.AccessibleName = "Mat Decorations";
             DGV_Mat.AllowUserToAddRows = false;
             DGV_Mat.AllowUserToDeleteRows = false;
             DGV_Mat.AllowUserToResizeColumns = false;
@@ -1535,6 +1540,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Poster
             // 
+            DGV_Poster.AccessibleName = "Poster Decorations";
             DGV_Poster.AllowUserToAddRows = false;
             DGV_Poster.AllowUserToDeleteRows = false;
             DGV_Poster.AllowUserToResizeColumns = false;
@@ -1576,6 +1582,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Doll
             // 
+            DGV_Doll.AccessibleName = "Doll Decorations";
             DGV_Doll.AllowUserToAddRows = false;
             DGV_Doll.AllowUserToDeleteRows = false;
             DGV_Doll.AllowUserToResizeColumns = false;
@@ -1617,6 +1624,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Cushion
             // 
+            DGV_Cushion.AccessibleName = "Cushion Decorations";
             DGV_Cushion.AllowUserToAddRows = false;
             DGV_Cushion.AllowUserToDeleteRows = false;
             DGV_Cushion.AllowUserToResizeColumns = false;
@@ -1710,6 +1718,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Caption
             // 
+            NUD_Caption.AccessibleName = "Caption";
             NUD_Caption.Location = new System.Drawing.Point(90, 174);
             NUD_Caption.Maximum = new decimal(new int[] { 2, 0, 0, 0 });
             NUD_Caption.Name = "NUD_Caption";
@@ -1755,6 +1764,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.FormattingEnabled = true;
             CB_Species.Location = new System.Drawing.Point(90, 19);
             CB_Species.Name = "CB_Species";
@@ -1772,6 +1782,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PID
             // 
+            TB_PID.AccessibleName = "PID";
             TB_PID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_PID.Font = new System.Drawing.Font("Courier New", 8F);
             TB_PID.Location = new System.Drawing.Point(90, 53);
@@ -1783,6 +1794,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Nickname
             // 
+            TB_Nickname.AccessibleName = "Nickname";
             TB_Nickname.DisplayContext = EntityContext.Gen3;
             TB_Nickname.Location = new System.Drawing.Point(90, 149);
             TB_Nickname.Name = "TB_Nickname";
@@ -1792,6 +1804,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TID
             // 
+            TB_TID.AccessibleName = "Trainer ID";
             TB_TID.Location = new System.Drawing.Point(90, 77);
             TB_TID.Mask = "00000";
             TB_TID.Name = "TB_TID";
@@ -1801,6 +1814,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OT
             // 
+            TB_OT.AccessibleName = "Original Trainer Name";
             TB_OT.DisplayContext = EntityContext.Gen3;
             TB_OT.Location = new System.Drawing.Point(90, 125);
             TB_OT.Name = "TB_OT";
@@ -1810,6 +1824,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SID
             // 
+            TB_SID.AccessibleName = "Secret ID";
             TB_SID.Location = new System.Drawing.Point(90, 101);
             TB_SID.Mask = "00000";
             TB_SID.Name = "TB_SID";
@@ -1819,6 +1834,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Painting
             // 
+            NUD_Painting.AccessibleName = "Painting";
             NUD_Painting.Location = new System.Drawing.Point(87, 6);
             NUD_Painting.Maximum = new decimal(new int[] { 4, 0, 0, 0 });
             NUD_Painting.Name = "NUD_Painting";
@@ -1828,6 +1844,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_EnablePaint
             // 
+            CHK_EnablePaint.AccessibleName = "Painting Enabled";
             CHK_EnablePaint.AutoSize = true;
             CHK_EnablePaint.Location = new System.Drawing.Point(125, 6);
             CHK_EnablePaint.Name = "CHK_EnablePaint";
