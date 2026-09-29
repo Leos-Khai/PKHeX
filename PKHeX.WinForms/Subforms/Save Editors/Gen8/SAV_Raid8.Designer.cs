@@ -60,6 +60,7 @@ namespace PKHeX.WinForms
             // 
             // PG_Den
             // 
+            PG_Den.AccessibleName = "Den Parameters";
             PG_Den.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_Den.Location = new System.Drawing.Point(14, 37);
             PG_Den.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -71,6 +72,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Den
             // 
+            CB_Den.AccessibleName = "Den";
             CB_Den.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Den.FormattingEnabled = true;
             CB_Den.Location = new System.Drawing.Point(14, 6);
