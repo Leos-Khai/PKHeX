@@ -41,6 +41,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_Triangle
             // 
+            PB_Triangle.AccessibleName = "Move legality";
+            PB_Triangle.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_Triangle.Image = Properties.Resources.warn;
             PB_Triangle.Location = new System.Drawing.Point(0, 0);
             PB_Triangle.Name = "PB_Triangle";
@@ -104,6 +106,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_Type
             // 
+            PB_Type.AccessibleName = "Move type";
+            PB_Type.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_Type.Location = new System.Drawing.Point(0, 0);
             PB_Type.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
             PB_Type.Name = "PB_Type";

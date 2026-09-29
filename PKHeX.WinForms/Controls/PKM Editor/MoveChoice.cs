@@ -8,6 +8,7 @@ namespace PKHeX.WinForms.Controls;
 public partial class MoveChoice : UserControl
 {
     private EntityContext Context;
+    private string Slot = "Move";
 
     public MoveChoice()
     {
@@ -26,6 +27,7 @@ public partial class MoveChoice : UserControl
     /// </summary>
     public void SetAccessibleSlot(string slot)
     {
+        Slot = slot;
         CB_Move.AccessibleName = slot;
         TB_PP.AccessibleName = $"{slot} PP";
         CB_PPUps.AccessibleName = $"{slot} PP Ups";
@@ -36,11 +38,13 @@ public partial class MoveChoice : UserControl
         if (value <= 0)
         {
             PB_Type.Image = null;
+            PB_Type.AccessibleName = $"{Slot} type: None";
             return;
         }
 
         var type = MoveInfo.GetType((ushort)value, Context);
         PB_Type.Image = TypeSpriteUtil.GetTypeSpriteIconSmall(type);
+        PB_Type.AccessibleName = $"{Slot} type: {GameInfo.Strings.Types[type]}";
     }
 
     private static void LoadClamp(ComboBox cb, int value)
@@ -62,6 +66,7 @@ public partial class MoveChoice : UserControl
         }
         PB_Triangle.Visible = true;
         PB_Triangle.Image = MoveDisplayState.GetMoveImage(!move.Valid, entity, i);
+        PB_Triangle.AccessibleName = $"{Slot} {MoveDisplayState.GetMoveStatus(!move.Valid, entity, i)}";
     }
 
     public void HealPP(PKM pk)

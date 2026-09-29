@@ -1853,6 +1853,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_WarnRelearn1
             // 
+            PB_WarnRelearn1.AccessibleName = "Relearn Move 1 legality";
+            PB_WarnRelearn1.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_WarnRelearn1.Image = Properties.Resources.warn;
             PB_WarnRelearn1.Location = new System.Drawing.Point(0, 0);
             PB_WarnRelearn1.Margin = new System.Windows.Forms.Padding(0);
@@ -1891,6 +1893,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_WarnRelearn2
             // 
+            PB_WarnRelearn2.AccessibleName = "Relearn Move 2 legality";
+            PB_WarnRelearn2.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_WarnRelearn2.Image = Properties.Resources.warn;
             PB_WarnRelearn2.Location = new System.Drawing.Point(0, 0);
             PB_WarnRelearn2.Margin = new System.Windows.Forms.Padding(0);
@@ -1929,6 +1933,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_WarnRelearn3
             // 
+            PB_WarnRelearn3.AccessibleName = "Relearn Move 3 legality";
+            PB_WarnRelearn3.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_WarnRelearn3.Image = Properties.Resources.warn;
             PB_WarnRelearn3.Location = new System.Drawing.Point(0, 0);
             PB_WarnRelearn3.Margin = new System.Windows.Forms.Padding(0);
@@ -1967,6 +1973,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_WarnRelearn4
             // 
+            PB_WarnRelearn4.AccessibleName = "Relearn Move 4 legality";
+            PB_WarnRelearn4.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_WarnRelearn4.Image = Properties.Resources.warn;
             PB_WarnRelearn4.Location = new System.Drawing.Point(0, 0);
             PB_WarnRelearn4.Margin = new System.Windows.Forms.Padding(0);

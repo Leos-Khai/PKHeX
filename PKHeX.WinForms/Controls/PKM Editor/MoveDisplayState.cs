@@ -18,4 +18,18 @@ public static class MoveDisplayState
 
         return null;
     }
+
+    /// <summary>
+    /// Spoken counterpart of <see cref="GetMoveImage"/>, as the warning icon is otherwise the only indication.
+    /// </summary>
+    public static string GetMoveStatus(bool isIllegal, PKM pk, int index)
+    {
+        if (isIllegal)
+            return "is illegal";
+
+        if (MoveInfo.IsDummiedMove(pk, index))
+            return "cannot be used in battle";
+
+        return "is legal";
+    }
 }
