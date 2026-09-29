@@ -1,5 +1,6 @@
 using PKHeX.Core;
 using PKHeX.Drawing.PokeSprite;
+using PKHeX.WinForms.Controls;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -61,7 +62,19 @@ public sealed partial class SAV_Pokeathlon4 : Form
 
         WinFormsUtil.TranslateInterface(this, Main.CurrentLanguage);
 
+        NameCounterEditors();
         LoadData();
+    }
+
+    // Counter labels are created untranslated and only get their final text from TranslateInterface.
+    private void NameCounterEditors()
+    {
+        foreach (var binding in CounterEditors)
+        {
+            var row = TLP_Counters.GetPositionFromControl(binding.Editor).Row;
+            if (TLP_Counters.GetControlFromPosition(0, row) is Label label)
+                binding.Editor.AccessibleName = label.Text.TrimEnd(':');
+        }
     }
 
     private void B_Save_Click(object sender, EventArgs e)
@@ -143,6 +156,7 @@ public sealed partial class SAV_Pokeathlon4 : Form
         });
         DGV_Medals.Columns.Add(new DataGridViewImageColumn
         {
+            CellTemplate = new AccessibleImageCell(),
             Name = "Sprite",
             HeaderText = "Sprite",
             Width = 48,
@@ -167,6 +181,7 @@ public sealed partial class SAV_Pokeathlon4 : Form
             var row = DGV_Medals.Rows[species - 1];
             row.Cells[0].Value = species;
             row.Cells[1].Value = SpriteUtil.GetSprite((ushort)species, 0, 0, 0, 0, false, Shiny.Never, EntityContext.Gen4);
+            row.Cells[1].Tag = GameInfo.Strings.specieslist[species];
             row.Tag = (ushort)species;
             row.Cells[0].ToolTipText = GameInfo.Strings.specieslist[species];
             row.Cells[1].ToolTipText = GameInfo.Strings.specieslist[species];
@@ -222,6 +237,7 @@ public sealed partial class SAV_Pokeathlon4 : Form
                 Text = GetEventDisplayName((PokeathlonEvent4)i) + ':',
             };
             var editor = CreateNumericEditor(ushort.MaxValue);
+            editor.AccessibleName = $"{Localize((PokeathlonEvent4)i)} Best Score";
             TLP_Best.RowStyles.Add(new RowStyle());
             TLP_Best.Controls.Add(label, 0, i);
             TLP_Best.Controls.Add(editor, 1, i);
