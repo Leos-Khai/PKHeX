@@ -74,7 +74,7 @@ namespace PKHeX.WinForms
             L_EVs = new System.Windows.Forms.Label();
             CB_Nature = new System.Windows.Forms.ComboBox();
             TB_SPAEV = new System.Windows.Forms.MaskedTextBox();
-            Label_Gender = new System.Windows.Forms.Label();
+            Label_Gender = new PKHeX.WinForms.Controls.SelectableLabel();
             TB_EC = new System.Windows.Forms.TextBox();
             L_EncryptionConstant = new System.Windows.Forms.Label();
             TB_HPEV = new System.Windows.Forms.MaskedTextBox();
@@ -683,6 +683,7 @@ namespace PKHeX.WinForms
             // 
             // Label_Gender
             // 
+            Label_Gender.AccessibleDescription = "Press to change gender.";
             Label_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             Label_Gender.Location = new System.Drawing.Point(195, 66);
             Label_Gender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1053,7 +1054,7 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.ComboBox CB_Ball;
         private System.Windows.Forms.Label L_PKFriendship;
         private System.Windows.Forms.ComboBox CB_Ability;
-        private System.Windows.Forms.Label Label_Gender;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_Gender;
         private System.Windows.Forms.Button B_GiveDecor;
         private System.Windows.Forms.MaskedTextBox TB_SPEIV;
         private System.Windows.Forms.MaskedTextBox TB_SPDIV;

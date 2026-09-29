@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using PKHeX.Core;
 using PKHeX.Drawing.PokeSprite;
+using PKHeX.WinForms.Controls;
 
 namespace PKHeX.WinForms;
 
@@ -20,6 +21,9 @@ public partial class SAV_HallOfFame : Form
     public SAV_HallOfFame(SAV6 sav)
     {
         InitializeComponent();
+        // The label only shows a gender symbol; narrate the gender by name instead.
+        Label_Gender.TextChanged += (_, _) => Label_Gender.AccessibleName = $"Gender: {GenderToggle.GetGenderName(EntityGender.GetFromString(Label_Gender.Text))}";
+        Label_OTGender.TextChanged += (_, _) => Label_OTGender.AccessibleName = $"Original Trainer Gender: {GenderToggle.GetGenderName(EntityGender.GetFromString(Label_OTGender.Text))}";
         WinFormsUtil.TranslateInterface(this, Main.CurrentLanguage);
         SAV = (SAV6)(Origin = sav).Clone();
         Fame = ((ISaveBlock6Main)SAV).HallOfFame;

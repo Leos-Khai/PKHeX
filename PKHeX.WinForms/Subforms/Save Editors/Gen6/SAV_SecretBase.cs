@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 using PKHeX.Core;
+using PKHeX.WinForms.Controls;
 using static PKHeX.Core.MessageStrings;
 
 namespace PKHeX.WinForms;
@@ -23,6 +24,8 @@ public partial class SAV_SecretBase : Form
     public SAV_SecretBase(SAV6AO sav)
     {
         InitializeComponent();
+        // The label only shows a gender symbol; narrate the gender by name instead.
+        Label_Gender.TextChanged += (_, _) => Label_Gender.AccessibleName = $"Gender: {GenderToggle.GetGenderName(EntityGender.GetFromString(Label_Gender.Text))}";
         WinFormsUtil.TranslateInterface(this, Main.CurrentLanguage);
         SAV = (SAV6AO)(Origin = sav).Clone();
 
