@@ -28,6 +28,8 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
 
         // Commonly reused Control arrays
         Moves = [MC_Move1, MC_Move2, MC_Move3, MC_Move4];
+        for (int i = 0; i < Moves.Length; i++)
+            Moves[i].SetAccessibleSlot($"Move {i + 1}");
         Relearn = [CB_RelearnMove1, CB_RelearnMove2, CB_RelearnMove3, CB_RelearnMove4];
         Markings = [PB_Mark1, PB_Mark2, PB_Mark3, PB_Mark4, PB_Mark5, PB_Mark6];
 

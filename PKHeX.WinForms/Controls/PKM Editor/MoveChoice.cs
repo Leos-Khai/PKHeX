@@ -21,6 +21,16 @@ public partial class MoveChoice : UserControl
     public bool HideLegality { private get; set; }
     public void SetContext(EntityContext context) => Context = context;
 
+    /// <summary>
+    /// Names the inner fields after the move slot, as all four slots are otherwise indistinguishable to screen readers.
+    /// </summary>
+    public void SetAccessibleSlot(string slot)
+    {
+        CB_Move.AccessibleName = slot;
+        TB_PP.AccessibleName = $"{slot} PP";
+        CB_PPUps.AccessibleName = $"{slot} PP Ups";
+    }
+
     private void UpdateTypeSprite(int value)
     {
         if (value <= 0)
