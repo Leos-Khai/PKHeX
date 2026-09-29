@@ -14,6 +14,15 @@ public partial class EntityInstructionBuilder : UserControl
 
     private static ReadOnlySpan<char> Prefixes => StringInstruction.Prefixes;
 
+    // The buttons and menu items only show operator symbols, which are read out unhelpfully. Order matches Prefixes.
+    private static readonly string[] PrefixNames =
+    [
+        "Set value",
+        "Require equal to", "Require not equal to", "Require greater than", "Require greater than or equal to", "Require less than", "Require less than or equal to",
+        "Add", "Subtract", "Multiply", "Divide", "Modulo",
+        "Bitwise and", "Bitwise or", "Bitwise xor", "Shift right", "Shift left",
+    ];
+
     private int currentFormat = -1;
     private int requirementIndex;
     private bool readOnlyMode;
@@ -34,6 +43,7 @@ public partial class EntityInstructionBuilder : UserControl
                 Name = $"mnu_{name}",
                 Tag = i,
                 ForeColor = color,
+                AccessibleName = i < PrefixNames.Length ? PrefixNames[i] : text,
             };
             item.Click += RequireItem_Click;
             requireMenu.Items.Add(item);
@@ -81,18 +91,26 @@ public partial class EntityInstructionBuilder : UserControl
         if (EntityBatchEditor.Instance.TryGetHasProperty(Entity, CB_Property.Text, out var pi))
         {
             L_PropType.ResetForeColor();
+            L_PropType.AccessibleDescription = null;
 
             bool hasValue = GetPropertyDisplayText(pi, Entity, out var display);
             L_PropValue.Text = display;
             if (hasValue)
+            {
                 L_PropValue.ResetForeColor();
+                L_PropValue.AccessibleDescription = null;
+            }
             else
+            {
                 L_PropValue.ForeColor = WinFormsUtil.ColorWarn;
+                L_PropValue.AccessibleDescription = "Value cannot be displayed";
+            }
         }
         else // no property, flag
         {
             L_PropValue.Text = string.Empty;
             L_PropType.ForeColor = WinFormsUtil.ColorWarn;
+            L_PropType.AccessibleDescription = "Property does not exist on the current entity";
         }
     }
 
@@ -113,6 +131,7 @@ public partial class EntityInstructionBuilder : UserControl
 
         requirementIndex = index;
         B_Require.Text = requireMenuItems[index].Text;
+        B_Require.AccessibleName = $"Instruction Type: {requireMenuItems[index].AccessibleName}";
 
         for (int i = 0; i < requireMenuItems.Length; i++)
             requireMenuItems[i].Checked = i == index;
