@@ -436,6 +436,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CR_PK1
             // 
+            CR_PK1.AccessibleName = "Catch Rate";
             CR_PK1.AutoSize = true;
             CR_PK1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             CR_PK1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -483,6 +484,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_NSparkle
             // 
+            CHK_NSparkle.AccessibleName = "N's Sparkle Active";
             CHK_NSparkle.AutoSize = true;
             CHK_NSparkle.Location = new System.Drawing.Point(120, 385);
             CHK_NSparkle.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
@@ -521,6 +523,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_PKRSStrain
             // 
+            CB_PKRSStrain.AccessibleName = "Pokérus Strain";
             CB_PKRSStrain.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PKRSStrain.FormattingEnabled = true;
             CB_PKRSStrain.Items.AddRange(new object[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" });
@@ -545,6 +548,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_PKRSDays
             // 
+            CB_PKRSDays.AccessibleName = "Pokérus Days";
             CB_PKRSDays.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PKRSDays.FormattingEnabled = true;
             CB_PKRSDays.Location = new System.Drawing.Point(65, 0);
@@ -621,6 +625,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Language
             // 
+            CB_Language.AccessibleName = "Language";
             CB_Language.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Language.FormattingEnabled = true;
@@ -659,6 +664,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Ability
             // 
+            CB_Ability.AccessibleName = "Ability";
             CB_Ability.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Ability.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Ability.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -673,6 +679,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // DEV_Ability
             // 
+            DEV_Ability.AccessibleName = "Ability";
             DEV_Ability.Anchor = System.Windows.Forms.AnchorStyles.Left;
             DEV_Ability.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             DEV_Ability.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -688,6 +695,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_AbilityNumber
             // 
+            TB_AbilityNumber.AccessibleName = "Ability Number";
             TB_AbilityNumber.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_AbilityNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_AbilityNumber.Location = new System.Drawing.Point(126, 26);
@@ -713,6 +721,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_Purification
             // 
+            NUD_Purification.AccessibleName = "Heart Gauge";
             NUD_Purification.Location = new System.Drawing.Point(0, 1);
             NUD_Purification.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             NUD_Purification.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
@@ -749,6 +758,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_HeldItem
             // 
+            CB_HeldItem.AccessibleName = "Held Item";
             CB_HeldItem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_HeldItem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_HeldItem.FormattingEnabled = true;
@@ -799,6 +809,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Form
             // 
+            CB_Form.AccessibleName = "Form";
             CB_Form.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Form.DropDownWidth = 85;
             CB_Form.Enabled = false;
@@ -825,6 +836,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_StatAlignment
             // 
+            CB_StatAlignment.AccessibleName = "Stat Alignment";
             CB_StatAlignment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_StatAlignment.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_StatAlignment.FormattingEnabled = true;
@@ -963,6 +975,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_NicknamedFlag
             // 
+            CHK_NicknamedFlag.AccessibleName = "Nicknamed Flag";
             CHK_NicknamedFlag.Anchor = System.Windows.Forms.AnchorStyles.Right;
             CHK_NicknamedFlag.AutoSize = true;
             CHK_NicknamedFlag.Location = new System.Drawing.Point(37, 4);
@@ -1053,6 +1066,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_PID
             // 
+            TB_PID.AccessibleName = "PID";
             TB_PID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_PID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_PID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -1083,6 +1097,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // BTN_RerollPID
             // 
+            BTN_RerollPID.AccessibleName = "Reroll PID";
             BTN_RerollPID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             BTN_RerollPID.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
             BTN_RerollPID.Location = new System.Drawing.Point(88, 0);
@@ -1168,6 +1183,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_ShadowID
             // 
+            NUD_ShadowID.AccessibleName = "Shadow ID";
             NUD_ShadowID.Location = new System.Drawing.Point(120, 410);
             NUD_ShadowID.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             NUD_ShadowID.Maximum = new decimal(new int[] { 127, 0, 0, 0 });
