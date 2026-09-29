@@ -134,6 +134,7 @@ public partial class SAV_HallOfFame3 : Form
         SaveEntry(entry);
         var shiny = entry.IsShiny ? Shiny.Always : Shiny.Never;
         PB_Sprite.Image = SpriteUtil.GetSprite(entry.Species, entry.DisplayForm(SAV.Version), 0, 0, 0, false, shiny, EntityContext.Gen3);
+        PB_Sprite.AccessibleName = GameInfo.Strings.specieslist[entry.Species];
     }
 
     private void B_Clear_Click(object sender, EventArgs e) => ClearFields();
