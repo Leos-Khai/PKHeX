@@ -86,7 +86,7 @@ public abstract record EventWorkGridBase : IEventWorkGrid
         _searchAction(Search.Text);
     }
 
-    protected static (SplitContainer Container, TextBox Search) CreateContainerCommon()
+    protected static (SplitContainer Container, TextBox Search) CreateContainerCommon(TabPage host)
     {
         var container = new SplitContainer
         {
@@ -102,6 +102,7 @@ public abstract record EventWorkGridBase : IEventWorkGrid
             Dock = DockStyle.Fill,
             Margin = Padding.Empty,
             PlaceholderText = "Search...",
+            AccessibleName = $"Search {host.Text}",
         };
         container.Panel1.Controls.Add(search);
 
@@ -211,13 +212,14 @@ public sealed record EventWorkGrid64<T> : EventWorkGridBase where T : struct, IE
 
     public static EventWorkGrid64<bool> CreateFlags(TabPage host, EventWorkFlagStorage storage, EventWorkLookup names)
     {
-        var (container, search) = CreateContainerCommon();
+        var (container, search) = CreateContainerCommon(host);
         host.Controls.Clear();
         host.Controls.Add(container);
 
         var font = new Font("Courier New", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
         var dgv = new DoubleBufferedDataGridView
         {
+            AccessibleName = host.Text,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
@@ -236,13 +238,14 @@ public sealed record EventWorkGrid64<T> : EventWorkGridBase where T : struct, IE
 
     public static EventWorkGrid64<ulong> CreateValues(TabPage host, EventWorkValueStorage storage, EventWorkLookup names)
     {
-        var (container, search) = CreateContainerCommon();
+        var (container, search) = CreateContainerCommon(host);
         host.Controls.Clear();
         host.Controls.Add(container);
 
         var font = new Font("Courier New", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
         var dgv = new DoubleBufferedDataGridView
         {
+            AccessibleName = host.Text,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
@@ -363,13 +366,14 @@ public sealed record EventWorkGridTuple : EventWorkGridBase
 
     public static EventWorkGridTuple CreateValues(TabPage host, EventWorkValueStorageKey128 storage, EventWorkLookup names)
     {
-        var (container, search) = CreateContainerCommon();
+        var (container, search) = CreateContainerCommon(host);
         host.Controls.Clear();
         host.Controls.Add(container);
 
         var font = new Font("Courier New", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
         var dgv = new DoubleBufferedDataGridView
         {
+            AccessibleName = host.Text,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
@@ -516,13 +520,14 @@ public sealed record EventWorkGrid128 : EventWorkGridBase
 
     public static EventWorkGrid128 CreateValues(TabPage host, EventWorkValueStorageKey128 storage, EventWorkLookup names)
     {
-        var (container, search) = CreateContainerCommon();
+        var (container, search) = CreateContainerCommon(host);
         host.Controls.Clear();
         host.Controls.Add(container);
 
         var font = new Font("Courier New", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
         var dgv = new DoubleBufferedDataGridView
         {
+            AccessibleName = host.Text,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
@@ -665,13 +670,14 @@ public sealed record EventWorkGrid192 : EventWorkGridBase
 
     public static EventWorkGrid192 CreateValues(TabPage host, EventWorkValueStorageKey192 storage, EventWorkLookup names)
     {
-        var (container, search) = CreateContainerCommon();
+        var (container, search) = CreateContainerCommon(host);
         host.Controls.Clear();
         host.Controls.Add(container);
 
         var font = new Font("Courier New", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
         var dgv = new DoubleBufferedDataGridView
         {
+            AccessibleName = host.Text,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,

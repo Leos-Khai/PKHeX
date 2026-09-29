@@ -129,6 +129,7 @@ namespace PKHeX.WinForms
             // 
             // TB_NewSAV
             // 
+            TB_NewSAV.AccessibleName = "New Save File Path";
             TB_NewSAV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_NewSAV.Location = new System.Drawing.Point(98, 35);
             TB_NewSAV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -150,6 +151,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OldSAV
             // 
+            TB_OldSAV.AccessibleName = "Old Save File Path";
             TB_OldSAV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_OldSAV.Location = new System.Drawing.Point(98, 5);
             TB_OldSAV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -160,6 +162,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Diff
             // 
+            RTB_Diff.AccessibleName = "Save Differences";
             RTB_Diff.Dock = System.Windows.Forms.DockStyle.Fill;
             RTB_Diff.Location = new System.Drawing.Point(0, 0);
             RTB_Diff.Margin = new System.Windows.Forms.Padding(0);
