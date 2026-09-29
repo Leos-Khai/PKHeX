@@ -31,7 +31,7 @@ namespace PKHeX.WinForms
         /// </summary>
         private void InitializeComponent()
         {
-            PB_QR = new PictureBox();
+            PB_QR = new PKHeX.WinForms.Controls.SelectablePictureBox();
             NUD_Box = new NumericUpDown();
             L_Box = new Label();
             L_Slot = new Label();
@@ -54,6 +54,8 @@ namespace PKHeX.WinForms
             // 
             // PB_QR
             // 
+            PB_QR.AccessibleName = "QR Code";
+            PB_QR.AccessibleRole = AccessibleRole.PushButton;
             PB_QR.BackgroundImageLayout = ImageLayout.None;
             PB_QR.Dock = DockStyle.Fill;
             PB_QR.Location = new System.Drawing.Point(0, 0);
@@ -62,11 +64,13 @@ namespace PKHeX.WinForms
             PB_QR.Size = new System.Drawing.Size(404, 344);
             PB_QR.SizeMode = PictureBoxSizeMode.AutoSize;
             PB_QR.TabIndex = 0;
-            PB_QR.TabStop = false;
+            PB_QR.TabStop = true;
             PB_QR.Click += PB_QR_Click;
+            PB_QR.KeyDown += PB_QR_KeyDown;
             // 
             // NUD_Box
             // 
+            NUD_Box.AccessibleName = "Box Number";
             NUD_Box.Location = new System.Drawing.Point(44, 6);
             NUD_Box.Margin = new Padding(0, 2, 8, 0);
             NUD_Box.Maximum = new decimal(new int[] { 32, 0, 0, 0 });
@@ -98,6 +102,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Slot
             // 
+            NUD_Slot.AccessibleName = "Slot Number";
             NUD_Slot.Location = new System.Drawing.Point(133, 6);
             NUD_Slot.Margin = new Padding(0, 2, 8, 0);
             NUD_Slot.Maximum = new decimal(new int[] { 30, 0, 0, 0 });
@@ -119,6 +124,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Copies
             // 
+            NUD_Copies.AccessibleName = "Copies";
             NUD_Copies.Location = new System.Drawing.Point(240, 6);
             NUD_Copies.Margin = new Padding(0, 2, 8, 0);
             NUD_Copies.Maximum = new decimal(new int[] { 960, 0, 0, 0 });
@@ -210,7 +216,7 @@ namespace PKHeX.WinForms
 
         #endregion
 
-        private PictureBox PB_QR;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_QR;
         private NumericUpDown NUD_Box;
         private Label L_Box;
         private Label L_Slot;
