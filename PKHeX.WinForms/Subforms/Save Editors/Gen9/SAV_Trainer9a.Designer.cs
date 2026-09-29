@@ -123,9 +123,9 @@ namespace PKHeX.WinForms
             L_X = new System.Windows.Forms.Label();
             Tab_Images = new System.Windows.Forms.TabPage();
             FLP_Images = new System.Windows.Forms.FlowLayoutPanel();
-            P_Picture1 = new System.Windows.Forms.PictureBox();
-            P_Picture2 = new System.Windows.Forms.PictureBox();
-            P_Picture3 = new System.Windows.Forms.PictureBox();
+            P_Picture1 = new PKHeX.WinForms.Controls.SelectablePictureBox();
+            P_Picture2 = new PKHeX.WinForms.Controls.SelectablePictureBox();
+            P_Picture3 = new PKHeX.WinForms.Controls.SelectablePictureBox();
             Tab_DLC = new System.Windows.Forms.TabPage();
             TB_StreetName = new PKHeX.WinForms.Controls.RenderedString();
             L_StreetName = new System.Windows.Forms.Label();
@@ -181,6 +181,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OTName
             // 
+            TB_OTName.AccessibleName = "Trainer Name";
             TB_OTName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_OTName.DisplayContext = EntityContext.Gen9a;
             TB_OTName.Location = new System.Drawing.Point(3, 5);
@@ -206,6 +207,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Money
             // 
+            MT_Money.AccessibleName = "Money";
             MT_Money.Anchor = System.Windows.Forms.AnchorStyles.Left;
             MT_Money.Location = new System.Drawing.Point(3, 3);
             MT_Money.Mask = "0000000";
@@ -323,6 +325,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Seconds
             // 
+            MT_Seconds.AccessibleName = "Play Time Seconds";
             MT_Seconds.Anchor = System.Windows.Forms.AnchorStyles.Left;
             MT_Seconds.Location = new System.Drawing.Point(131, 264);
             MT_Seconds.Mask = "00";
@@ -334,6 +337,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Minutes
             // 
+            MT_Minutes.AccessibleName = "Play Time Minutes";
             MT_Minutes.Anchor = System.Windows.Forms.AnchorStyles.Left;
             MT_Minutes.Location = new System.Drawing.Point(131, 233);
             MT_Minutes.Mask = "00";
@@ -357,6 +361,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Hours
             // 
+            MT_Hours.AccessibleName = "Play Time Hours";
             MT_Hours.Anchor = System.Windows.Forms.AnchorStyles.Left;
             MT_Hours.Location = new System.Drawing.Point(131, 202);
             MT_Hours.Mask = "00000";
@@ -379,6 +384,7 @@ namespace PKHeX.WinForms
             // 
             // B_MaxCash
             // 
+            B_MaxCash.AccessibleName = "Max Money";
             B_MaxCash.Anchor = System.Windows.Forms.AnchorStyles.Left;
             B_MaxCash.Location = new System.Drawing.Point(76, 4);
             B_MaxCash.Name = "B_MaxCash";
@@ -389,6 +395,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Language
             // 
+            CB_Language.AccessibleName = "Language";
             CB_Language.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Language.FormattingEnabled = true;
@@ -704,6 +711,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_LastSavedTime
             // 
+            CAL_LastSavedTime.AccessibleName = "Last Saved Time";
             CAL_LastSavedTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CAL_LastSavedTime.CustomFormat = "HH:mm:ss";
             CAL_LastSavedTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -718,6 +726,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_LastSavedDate
             // 
+            CAL_LastSavedDate.AccessibleName = "Last Saved Date";
             CAL_LastSavedDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CAL_LastSavedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_LastSavedDate.Location = new System.Drawing.Point(131, 120);
@@ -763,6 +772,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Gender
             // 
+            CB_Gender.AccessibleName = "Gender";
             CB_Gender.AllowClick = true;
             CB_Gender.BackgroundImage = (System.Drawing.Image)resources.GetObject("CB_Gender.BackgroundImage");
             CB_Gender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -857,6 +867,7 @@ namespace PKHeX.WinForms
             // 
             // MT_RoyaleInfinite
             // 
+            MT_RoyaleInfinite.AccessibleName = "Royale Infinite Ticket Points";
             MT_RoyaleInfinite.Location = new System.Drawing.Point(394, 62);
             MT_RoyaleInfinite.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_RoyaleInfinite.Mask = "0000000";
@@ -868,6 +879,7 @@ namespace PKHeX.WinForms
             // 
             // B_RoyaleInfiniteMax
             // 
+            B_RoyaleInfiniteMax.AccessibleName = "Max Royale Infinite Ticket Points";
             B_RoyaleInfiniteMax.Location = new System.Drawing.Point(465, 62);
             B_RoyaleInfiniteMax.Margin = new System.Windows.Forms.Padding(0);
             B_RoyaleInfiniteMax.Name = "B_RoyaleInfiniteMax";
@@ -878,6 +890,7 @@ namespace PKHeX.WinForms
             // 
             // MT_RoyaleRegular
             // 
+            MT_RoyaleRegular.AccessibleName = "Royale Regular Ticket Points";
             MT_RoyaleRegular.Location = new System.Drawing.Point(394, 39);
             MT_RoyaleRegular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_RoyaleRegular.Mask = "0000000";
@@ -889,6 +902,7 @@ namespace PKHeX.WinForms
             // 
             // B_RoyaleRegularMax
             // 
+            B_RoyaleRegularMax.AccessibleName = "Max Royale Regular Ticket Points";
             B_RoyaleRegularMax.Location = new System.Drawing.Point(465, 39);
             B_RoyaleRegularMax.Margin = new System.Windows.Forms.Padding(0);
             B_RoyaleRegularMax.Name = "B_RoyaleRegularMax";
@@ -920,6 +934,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Map
             // 
+            TB_Map.AccessibleName = "Map";
             TB_Map.Location = new System.Drawing.Point(115, 184);
             TB_Map.MaxLength = 32;
             TB_Map.Name = "TB_Map";
@@ -939,6 +954,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_R
             // 
+            NUD_R.AccessibleName = "Rotation";
             NUD_R.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_R.DecimalPlaces = 6;
             NUD_R.Location = new System.Drawing.Point(115, 129);
@@ -963,6 +979,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Z
             // 
+            NUD_Z.AccessibleName = "Z Coordinate";
             NUD_Z.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_Z.DecimalPlaces = 6;
             NUD_Z.Location = new System.Drawing.Point(115, 57);
@@ -977,6 +994,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Y
             // 
+            NUD_Y.AccessibleName = "Y Coordinate";
             NUD_Y.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_Y.DecimalPlaces = 6;
             NUD_Y.Location = new System.Drawing.Point(115, 93);
@@ -991,6 +1009,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_X
             // 
+            NUD_X.AccessibleName = "X Coordinate";
             NUD_X.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_X.DecimalPlaces = 6;
             NUD_X.Location = new System.Drawing.Point(115, 22);
@@ -1058,6 +1077,8 @@ namespace PKHeX.WinForms
             // 
             // P_Picture1
             // 
+            P_Picture1.AccessibleName = "Save Current Picture";
+            P_Picture1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             P_Picture1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             P_Picture1.Cursor = System.Windows.Forms.Cursors.Hand;
             P_Picture1.Location = new System.Drawing.Point(3, 3);
@@ -1065,11 +1086,13 @@ namespace PKHeX.WinForms
             P_Picture1.Size = new System.Drawing.Size(342, 342);
             P_Picture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             P_Picture1.TabIndex = 79;
-            P_Picture1.TabStop = false;
             P_Picture1.Click += P_Picture1_Click;
+            P_Picture1.KeyDown += P_Picture1_KeyDown;
             // 
             // P_Picture2
             // 
+            P_Picture2.AccessibleName = "Save SBC Picture";
+            P_Picture2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             P_Picture2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             P_Picture2.Cursor = System.Windows.Forms.Cursors.Hand;
             P_Picture2.Location = new System.Drawing.Point(3, 351);
@@ -1077,11 +1100,13 @@ namespace PKHeX.WinForms
             P_Picture2.Size = new System.Drawing.Size(566, 294);
             P_Picture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             P_Picture2.TabIndex = 80;
-            P_Picture2.TabStop = false;
             P_Picture2.Click += P_Picture2_Click;
+            P_Picture2.KeyDown += P_Picture2_KeyDown;
             // 
             // P_Picture3
             // 
+            P_Picture3.AccessibleName = "Save Initial Picture";
+            P_Picture3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             P_Picture3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             P_Picture3.Cursor = System.Windows.Forms.Cursors.Hand;
             P_Picture3.Location = new System.Drawing.Point(3, 651);
@@ -1089,8 +1114,8 @@ namespace PKHeX.WinForms
             P_Picture3.Size = new System.Drawing.Size(566, 294);
             P_Picture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             P_Picture3.TabIndex = 81;
-            P_Picture3.TabStop = false;
             P_Picture3.Click += P_Picture3_Click;
+            P_Picture3.KeyDown += P_Picture3_KeyDown;
             // 
             // Tab_DLC
             // 
@@ -1109,6 +1134,7 @@ namespace PKHeX.WinForms
             // 
             // TB_StreetName
             // 
+            TB_StreetName.AccessibleName = "Street Name";
             TB_StreetName.DisplayContext = EntityContext.Gen9a;
             TB_StreetName.Location = new System.Drawing.Point(254, 39);
             TB_StreetName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1140,6 +1166,7 @@ namespace PKHeX.WinForms
             // 
             // MT_HyperspaceSurveyPoints
             // 
+            MT_HyperspaceSurveyPoints.AccessibleName = "Hyperspace Survey Points";
             MT_HyperspaceSurveyPoints.Location = new System.Drawing.Point(254, 4);
             MT_HyperspaceSurveyPoints.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_HyperspaceSurveyPoints.Mask = "0000000";
@@ -1151,6 +1178,7 @@ namespace PKHeX.WinForms
             // 
             // B_HyperspaceSurveyPoints
             // 
+            B_HyperspaceSurveyPoints.AccessibleName = "Max Hyperspace Survey Points";
             B_HyperspaceSurveyPoints.Location = new System.Drawing.Point(325, 4);
             B_HyperspaceSurveyPoints.Margin = new System.Windows.Forms.Padding(0);
             B_HyperspaceSurveyPoints.Name = "B_HyperspaceSurveyPoints";
@@ -1299,9 +1327,9 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.Label L_Map;
         private System.Windows.Forms.TabPage Tab_Images;
         private System.Windows.Forms.FlowLayoutPanel FLP_Images;
-        private System.Windows.Forms.PictureBox P_Picture1;
-        private System.Windows.Forms.PictureBox P_Picture2;
-        private System.Windows.Forms.PictureBox P_Picture3;
+        private PKHeX.WinForms.Controls.SelectablePictureBox P_Picture1;
+        private PKHeX.WinForms.Controls.SelectablePictureBox P_Picture2;
+        private PKHeX.WinForms.Controls.SelectablePictureBox P_Picture3;
         private System.Windows.Forms.Button B_CollectTechnicalMachines;
         private System.Windows.Forms.Button B_CollectScrews;
         private System.Windows.Forms.TabPage Tab_DLC;
