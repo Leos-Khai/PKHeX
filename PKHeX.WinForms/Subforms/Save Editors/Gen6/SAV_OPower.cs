@@ -36,10 +36,19 @@ public partial class SAV_OPower : Form
         var nameBattle = WinFormsTranslator.GetEnumTranslation<OPower6BattleType>(Main.CurrentLanguage).AsSpan()[..^1];
         foreach (string index in nameIndex)
             CLB_Unlock.Items.Add(index);
+        // The two boxes per row are unlabelled level values; the row label alone would name both identically.
         for (int i = 0; i < nameField.Length; i++)
+        {
             LabelField[i].Text = nameField[i];
+            NUDField_A[i].AccessibleName = $"Field {nameField[i]} Level 1";
+            NUDField_B[i].AccessibleName = $"Field {nameField[i]} Level 2";
+        }
         for (int i = 0; i < nameBattle.Length; i++)
+        {
             LabelBattle[i].Text = nameBattle[i];
+            NUDBattle_A[i].AccessibleName = $"Battle {nameBattle[i]} Level 1";
+            NUDBattle_B[i].AccessibleName = $"Battle {nameBattle[i]} Level 2";
+        }
 
         LoadCurrent();
 
