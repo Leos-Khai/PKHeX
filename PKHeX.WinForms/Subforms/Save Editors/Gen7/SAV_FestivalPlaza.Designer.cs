@@ -59,7 +59,7 @@ namespace PKHeX.WinForms
             GB_FacilityMessage = new System.Windows.Forms.GroupBox();
             NUD_FacilityMessage = new System.Windows.Forms.NumericUpDown();
             CB_FacilityMessage = new System.Windows.Forms.ComboBox();
-            Label_OTGender = new System.Windows.Forms.Label();
+            Label_OTGender = new PKHeX.WinForms.Controls.SelectableLabel();
             CHK_FacilityIntroduced = new System.Windows.Forms.CheckBox();
             L_FacilityNPC = new System.Windows.Forms.Label();
             NUD_FacilityColor = new System.Windows.Forms.NumericUpDown();
@@ -484,6 +484,7 @@ namespace PKHeX.WinForms
             // 
             // Label_OTGender
             // 
+            Label_OTGender.AccessibleDescription = "Press to change gender.";
             Label_OTGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Label_OTGender.Location = new System.Drawing.Point(483, 92);
             Label_OTGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1260,7 +1261,7 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.Label L_FacilityType;
         private System.Windows.Forms.ComboBox CB_FacilityNPC;
         private System.Windows.Forms.ComboBox CB_FacilityType;
-        private System.Windows.Forms.Label Label_OTGender;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_OTGender;
         private System.Windows.Forms.GroupBox GB_FacilityMessage;
         private System.Windows.Forms.ComboBox CB_FacilityMessage;
         private System.Windows.Forms.NumericUpDown NUD_FacilityMessage;
