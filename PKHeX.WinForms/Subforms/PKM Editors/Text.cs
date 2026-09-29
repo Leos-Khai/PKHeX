@@ -111,6 +111,8 @@ public sealed partial class TrashEditor : Form
             l.Click += (_, _) => { if (TB_Text.Text.Length < TB_Text.MaxLength) TB_Text.AppendText(l.Text); };
             FLP_Characters.Controls.Add(l);
             Tip.SetToolTip(l, $"Insert {l.Text} (0x{c:X4})");
+            l.AccessibleName = $"Insert {l.Text} (0x{c:X4})";
+            l.AccessibleRole = AccessibleRole.PushButton;
         }
     }
 
@@ -124,6 +126,7 @@ public sealed partial class TrashEditor : Form
             var l = GetLabel($"${i:X2}");
             l.Font = NUD_Generation.Font;
             var n = GetNUD(min: 0, max: 255, hex: true);
+            n.AccessibleName = $"Byte {i:X2}";
             n.Click += (_, _) =>
             {
                 switch (ModifierKeys)

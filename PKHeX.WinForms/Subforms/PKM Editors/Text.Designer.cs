@@ -57,6 +57,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Text
             // 
+            TB_Text.AccessibleName = "String";
             TB_Text.Location = new System.Drawing.Point(114, 14);
             TB_Text.DisableInGameFont = false;
             TB_Text.DisplayContext = Core.EntityContext.None;
@@ -67,6 +68,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Trash Layer Species";
             CB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -125,6 +127,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Language
             // 
+            CB_Language.AccessibleName = "Trash Layer Language";
             CB_Language.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Language.FormattingEnabled = true;
@@ -192,6 +195,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Generation
             // 
+            NUD_Generation.AccessibleName = "Trash Layer Generation";
             NUD_Generation.Font = new System.Drawing.Font("Courier New", 8.25F);
             NUD_Generation.Location = new System.Drawing.Point(134, 81);
             NUD_Generation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
