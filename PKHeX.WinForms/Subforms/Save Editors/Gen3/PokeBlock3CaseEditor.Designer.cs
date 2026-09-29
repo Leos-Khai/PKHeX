@@ -36,6 +36,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Pokeblocks
             // 
+            LB_Pokeblocks.AccessibleName = "Pokeblock";
             LB_Pokeblocks.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Pokeblocks.FormattingEnabled = true;
             LB_Pokeblocks.ItemHeight = 15;
@@ -48,6 +49,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokeblockDel
             // 
+            B_PokeblockDel.AccessibleName = "Delete All Pokeblocks";
             B_PokeblockDel.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             B_PokeblockDel.Location = new System.Drawing.Point(246, 216);
             B_PokeblockDel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -60,6 +62,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokeblockAll
             // 
+            B_PokeblockAll.AccessibleName = "Give All Pokeblocks";
             B_PokeblockAll.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             B_PokeblockAll.Location = new System.Drawing.Point(147, 216);
             B_PokeblockAll.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -72,6 +75,7 @@ namespace PKHeX.WinForms
             // 
             // PG_Pokeblocks
             // 
+            PG_Pokeblocks.AccessibleName = "Pokeblock Properties";
             PG_Pokeblocks.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_Pokeblocks.HelpVisible = false;
             PG_Pokeblocks.Location = new System.Drawing.Point(147, 2);
