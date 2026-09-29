@@ -60,6 +60,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Donut
             // 
+            LB_Donut.AccessibleName = "Donuts";
             LB_Donut.AllowDrop = true;
             LB_Donut.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Donut.FormattingEnabled = true;
