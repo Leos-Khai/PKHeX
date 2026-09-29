@@ -90,6 +90,7 @@ namespace PKHeX.WinForms
             // 
             // dgv
             // 
+            dgv.AccessibleName = "Move Shop Moves";
             dgv.AllowUserToAddRows = false;
             dgv.AllowUserToDeleteRows = false;
             dgv.AllowUserToResizeColumns = false;
