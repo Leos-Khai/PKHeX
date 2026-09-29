@@ -74,16 +74,17 @@ public partial class BallBrowser : Form
             BackgroundImage = valid ? SpriteUtil.Spriter.Set : SpriteUtil.Spriter.Delete,
             BackgroundImageLayout = ImageLayout.Tile,
             Name = name,
-            AccessibleDescription = name,
+            // The tile background colour is the only cue for legality.
+            AccessibleDescription = valid ? name : $"{name}, not legal for this Pokémon",
             AccessibleName = name,
-            AccessibleRole = AccessibleRole.Graphic,
+            AccessibleRole = AccessibleRole.PushButton,
         };
 
         pb.MouseEnter += (_, _) => Text = name;
         pb.Click += (_, _) => SelectBall(ballID);
         pb.KeyDown += (_, e) =>
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode is Keys.Enter or Keys.Space)
                 SelectBall(ballID);
         };
         return pb;
