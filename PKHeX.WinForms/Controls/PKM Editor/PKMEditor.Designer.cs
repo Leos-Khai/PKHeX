@@ -1863,6 +1863,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_RelearnMove1
             // 
+            CB_RelearnMove1.AccessibleName = "Relearn Move 1";
             CB_RelearnMove1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_RelearnMove1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_RelearnMove1.FormattingEnabled = true;
@@ -1900,6 +1901,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_RelearnMove2
             // 
+            CB_RelearnMove2.AccessibleName = "Relearn Move 2";
             CB_RelearnMove2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_RelearnMove2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_RelearnMove2.FormattingEnabled = true;
@@ -1937,6 +1939,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_RelearnMove3
             // 
+            CB_RelearnMove3.AccessibleName = "Relearn Move 3";
             CB_RelearnMove3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_RelearnMove3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_RelearnMove3.FormattingEnabled = true;
@@ -1974,6 +1977,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_RelearnMove4
             // 
+            CB_RelearnMove4.AccessibleName = "Relearn Move 4";
             CB_RelearnMove4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_RelearnMove4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_RelearnMove4.FormattingEnabled = true;
@@ -2074,6 +2078,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_AlphaMastered
             // 
+            CB_AlphaMastered.AccessibleName = "Alpha Mastered Move";
             CB_AlphaMastered.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_AlphaMastered.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_AlphaMastered.FormattingEnabled = true;
