@@ -40,6 +40,7 @@ namespace PKHeX.WinForms
             // 
             // dgv
             // 
+            dgv.AccessibleName = "Underground Items";
             dgv.AllowUserToAddRows = false;
             dgv.AllowUserToDeleteRows = false;
             dgv.AllowUserToResizeColumns = false;
@@ -85,6 +86,7 @@ namespace PKHeX.WinForms
             // 
             // B_All
             // 
+            B_All.AccessibleName = "Max All Underground Items";
             B_All.Location = new System.Drawing.Point(14, 16);
             B_All.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_All.Name = "B_All";
@@ -96,6 +98,7 @@ namespace PKHeX.WinForms
             // 
             // B_None
             // 
+            B_None.AccessibleName = "Clear All Underground Items";
             B_None.Location = new System.Drawing.Point(96, 16);
             B_None.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_None.Name = "B_None";
