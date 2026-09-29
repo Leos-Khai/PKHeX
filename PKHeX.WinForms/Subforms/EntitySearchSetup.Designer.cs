@@ -125,6 +125,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Instructions
             // 
+            RTB_Instructions.AccessibleName = "Advanced Filter Instructions";
             RTB_Instructions.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             RTB_Instructions.Location = new System.Drawing.Point(0, 55);
             RTB_Instructions.Margin = new System.Windows.Forms.Padding(0);
@@ -153,6 +154,7 @@ namespace PKHeX.WinForms
             // 
             // B_Next
             // 
+            B_Next.AccessibleName = "Next Match";
             B_Next.Dock = System.Windows.Forms.DockStyle.Fill;
             B_Next.Location = new System.Drawing.Point(234, 0);
             B_Next.Margin = new System.Windows.Forms.Padding(0);
@@ -166,6 +168,7 @@ namespace PKHeX.WinForms
             // 
             // B_Previous
             // 
+            B_Previous.AccessibleName = "Previous Match";
             B_Previous.Dock = System.Windows.Forms.DockStyle.Fill;
             B_Previous.Location = new System.Drawing.Point(0, 0);
             B_Previous.Margin = new System.Windows.Forms.Padding(0);
