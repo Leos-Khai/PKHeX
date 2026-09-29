@@ -28,6 +28,7 @@ public partial class StatusBrowser : Form
             Value = 1,
             Width = 40,
             TextAlign = HorizontalAlignment.Center,
+            AccessibleName = "Sleep Turns",
             Margin = Padding.Empty,
             Padding = Padding.Empty,
         };
@@ -92,18 +93,21 @@ public partial class StatusBrowser : Form
         };
 
         pb.MouseEnter += (_, _) => Text = value is StatusCondition.PoisonBad ? "Toxic" : WinFormsTranslator.TranslateEnum(value.GetStatusType(), Main.CurrentLanguage);
-        pb.Click += (_, _) =>
+        pb.Click += (_, _) => Choose();
+        pb.KeyDown += (_, e) =>
+        {
+            if (e.KeyCode is Keys.Enter or Keys.Space)
+                Choose();
+        };
+        return pb;
+
+        // Keyboard and mouse must agree, otherwise Sleep would ignore the turn count chosen in the spinner.
+        void Choose()
         {
             if (value is StatusCondition.Sleep1)
                 value = (StatusCondition)NUD_Sleep.Value;
             SelectValue(value);
-        };
-        pb.KeyDown += (_, e) =>
-        {
-            if (e.KeyCode is Keys.Enter or Keys.Space)
-                SelectValue(value);
-        };
-        return pb;
+        }
     }
 
     private void SelectValue(StatusCondition value)
