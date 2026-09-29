@@ -85,6 +85,7 @@ namespace PKHeX.WinForms
             // 
             // SCR_Box
             // 
+            SCR_Box.AccessibleName = "Results Scroll";
             SCR_Box.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
             SCR_Box.LargeChange = 1;
             SCR_Box.Location = new System.Drawing.Point(299, 3);
@@ -176,6 +177,7 @@ namespace PKHeX.WinForms
             // 
             // CB_HeldItem
             // 
+            CB_HeldItem.AccessibleName = "Held Item";
             CB_HeldItem.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_HeldItem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_HeldItem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -188,6 +190,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -200,6 +203,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move4
             // 
+            CB_Move4.AccessibleName = "Move 4";
             CB_Move4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Move4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -212,6 +216,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move3
             // 
+            CB_Move3.AccessibleName = "Move 3";
             CB_Move3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Move3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -224,6 +229,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move2
             // 
+            CB_Move2.AccessibleName = "Move 2";
             CB_Move2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Move2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -236,6 +242,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move1
             // 
+            CB_Move1.AccessibleName = "Move 1";
             CB_Move1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Move1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -461,6 +468,7 @@ namespace PKHeX.WinForms
             // 
             // CB_FormatComparator
             // 
+            CB_FormatComparator.AccessibleName = "Format Comparison";
             CB_FormatComparator.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_FormatComparator.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FormatComparator.FormattingEnabled = true;
@@ -474,6 +482,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Format
             // 
+            CB_Format.AccessibleName = "Format";
             CB_Format.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Format.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Format.DropDownWidth = 100;
@@ -588,6 +597,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Instructions
             // 
+            RTB_Instructions.AccessibleName = "Advanced Filter Instructions";
             RTB_Instructions.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             RTB_Instructions.Location = new System.Drawing.Point(0, 55);
             RTB_Instructions.Margin = new System.Windows.Forms.Padding(0);
