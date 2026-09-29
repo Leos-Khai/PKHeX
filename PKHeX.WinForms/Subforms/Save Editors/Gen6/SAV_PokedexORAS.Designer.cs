@@ -103,6 +103,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species";
             LB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Species.FormattingEnabled = true;
             LB_Species.Location = new System.Drawing.Point(14, 46);
@@ -260,6 +261,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go to Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -298,6 +300,7 @@ namespace PKHeX.WinForms
             // 
             // B_Modify
             // 
+            B_Modify.AccessibleName = "Modify Pokédex Entries";
             B_Modify.Location = new System.Drawing.Point(370, 13);
             B_Modify.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Modify.Name = "B_Modify";
@@ -352,6 +355,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Seen
             // 
+            MT_Seen.AccessibleName = "DexNav Seen Count";
             MT_Seen.Location = new System.Drawing.Point(447, 251);
             MT_Seen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Seen.Mask = "00000";
@@ -374,6 +378,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Spinda
             // 
+            TB_Spinda.AccessibleName = "Spinda Pattern";
             TB_Spinda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Spinda.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_Spinda.Location = new System.Drawing.Point(370, 225);
@@ -513,6 +518,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormsSeen
             // 
+            CLB_FormsSeen.AccessibleName = "Seen Forms";
             CLB_FormsSeen.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             CLB_FormsSeen.FormattingEnabled = true;
             CLB_FormsSeen.Location = new System.Drawing.Point(447, 70);
@@ -533,6 +539,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormDisplayed
             // 
+            CLB_FormDisplayed.AccessibleName = "Displayed Form";
             CLB_FormDisplayed.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             CLB_FormDisplayed.FormattingEnabled = true;
             CLB_FormDisplayed.Location = new System.Drawing.Point(593, 70);
@@ -554,6 +561,7 @@ namespace PKHeX.WinForms
             // 
             // B_ModifyForms
             // 
+            B_ModifyForms.AccessibleName = "Modify Forms";
             B_ModifyForms.Location = new System.Drawing.Point(662, 13);
             B_ModifyForms.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ModifyForms.Name = "B_ModifyForms";
@@ -602,6 +610,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Obtained
             // 
+            MT_Obtained.AccessibleName = "DexNav Obtained Count";
             MT_Obtained.Location = new System.Drawing.Point(447, 277);
             MT_Obtained.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Obtained.Mask = "00000";
