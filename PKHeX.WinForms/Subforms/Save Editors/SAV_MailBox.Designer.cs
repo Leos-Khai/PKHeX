@@ -152,6 +152,7 @@ namespace PKHeX.WinForms
             // 
             // LB_PartyHeld
             // 
+            LB_PartyHeld.AccessibleName = "Party Mailbox";
             LB_PartyHeld.FormattingEnabled = true;
             LB_PartyHeld.IntegralHeight = false;
             LB_PartyHeld.Location = new System.Drawing.Point(18, 45);
@@ -163,6 +164,7 @@ namespace PKHeX.WinForms
             // 
             // LB_PCBOX
             // 
+            LB_PCBOX.AccessibleName = "PC Mailbox";
             LB_PCBOX.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_PCBOX.FormattingEnabled = true;
             LB_PCBOX.IntegralHeight = false;
@@ -197,6 +199,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MessageBody21
             // 
+            TB_MessageBody21.AccessibleName = "Message Line 1";
             TB_MessageBody21.Location = new System.Drawing.Point(10, 27);
             TB_MessageBody21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_MessageBody21.MaxLength = 32;
@@ -207,6 +210,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MessageBody22
             // 
+            TB_MessageBody22.AccessibleName = "Message Line 2";
             TB_MessageBody22.Location = new System.Drawing.Point(10, 61);
             TB_MessageBody22.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_MessageBody22.MaxLength = 32;
@@ -217,6 +221,7 @@ namespace PKHeX.WinForms
             // 
             // TB_AuthorName
             // 
+            TB_AuthorName.AccessibleName = "Author Name";
             TB_AuthorName.Location = new System.Drawing.Point(10, 27);
             TB_AuthorName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_AuthorName.MaxLength = 7;
@@ -227,6 +232,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_AuthorTID
             // 
+            NUD_AuthorTID.AccessibleName = "Author Trainer ID";
             NUD_AuthorTID.Location = new System.Drawing.Point(10, 61);
             NUD_AuthorTID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_AuthorTID.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -237,6 +243,7 @@ namespace PKHeX.WinForms
             // 
             // CB_AppearPKM1
             // 
+            CB_AppearPKM1.AccessibleName = "Appear PokÃ©mon 1";
             CB_AppearPKM1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_AppearPKM1.FormattingEnabled = true;
             CB_AppearPKM1.Location = new System.Drawing.Point(274, 380);
@@ -247,6 +254,7 @@ namespace PKHeX.WinForms
             // 
             // CB_MailType
             // 
+            CB_MailType.AccessibleName = "Mail Type";
             CB_MailType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_MailType.FormattingEnabled = true;
             CB_MailType.Location = new System.Drawing.Point(274, 344);
@@ -257,6 +265,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_AuthorSID
             // 
+            NUD_AuthorSID.AccessibleName = "Author Secret ID";
             NUD_AuthorSID.Location = new System.Drawing.Point(84, 61);
             NUD_AuthorSID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_AuthorSID.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -267,6 +276,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BoxSize
             // 
+            NUD_BoxSize.AccessibleName = "Mailbox (PC) Served";
             NUD_BoxSize.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             NUD_BoxSize.Location = new System.Drawing.Point(105, 464);
             NUD_BoxSize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -316,6 +326,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MessageEnding
             // 
+            NUD_MessageEnding.AccessibleName = "Message Ending";
             NUD_MessageEnding.Location = new System.Drawing.Point(10, 132);
             NUD_MessageEnding.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_MessageEnding.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -326,6 +337,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message23
             // 
+            NUD_Message23.AccessibleName = "Message Line 3 Word 4";
             NUD_Message23.Location = new System.Drawing.Point(231, 96);
             NUD_Message23.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message23.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -336,6 +348,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message13
             // 
+            NUD_Message13.AccessibleName = "Message Line 2 Word 4";
             NUD_Message13.Location = new System.Drawing.Point(231, 61);
             NUD_Message13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message13.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -346,6 +359,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message03
             // 
+            NUD_Message03.AccessibleName = "Message Line 1 Word 4";
             NUD_Message03.Location = new System.Drawing.Point(231, 27);
             NUD_Message03.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message03.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -356,6 +370,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message22
             // 
+            NUD_Message22.AccessibleName = "Message Line 3 Word 3";
             NUD_Message22.Location = new System.Drawing.Point(158, 96);
             NUD_Message22.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message22.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -366,6 +381,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message21
             // 
+            NUD_Message21.AccessibleName = "Message Line 3 Word 2";
             NUD_Message21.Location = new System.Drawing.Point(84, 96);
             NUD_Message21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message21.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -376,6 +392,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message20
             // 
+            NUD_Message20.AccessibleName = "Message Line 3 Word 1";
             NUD_Message20.Location = new System.Drawing.Point(10, 96);
             NUD_Message20.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message20.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -386,6 +403,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message12
             // 
+            NUD_Message12.AccessibleName = "Message Line 2 Word 3";
             NUD_Message12.Location = new System.Drawing.Point(158, 61);
             NUD_Message12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message12.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -396,6 +414,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message11
             // 
+            NUD_Message11.AccessibleName = "Message Line 2 Word 2";
             NUD_Message11.Location = new System.Drawing.Point(84, 61);
             NUD_Message11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message11.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -406,6 +425,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message10
             // 
+            NUD_Message10.AccessibleName = "Message Line 2 Word 1";
             NUD_Message10.Location = new System.Drawing.Point(10, 61);
             NUD_Message10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message10.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -416,6 +436,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message02
             // 
+            NUD_Message02.AccessibleName = "Message Line 1 Word 3";
             NUD_Message02.Location = new System.Drawing.Point(158, 27);
             NUD_Message02.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message02.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -426,6 +447,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message01
             // 
+            NUD_Message01.AccessibleName = "Message Line 1 Word 2";
             NUD_Message01.Location = new System.Drawing.Point(84, 27);
             NUD_Message01.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message01.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -436,6 +458,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Message00
             // 
+            NUD_Message00.AccessibleName = "Message Line 1 Word 1";
             NUD_Message00.Location = new System.Drawing.Point(10, 27);
             NUD_Message00.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Message00.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -474,6 +497,7 @@ namespace PKHeX.WinForms
             // 
             // CB_AuthorVersion
             // 
+            CB_AuthorVersion.AccessibleName = "Author Version";
             CB_AuthorVersion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_AuthorVersion.FormattingEnabled = true;
             CB_AuthorVersion.Location = new System.Drawing.Point(158, 60);
@@ -484,6 +508,7 @@ namespace PKHeX.WinForms
             // 
             // CB_AuthorLang
             // 
+            CB_AuthorLang.AccessibleName = "Author Language";
             CB_AuthorLang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_AuthorLang.FormattingEnabled = true;
             CB_AuthorLang.Location = new System.Drawing.Point(158, 24);
@@ -554,6 +579,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MailID6
             // 
+            NUD_MailID6.AccessibleName = "Party PokÃ©mon 6 Mail ID";
             NUD_MailID6.Location = new System.Drawing.Point(138, 252);
             NUD_MailID6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_MailID6.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
@@ -586,6 +612,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MailID5
             // 
+            NUD_MailID5.AccessibleName = "Party PokÃ©mon 5 Mail ID";
             NUD_MailID5.Location = new System.Drawing.Point(138, 207);
             NUD_MailID5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_MailID5.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
@@ -618,6 +645,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MailID4
             // 
+            NUD_MailID4.AccessibleName = "Party PokÃ©mon 4 Mail ID";
             NUD_MailID4.Location = new System.Drawing.Point(138, 162);
             NUD_MailID4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_MailID4.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
@@ -650,6 +678,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MailID3
             // 
+            NUD_MailID3.AccessibleName = "Party PokÃ©mon 3 Mail ID";
             NUD_MailID3.Location = new System.Drawing.Point(138, 117);
             NUD_MailID3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_MailID3.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
@@ -682,6 +711,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MailID2
             // 
+            NUD_MailID2.AccessibleName = "Party PokÃ©mon 2 Mail ID";
             NUD_MailID2.Location = new System.Drawing.Point(138, 72);
             NUD_MailID2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_MailID2.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
@@ -714,6 +744,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MailID1
             // 
+            NUD_MailID1.AccessibleName = "Party PokÃ©mon 1 Mail ID";
             NUD_MailID1.Location = new System.Drawing.Point(138, 27);
             NUD_MailID1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_MailID1.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
@@ -756,6 +787,7 @@ namespace PKHeX.WinForms
             // 
             // CB_AppearPKM2
             // 
+            CB_AppearPKM2.AccessibleName = "Appear PokÃ©mon 2";
             CB_AppearPKM2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_AppearPKM2.FormattingEnabled = true;
             CB_AppearPKM2.Location = new System.Drawing.Point(410, 380);
@@ -766,6 +798,7 @@ namespace PKHeX.WinForms
             // 
             // CB_AppearPKM3
             // 
+            CB_AppearPKM3.AccessibleName = "Appear PokÃ©mon 3";
             CB_AppearPKM3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_AppearPKM3.FormattingEnabled = true;
             CB_AppearPKM3.Location = new System.Drawing.Point(541, 380);
@@ -786,6 +819,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Misc1
             // 
+            NUD_Misc1.AccessibleName = "Misc Value 1";
             NUD_Misc1.Location = new System.Drawing.Point(274, 381);
             NUD_Misc1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Misc1.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -796,6 +830,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Misc2
             // 
+            NUD_Misc2.AccessibleName = "Misc Value 2";
             NUD_Misc2.Location = new System.Drawing.Point(348, 381);
             NUD_Misc2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Misc2.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -806,6 +841,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Misc3
             // 
+            NUD_Misc3.AccessibleName = "Misc Value 3";
             NUD_Misc3.Location = new System.Drawing.Point(421, 381);
             NUD_Misc3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Misc3.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -816,6 +852,7 @@ namespace PKHeX.WinForms
             // 
             // B_PartyUp
             // 
+            B_PartyUp.AccessibleName = "Move Party Mail Up";
             B_PartyUp.Location = new System.Drawing.Point(160, 45);
             B_PartyUp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_PartyUp.Name = "B_PartyUp";
@@ -828,6 +865,7 @@ namespace PKHeX.WinForms
             // 
             // B_PartyDown
             // 
+            B_PartyDown.AccessibleName = "Move Party Mail Down";
             B_PartyDown.Location = new System.Drawing.Point(160, 80);
             B_PartyDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_PartyDown.Name = "B_PartyDown";
@@ -840,6 +878,7 @@ namespace PKHeX.WinForms
             // 
             // B_BoxDown
             // 
+            B_BoxDown.AccessibleName = "Move PC Mail Down";
             B_BoxDown.Location = new System.Drawing.Point(160, 227);
             B_BoxDown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_BoxDown.Name = "B_BoxDown";
@@ -852,6 +891,7 @@ namespace PKHeX.WinForms
             // 
             // B_BoxUp
             // 
+            B_BoxUp.AccessibleName = "Move PC Mail Up";
             B_BoxUp.Location = new System.Drawing.Point(160, 193);
             B_BoxUp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_BoxUp.Name = "B_BoxUp";
@@ -864,6 +904,7 @@ namespace PKHeX.WinForms
             // 
             // GT_AuthorGender
             // 
+            GT_AuthorGender.AccessibleName = "Author Gender";
             GT_AuthorGender.AllowClick = true;
             GT_AuthorGender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             GT_AuthorGender.Gender = 255;
