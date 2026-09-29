@@ -70,6 +70,7 @@
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species List";
             LB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Species.FormattingEnabled = true;
             LB_Species.ItemHeight = 15;
@@ -92,6 +93,7 @@
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go to Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -119,6 +121,7 @@
             // 
             // B_Modify
             // 
+            B_Modify.AccessibleName = "Set All Species Counts";
             B_Modify.Location = new System.Drawing.Point(191, 20);
             B_Modify.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Modify.Name = "B_Modify";
@@ -145,6 +148,7 @@
             // 
             // NUD_SpeciesCaptured
             // 
+            NUD_SpeciesCaptured.AccessibleName = "Species Captured";
             NUD_SpeciesCaptured.Location = new System.Drawing.Point(100, 20);
             NUD_SpeciesCaptured.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SpeciesCaptured.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -155,6 +159,7 @@
             // 
             // NUD_SpeciesTransferred
             // 
+            NUD_SpeciesTransferred.AccessibleName = "Species Transferred";
             NUD_SpeciesTransferred.Location = new System.Drawing.Point(100, 46);
             NUD_SpeciesTransferred.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_SpeciesTransferred.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -165,6 +170,7 @@
             // 
             // NUD_TotalTransferred
             // 
+            NUD_TotalTransferred.AccessibleName = "Total Transferred";
             NUD_TotalTransferred.Location = new System.Drawing.Point(98, 48);
             NUD_TotalTransferred.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_TotalTransferred.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -175,6 +181,7 @@
             // 
             // NUD_TotalCaptured
             // 
+            NUD_TotalCaptured.AccessibleName = "Total Captured";
             NUD_TotalCaptured.Location = new System.Drawing.Point(98, 22);
             NUD_TotalCaptured.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_TotalCaptured.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
@@ -245,6 +252,7 @@
             // 
             // B_SumTotal
             // 
+            B_SumTotal.AccessibleName = "Sum Totals";
             B_SumTotal.Location = new System.Drawing.Point(191, 22);
             B_SumTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_SumTotal.Name = "B_SumTotal";
