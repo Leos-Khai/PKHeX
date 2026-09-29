@@ -34,6 +34,7 @@ namespace PKHeX.WinForms
             // 
             // PB_BoxSwap
             // 
+            B_BoxSwap.AccessibleName = "Swap With Main Window Box";
             B_BoxSwap.Image = global::PKHeX.WinForms.Properties.Resources.swapBox;
             B_BoxSwap.Location = new System.Drawing.Point(0, 0);
             B_BoxSwap.Name = "B_BoxSwap";
