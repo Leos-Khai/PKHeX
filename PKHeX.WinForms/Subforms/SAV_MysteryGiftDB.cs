@@ -33,7 +33,7 @@ public partial class SAV_MysteryGiftDB : Form
         InitializeComponent();
 
         var settings = new TabPage { Text = "Settings", Name = "Tab_Settings" };
-        var settingsGrid = new PropertyGrid { Dock = DockStyle.Fill };
+        var settingsGrid = new PropertyGrid { Dock = DockStyle.Fill, AccessibleName = "Search Settings" };
         PropertyGridLocalization.Apply(settingsGrid, Main.Settings.MysteryDb, Main.CurrentLanguage);
         settings.Controls.Add(settingsGrid);
         TC_SearchSettings.Controls.Add(settings);
@@ -77,6 +77,14 @@ public partial class SAV_MysteryGiftDB : Form
                     ClickView(slot, e);
             };
 
+            // A plain click does nothing here (Ctrl+click views), so the keyboard action is view.
+            slot.KeyDown += (_, e) =>
+            {
+                if (e.KeyCode is not (Keys.Enter or Keys.Space))
+                    return;
+                ClickView(slot, e);
+                e.Handled = true;
+            };
             slot.ContextMenuStrip = mnu;
             slot.MouseEnter += (_, _) => ShowHoverTextForSlot(slot);
             slot.Enter += (_, _) =>
@@ -85,8 +93,13 @@ public partial class SAV_MysteryGiftDB : Form
                 if (index < 0)
                     return;
                 index += (SCR_Box.Value * RES_MIN);
+                // The grid's generated row/column name is meaningless when narrated; the number also shifts as the results scroll.
+                slot.AccessibleName = $"Result {index + 1}";
                 if (index >= Results.Count)
+                {
+                    slot.AccessibleDescription = null; // don't narrate the previous result in an empty slot
                     return;
+                }
 
                 var enc = Results[index];
                 slot.AccessibleDescription = string.Join(Environment.NewLine, enc.GetTextLines());
