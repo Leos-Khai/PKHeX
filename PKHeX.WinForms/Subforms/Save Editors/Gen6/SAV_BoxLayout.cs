@@ -201,6 +201,7 @@ public partial class SAV_BoxLayout : Form
                 Width = CB_Unlocked.Width - 5,
                 Hexadecimal = true,
                 Value = flags[i],
+                AccessibleName = $"Box Flags {i + 1}",
             };
             FLP_Flags.Controls.Add(flagArr[i]);
         }
