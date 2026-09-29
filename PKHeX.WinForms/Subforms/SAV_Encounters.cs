@@ -38,7 +38,7 @@ public partial class SAV_Encounters : Form
         InitializeComponent();
 
         var settings = new TabPage { Text = "Settings", Name = "Tab_Settings" };
-        var settingsGrid = new PropertyGrid { Dock = DockStyle.Fill };
+        var settingsGrid = new PropertyGrid { Dock = DockStyle.Fill, AccessibleName = "Search Settings" };
         PropertyGridLocalization.Apply(settingsGrid, Main.Settings.EncounterDb, Main.CurrentLanguage);
         settings.Controls.Add(settingsGrid);
         TC_SearchOptions.Controls.Add(settings);
@@ -81,11 +81,24 @@ public partial class SAV_Encounters : Form
                 if (index < 0)
                     return;
                 index += (SCR_Box.Value * RES_MIN);
+                // The grid's generated row/column name is meaningless when narrated; the number also shifts as the results scroll.
+                slot.AccessibleName = $"Result {index + 1}";
                 if (index >= Results.Count)
+                {
+                    slot.AccessibleDescription = null; // don't narrate the previous result in an empty slot
                     return;
+                }
 
                 var enc = Results[index];
                 slot.AccessibleDescription = string.Join(Environment.NewLine, enc.GetTextLines());
+            };
+            // A plain click does nothing here (Ctrl+click views), so the keyboard action is view.
+            slot.KeyDown += (_, e) =>
+            {
+                if (e.KeyCode is not (Keys.Enter or Keys.Space))
+                    return;
+                ClickView(slot, e);
+                e.Handled = true;
             };
             slot.ContextMenuStrip = mnu;
             if (Main.Settings.Hover.HoverSlotShowText)
