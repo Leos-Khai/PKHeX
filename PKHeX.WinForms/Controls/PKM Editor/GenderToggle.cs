@@ -71,7 +71,7 @@ public partial class GenderToggle : UserControl, IGenderToggle
         return value;
     }
 
-    private static string GetGenderName(int value) => value switch
+    public static string GetGenderName(int value) => value switch
     {
         0 => "Male",
         1 => "Female",
