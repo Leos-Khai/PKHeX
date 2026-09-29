@@ -116,6 +116,7 @@ public partial class SizeCP : UserControl
             var label = L_SizeH;
             var value = ss.HeightScalar;
             label.Text = SizeClass[(int)PokeSizeUtil.GetSizeRating(value)];
+            NUD_HeightScalar.AccessibleDescription = $"Size class: {label.Text}";
             SetLabelColorHeightWeight(label);
         }
 
@@ -136,6 +137,7 @@ public partial class SizeCP : UserControl
             var label = L_SizeW;
             var value = ss.WeightScalar;
             label.Text = SizeClass[(int)PokeSizeUtil.GetSizeRating(value)];
+            NUD_WeightScalar.AccessibleDescription = $"Size class: {label.Text}";
             SetLabelColorHeightWeight(label);
         }
 
@@ -163,10 +165,17 @@ public partial class SizeCP : UserControl
             else
                 label.Text = SizeClass[(int)PokeSizeUtil.GetSizeRating(value)];
 
+            // The label's colour is the only cue that a size mark is possible; spell it out.
             if (value is 0 or 255) // Tiny or Jumbo Mark possible.
+            {
                 label.ForeColor = WinFormsUtil.ColorWarn;
+                NUD_Scale.AccessibleDescription = $"Size class: {label.Text}. Tiny or Jumbo mark possible";
+            }
             else
+            {
                 label.ResetForeColor();
+                NUD_Scale.AccessibleDescription = $"Size class: {label.Text}";
+            }
         }
     }
 

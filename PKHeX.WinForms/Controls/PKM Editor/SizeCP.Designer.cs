@@ -72,6 +72,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // MT_CP
             // 
+            MT_CP.AccessibleName = "CP";
             MT_CP.Location = new System.Drawing.Point(0, 1);
             MT_CP.Margin = new System.Windows.Forms.Padding(0);
             MT_CP.Mask = "00000";
@@ -83,6 +84,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CHK_Auto
             // 
+            CHK_Auto.AccessibleName = "Auto Calculate CP and Size";
             CHK_Auto.Location = new System.Drawing.Point(52, 1);
             CHK_Auto.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
             CHK_Auto.Name = "CHK_Auto";
@@ -127,6 +129,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_HeightScalar
             // 
+            NUD_HeightScalar.AccessibleName = "Height Scalar";
             NUD_HeightScalar.Location = new System.Drawing.Point(0, 1);
             NUD_HeightScalar.Margin = new System.Windows.Forms.Padding(0);
             NUD_HeightScalar.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -139,6 +142,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_HeightAbs
             // 
+            TB_HeightAbs.AccessibleName = "Height";
             TB_HeightAbs.Location = new System.Drawing.Point(45, 1);
             TB_HeightAbs.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             TB_HeightAbs.Name = "TB_HeightAbs";
@@ -201,6 +205,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_WeightScalar
             // 
+            NUD_WeightScalar.AccessibleName = "Weight Scalar";
             NUD_WeightScalar.Location = new System.Drawing.Point(0, 1);
             NUD_WeightScalar.Margin = new System.Windows.Forms.Padding(0);
             NUD_WeightScalar.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -213,6 +218,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_WeightAbs
             // 
+            TB_WeightAbs.AccessibleName = "Weight";
             TB_WeightAbs.Location = new System.Drawing.Point(45, 1);
             TB_WeightAbs.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             TB_WeightAbs.Name = "TB_WeightAbs";
@@ -271,6 +277,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_Scale
             // 
+            NUD_Scale.AccessibleName = "Scale";
             NUD_Scale.Location = new System.Drawing.Point(0, 0);
             NUD_Scale.Margin = new System.Windows.Forms.Padding(0);
             NUD_Scale.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
