@@ -1348,6 +1348,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCMS
             // 
+            TB_MCMS.AccessibleName = "Maison Current Multi Super";
             TB_MCMS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCMS.Location = new System.Drawing.Point(121, 120);
             TB_MCMS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1359,6 +1360,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCMN
             // 
+            TB_MCMN.AccessibleName = "Maison Current Multi Normal";
             TB_MCMN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCMN.Location = new System.Drawing.Point(71, 120);
             TB_MCMN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1370,6 +1372,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCRS
             // 
+            TB_MCRS.AccessibleName = "Maison Current Rotation Super";
             TB_MCRS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCRS.Location = new System.Drawing.Point(121, 98);
             TB_MCRS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1381,6 +1384,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCRN
             // 
+            TB_MCRN.AccessibleName = "Maison Current Rotation Normal";
             TB_MCRN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCRN.Location = new System.Drawing.Point(71, 98);
             TB_MCRN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1392,6 +1396,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCTS
             // 
+            TB_MCTS.AccessibleName = "Maison Current Triples Super";
             TB_MCTS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCTS.Location = new System.Drawing.Point(121, 77);
             TB_MCTS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1403,6 +1408,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCTN
             // 
+            TB_MCTN.AccessibleName = "Maison Current Triples Normal";
             TB_MCTN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCTN.Location = new System.Drawing.Point(71, 77);
             TB_MCTN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1414,6 +1420,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCDS
             // 
+            TB_MCDS.AccessibleName = "Maison Current Doubles Super";
             TB_MCDS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCDS.Location = new System.Drawing.Point(121, 55);
             TB_MCDS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1425,6 +1432,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCDN
             // 
+            TB_MCDN.AccessibleName = "Maison Current Doubles Normal";
             TB_MCDN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCDN.Location = new System.Drawing.Point(71, 55);
             TB_MCDN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1436,6 +1444,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCSS
             // 
+            TB_MCSS.AccessibleName = "Maison Current Singles Super";
             TB_MCSS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCSS.Location = new System.Drawing.Point(121, 33);
             TB_MCSS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1447,6 +1456,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MCSN
             // 
+            TB_MCSN.AccessibleName = "Maison Current Singles Normal";
             TB_MCSN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MCSN.Location = new System.Drawing.Point(71, 33);
             TB_MCSN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1557,6 +1567,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBMS
             // 
+            TB_MBMS.AccessibleName = "Maison Best Multi Super";
             TB_MBMS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBMS.Location = new System.Drawing.Point(121, 122);
             TB_MBMS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1568,6 +1579,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBMN
             // 
+            TB_MBMN.AccessibleName = "Maison Best Multi Normal";
             TB_MBMN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBMN.Location = new System.Drawing.Point(71, 122);
             TB_MBMN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1579,6 +1591,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBRS
             // 
+            TB_MBRS.AccessibleName = "Maison Best Rotation Super";
             TB_MBRS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBRS.Location = new System.Drawing.Point(121, 100);
             TB_MBRS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1590,6 +1603,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBRN
             // 
+            TB_MBRN.AccessibleName = "Maison Best Rotation Normal";
             TB_MBRN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBRN.Location = new System.Drawing.Point(71, 100);
             TB_MBRN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1601,6 +1615,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBTS
             // 
+            TB_MBTS.AccessibleName = "Maison Best Triples Super";
             TB_MBTS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBTS.Location = new System.Drawing.Point(121, 80);
             TB_MBTS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1612,6 +1627,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBTN
             // 
+            TB_MBTN.AccessibleName = "Maison Best Triples Normal";
             TB_MBTN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBTN.Location = new System.Drawing.Point(71, 80);
             TB_MBTN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1623,6 +1639,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBDS
             // 
+            TB_MBDS.AccessibleName = "Maison Best Doubles Super";
             TB_MBDS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBDS.Location = new System.Drawing.Point(121, 58);
             TB_MBDS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1634,6 +1651,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBDN
             // 
+            TB_MBDN.AccessibleName = "Maison Best Doubles Normal";
             TB_MBDN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBDN.Location = new System.Drawing.Point(71, 58);
             TB_MBDN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1645,6 +1663,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBSS
             // 
+            TB_MBSS.AccessibleName = "Maison Best Singles Super";
             TB_MBSS.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBSS.Location = new System.Drawing.Point(121, 36);
             TB_MBSS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1656,6 +1675,7 @@ namespace PKHeX.WinForms
             // 
             // TB_MBSN
             // 
+            TB_MBSN.AccessibleName = "Maison Best Singles Normal";
             TB_MBSN.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_MBSN.Location = new System.Drawing.Point(71, 36);
             TB_MBSN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
