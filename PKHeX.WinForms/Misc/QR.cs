@@ -77,6 +77,16 @@ public partial class QR : Form
         var height = qr.Height + 50;
         var img = QRImageUtil.GetQRImageExtended(font, qr, icon, width, height, Lines.Span, extraText);
         PB_QR.Image = img;
+        // The image text (gift/Pokémon details) is drawn into the bitmap; expose it, plus the click action, to screen readers.
+        PB_QR.AccessibleDescription = $"{string.Join(' ', Lines.ToArray())}{extraText}. Press Enter to copy the image to the clipboard.";
+    }
+
+    private void PB_QR_KeyDown(object? sender, KeyEventArgs e)
+    {
+        if (e.KeyCode is not (Keys.Enter or Keys.Space))
+            return;
+        PB_QR_Click(sender!, e);
+        e.Handled = true;
     }
 
     private void PB_QR_Click(object sender, EventArgs e)
