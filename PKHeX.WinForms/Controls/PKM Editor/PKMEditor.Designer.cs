@@ -1069,6 +1069,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // UC_Gender
             // 
+            UC_Gender.AccessibleName = "Gender";
             UC_Gender.AllowClick = false;
             UC_Gender.BackgroundImage = (System.Drawing.Image)resources.GetObject("UC_Gender.BackgroundImage");
             UC_Gender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -2820,6 +2821,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // UC_HTGender
             // 
+            UC_HTGender.AccessibleName = "Handling Trainer Gender";
             UC_HTGender.AllowClick = true;
             UC_HTGender.BackgroundImage = (System.Drawing.Image)resources.GetObject("UC_HTGender.BackgroundImage");
             UC_HTGender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
@@ -2931,6 +2933,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // UC_OTGender
             // 
+            UC_OTGender.AccessibleName = "Original Trainer Gender";
             UC_OTGender.AllowClick = true;
             UC_OTGender.BackgroundImage = (System.Drawing.Image)resources.GetObject("UC_OTGender.BackgroundImage");
             UC_OTGender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;

@@ -32,6 +32,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // GenderToggle
             // 
+            AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             Name = "GenderToggle";
