@@ -40,6 +40,7 @@ public partial class SAV_Pokepuff : Form
         DataGridViewComboBoxColumn dgvPuff = new()
         {
             DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+            HeaderText = "Pokepuff", // headers are hidden; screen readers still narrate them for each cell
         };
         {
             foreach (string t in pfa)
