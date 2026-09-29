@@ -1144,24 +1144,26 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_TeraType2
             // 
+            PB_TeraType2.AccessibleName = "Set Original Tera Type to second type";
+            PB_TeraType2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_TeraType2.Location = new System.Drawing.Point(168, 0);
             PB_TeraType2.Margin = new System.Windows.Forms.Padding(0);
             PB_TeraType2.Name = "PB_TeraType2";
             PB_TeraType2.Size = new System.Drawing.Size(40, 8);
             PB_TeraType2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             PB_TeraType2.TabIndex = 46;
-            PB_TeraType2.TabStop = false;
             PB_TeraType2.Click += PB_TeraType2_Click;
             // 
             // PB_TeraType1
             // 
+            PB_TeraType1.AccessibleName = "Set Original Tera Type to first type";
+            PB_TeraType1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_TeraType1.Location = new System.Drawing.Point(128, 0);
             PB_TeraType1.Margin = new System.Windows.Forms.Padding(0);
             PB_TeraType1.Name = "PB_TeraType1";
             PB_TeraType1.Size = new System.Drawing.Size(40, 8);
             PB_TeraType1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             PB_TeraType1.TabIndex = 47;
-            PB_TeraType1.TabStop = false;
             PB_TeraType1.Click += PB_TeraType1_Click;
             // 
             // L_TeraTypeOriginal
@@ -1214,6 +1216,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_TeraType
             // 
+            PB_TeraType.AccessibleName = "Tera Type";
+            PB_TeraType.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_TeraType.Location = new System.Drawing.Point(214, 0);
             PB_TeraType.Margin = new System.Windows.Forms.Padding(0);
             PB_TeraType.Name = "PB_TeraType";

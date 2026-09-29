@@ -25,10 +25,9 @@ public partial class StatEditor : UserControl
         TB_IVTotal.ForeColor = TB_EVTotal.ForeColor = MT_EVs[0].ForeColor;
 
         // Row and column headers are separate labels, so screen readers can't infer which stat/column a field edits.
-        ReadOnlySpan<string> statNames = ["HP", "Attack", "Defense", "Speed", "Special Attack", "Special Defense"];
-        for (int i = 0; i < statNames.Length; i++)
+        for (int i = 0; i < StatNames.Length; i++)
         {
-            var stat = statNames[i];
+            var stat = StatNames[i];
             MT_Base[i].AccessibleName = $"{stat} Base";
             MT_IVs[i].AccessibleName = $"{stat} IV";
             MT_EVs[i].AccessibleName = $"{stat} EV";
@@ -36,6 +35,9 @@ public partial class StatEditor : UserControl
             MT_GVs[i].AccessibleName = $"{stat} GV";
             MT_Stats[i].AccessibleName = $"{stat} Stat";
         }
+
+        ActivateOnKey(PB_TeraType1, PB_TeraType1_Click);
+        ActivateOnKey(PB_TeraType2, PB_TeraType2_Click);
 
         foreach (var iv in MT_IVs)
             iv.MouseWheel += WinFormsUtil.MouseWheelIncrement1;
@@ -46,6 +48,19 @@ public partial class StatEditor : UserControl
         foreach (var gv in MT_GVs)
             gv.MouseWheel += WinFormsUtil.MouseWheelIncrement1;
     }
+
+    private static readonly string[] StatNames = ["HP", "Attack", "Defense", "Speed", "Special Attack", "Special Defense"];
+
+    /// <summary>
+    /// Lets keyboard users trigger a picture's click action; the handlers ignore the event arguments.
+    /// </summary>
+    private static void ActivateOnKey(SelectablePictureBox pb, Action<object, EventArgs> click) => pb.KeyDown += (sender, e) =>
+    {
+        if (e.KeyCode is not (Keys.Enter or Keys.Space))
+            return;
+        click(sender!, e);
+        e.Handled = true;
+    };
 
     private static Color EVsInvalid => Color.Red;
     private static Color EVsMaxed => Color.LightGreen;
@@ -322,11 +337,13 @@ public partial class StatEditor : UserControl
         {
             tb.ForeColor = Color.Black;
             tb.BackColor = StatHyperTrained;
+            tb.AccessibleDescription = "Hyper trained";
         }
         else
         {
             tb.ResetForeColor();
             tb.ResetBackColor();
+            tb.AccessibleDescription = null;
         }
     }
 
@@ -379,6 +396,7 @@ public partial class StatEditor : UserControl
             {
                 iv.ResetForeColor();
                 iv.ResetBackColor();
+                iv.AccessibleDescription = null;
             }
             return;
         }
@@ -405,7 +423,17 @@ public partial class StatEditor : UserControl
         else
             TB_EVTotal.ResetForeColor();
         EVTip.SetToolTip(TB_EVTotal, $"Remaining: {510 - evtotal}");
+        TB_EVTotal.AccessibleDescription = GetEVTotalDescription(evtotal);
     }
+
+    // The total's background colour is the only cue for these states, so spell them out.
+    private static string GetEVTotalDescription(int evtotal) => EffortValues.GetGrade(evtotal) switch
+    {
+        EffortValueGrade.Illegal => $"Illegal, {evtotal - EffortValues.Max510} over the maximum of 510",
+        EffortValueGrade.MaxLegal => "Maximum of 510 reached",
+        EffortValueGrade.MaxEffective => "Highest effective total, 2 remaining",
+        _ => $"Remaining: {510 - evtotal}",
+    };
 
     private static Color GetEVTotalColor(int evtotal, Color defaultColor) => EffortValues.GetGrade(evtotal) switch
     {
@@ -436,6 +464,10 @@ public partial class StatEditor : UserControl
             var pi = Entity.PersonalInfo;
             PB_TeraType1.SetType(pi.Type1, false); // Personal Info are just regular move types.
             PB_TeraType2.SetType(pi.Type2, false); // Personal Info are just regular move types.
+
+            // These are plain colour swatches, so name the type they stand for.
+            PB_TeraType1.AccessibleName = $"Set Original Tera Type to {GetTypeName(pi.Type1)}";
+            PB_TeraType2.AccessibleName = $"Set Original Tera Type to {GetTypeName(pi.Type2)}";
         }
     }
 
@@ -527,8 +559,12 @@ public partial class StatEditor : UserControl
     public string UpdateNatureModification(Nature nature)
     {
         // Reset Label Colors
-        foreach (var l in L_Stats)
-            l.ResetForeColor();
+        for (int i = 0; i < L_Stats.Length; i++)
+        {
+            L_Stats[i].ResetForeColor();
+            L_Stats[i].AccessibleName = null;
+            MT_Stats[i].AccessibleDescription = null;
+        }
 
         // Set Colored StatLabels only if Nature isn't Neutral
         var (up, dn) = nature.GetNatureModification();
@@ -549,6 +585,12 @@ public partial class StatEditor : UserControl
 
         incr.ForeColor = increase;
         decr.ForeColor = decrease;
+
+        // The label colour is the only cue for the nature's effect.
+        incr.AccessibleName = $"{StatNames[up + 1]} (Nature +)";
+        decr.AccessibleName = $"{StatNames[dn + 1]} (Nature -)";
+        MT_Stats[up + 1].AccessibleDescription = "Increased by nature";
+        MT_Stats[dn + 1].AccessibleDescription = "Decreased by nature";
         return $"+{incr.Text} / -{decr.Text}".Replace(":", string.Empty);
     }
 
@@ -653,16 +695,19 @@ public partial class StatEditor : UserControl
         {
             tb.ForeColor = Color.Black;
             tb.BackColor = EVsInvalid;
+            tb.AccessibleDescription = $"Over the maximum of {max}";
         }
         else if (current == max)
         {
             tb.ForeColor = Color.Black;
             tb.BackColor = StatHyperTrained;
+            tb.AccessibleDescription = "At maximum";
         }
         else
         {
             tb.ResetForeColor();
             tb.ResetBackColor();
+            tb.AccessibleDescription = null;
         }
     }
 
@@ -844,6 +889,14 @@ public partial class StatEditor : UserControl
         CB_TeraTypeOverride.SelectedValue = (int)TeraOverrideNoneValue;
     }
 
+    private static string GetTypeName(byte type)
+    {
+        if (type == TeraTypeUtil.Stellar)
+            type = TeraTypeUtil.StellarTypeDisplayStringIndex;
+        var types = GameInfo.Strings.Types;
+        return type < types.Count ? types[type] : "None";
+    }
+
     private void PB_TeraType1_Click(object sender, EventArgs e) => SetOriginalTeraType(Entity.PersonalInfo.Type1);
     private void PB_TeraType2_Click(object sender, EventArgs e) => SetOriginalTeraType(Entity.PersonalInfo.Type2);
 
@@ -900,6 +953,7 @@ public partial class StatEditor : UserControl
         if (type == TeraOverrideNoneValue)
             type = original;
         PB_TeraType.Image = TypeSpriteUtil.GetTypeSpriteGem(type);
+        PB_TeraType.AccessibleName = $"Tera Type: {GetTypeName(type)}";
         if (!ChangingFields)
             MainEditor.UpdateSprite();
     }
@@ -910,7 +964,7 @@ public partial class StatEditor : UserControl
     }
 }
 
-public sealed class TypePictureBox : PictureBox
+public sealed class TypePictureBox : SelectablePictureBox
 {
     private byte Type;
 
