@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using PKHeX.Core;
 using PKHeX.Drawing.Misc;
+using PKHeX.WinForms.Controls;
 
 namespace PKHeX.WinForms;
 
@@ -48,6 +49,7 @@ public partial class MoveShopEditor : Form
 
         var cType = new DataGridViewImageColumn
         {
+            CellTemplate = new AccessibleImageCell(),
             HeaderText = "Type",
             DisplayIndex = ColumnTypeIcon,
             Width = 40,
@@ -159,6 +161,7 @@ public partial class MoveShopEditor : Form
             row.Cells[ColumnIndex].Value = $"{i + Bias:00}";
             row.Cells[ColumnType].Value = type.ToString("00") + (isValid ? 0 : 1) + names[move]; // type -> valid -> name sorting
             row.Cells[ColumnTypeIcon].Value = TypeSpriteUtil.GetTypeSpriteIconSmall(type);
+            row.Cells[ColumnTypeIcon].Tag = GameInfo.Strings.types[type];
             row.Cells[ColumnName].Value = names[indexes[i]];
         }
     }
