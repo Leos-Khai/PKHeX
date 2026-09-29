@@ -2347,6 +2347,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_Spirit7b
             // 
+            NUD_Spirit7b.AccessibleName = "Spirit";
             NUD_Spirit7b.Location = new System.Drawing.Point(128, 1);
             NUD_Spirit7b.Margin = new System.Windows.Forms.Padding(0);
             NUD_Spirit7b.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -2380,6 +2381,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_Mood7b
             // 
+            NUD_Mood7b.AccessibleName = "Mood";
             NUD_Mood7b.Location = new System.Drawing.Point(128, 1);
             NUD_Mood7b.Margin = new System.Windows.Forms.Padding(0);
             NUD_Mood7b.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -2413,6 +2415,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_WalkingMood
             // 
+            NUD_WalkingMood.AccessibleName = "Walking Mood";
             NUD_WalkingMood.Location = new System.Drawing.Point(128, 1);
             NUD_WalkingMood.Margin = new System.Windows.Forms.Padding(0);
             NUD_WalkingMood.Maximum = new decimal(new int[] { 127, 0, 0, 0 });
@@ -2447,6 +2450,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_PokeStarFame
             // 
+            NUD_PokeStarFame.AccessibleName = "Fame";
             NUD_PokeStarFame.Location = new System.Drawing.Point(128, 1);
             NUD_PokeStarFame.Margin = new System.Windows.Forms.Padding(0);
             NUD_PokeStarFame.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -2645,6 +2649,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CAL_ReceivedDateTime
             // 
+            CAL_ReceivedDateTime.AccessibleName = "Acquired by Current Handler Date";
             CAL_ReceivedDateTime.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TLP_OTMisc.SetColumnSpan(CAL_ReceivedDateTime, 2);
             CAL_ReceivedDateTime.CustomFormat = "yyyy-MM-dd HH:mm:ss tt";
@@ -2684,6 +2689,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_HomeTracker
             // 
+            TB_HomeTracker.AccessibleName = "HOME Tracker";
             TB_HomeTracker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_HomeTracker.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_HomeTracker.Location = new System.Drawing.Point(136, 380);
@@ -2735,6 +2741,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_EC
             // 
+            TB_EC.AccessibleName = "Encryption Constant";
             TB_EC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_EC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_EC.Font = new System.Drawing.Font("Courier New", 8.25F);
@@ -2749,6 +2756,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // BTN_RerollEC
             // 
+            BTN_RerollEC.AccessibleName = "Reroll Encryption Constant";
             BTN_RerollEC.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F);
             BTN_RerollEC.Location = new System.Drawing.Point(64, 0);
             BTN_RerollEC.Margin = new System.Windows.Forms.Padding(0);
@@ -2838,6 +2846,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_HT
             // 
+            TB_HT.AccessibleName = "Handling Trainer Name";
             TB_HT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_HT.Location = new System.Drawing.Point(0, 0);
             TB_HT.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
@@ -2864,6 +2873,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_3DSReg
             // 
+            CB_3DSReg.AccessibleName = "3DS Region";
             CB_3DSReg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_3DSReg.FormattingEnabled = true;
             CB_3DSReg.Location = new System.Drawing.Point(136, 163);
@@ -2886,6 +2896,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_SubRegion
             // 
+            CB_SubRegion.AccessibleName = "State/Province";
             CB_SubRegion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_SubRegion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_SubRegion.DropDownWidth = 180;
@@ -2911,6 +2922,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Country
             // 
+            CB_Country.AccessibleName = "Country";
             CB_Country.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Country.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Country.DropDownWidth = 180;
@@ -2951,6 +2963,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_OT
             // 
+            TB_OT.AccessibleName = "Original Trainer Name";
             TB_OT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_OT.Location = new System.Drawing.Point(0, 0);
             TB_OT.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
@@ -3045,6 +3058,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_ExtraBytes
             // 
+            CB_ExtraBytes.AccessibleName = "Extra Byte Offset";
             CB_ExtraBytes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_ExtraBytes.FormattingEnabled = true;
             CB_ExtraBytes.Location = new System.Drawing.Point(0, 12);
@@ -3056,6 +3070,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_ExtraByte
             // 
+            TB_ExtraByte.AccessibleName = "Extra Byte Value";
             TB_ExtraByte.Location = new System.Drawing.Point(68, 12);
             TB_ExtraByte.Margin = new System.Windows.Forms.Padding(4, 12, 0, 0);
             TB_ExtraByte.Mask = "000";
@@ -3110,6 +3125,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Handler
             // 
+            CB_Handler.AccessibleName = "Current Handler";
             CB_Handler.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Handler.FormattingEnabled = true;
             CB_Handler.Items.AddRange(new object[] { "OT", "HT" });
@@ -3122,6 +3138,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_HTLanguage
             // 
+            CB_HTLanguage.AccessibleName = "Handling Trainer Language";
             CB_HTLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_HTLanguage.FormattingEnabled = true;
             CB_HTLanguage.Location = new System.Drawing.Point(136, 285);
