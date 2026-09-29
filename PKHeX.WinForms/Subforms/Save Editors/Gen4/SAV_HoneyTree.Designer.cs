@@ -78,6 +78,7 @@
             // 
             // CB_TreeList
             // 
+            CB_TreeList.AccessibleName = "Honey Tree";
             CB_TreeList.FormattingEnabled = true;
             CB_TreeList.Items.AddRange(new object[] { "Route 205, Floaroma Town side", "Route 205, Eterna City side", "Route 206", "Route 207", "Route 208", "Route 209", "Route 210, Solaceon Town side", "Route 210, Celestic Town side", "Route 211", "Route 212, Hearthome City side", "Route 212, Pastoria City side", "Route 213", "Route 214", "Route 215", "Route 218", "Route 221", "Route 222", "Valley Windworks", "Eterna Forest", "Fuego Ironworks", "Floaroma Meadow" });
             CB_TreeList.Location = new System.Drawing.Point(12, 42);
@@ -129,6 +130,7 @@
             // 
             // NUD_Time
             // 
+            NUD_Time.AccessibleName = "Time Left (minutes)";
             NUD_Time.Location = new System.Drawing.Point(13, 96);
             NUD_Time.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Time.Maximum = new decimal(new int[] { 1440, 0, 0, 0 });
@@ -138,6 +140,7 @@
             // 
             // NUD_Shake
             // 
+            NUD_Shake.AccessibleName = "Shake";
             NUD_Shake.Location = new System.Drawing.Point(139, 96);
             NUD_Shake.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Shake.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -179,6 +182,7 @@
             // 
             // NUD_Group
             // 
+            NUD_Group.AccessibleName = "Species Group";
             NUD_Group.Location = new System.Drawing.Point(10, 37);
             NUD_Group.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Group.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -199,6 +203,7 @@
             // 
             // NUD_Slot
             // 
+            NUD_Slot.AccessibleName = "Species Slot";
             NUD_Slot.Location = new System.Drawing.Point(59, 37);
             NUD_Slot.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Slot.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
