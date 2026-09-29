@@ -19,6 +19,10 @@ public partial class KChart : Form
     {
         InitializeComponent();
         Icon = Properties.Resources.Icon;
+        // A plain image cell is narrated as "System.Drawing.Bitmap"; these cells narrate their Tag text instead.
+        Sprite.CellTemplate = new PKHeX.WinForms.Controls.AccessibleImageCell();
+        Type1.CellTemplate = new PKHeX.WinForms.Controls.AccessibleImageCell();
+        Type2.CellTemplate = new PKHeX.WinForms.Controls.AccessibleImageCell();
         if (sav is SAV9ZA)
             DGV.Columns.Add(new DataGridViewTextBoxColumn { ReadOnly = true, HeaderText = "Alpha Move" });
         DGV.AllowUserToOrderColumns = true;
@@ -64,6 +68,7 @@ public partial class KChart : Form
 
         var bst = p.BST;
         cells[c++].Value = species.ToString(SpeciesNumberFormat) + (form > 0 ? $"-{form:00}" : string.Empty);
+        cells[c].Tag = name;
         cells[c++].Value = SpriteUtil.GetSprite(species, form, 0, 0, 0, false, Shiny.Never, SAV.Context);
         cells[c++].Value = name;
         cells[c++].Value = GetIsNative(p, species);
@@ -71,7 +76,10 @@ public partial class KChart : Form
         cells[c].Style.ForeColor = Color.Black;
         cells[c++].Value = bst.ToString("000");
         cells[c++].Value = p.CatchRate.ToString("000");
+        var types = GameInfo.Strings.Types;
+        cells[c].Tag = types[p.Type1];
         cells[c++].Value = TypeSpriteUtil.GetTypeSpriteWide(p.Type1, SAV.Generation);
+        cells[c].Tag = p.Type1 == p.Type2 ? null : types[p.Type2]; // mono-type: the blank cell stays silent
         cells[c++].Value = p.Type1 == p.Type2 ? SpriteUtil.Spriter.Transparent : TypeSpriteUtil.GetTypeSpriteWide(p.Type2, SAV.Generation);
         Stat(cells[c++], p.HP);
         Stat(cells[c++], p.ATK);

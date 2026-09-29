@@ -51,6 +51,7 @@ namespace PKHeX.WinForms
             // 
             // DGV
             // 
+            DGV.AccessibleName = "Base Stats Chart";
             DGV.AllowUserToAddRows = false;
             DGV.AllowUserToDeleteRows = false;
             DGV.AllowUserToResizeColumns = false;
