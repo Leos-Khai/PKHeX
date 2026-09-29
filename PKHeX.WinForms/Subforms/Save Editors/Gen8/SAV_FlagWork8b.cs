@@ -99,6 +99,7 @@ public sealed partial class SAV_FlagWork8b : Form
                     Margin = Padding.Empty,
                     Checked = SAV.FlagWork.GetFlag(index),
                     AutoSize = true,
+                    AccessibleName = name,
                 };
                 lbl.Click += (_, _) => chk.Checked ^= true;
                 chk.CheckedChanged += (_, _) =>
@@ -112,7 +113,7 @@ public sealed partial class SAV_FlagWork8b : Form
             }
 
             ApplyBoolFilter(panel, rows, string.Empty);
-            var search = CreateSearchBox(text => ApplyBoolFilter(panel, rows, text));
+            var search = CreateSearchBox(text => ApplyBoolFilter(panel, rows, text), "Search Event Flags");
             var host = CreateSearchHost(search, panel);
             tab.Controls.Add(host);
         }
@@ -144,6 +145,7 @@ public sealed partial class SAV_FlagWork8b : Form
                     Margin = Padding.Empty,
                     Checked = SAV.FlagWork.GetSystemFlag(index),
                     AutoSize = true,
+                    AccessibleName = name,
                 };
                 lbl.Click += (_, _) => chk.Checked ^= true;
                 chk.CheckedChanged += (_, _) =>
@@ -157,7 +159,7 @@ public sealed partial class SAV_FlagWork8b : Form
             }
 
             ApplyBoolFilter(panel, rows, string.Empty);
-            var search = CreateSearchBox(text => ApplyBoolFilter(panel, rows, text));
+            var search = CreateSearchBox(text => ApplyBoolFilter(panel, rows, text), "Search System Flags");
             var host = CreateSearchHost(search, panel);
             tab.Controls.Add(host);
         }
@@ -189,6 +191,7 @@ public sealed partial class SAV_FlagWork8b : Form
                     Minimum = int.MinValue,
                     Margin = Padding.Empty,
                     Width = 85,
+                    AccessibleName = entry.Name,
                 };
 
                 var map = entry.PredefinedValues.Select(z => new ComboItem(z.Name, z.Value)).ToList();
@@ -197,6 +200,7 @@ public sealed partial class SAV_FlagWork8b : Form
                     Margin = Padding.Empty,
                     Width = 165,
                     DropDownStyle = ComboBoxStyle.DropDownList,
+                    AccessibleName = $"{entry.Name} Predefined Value",
                     BindingContext = BindingContext,
                     DropDownWidth = Width + 100,
                 };
@@ -241,7 +245,7 @@ public sealed partial class SAV_FlagWork8b : Form
             }
 
             ApplyWorkFilter(panel, rows, string.Empty);
-            var search = CreateSearchBox(text => ApplyWorkFilter(panel, rows, text));
+            var search = CreateSearchBox(text => ApplyWorkFilter(panel, rows, text), "Search Work Values");
             var host = CreateSearchHost(search, panel);
             tab.Controls.Add(host);
         }
@@ -290,10 +294,11 @@ public sealed partial class SAV_FlagWork8b : Form
         panel.ResumeLayout();
     }
 
-    private static TextBox CreateSearchBox(Action<string> applyFilter)
+    private static TextBox CreateSearchBox(Action<string> applyFilter, string accessibleName)
     {
         var box = new TextBox
         {
+            AccessibleName = accessibleName,
             PlaceholderText = "Search...",
             Dock = DockStyle.Top,
             Margin = Padding.Empty,

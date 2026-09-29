@@ -104,6 +104,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_WorkIndex
             // 
+            NUD_WorkIndex.AccessibleName = "Constant Index";
             NUD_WorkIndex.Location = new System.Drawing.Point(102, 81);
             NUD_WorkIndex.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_WorkIndex.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
@@ -126,6 +127,7 @@ namespace PKHeX.WinForms
             // 
             // B_ApplyFlagSystem
             // 
+            B_ApplyFlagSystem.AccessibleName = "Apply System Flag";
             B_ApplyFlagSystem.Location = new System.Drawing.Point(290, 44);
             B_ApplyFlagSystem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ApplyFlagSystem.Name = "B_ApplyFlagSystem";
@@ -137,6 +139,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_System
             // 
+            NUD_System.AccessibleName = "System Flag Index";
             NUD_System.Location = new System.Drawing.Point(186, 46);
             NUD_System.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_System.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
@@ -159,6 +162,7 @@ namespace PKHeX.WinForms
             // 
             // B_ApplyFlag
             // 
+            B_ApplyFlag.AccessibleName = "Apply Event Flag";
             B_ApplyFlag.Location = new System.Drawing.Point(290, 17);
             B_ApplyFlag.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ApplyFlag.Name = "B_ApplyFlag";
@@ -170,6 +174,7 @@ namespace PKHeX.WinForms
             // 
             // B_ApplyWork
             // 
+            B_ApplyWork.AccessibleName = "Apply Constant";
             B_ApplyWork.Location = new System.Drawing.Point(290, 81);
             B_ApplyWork.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ApplyWork.Name = "B_ApplyWork";
@@ -181,6 +186,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Work
             // 
+            NUD_Work.AccessibleName = "Constant Value";
             NUD_Work.Location = new System.Drawing.Point(186, 81);
             NUD_Work.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Work.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
@@ -191,6 +197,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Flag
             // 
+            NUD_Flag.AccessibleName = "Event Flag Index";
             NUD_Flag.Location = new System.Drawing.Point(186, 20);
             NUD_Flag.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Flag.Maximum = new decimal(new int[] { 3999, 0, 0, 0 });
@@ -240,6 +247,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Diff
             // 
+            RTB_Diff.AccessibleName = "Flag Differences";
             RTB_Diff.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             RTB_Diff.Location = new System.Drawing.Point(4, 84);
             RTB_Diff.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -251,6 +259,7 @@ namespace PKHeX.WinForms
             // 
             // TB_NewSAV
             // 
+            TB_NewSAV.AccessibleName = "New Save File Path";
             TB_NewSAV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_NewSAV.Location = new System.Drawing.Point(108, 54);
             TB_NewSAV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -261,6 +270,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OldSAV
             // 
+            TB_OldSAV.AccessibleName = "Old Save File Path";
             TB_OldSAV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_OldSAV.Location = new System.Drawing.Point(108, 24);
             TB_OldSAV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
