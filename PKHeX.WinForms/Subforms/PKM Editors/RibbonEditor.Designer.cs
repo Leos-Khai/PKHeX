@@ -160,6 +160,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Affixed
             // 
+            CB_Affixed.AccessibleName = "Affixed Ribbon";
             CB_Affixed.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Affixed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Affixed.DropDownWidth = 200;
