@@ -195,26 +195,13 @@ public sealed partial class SAV_Inventory : Form
 
     private static DataGridViewImageColumn GetSpriteColumn() => new()
     {
-        CellTemplate = new SpriteCell(),
+        CellTemplate = new AccessibleImageCell(),
         HeaderText = string.Empty,
         DisplayIndex = ColumnSprite,
         ReadOnly = true,
         ImageLayout = DataGridViewImageCellLayout.Zoom,
         Width = 30,
     };
-
-    /// <summary>
-    /// Sprite cell that stays silent for screen readers; otherwise every row is narrated starting with "System.Drawing.Bitmap".
-    /// </summary>
-    private sealed class SpriteCell : DataGridViewImageCell
-    {
-        protected override AccessibleObject CreateAccessibilityInstance() => new SpriteCellAccessibleObject(this);
-
-        private sealed class SpriteCellAccessibleObject(DataGridViewCell owner) : DataGridViewCellAccessibleObject(owner)
-        {
-            public override string Value => string.Empty;
-        }
-    }
 
     private DataGridViewComboBoxColumn GetItemColumn(int c, string name = "Item") => new()
     {
