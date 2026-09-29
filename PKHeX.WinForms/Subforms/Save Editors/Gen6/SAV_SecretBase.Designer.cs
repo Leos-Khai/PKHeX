@@ -138,6 +138,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Bases
             // 
+            LB_Bases.AccessibleName = "Secret Bases";
             LB_Bases.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Bases.FormattingEnabled = true;
             LB_Bases.Location = new System.Drawing.Point(14, 29);
@@ -223,6 +224,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FPKM
             // 
+            NUD_FPKM.AccessibleName = "Participant";
             NUD_FPKM.Location = new System.Drawing.Point(107, 10);
             NUD_FPKM.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FPKM.Maximum = new decimal(new int[] { 2, 0, 0, 0 });
@@ -233,6 +235,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPEIV
             // 
+            TB_SPEIV.AccessibleName = "Speed IV";
             TB_SPEIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPEIV.Location = new System.Drawing.Point(374, 167);
             TB_SPEIV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -244,6 +247,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PPu3
             // 
+            CB_PPu3.AccessibleName = "Move 3 PP Ups";
             CB_PPu3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PPu3.FormattingEnabled = true;
             CB_PPu3.Items.AddRange(new object[] { "0", "1", "2", "3" });
@@ -255,6 +259,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPDIV
             // 
+            TB_SPDIV.AccessibleName = "Special Defense IV";
             TB_SPDIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPDIV.Location = new System.Drawing.Point(374, 141);
             TB_SPDIV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -266,6 +271,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PPu4
             // 
+            CB_PPu4.AccessibleName = "Move 4 PP Ups";
             CB_PPu4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PPu4.FormattingEnabled = true;
             CB_PPu4.Items.AddRange(new object[] { "0", "1", "2", "3" });
@@ -287,6 +293,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PPu2
             // 
+            CB_PPu2.AccessibleName = "Move 2 PP Ups";
             CB_PPu2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PPu2.FormattingEnabled = true;
             CB_PPu2.Items.AddRange(new object[] { "0", "1", "2", "3" });
@@ -298,6 +305,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPAIV
             // 
+            TB_SPAIV.AccessibleName = "Special Attack IV";
             TB_SPAIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPAIV.Location = new System.Drawing.Point(374, 115);
             TB_SPAIV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -329,6 +337,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move4
             // 
+            CB_Move4.AccessibleName = "Move 4";
             CB_Move4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Move4.FormattingEnabled = true;
@@ -340,6 +349,7 @@ namespace PKHeX.WinForms
             // 
             // TB_DEFIV
             // 
+            TB_DEFIV.AccessibleName = "Defense IV";
             TB_DEFIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_DEFIV.Location = new System.Drawing.Point(374, 89);
             TB_DEFIV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -351,6 +361,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Shiny
             // 
+            CHK_Shiny.AccessibleName = "Shiny";
             CHK_Shiny.AutoSize = true;
             CHK_Shiny.Location = new System.Drawing.Point(162, 94);
             CHK_Shiny.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -372,6 +383,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PPu1
             // 
+            CB_PPu1.AccessibleName = "Move 1 PP Ups";
             CB_PPu1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PPu1.FormattingEnabled = true;
             CB_PPu1.Items.AddRange(new object[] { "0", "1", "2", "3" });
@@ -383,6 +395,7 @@ namespace PKHeX.WinForms
             // 
             // TB_ATKIV
             // 
+            TB_ATKIV.AccessibleName = "Attack IV";
             TB_ATKIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_ATKIV.Location = new System.Drawing.Point(374, 63);
             TB_ATKIV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -394,6 +407,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Form
             // 
+            CB_Form.AccessibleName = "Form";
             CB_Form.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Form.DropDownWidth = 85;
             CB_Form.Enabled = false;
@@ -417,6 +431,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move3
             // 
+            CB_Move3.AccessibleName = "Move 3";
             CB_Move3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Move3.FormattingEnabled = true;
@@ -428,6 +443,7 @@ namespace PKHeX.WinForms
             // 
             // TB_HPIV
             // 
+            TB_HPIV.AccessibleName = "HP IV";
             TB_HPIV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_HPIV.Location = new System.Drawing.Point(374, 37);
             TB_HPIV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -439,6 +455,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Level
             // 
+            TB_Level.AccessibleName = "Level";
             TB_Level.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Level.Location = new System.Drawing.Point(162, 63);
             TB_Level.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -460,6 +477,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move2
             // 
+            CB_Move2.AccessibleName = "Move 2";
             CB_Move2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Move2.FormattingEnabled = true;
@@ -471,6 +489,7 @@ namespace PKHeX.WinForms
             // 
             // TB_ATKEV
             // 
+            TB_ATKEV.AccessibleName = "Attack EV";
             TB_ATKEV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_ATKEV.Location = new System.Drawing.Point(407, 63);
             TB_ATKEV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -482,6 +501,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Friendship
             // 
+            TB_Friendship.AccessibleName = "Friendship";
             TB_Friendship.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Friendship.Location = new System.Drawing.Point(418, 239);
             TB_Friendship.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -502,6 +522,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move1
             // 
+            CB_Move1.AccessibleName = "Move 1";
             CB_Move1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Move1.FormattingEnabled = true;
@@ -513,6 +534,7 @@ namespace PKHeX.WinForms
             // 
             // TB_DEFEV
             // 
+            TB_DEFEV.AccessibleName = "Defense EV";
             TB_DEFEV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_DEFEV.Location = new System.Drawing.Point(407, 89);
             TB_DEFEV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -524,6 +546,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Ball
             // 
+            CB_Ball.AccessibleName = "Ball";
             CB_Ball.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Ball.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Ball.FormattingEnabled = true;
@@ -555,6 +578,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPEEV
             // 
+            TB_SPEEV.AccessibleName = "Speed EV";
             TB_SPEEV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPEEV.Location = new System.Drawing.Point(407, 167);
             TB_SPEEV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -566,6 +590,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.FormattingEnabled = true;
@@ -588,6 +613,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Ability
             // 
+            CB_Ability.AccessibleName = "Ability";
             CB_Ability.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Ability.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Ability.FormattingEnabled = true;
@@ -599,6 +625,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPDEV
             // 
+            TB_SPDEV.AccessibleName = "Special Defense EV";
             TB_SPDEV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPDEV.Location = new System.Drawing.Point(407, 141);
             TB_SPDEV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -610,6 +637,7 @@ namespace PKHeX.WinForms
             // 
             // CB_HeldItem
             // 
+            CB_HeldItem.AccessibleName = "Held Item";
             CB_HeldItem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_HeldItem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_HeldItem.FormattingEnabled = true;
@@ -631,6 +659,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Nature
             // 
+            CB_Nature.AccessibleName = "Nature";
             CB_Nature.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Nature.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Nature.FormattingEnabled = true;
@@ -642,6 +671,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SPAEV
             // 
+            TB_SPAEV.AccessibleName = "Special Attack EV";
             TB_SPAEV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_SPAEV.Location = new System.Drawing.Point(407, 115);
             TB_SPAEV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -665,6 +695,7 @@ namespace PKHeX.WinForms
             // 
             // TB_EC
             // 
+            TB_EC.AccessibleName = "Encryption Constant";
             TB_EC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_EC.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_EC.Font = new System.Drawing.Font("Courier New", 8.25F);
@@ -688,6 +719,7 @@ namespace PKHeX.WinForms
             // 
             // TB_HPEV
             // 
+            TB_HPEV.AccessibleName = "HP EV";
             TB_HPEV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_HPEV.Location = new System.Drawing.Point(407, 37);
             TB_HPEV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -712,6 +744,7 @@ namespace PKHeX.WinForms
             // 
             // PG_Base
             // 
+            PG_Base.AccessibleName = "Secret Base Properties";
             PG_Base.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_Base.BackColor = System.Drawing.SystemColors.Control;
             PG_Base.HelpVisible = false;
@@ -767,6 +800,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FX
             // 
+            NUD_FX.AccessibleName = "X Coordinate";
             NUD_FX.Location = new System.Drawing.Point(102, 92);
             NUD_FX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FX.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -776,6 +810,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FY
             // 
+            NUD_FY.AccessibleName = "Y Coordinate";
             NUD_FY.Location = new System.Drawing.Point(102, 117);
             NUD_FY.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FY.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -805,6 +840,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FObjType
             // 
+            NUD_FObjType.AccessibleName = "Decoration";
             NUD_FObjType.Location = new System.Drawing.Point(102, 62);
             NUD_FObjType.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FObjType.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -826,6 +862,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FRot
             // 
+            NUD_FRot.AccessibleName = "Rotation";
             NUD_FRot.Location = new System.Drawing.Point(102, 147);
             NUD_FRot.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FRot.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -835,6 +872,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FObject
             // 
+            NUD_FObject.AccessibleName = "Object Index";
             NUD_FObject.Location = new System.Drawing.Point(102, 21);
             NUD_FObject.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FObject.Maximum = new decimal(new int[] { 27, 0, 0, 0 });
@@ -880,6 +918,7 @@ namespace PKHeX.WinForms
             // 
             // B_FDelete
             // 
+            B_FDelete.AccessibleName = "Delete Secret Base";
             B_FDelete.Location = new System.Drawing.Point(112, 29);
             B_FDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_FDelete.Name = "B_FDelete";
@@ -913,6 +952,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_CapturedRecord
             // 
+            NUD_CapturedRecord.AccessibleName = "Flags Captured";
             NUD_CapturedRecord.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             NUD_CapturedRecord.Location = new System.Drawing.Point(130, 434);
             NUD_CapturedRecord.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
