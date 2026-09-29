@@ -48,6 +48,7 @@ namespace PKHeX.WinForms
             // 
             // dgv
             // 
+            dgv.AccessibleName = "Zygarde Cells";
             dgv.AllowUserToAddRows = false;
             dgv.AllowUserToDeleteRows = false;
             dgv.AllowUserToResizeColumns = false;
@@ -115,6 +116,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Cells
             // 
+            NUD_CellsTotal.AccessibleName = "Zygarde Cells Stored";
             NUD_CellsTotal.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             NUD_CellsTotal.Location = new System.Drawing.Point(105, 357);
             NUD_CellsTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -159,6 +161,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Collected
             // 
+            NUD_CellsCollected.AccessibleName = "Zygarde Cells Collected";
             NUD_CellsCollected.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             NUD_CellsCollected.Location = new System.Drawing.Point(105, 328);
             NUD_CellsCollected.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
