@@ -40,6 +40,14 @@ public partial class SAV_Wondercard : Form
             pb.DragDrop += BoxSlot_DragDrop;
             pb.DragEnter += BoxSlot_DragEnter;
             pb.MouseDown += BoxSlot_MouseDown;
+            // A plain click starts a drag, so "view" (Ctrl+click) is the keyboard action; the context menu already offers set and delete.
+            pb.KeyDown += (_, e) =>
+            {
+                if (e.KeyCode is not (Keys.Enter or Keys.Space))
+                    return;
+                ClickView(pb, e);
+                e.Handled = true;
+            };
             pb.ContextMenuStrip = mnuVSD;
             pb.MouseHover += (_, _) => Summary.Show(pb, Album[pba.IndexOf(pb)]);
             pb.Enter += (_, _) =>
@@ -716,7 +724,7 @@ public partial class SAV_Wondercard : Form
             row.Controls.Add(GetLabel($"{start}-{start + count - 1}"));
             for (int j = 0; j < count; j++)
             {
-                var p = GetPictureBox(spriter.Width, spriter.Height, $"Row {i} Slot {start + j}");
+                var p = GetPictureBox(spriter.Width, spriter.Height, $"Wonder Card {start + j}");
                 row.Controls.Add(p);
                 pb.Add(p);
             }
