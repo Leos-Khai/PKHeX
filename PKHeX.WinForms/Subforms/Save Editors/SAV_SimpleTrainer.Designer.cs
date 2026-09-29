@@ -198,6 +198,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_AdventureStartDate
             // 
+            CAL_AdventureStartDate.AccessibleName = "Game Started Date";
             CAL_AdventureStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_AdventureStartDate.Location = new System.Drawing.Point(105, 59);
             CAL_AdventureStartDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -210,6 +211,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_HoFDate
             // 
+            CAL_HoFDate.AccessibleName = "Hall of Fame Date";
             CAL_HoFDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_HoFDate.Location = new System.Drawing.Point(105, 123);
             CAL_HoFDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -231,6 +233,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Seconds
             // 
+            MT_Seconds.AccessibleName = "Seconds Played";
             MT_Seconds.Location = new System.Drawing.Point(194, 20);
             MT_Seconds.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Seconds.Mask = "00";
@@ -241,6 +244,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Hours
             // 
+            MT_Hours.AccessibleName = "Hours Played";
             MT_Hours.Location = new System.Drawing.Point(51, 20);
             MT_Hours.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Hours.Mask = "00000";
@@ -271,6 +275,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Minutes
             // 
+            MT_Minutes.AccessibleName = "Minutes Played";
             MT_Minutes.Location = new System.Drawing.Point(130, 20);
             MT_Minutes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Minutes.Mask = "00";
@@ -291,6 +296,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_AdventureStartTime
             // 
+            CAL_AdventureStartTime.AccessibleName = "Game Started Time";
             CAL_AdventureStartTime.CustomFormat = "HH:mm:ss";
             CAL_AdventureStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             CAL_AdventureStartTime.Location = new System.Drawing.Point(135, 81);
@@ -305,6 +311,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_HoFTime
             // 
+            CAL_HoFTime.AccessibleName = "Hall of Fame Time";
             CAL_HoFTime.CustomFormat = "HH:mm:ss";
             CAL_HoFTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             CAL_HoFTime.Location = new System.Drawing.Point(135, 145);
@@ -448,6 +455,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Z
             // 
+            NUD_Z.AccessibleName = "Z Coordinate";
             NUD_Z.Location = new System.Drawing.Point(108, 78);
             NUD_Z.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Z.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -459,6 +467,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_M
             // 
+            NUD_M.AccessibleName = "Current Map";
             NUD_M.Location = new System.Drawing.Point(108, 18);
             NUD_M.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_M.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
@@ -469,6 +478,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Y
             // 
+            NUD_Y.AccessibleName = "Y Coordinate";
             NUD_Y.Location = new System.Drawing.Point(108, 108);
             NUD_Y.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_Y.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -479,6 +489,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_X
             // 
+            NUD_X.AccessibleName = "X Coordinate";
             NUD_X.Location = new System.Drawing.Point(108, 48);
             NUD_X.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_X.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
