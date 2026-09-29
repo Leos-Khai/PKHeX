@@ -209,6 +209,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UploadCount
             // 
+            NUD_UploadCount.AccessibleName = "Upload Count";
             NUD_UploadCount.Anchor = System.Windows.Forms.AnchorStyles.Left;
             NUD_UploadCount.Location = new System.Drawing.Point(102, 34);
             NUD_UploadCount.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
@@ -260,6 +261,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_DexSkin
             // 
+            NUD_DexSkin.AccessibleName = "Pokédex Skin";
             NUD_DexSkin.Anchor = System.Windows.Forms.AnchorStyles.Left;
             NUD_DexSkin.Location = new System.Drawing.Point(102, 239);
             NUD_DexSkin.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -269,6 +271,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_CGearSkin
             // 
+            NUD_CGearSkin.AccessibleName = "C-Gear Skin";
             NUD_CGearSkin.Anchor = System.Windows.Forms.AnchorStyles.Left;
             NUD_CGearSkin.Location = new System.Drawing.Point(102, 208);
             NUD_CGearSkin.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -278,6 +281,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Musical
             // 
+            NUD_Musical.AccessibleName = "Musical";
             NUD_Musical.Anchor = System.Windows.Forms.AnchorStyles.Left;
             NUD_Musical.Location = new System.Drawing.Point(102, 177);
             NUD_Musical.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -309,6 +313,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UploadStatus
             // 
+            NUD_UploadStatus.AccessibleName = "Upload Status";
             NUD_UploadStatus.Anchor = System.Windows.Forms.AnchorStyles.Left;
             NUD_UploadStatus.Location = new System.Drawing.Point(102, 65);
             NUD_UploadStatus.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -330,6 +335,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DateSet
             // 
+            CHK_DateSet.AccessibleName = "Upload Date Set";
             CHK_DateSet.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CHK_DateSet.AutoSize = true;
             CHK_DateSet.Location = new System.Drawing.Point(0, 5);
@@ -343,6 +349,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_UploadDate
             // 
+            CAL_UploadDate.AccessibleName = "Upload Date";
             CAL_UploadDate.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CAL_UploadDate.Location = new System.Drawing.Point(48, 3);
             CAL_UploadDate.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
@@ -363,6 +370,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Items
             // 
+            DGV_Items.AccessibleName = "Items";
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ControlLight;
             DGV_Items.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             DGV_Items.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -420,6 +428,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Furniture5
             // 
+            TB_Furniture5.AccessibleName = "Furniture 5 Name";
             TB_Furniture5.Location = new System.Drawing.Point(81, 135);
             TB_Furniture5.Name = "TB_Furniture5";
             TB_Furniture5.Size = new System.Drawing.Size(160, 25);
@@ -427,6 +436,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Furniture4
             // 
+            TB_Furniture4.AccessibleName = "Furniture 4 Name";
             TB_Furniture4.Location = new System.Drawing.Point(81, 104);
             TB_Furniture4.Name = "TB_Furniture4";
             TB_Furniture4.Size = new System.Drawing.Size(160, 25);
@@ -434,6 +444,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Furniture3
             // 
+            TB_Furniture3.AccessibleName = "Furniture 3 Name";
             TB_Furniture3.Location = new System.Drawing.Point(81, 73);
             TB_Furniture3.Name = "TB_Furniture3";
             TB_Furniture3.Size = new System.Drawing.Size(160, 25);
@@ -441,6 +452,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Furniture2
             // 
+            TB_Furniture2.AccessibleName = "Furniture 2 Name";
             TB_Furniture2.Location = new System.Drawing.Point(81, 42);
             TB_Furniture2.Name = "TB_Furniture2";
             TB_Furniture2.Size = new System.Drawing.Size(160, 25);
@@ -448,6 +460,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Furniture1
             // 
+            NUD_Furniture1.AccessibleName = "Furniture 1 Value";
             NUD_Furniture1.Location = new System.Drawing.Point(11, 11);
             NUD_Furniture1.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_Furniture1.Name = "NUD_Furniture1";
@@ -456,6 +469,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Furniture2
             // 
+            NUD_Furniture2.AccessibleName = "Furniture 2 Value";
             NUD_Furniture2.Location = new System.Drawing.Point(11, 42);
             NUD_Furniture2.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_Furniture2.Name = "NUD_Furniture2";
@@ -464,6 +478,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Furniture3
             // 
+            NUD_Furniture3.AccessibleName = "Furniture 3 Value";
             NUD_Furniture3.Location = new System.Drawing.Point(11, 73);
             NUD_Furniture3.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_Furniture3.Name = "NUD_Furniture3";
@@ -472,6 +487,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Furniture4
             // 
+            NUD_Furniture4.AccessibleName = "Furniture 4 Value";
             NUD_Furniture4.Location = new System.Drawing.Point(11, 104);
             NUD_Furniture4.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_Furniture4.Name = "NUD_Furniture4";
@@ -480,6 +496,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Furniture5
             // 
+            NUD_Furniture5.AccessibleName = "Furniture 5 Value";
             NUD_Furniture5.Location = new System.Drawing.Point(11, 135);
             NUD_Furniture5.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_Furniture5.Name = "NUD_Furniture5";
@@ -488,6 +505,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Furniture1
             // 
+            TB_Furniture1.AccessibleName = "Furniture 1 Name";
             TB_Furniture1.Location = new System.Drawing.Point(81, 11);
             TB_Furniture1.Name = "TB_Furniture1";
             TB_Furniture1.Size = new System.Drawing.Size(160, 25);
@@ -495,6 +513,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_FurnitureSynchronized
             // 
+            CHK_FurnitureSynchronized.AccessibleName = "Furniture Synchronized";
             CHK_FurnitureSynchronized.AutoSize = true;
             CHK_FurnitureSynchronized.Location = new System.Drawing.Point(81, 166);
             CHK_FurnitureSynchronized.Name = "CHK_FurnitureSynchronized";
@@ -505,6 +524,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FurnitureSelected
             // 
+            NUD_FurnitureSelected.AccessibleName = "Selected Furniture";
             NUD_FurnitureSelected.Location = new System.Drawing.Point(81, 193);
             NUD_FurnitureSelected.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_FurnitureSelected.Name = "NUD_FurnitureSelected";
