@@ -210,6 +210,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OTName
             // 
+            TB_OTName.AccessibleName = "Trainer Name";
             TB_OTName.DisplayContext = EntityContext.Gen8;
             TB_OTName.Location = new System.Drawing.Point(115, 8);
             TB_OTName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -233,6 +234,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Money
             // 
+            MT_Money.AccessibleName = "Money";
             MT_Money.Location = new System.Drawing.Point(139, 33);
             MT_Money.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Money.Mask = "0000000";
@@ -333,6 +335,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_LastSavedDate
             // 
+            CAL_LastSavedDate.AccessibleName = "Last Saved Date";
             CAL_LastSavedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_LastSavedDate.Location = new System.Drawing.Point(104, 127);
             CAL_LastSavedDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -364,6 +367,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Seconds
             // 
+            MT_Seconds.AccessibleName = "Seconds Played";
             MT_Seconds.Location = new System.Drawing.Point(194, 16);
             MT_Seconds.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Seconds.Mask = "00";
@@ -375,6 +379,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Minutes
             // 
+            MT_Minutes.AccessibleName = "Minutes Played";
             MT_Minutes.Location = new System.Drawing.Point(130, 16);
             MT_Minutes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Minutes.Mask = "00";
@@ -396,6 +401,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Hours
             // 
+            MT_Hours.AccessibleName = "Hours Played";
             MT_Hours.Location = new System.Drawing.Point(51, 16);
             MT_Hours.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Hours.Mask = "00000";
@@ -416,6 +422,7 @@ namespace PKHeX.WinForms
             // 
             // B_MaxCash
             // 
+            B_MaxCash.AccessibleName = "Max Money";
             B_MaxCash.Location = new System.Drawing.Point(201, 33);
             B_MaxCash.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_MaxCash.Name = "B_MaxCash";
@@ -426,6 +433,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Language
             // 
+            CB_Language.AccessibleName = "Language";
             CB_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Language.FormattingEnabled = true;
             CB_Language.Location = new System.Drawing.Point(115, 120);
@@ -436,6 +444,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Game
             // 
+            CB_Game.AccessibleName = "Game Version";
             CB_Game.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Game.FormattingEnabled = true;
             CB_Game.Items.AddRange(new object[] { "Sword", "Shield" });
@@ -447,6 +456,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Gender
             // 
+            CB_Gender.AccessibleName = "Gender";
             CB_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Gender.FormattingEnabled = true;
             CB_Gender.Items.AddRange(new object[] { "♂", "♀" });
@@ -755,6 +765,7 @@ namespace PKHeX.WinForms
             // 
             // MT_RotoRally
             // 
+            MT_RotoRally.AccessibleName = "Roto Rally Score";
             MT_RotoRally.Location = new System.Drawing.Point(386, 115);
             MT_RotoRally.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_RotoRally.Mask = "00000";
@@ -765,6 +776,7 @@ namespace PKHeX.WinForms
             // 
             // B_MaxWatt
             // 
+            B_MaxWatt.AccessibleName = "Max Watts";
             B_MaxWatt.Location = new System.Drawing.Point(201, 60);
             B_MaxWatt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_MaxWatt.Name = "B_MaxWatt";
@@ -775,6 +787,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Watt
             // 
+            MT_Watt.AccessibleName = "Watts";
             MT_Watt.Location = new System.Drawing.Point(139, 61);
             MT_Watt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Watt.Mask = "0000000";
@@ -805,6 +818,7 @@ namespace PKHeX.WinForms
             // 
             // MT_TrainerCardID
             // 
+            MT_TrainerCardID.AccessibleName = "League Trainer ID";
             MT_TrainerCardID.Location = new System.Drawing.Point(386, 68);
             MT_TrainerCardID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_TrainerCardID.Mask = "000000";
@@ -815,6 +829,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TrainerCardNumber
             // 
+            TB_TrainerCardNumber.AccessibleName = "League Uniform ID";
             TB_TrainerCardNumber.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_TrainerCardNumber.Location = new System.Drawing.Point(386, 38);
             TB_TrainerCardNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -837,6 +852,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TrainerCardName
             // 
+            TB_TrainerCardName.AccessibleName = "League Card Name";
             TB_TrainerCardName.DisplayContext = EntityContext.Gen8;
             TB_TrainerCardName.Location = new System.Drawing.Point(386, 8);
             TB_TrainerCardName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -874,6 +890,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BP
             // 
+            NUD_BP.AccessibleName = "Battle Points";
             NUD_BP.Location = new System.Drawing.Point(134, 45);
             NUD_BP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_BP.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -946,6 +963,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_HoFDate
             // 
+            CAL_HoFDate.AccessibleName = "Hall of Fame Date";
             CAL_HoFDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_HoFDate.Location = new System.Drawing.Point(104, 83);
             CAL_HoFDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -958,6 +976,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_HoFTime
             // 
+            CAL_HoFTime.AccessibleName = "Hall of Fame Time";
             CAL_HoFTime.CustomFormat = "HH:mm:ss";
             CAL_HoFTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             CAL_HoFTime.Location = new System.Drawing.Point(134, 105);
@@ -982,6 +1001,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_AdventureStartDate
             // 
+            CAL_AdventureStartDate.AccessibleName = "Game Started Date";
             CAL_AdventureStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_AdventureStartDate.Location = new System.Drawing.Point(104, 40);
             CAL_AdventureStartDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -994,6 +1014,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_AdventureStartTime
             // 
+            CAL_AdventureStartTime.AccessibleName = "Game Started Time";
             CAL_AdventureStartTime.CustomFormat = "HH:mm:ss";
             CAL_AdventureStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             CAL_AdventureStartTime.Location = new System.Drawing.Point(134, 62);
@@ -1008,6 +1029,7 @@ namespace PKHeX.WinForms
             // 
             // CAL_LastSavedTime
             // 
+            CAL_LastSavedTime.AccessibleName = "Last Saved Time";
             CAL_LastSavedTime.CustomFormat = "HH:mm";
             CAL_LastSavedTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             CAL_LastSavedTime.Location = new System.Drawing.Point(134, 149);
@@ -1060,6 +1082,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SZ
             // 
+            NUD_SZ.AccessibleName = "Z Scale";
             NUD_SZ.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_SZ.DecimalPlaces = 6;
             NUD_SZ.Location = new System.Drawing.Point(108, 168);
@@ -1073,6 +1096,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SY
             // 
+            NUD_SY.AccessibleName = "Y Scale";
             NUD_SY.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_SY.DecimalPlaces = 6;
             NUD_SY.Location = new System.Drawing.Point(108, 198);
@@ -1086,6 +1110,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SX
             // 
+            NUD_SX.AccessibleName = "X Scale";
             NUD_SX.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_SX.DecimalPlaces = 6;
             NUD_SX.Location = new System.Drawing.Point(108, 138);
@@ -1129,6 +1154,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_R
             // 
+            NUD_R.AccessibleName = "Rotation";
             NUD_R.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_R.DecimalPlaces = 6;
             NUD_R.Location = new System.Drawing.Point(108, 228);
@@ -1152,6 +1178,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Z
             // 
+            NUD_Z.AccessibleName = "Z Coordinate";
             NUD_Z.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_Z.DecimalPlaces = 6;
             NUD_Z.Location = new System.Drawing.Point(108, 78);
@@ -1165,6 +1192,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_M
             // 
+            NUD_M.AccessibleName = "Current Map";
             NUD_M.Location = new System.Drawing.Point(108, 18);
             NUD_M.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_M.Maximum = new decimal(new int[] { -1, -1, 0, 0 });
@@ -1175,6 +1203,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Y
             // 
+            NUD_Y.AccessibleName = "Y Coordinate";
             NUD_Y.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_Y.DecimalPlaces = 6;
             NUD_Y.Location = new System.Drawing.Point(108, 108);
@@ -1188,6 +1217,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_X
             // 
+            NUD_X.AccessibleName = "X Coordinate";
             NUD_X.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             NUD_X.DecimalPlaces = 6;
             NUD_X.Location = new System.Drawing.Point(108, 48);
@@ -1259,6 +1289,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Fashion
             // 
+            CB_Fashion.AccessibleName = "Fashion Unlock Type";
             CB_Fashion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Fashion.FormattingEnabled = true;
             CB_Fashion.Items.AddRange(new object[] { "New Game", "All Legal", "Everything" });
@@ -1280,6 +1311,7 @@ namespace PKHeX.WinForms
             // 
             // CB_SkinColor
             // 
+            CB_SkinColor.AccessibleName = "Skin Color";
             CB_SkinColor.FormattingEnabled = true;
             CB_SkinColor.Location = new System.Drawing.Point(312, 88);
             CB_SkinColor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1331,6 +1363,7 @@ namespace PKHeX.WinForms
             // 
             // MT_BattleTowerDoublesStreak
             // 
+            MT_BattleTowerDoublesStreak.AccessibleName = "Battle Tower Doubles Streak";
             MT_BattleTowerDoublesStreak.Location = new System.Drawing.Point(169, 70);
             MT_BattleTowerDoublesStreak.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_BattleTowerDoublesStreak.Mask = "000";
@@ -1351,6 +1384,7 @@ namespace PKHeX.WinForms
             // 
             // MT_BattleTowerDoublesWin
             // 
+            MT_BattleTowerDoublesWin.AccessibleName = "Battle Tower Doubles Wins";
             MT_BattleTowerDoublesWin.Location = new System.Drawing.Point(103, 69);
             MT_BattleTowerDoublesWin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_BattleTowerDoublesWin.Mask = "0000000";
@@ -1371,6 +1405,7 @@ namespace PKHeX.WinForms
             // 
             // MT_BattleTowerSinglesStreak
             // 
+            MT_BattleTowerSinglesStreak.AccessibleName = "Battle Tower Singles Streak";
             MT_BattleTowerSinglesStreak.Location = new System.Drawing.Point(169, 40);
             MT_BattleTowerSinglesStreak.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_BattleTowerSinglesStreak.Mask = "000";
@@ -1401,6 +1436,7 @@ namespace PKHeX.WinForms
             // 
             // MT_BattleTowerSinglesWin
             // 
+            MT_BattleTowerSinglesWin.AccessibleName = "Battle Tower Singles Wins";
             MT_BattleTowerSinglesWin.Location = new System.Drawing.Point(103, 39);
             MT_BattleTowerSinglesWin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_BattleTowerSinglesWin.Mask = "0000000";
@@ -1430,6 +1466,7 @@ namespace PKHeX.WinForms
             // 
             // B_CopyFromPartyToTrainerCard
             // 
+            B_CopyFromPartyToTrainerCard.AccessibleName = "Copy Party to Trainer Card";
             B_CopyFromPartyToTrainerCard.Location = new System.Drawing.Point(103, 298);
             B_CopyFromPartyToTrainerCard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_CopyFromPartyToTrainerCard.Name = "B_CopyFromPartyToTrainerCard";
@@ -1441,6 +1478,7 @@ namespace PKHeX.WinForms
             // 
             // B_CopyFromPartyToTitleScreen
             // 
+            B_CopyFromPartyToTitleScreen.AccessibleName = "Copy Party to Title Screen";
             B_CopyFromPartyToTitleScreen.Location = new System.Drawing.Point(360, 298);
             B_CopyFromPartyToTitleScreen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_CopyFromPartyToTitleScreen.Name = "B_CopyFromPartyToTitleScreen";
@@ -1452,6 +1490,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ShowTrainerCard
             // 
+            NUD_ShowTrainerCard.AccessibleName = "Shown on Trainer Card Slot";
             NUD_ShowTrainerCard.Location = new System.Drawing.Point(161, 10);
             NUD_ShowTrainerCard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_ShowTrainerCard.Maximum = new decimal(new int[] { 6, 0, 0, 0 });
@@ -1474,6 +1513,7 @@ namespace PKHeX.WinForms
             // 
             // PG_ShowTrainerCard
             // 
+            PG_ShowTrainerCard.AccessibleName = "Shown on Trainer Card Pokémon Details";
             PG_ShowTrainerCard.HelpVisible = false;
             PG_ShowTrainerCard.Location = new System.Drawing.Point(4, 35);
             PG_ShowTrainerCard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1484,6 +1524,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ShowTitleScreen
             // 
+            NUD_ShowTitleScreen.AccessibleName = "Shown on Title Screen Slot";
             NUD_ShowTitleScreen.Location = new System.Drawing.Point(419, 10);
             NUD_ShowTitleScreen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_ShowTitleScreen.Maximum = new decimal(new int[] { 6, 0, 0, 0 });
@@ -1506,6 +1547,7 @@ namespace PKHeX.WinForms
             // 
             // PG_ShowTitleScreen
             // 
+            PG_ShowTitleScreen.AccessibleName = "Shown on Title Screen Pokémon Details";
             PG_ShowTitleScreen.HelpVisible = false;
             PG_ShowTitleScreen.Location = new System.Drawing.Point(261, 35);
             PG_ShowTitleScreen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
