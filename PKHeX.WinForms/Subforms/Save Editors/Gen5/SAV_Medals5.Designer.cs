@@ -98,6 +98,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Medals
             // 
+            DGV_Medals.AccessibleName = "Medals";
             DGV_Medals.AllowUserToAddRows = false;
             DGV_Medals.AllowUserToDeleteRows = false;
             DGV_Medals.AllowUserToResizeRows = false;
@@ -202,6 +203,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PinnedMedal
             // 
+            CB_PinnedMedal.AccessibleName = "Pinned Medal";
             CB_PinnedMedal.Anchor = System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_PinnedMedal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PinnedMedal.FormattingEnabled = true;
@@ -223,6 +225,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Rank
             // 
+            CB_Rank.AccessibleName = "Rank";
             CB_Rank.Anchor = System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Rank.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Rank.FormattingEnabled = true;
@@ -306,6 +309,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Habitat
             // 
+            DGV_Habitat.AccessibleName = "Habitats";
             DGV_Habitat.AllowUserToAddRows = false;
             DGV_Habitat.AllowUserToDeleteRows = false;
             DGV_Habitat.AllowUserToResizeRows = false;
@@ -475,6 +479,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown90
             // 
+            NUD_Unknown90.AccessibleName = "Unknown 90";
             NUD_Unknown90.Location = new System.Drawing.Point(144, 38);
             NUD_Unknown90.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_Unknown90.Name = "NUD_Unknown90";
@@ -493,6 +498,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown92
             // 
+            NUD_Unknown92.AccessibleName = "Unknown 92";
             NUD_Unknown92.Location = new System.Drawing.Point(330, 38);
             NUD_Unknown92.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_Unknown92.Name = "NUD_Unknown92";
@@ -511,6 +517,7 @@ namespace PKHeX.WinForms
             // 
             // CB_LastEncounterType
             // 
+            CB_LastEncounterType.AccessibleName = "Last Encounter Type";
             CB_LastEncounterType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             HabitatBottomPanel.SetColumnSpan(CB_LastEncounterType, 2);
             CB_LastEncounterType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
