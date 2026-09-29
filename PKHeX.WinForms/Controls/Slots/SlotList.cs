@@ -129,6 +129,7 @@ public partial class SlotList : UserControl, ISlotViewer<PictureBox>
     {
         var type = string.Empty;
         int added = -1;
+        int groupIndex = 0;
         for (int i = 0; i < countTotal; i++)
         {
             var info = SlotOffsets[i];
@@ -138,10 +139,13 @@ public partial class SlotList : UserControl, ISlotViewer<PictureBox>
             {
                 added++;
                 type = label.Text;
+                groupIndex = 0;
                 FLP_Slots.Controls.Add(label, 0, added++);
             }
 
             var slot = slots[i];
+            // The generated control name (bpkmN) is meaningless when narrated; name the slot after its group heading instead.
+            slot.AccessibleName = $"{type} {++groupIndex}";
             FLP_Slots.Controls.Add(slot, 0, added);
         }
     }
