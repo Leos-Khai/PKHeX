@@ -169,6 +169,9 @@ public partial class SAV_SimpleTrainer : Form
                 control.Visible = true;
             }
             L_Coins.Text = "BP"; // no translation boo
+            // The controls are reused for Battle Points here, so the designer's "Coins" names would be wrong.
+            MT_Coins.AccessibleName = "Battle Points";
+            B_MaxCoins.AccessibleName = "Max Battle Points";
             MT_Coins.Text = s.BattleSubway.BP.ToString();
 
             var pd = s.PlayerPosition;

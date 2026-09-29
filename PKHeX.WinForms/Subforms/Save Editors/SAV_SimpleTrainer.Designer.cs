@@ -152,6 +152,7 @@ namespace PKHeX.WinForms
             // 
             // MT_PikaBeach
             // 
+            MT_PikaBeach.AccessibleName = "Pikachu Beach Score";
             MT_PikaBeach.Location = new System.Drawing.Point(130, 74);
             MT_PikaBeach.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_PikaBeach.Mask = "0000";
@@ -174,6 +175,7 @@ namespace PKHeX.WinForms
             // 
             // MT_PikaFriend
             // 
+            MT_PikaFriend.AccessibleName = "Pikachu Friendship";
             MT_PikaFriend.Location = new System.Drawing.Point(130, 46);
             MT_PikaFriend.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_PikaFriend.Mask = "000";
@@ -317,6 +319,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OTName
             // 
+            TB_OTName.AccessibleName = "Trainer Name";
             TB_OTName.Location = new System.Drawing.Point(115, 13);
             TB_OTName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_OTName.MaxLength = 12;
@@ -328,6 +331,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Gender
             // 
+            CB_Gender.AccessibleName = "Gender";
             CB_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Gender.FormattingEnabled = true;
             CB_Gender.Items.AddRange(new object[] { "♂", "♀" });
@@ -359,6 +363,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Money
             // 
+            MT_Money.AccessibleName = "Money";
             MT_Money.Location = new System.Drawing.Point(139, 38);
             MT_Money.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Money.Mask = "0000000";
@@ -389,6 +394,7 @@ namespace PKHeX.WinForms
             // 
             // MT_TID
             // 
+            MT_TID.AccessibleName = "Trainer ID";
             MT_TID.Location = new System.Drawing.Point(62, 39);
             MT_TID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_TID.Mask = "00000";
@@ -400,6 +406,7 @@ namespace PKHeX.WinForms
             // 
             // MT_SID
             // 
+            MT_SID.AccessibleName = "Secret ID";
             MT_SID.Location = new System.Drawing.Point(62, 63);
             MT_SID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_SID.Mask = "00000";
@@ -411,6 +418,7 @@ namespace PKHeX.WinForms
             // 
             // B_MaxCash
             // 
+            B_MaxCash.AccessibleName = "Max Money";
             B_MaxCash.Location = new System.Drawing.Point(201, 38);
             B_MaxCash.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_MaxCash.Name = "B_MaxCash";
@@ -581,6 +589,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Country
             // 
+            CB_Country.AccessibleName = "Country";
             CB_Country.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Country.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Country.DropDownWidth = 180;
@@ -604,6 +613,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Region
             // 
+            CB_Region.AccessibleName = "State/Province";
             CB_Region.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Region.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Region.DropDownWidth = 180;
@@ -616,6 +626,7 @@ namespace PKHeX.WinForms
             // 
             // B_MaxCoins
             // 
+            B_MaxCoins.AccessibleName = "Max Coins";
             B_MaxCoins.Location = new System.Drawing.Point(111, 65);
             B_MaxCoins.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_MaxCoins.Name = "B_MaxCoins";
@@ -638,6 +649,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Coins
             // 
+            MT_Coins.AccessibleName = "Coins";
             MT_Coins.Location = new System.Drawing.Point(62, 63);
             MT_Coins.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Coins.Mask = "00000";
@@ -881,6 +893,7 @@ namespace PKHeX.WinForms
             // 
             // CB_SoundType
             // 
+            CB_SoundType.AccessibleName = "Sound Type";
             CB_SoundType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_SoundType.FormattingEnabled = true;
             CB_SoundType.Location = new System.Drawing.Point(83, 78);
@@ -901,6 +914,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TextSpeed
             // 
+            CB_TextSpeed.AccessibleName = "Text Speed";
             CB_TextSpeed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TextSpeed.FormattingEnabled = true;
             CB_TextSpeed.Location = new System.Drawing.Point(83, 110);
@@ -921,6 +935,7 @@ namespace PKHeX.WinForms
             // 
             // CB_BattleStyle
             // 
+            CB_BattleStyle.AccessibleName = "Battle Style";
             CB_BattleStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BattleStyle.FormattingEnabled = true;
             CB_BattleStyle.Location = new System.Drawing.Point(83, 47);
