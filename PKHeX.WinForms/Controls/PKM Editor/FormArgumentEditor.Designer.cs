@@ -68,6 +68,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_FormArg
             // 
+            CB_FormArg.AccessibleName = "Form Argument";
             CB_FormArg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FormArg.FormattingEnabled = true;
             CB_FormArg.Items.AddRange(new object[] { "" });
@@ -81,6 +82,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_FormArg
             // 
+            NUD_FormArg.AccessibleName = "Form Argument";
             NUD_FormArg.Location = new System.Drawing.Point(0, 25);
             NUD_FormArg.Margin = new System.Windows.Forms.Padding(0);
             NUD_FormArg.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -105,6 +107,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_FormArgMax
             // 
+            NUD_FormArgMax.AccessibleName = "Form Argument Maximum";
             NUD_FormArgMax.Location = new System.Drawing.Point(0, 0);
             NUD_FormArgMax.Margin = new System.Windows.Forms.Padding(0);
             NUD_FormArgMax.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -116,6 +119,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_FormArgElapsed
             // 
+            NUD_FormArgElapsed.AccessibleName = "Form Argument Elapsed";
             NUD_FormArgElapsed.Location = new System.Drawing.Point(41, 0);
             NUD_FormArgElapsed.Margin = new System.Windows.Forms.Padding(0);
             NUD_FormArgElapsed.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -128,6 +132,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_FormArgRemain
             // 
+            NUD_FormArgRemain.AccessibleName = "Form Argument Remaining";
             NUD_FormArgRemain.Location = new System.Drawing.Point(82, 0);
             NUD_FormArgRemain.Margin = new System.Windows.Forms.Padding(0);
             NUD_FormArgRemain.Maximum = new decimal(new int[] { 255, 0, 0, 0 });

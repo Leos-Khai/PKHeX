@@ -51,6 +51,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUD_CatchRate
             // 
+            NUD_CatchRate.AccessibleName = "Catch Rate";
             NUD_CatchRate.Location = new System.Drawing.Point(0, 0);
             NUD_CatchRate.Margin = new System.Windows.Forms.Padding(0);
             NUD_CatchRate.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -62,6 +63,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // B_Clear
             // 
+            B_Clear.AccessibleName = "Clear Catch Rate";
             B_Clear.Location = new System.Drawing.Point(40, 0);
             B_Clear.Margin = new System.Windows.Forms.Padding(0);
             B_Clear.Name = "B_Clear";
@@ -73,6 +75,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // B_Reset
             // 
+            B_Reset.AccessibleName = "Reset Catch Rate to suggested value";
             B_Reset.Location = new System.Drawing.Point(104, 0);
             B_Reset.Margin = new System.Windows.Forms.Padding(0);
             B_Reset.Name = "B_Reset";
