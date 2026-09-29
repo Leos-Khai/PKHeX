@@ -308,6 +308,7 @@ public partial class SAV_Misc3 : Form
 
             var key = GetTranslationKey(facility, validStats[i]);
             label.Text = context.TryGetValue(key, out var text) ? text : key.Split('_')[^1];
+            StatNUDA[i].AccessibleName = label.Text; // the label sits beside the box, so screen readers would not pair them
         }
 
         editingcont = false;
@@ -487,8 +488,11 @@ public partial class SAV_Misc3 : Form
             var gold = SAV.GetEventFlag(BattleFrontier3.GetSymbolGoldFlagIndex(facility));
             var value = silver ? gold ? Color.Gold : Color.Silver : Color.Transparent;
             SymbolButtonA[i].BackColor = value;
+            SymbolButtonA[i].AccessibleDescription = GetSymbolState(value); // colour is the only visible state
         }
     }
+
+    private static string GetSymbolState(Color color) => color == Color.Gold ? "Gold" : color == Color.Silver ? "Silver" : "None";
 
     private void SaveBattleFrontier()
     {
@@ -513,6 +517,7 @@ public partial class SAV_Misc3 : Form
         var color = match.BackColor;
         color = color == Color.Transparent ? Color.Silver : color == Color.Silver ? Color.Gold : Color.Transparent;
         match.BackColor = color;
+        match.AccessibleDescription = GetSymbolState(color);
     }
     #endregion
 

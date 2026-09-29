@@ -894,6 +894,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Stats1
             // 
+            CB_Stats1.AccessibleName = "Battle Facility";
             CB_Stats1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Stats1.FormattingEnabled = true;
             CB_Stats1.Location = new System.Drawing.Point(96, 20);
@@ -1009,6 +1010,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Continue
             // 
+            CHK_Continue.AccessibleName = "Continue";
             CHK_Continue.AutoSize = true;
             CHK_Continue.Location = new System.Drawing.Point(160, 97);
             CHK_Continue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1020,6 +1022,7 @@ namespace PKHeX.WinForms
             // 
             // RB_Stats3_02
             // 
+            RB_Stats3_02.AccessibleName = "Open Level Stats";
             RB_Stats3_02.AutoSize = true;
             RB_Stats3_02.Location = new System.Drawing.Point(98, 75);
             RB_Stats3_02.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1033,6 +1036,7 @@ namespace PKHeX.WinForms
             // 
             // RB_Stats3_01
             // 
+            RB_Stats3_01.AccessibleName = "Level 50 Stats";
             RB_Stats3_01.AutoSize = true;
             RB_Stats3_01.Location = new System.Drawing.Point(31, 75);
             RB_Stats3_01.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1046,6 +1050,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Stats2
             // 
+            CB_Stats2.AccessibleName = "Battle Mode";
             CB_Stats2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Stats2.FormattingEnabled = true;
             CB_Stats2.Location = new System.Drawing.Point(96, 47);
@@ -1088,6 +1093,7 @@ namespace PKHeX.WinForms
             // 
             // BTN_SymbolB
             // 
+            BTN_SymbolB.AccessibleName = "Brave Symbol (Battle Pyramid)";
             BTN_SymbolB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BTN_SymbolB.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold);
             BTN_SymbolB.Location = new System.Drawing.Point(108, 20);
@@ -1101,6 +1107,7 @@ namespace PKHeX.WinForms
             // 
             // BTN_SymbolL
             // 
+            BTN_SymbolL.AccessibleName = "Luck Symbol (Battle Pike)";
             BTN_SymbolL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BTN_SymbolL.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold);
             BTN_SymbolL.Location = new System.Drawing.Point(92, 54);
@@ -1114,6 +1121,7 @@ namespace PKHeX.WinForms
             // 
             // BTN_SymbolK
             // 
+            BTN_SymbolK.AccessibleName = "Knowledge Symbol (Battle Factory)";
             BTN_SymbolK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BTN_SymbolK.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold);
             BTN_SymbolK.Location = new System.Drawing.Point(75, 20);
@@ -1127,6 +1135,7 @@ namespace PKHeX.WinForms
             // 
             // BTN_SymbolG
             // 
+            BTN_SymbolG.AccessibleName = "Guts Symbol (Battle Arena)";
             BTN_SymbolG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BTN_SymbolG.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold);
             BTN_SymbolG.Location = new System.Drawing.Point(58, 54);
@@ -1140,6 +1149,7 @@ namespace PKHeX.WinForms
             // 
             // BTN_SymbolS
             // 
+            BTN_SymbolS.AccessibleName = "Spirit Symbol (Battle Palace)";
             BTN_SymbolS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BTN_SymbolS.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold);
             BTN_SymbolS.Location = new System.Drawing.Point(41, 20);
@@ -1153,6 +1163,7 @@ namespace PKHeX.WinForms
             // 
             // BTN_SymbolT
             // 
+            BTN_SymbolT.AccessibleName = "Tactics Symbol (Battle Dome)";
             BTN_SymbolT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BTN_SymbolT.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold);
             BTN_SymbolT.Location = new System.Drawing.Point(24, 54);
@@ -1166,6 +1177,7 @@ namespace PKHeX.WinForms
             // 
             // BTN_SymbolA
             // 
+            BTN_SymbolA.AccessibleName = "Ability Symbol (Battle Tower)";
             BTN_SymbolA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             BTN_SymbolA.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold);
             BTN_SymbolA.Location = new System.Drawing.Point(7, 20);
