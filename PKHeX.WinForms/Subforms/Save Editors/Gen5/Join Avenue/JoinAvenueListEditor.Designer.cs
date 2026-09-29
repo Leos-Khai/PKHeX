@@ -50,6 +50,7 @@ partial class JoinAvenueListEditor
         // 
         // LB_Entries
         // 
+        LB_Entries.AccessibleName = "Entries";
         LB_Entries.Dock = System.Windows.Forms.DockStyle.Fill;
         LB_Entries.FormattingEnabled = true;
         LB_Entries.IntegralHeight = false;
@@ -73,6 +74,7 @@ partial class JoinAvenueListEditor
         // 
         // B_Import
         // 
+        B_Import.AccessibleName = "Import Entry";
         B_Import.AutoSize = true;
         B_Import.Location = new System.Drawing.Point(7, 7);
         B_Import.Name = "B_Import";
@@ -83,6 +85,7 @@ partial class JoinAvenueListEditor
         // 
         // B_Export
         // 
+        B_Export.AccessibleName = "Export Entry";
         B_Export.AutoSize = true;
         B_Export.Location = new System.Drawing.Point(72, 7);
         B_Export.Name = "B_Export";

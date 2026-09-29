@@ -161,6 +161,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // TB_Name
         // 
+        TB_Name.AccessibleName = "Name";
         TB_Name.Location = new System.Drawing.Point(105, 0);
         TB_Name.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         TB_Name.MaxLength = 7;
@@ -180,6 +181,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_Country
         // 
+        NUD_Country.AccessibleName = "Country";
         NUD_Country.Location = new System.Drawing.Point(105, 26);
         NUD_Country.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_Country.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -199,6 +201,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_Subregion
         // 
+        NUD_Subregion.AccessibleName = "Subregion";
         NUD_Subregion.Location = new System.Drawing.Point(105, 52);
         NUD_Subregion.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_Subregion.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -218,6 +221,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // TB_Shout
         // 
+        TB_Shout.AccessibleName = "Shout";
         TB_Shout.Location = new System.Drawing.Point(105, 78);
         TB_Shout.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         TB_Shout.MaxLength = 8;
@@ -237,6 +241,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // CB_Version
         // 
+        CB_Version.AccessibleName = "Version";
         CB_Version.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         CB_Version.FormattingEnabled = true;
         CB_Version.Location = new System.Drawing.Point(105, 104);
@@ -257,6 +262,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // CB_Language
         // 
+        CB_Language.AccessibleName = "Language";
         CB_Language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         CB_Language.FormattingEnabled = true;
         CB_Language.Location = new System.Drawing.Point(105, 130);
@@ -277,6 +283,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_Unknown22
         // 
+        NUD_Unknown22.AccessibleName = "Unknown 0x22";
         NUD_Unknown22.Location = new System.Drawing.Point(105, 156);
         NUD_Unknown22.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_Unknown22.Maximum = new decimal(new int[] { 15, 0, 0, 0 });
@@ -286,6 +293,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // UC_Gender
         // 
+        UC_Gender.AccessibleName = "Gender";
         UC_Gender.Location = new System.Drawing.Point(105, 182);
         UC_Gender.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         UC_Gender.Name = "UC_Gender";
@@ -304,6 +312,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_Unused23
         // 
+        NUD_Unused23.AccessibleName = "Unused 0x23";
         NUD_Unused23.Location = new System.Drawing.Point(105, 208);
         NUD_Unused23.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_Unused23.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -323,6 +332,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_TID16
         // 
+        NUD_TID16.AccessibleName = "Trainer ID";
         NUD_TID16.Location = new System.Drawing.Point(105, 234);
         NUD_TID16.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_TID16.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -342,6 +352,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_Unknown26
         // 
+        NUD_Unknown26.AccessibleName = "Unknown 0x26";
         NUD_Unknown26.Location = new System.Drawing.Point(105, 260);
         NUD_Unknown26.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_Unknown26.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -361,6 +372,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_Unknown27
         // 
+        NUD_Unknown27.AccessibleName = "Unknown 0x27";
         NUD_Unknown27.Location = new System.Drawing.Point(105, 286);
         NUD_Unknown27.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_Unknown27.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -380,6 +392,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_PlayedHours
         // 
+        NUD_PlayedHours.AccessibleName = "Played Hours";
         NUD_PlayedHours.Location = new System.Drawing.Point(105, 312);
         NUD_PlayedHours.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_PlayedHours.Maximum = new decimal(new int[] { 1023, 0, 0, 0 });
@@ -399,6 +412,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_PlayedMinutes
         // 
+        NUD_PlayedMinutes.AccessibleName = "Played Minutes";
         NUD_PlayedMinutes.Location = new System.Drawing.Point(105, 338);
         NUD_PlayedMinutes.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_PlayedMinutes.Maximum = new decimal(new int[] { 63, 0, 0, 0 });
@@ -418,6 +432,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_Sprite
         // 
+        NUD_Sprite.AccessibleName = "Sprite";
         NUD_Sprite.Location = new System.Drawing.Point(105, 364);
         NUD_Sprite.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_Sprite.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -437,6 +452,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // TB_Greeting
         // 
+        TB_Greeting.AccessibleName = "Greeting";
         TB_Greeting.Location = new System.Drawing.Point(105, 390);
         TB_Greeting.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         TB_Greeting.MaxLength = 8;
@@ -456,6 +472,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // TB_Farewell
         // 
+        TB_Farewell.AccessibleName = "Farewell";
         TB_Farewell.Location = new System.Drawing.Point(105, 416);
         TB_Farewell.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         TB_Farewell.MaxLength = 8;
@@ -475,6 +492,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_MetYear
         // 
+        NUD_MetYear.AccessibleName = "Met Year";
         NUD_MetYear.Location = new System.Drawing.Point(105, 442);
         NUD_MetYear.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_MetYear.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -494,6 +512,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_MetMonth
         // 
+        NUD_MetMonth.AccessibleName = "Met Month";
         NUD_MetMonth.Location = new System.Drawing.Point(105, 468);
         NUD_MetMonth.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_MetMonth.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -513,6 +532,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_MetDay
         // 
+        NUD_MetDay.AccessibleName = "Met Day";
         NUD_MetDay.Location = new System.Drawing.Point(105, 494);
         NUD_MetDay.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_MetDay.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -532,6 +552,7 @@ partial class JoinAvenueEntityGeneralEditor
         // 
         // NUD_Seed
         // 
+        NUD_Seed.AccessibleName = "Seed";
         NUD_Seed.Location = new System.Drawing.Point(105, 520);
         NUD_Seed.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
         NUD_Seed.Maximum = new decimal(new int[] { -1, 0, 0, 0 });

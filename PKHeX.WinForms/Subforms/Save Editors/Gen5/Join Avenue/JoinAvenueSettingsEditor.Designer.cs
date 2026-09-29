@@ -118,6 +118,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Name
             // 
+            TB_Name.AccessibleName = "Name";
             TB_Name.Location = new System.Drawing.Point(154, 0);
             TB_Name.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_Name.MaxLength = 20;
@@ -138,6 +139,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Title
             // 
+            TB_Title.AccessibleName = "Title";
             TB_Title.Location = new System.Drawing.Point(154, 26);
             TB_Title.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_Title.MaxLength = 20;
@@ -158,6 +160,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Experience
             // 
+            NUD_Experience.AccessibleName = "Experience";
             NUD_Experience.Location = new System.Drawing.Point(154, 52);
             NUD_Experience.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Experience.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -178,6 +181,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Rank
             // 
+            NUD_Rank.AccessibleName = "Rank";
             NUD_Rank.Location = new System.Drawing.Point(154, 78);
             NUD_Rank.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Rank.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -198,6 +202,7 @@ namespace PKHeX.WinForms
             // 
             // CB_CeilingColor
             // 
+            CB_CeilingColor.AccessibleName = "Ceiling Color";
             CB_CeilingColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_CeilingColor.FormattingEnabled = true;
             CB_CeilingColor.Location = new System.Drawing.Point(154, 104);
@@ -219,6 +224,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Flags
             // 
+            NUD_Flags.AccessibleName = "Flags";
             NUD_Flags.Location = new System.Drawing.Point(154, 130);
             NUD_Flags.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Flags.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -239,6 +245,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Seed
             // 
+            NUD_Seed.AccessibleName = "Seed";
             NUD_Seed.Location = new System.Drawing.Point(154, 156);
             NUD_Seed.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Seed.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -259,6 +266,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_IsPromotionActive
             // 
+            CHK_IsPromotionActive.AccessibleName = "Promotion Active";
             CHK_IsPromotionActive.Location = new System.Drawing.Point(154, 182);
             CHK_IsPromotionActive.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             CHK_IsPromotionActive.Name = "CHK_IsPromotionActive";
@@ -278,6 +286,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PromotionDaysElapsed
             // 
+            NUD_PromotionDaysElapsed.AccessibleName = "Promotion Days Elapsed";
             NUD_PromotionDaysElapsed.Location = new System.Drawing.Point(154, 208);
             NUD_PromotionDaysElapsed.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_PromotionDaysElapsed.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -298,6 +307,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PlayerCount
             // 
+            NUD_PlayerCount.AccessibleName = "Player ID Count";
             NUD_PlayerCount.Location = new System.Drawing.Point(154, 234);
             NUD_PlayerCount.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_PlayerCount.Maximum = new decimal(new int[] { 32, 0, 0, 0 });
@@ -318,6 +328,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PlayerInsert
             // 
+            NUD_PlayerInsert.AccessibleName = "Player ID Insert";
             NUD_PlayerInsert.Location = new System.Drawing.Point(154, 260);
             NUD_PlayerInsert.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_PlayerInsert.Maximum = new decimal(new int[] { 31, 0, 0, 0 });
@@ -337,6 +348,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_VisitingPlayerDatabase
             // 
+            DGV_VisitingPlayerDatabase.AccessibleName = "Visiting Player IDs";
             DGV_VisitingPlayerDatabase.AllowUserToAddRows = false;
             DGV_VisitingPlayerDatabase.AllowUserToDeleteRows = false;
             DGV_VisitingPlayerDatabase.AllowUserToResizeRows = false;
