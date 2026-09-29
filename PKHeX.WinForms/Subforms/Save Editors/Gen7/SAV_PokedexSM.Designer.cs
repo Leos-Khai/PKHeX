@@ -89,6 +89,7 @@
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species List";
             LB_Species.FormattingEnabled = true;
             LB_Species.ItemHeight = 15;
             LB_Species.Location = new System.Drawing.Point(14, 46);
@@ -111,6 +112,7 @@
             // 
             // CHK_P2
             // 
+            CHK_P2.AccessibleName = "Seen Male";
             CHK_P2.AutoSize = true;
             CHK_P2.Location = new System.Drawing.Point(7, 29);
             CHK_P2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -123,6 +125,7 @@
             // 
             // CHK_P3
             // 
+            CHK_P3.AccessibleName = "Seen Female";
             CHK_P3.AutoSize = true;
             CHK_P3.Location = new System.Drawing.Point(7, 49);
             CHK_P3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -135,6 +138,7 @@
             // 
             // CHK_P4
             // 
+            CHK_P4.AccessibleName = "Seen Shiny Male";
             CHK_P4.AutoSize = true;
             CHK_P4.Location = new System.Drawing.Point(7, 69);
             CHK_P4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -147,6 +151,7 @@
             // 
             // CHK_P5
             // 
+            CHK_P5.AccessibleName = "Seen Shiny Female";
             CHK_P5.AutoSize = true;
             CHK_P5.Location = new System.Drawing.Point(7, 89);
             CHK_P5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -159,6 +164,7 @@
             // 
             // CHK_P6
             // 
+            CHK_P6.AccessibleName = "Displayed Male";
             CHK_P6.AutoSize = true;
             CHK_P6.Location = new System.Drawing.Point(7, 29);
             CHK_P6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -171,6 +177,7 @@
             // 
             // CHK_P7
             // 
+            CHK_P7.AccessibleName = "Displayed Female";
             CHK_P7.AutoSize = true;
             CHK_P7.Location = new System.Drawing.Point(7, 49);
             CHK_P7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -183,6 +190,7 @@
             // 
             // CHK_P8
             // 
+            CHK_P8.AccessibleName = "Displayed Shiny Male";
             CHK_P8.AutoSize = true;
             CHK_P8.Location = new System.Drawing.Point(7, 69);
             CHK_P8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -195,6 +203,7 @@
             // 
             // CHK_P9
             // 
+            CHK_P9.AccessibleName = "Displayed Shiny Female";
             CHK_P9.AutoSize = true;
             CHK_P9.Location = new System.Drawing.Point(7, 89);
             CHK_P9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -294,6 +303,7 @@
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go to Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -363,6 +373,7 @@
             // 
             // CHK_L9
             // 
+            CHK_L9.AccessibleName = "Chinese Traditional";
             CHK_L9.AutoSize = true;
             CHK_L9.Location = new System.Drawing.Point(21, 175);
             CHK_L9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -374,6 +385,7 @@
             // 
             // CHK_L8
             // 
+            CHK_L8.AccessibleName = "Chinese Simplified";
             CHK_L8.AutoSize = true;
             CHK_L8.Location = new System.Drawing.Point(21, 155);
             CHK_L8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -483,6 +495,7 @@
             // 
             // LB_Forms
             // 
+            LB_Forms.AccessibleName = "Forms";
             LB_Forms.FormattingEnabled = true;
             LB_Forms.ItemHeight = 15;
             LB_Forms.Location = new System.Drawing.Point(14, 256);
