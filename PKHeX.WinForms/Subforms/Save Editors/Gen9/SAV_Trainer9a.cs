@@ -224,6 +224,11 @@ public sealed partial class SAV_Trainer9a : Form
     private void P_Picture2_Click(object sender, EventArgs e) => SAV_Trainer9.IMG_Save(P_Picture2.Image!, nameof(KPictureInitialData));
     private void P_Picture3_Click(object sender, EventArgs e) => SAV_Trainer9.IMG_Save(P_Picture3.Image!, nameof(KPictureCurrentData));
 
+    // Lets keyboard-only users save the images, as the picture boxes are otherwise mouse-only.
+    private void P_Picture1_KeyDown(object sender, KeyEventArgs e) { if (e.KeyCode is Keys.Enter or Keys.Space) P_Picture1_Click(sender, e); }
+    private void P_Picture2_KeyDown(object sender, KeyEventArgs e) { if (e.KeyCode is Keys.Enter or Keys.Space) P_Picture2_Click(sender, e); }
+    private void P_Picture3_KeyDown(object sender, KeyEventArgs e) { if (e.KeyCode is Keys.Enter or Keys.Space) P_Picture3_Click(sender, e); }
+
     private void B_CollectTechnicalMachines_Click(object sender, EventArgs e)
     {
         var count = TechnicalMachine9a.SetAllTechnicalMachines(SAV, true);
