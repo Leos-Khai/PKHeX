@@ -175,6 +175,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_Unlock
             // 
+            CLB_Unlock.AccessibleName = "Unlocked O-Powers";
             CLB_Unlock.FormattingEnabled = true;
             CLB_Unlock.Location = new System.Drawing.Point(14, 12);
             CLB_Unlock.Name = "CLB_Unlock";
@@ -711,6 +712,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Points
             // 
+            NUD_Points.AccessibleName = "O-Power Points";
             NUD_Points.Location = new System.Drawing.Point(557, 228);
             NUD_Points.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_Points.Name = "NUD_Points";
