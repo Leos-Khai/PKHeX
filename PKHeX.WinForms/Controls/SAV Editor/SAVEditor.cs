@@ -138,6 +138,22 @@ public partial class SAVEditor : UserControl, ISlotViewer<PictureBox>, ISaveFile
         pb.GiveFeedback += (_, e) => e.UseDefaultCursors = false;
         pb.AllowDrop = true;
         pb.ContextMenuStrip = menu.mnuVSD;
+
+        // Keyboard equivalents of the modifier-clicks: Enter views, Shift+Enter sets, Delete clears. The Menu key opens the full slot menu.
+        pb.KeyDown += (sender, e) =>
+        {
+            var action = e.KeyCode switch
+            {
+                Keys.Enter when e.Shift => Keys.Shift,
+                Keys.Enter => Keys.Control,
+                Keys.Delete => Keys.Alt,
+                _ => Keys.None,
+            };
+            if (action == Keys.None || sender is null)
+                return;
+            menu.OmniClick(sender, e, action);
+            e.Handled = true;
+        };
     }
 
     /// <summary>Occurs when the Control Collection requests a cloning operation to the current box.</summary>
