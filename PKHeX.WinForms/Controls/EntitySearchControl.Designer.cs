@@ -78,6 +78,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Ability
             // 
+            CB_Ability.AccessibleName = "Ability";
             CB_Ability.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Ability.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Ability.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -91,6 +92,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_HeldItem
             // 
+            CB_HeldItem.AccessibleName = "Held Item";
             CB_HeldItem.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_HeldItem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_HeldItem.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -103,6 +105,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Nature
             // 
+            CB_Nature.AccessibleName = "Nature";
             CB_Nature.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Nature.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Nature.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -115,6 +118,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -127,6 +131,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Nickname
             // 
+            TB_Nickname.AccessibleName = "Nickname";
             TB_Nickname.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_Nickname.Location = new System.Drawing.Point(101, 52);
             TB_Nickname.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
@@ -136,6 +141,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Move4
             // 
+            CB_Move4.AccessibleName = "Move 4";
             CB_Move4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Move4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -148,6 +154,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Move3
             // 
+            CB_Move3.AccessibleName = "Move 3";
             CB_Move3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Move3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -160,6 +167,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Move2
             // 
+            CB_Move2.AccessibleName = "Move 2";
             CB_Move2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Move2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -172,6 +180,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Move1
             // 
+            CB_Move1.AccessibleName = "Move 1";
             CB_Move1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Move1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -184,6 +193,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Level
             // 
+            TB_Level.AccessibleName = "Level";
             TB_Level.Anchor = System.Windows.Forms.AnchorStyles.Left;
             TB_Level.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Level.Location = new System.Drawing.Point(0, 0);
@@ -268,6 +278,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_EVTrain
             // 
+            CB_EVTrain.AccessibleName = "EV Training";
             CB_EVTrain.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_EVTrain.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_EVTrain.DropDownWidth = 85;
@@ -281,6 +292,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_HPType
             // 
+            CB_HPType.AccessibleName = "Hidden Power Type";
             CB_HPType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_HPType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_HPType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -306,6 +318,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_GameOrigin
             // 
+            CB_GameOrigin.AccessibleName = "OT Version";
             CB_GameOrigin.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_GameOrigin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_GameOrigin.FormattingEnabled = true;
@@ -318,6 +331,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_IV
             // 
+            CB_IV.AccessibleName = "IV Potential";
             CB_IV.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_IV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_IV.DropDownWidth = 85;
@@ -331,6 +345,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Level
             // 
+            CB_Level.AccessibleName = "Level Comparison";
             CB_Level.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Level.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Level.DropDownWidth = 85;
@@ -441,6 +456,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Generation
             // 
+            CB_Generation.AccessibleName = "Generation";
             CB_Generation.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Generation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Generation.FormattingEnabled = true;
@@ -496,6 +512,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // MT_ESV
             // 
+            MT_ESV.AccessibleName = "Egg Shiny Value";
             MT_ESV.Anchor = System.Windows.Forms.AnchorStyles.Left;
             MT_ESV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MT_ESV.Location = new System.Drawing.Point(100, 0);
@@ -605,6 +622,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_FormatComparator
             // 
+            CB_FormatComparator.AccessibleName = "Format Comparison";
             CB_FormatComparator.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_FormatComparator.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FormatComparator.FormattingEnabled = true;
@@ -618,6 +636,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Format
             // 
+            CB_Format.AccessibleName = "Format";
             CB_Format.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_Format.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Format.FormattingEnabled = true;
