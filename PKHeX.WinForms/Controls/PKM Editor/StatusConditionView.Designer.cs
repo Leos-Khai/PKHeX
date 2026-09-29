@@ -34,6 +34,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_Status
             // 
+            PB_Status.AccessibleName = "Status Condition";
+            PB_Status.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Status.Dock = System.Windows.Forms.DockStyle.Fill;
             PB_Status.Location = new System.Drawing.Point(0, 0);
             PB_Status.Margin = new System.Windows.Forms.Padding(0);
