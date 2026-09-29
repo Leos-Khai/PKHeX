@@ -39,6 +39,7 @@
             // 
             // NUD_Stat
             // 
+            NUD_Stat.AccessibleName = "Trainer Record Value";
             NUD_Stat.Location = new System.Drawing.Point(40, 25);
             NUD_Stat.Name = "NUD_Stat";
             NUD_Stat.Size = new System.Drawing.Size(103, 23);
@@ -67,6 +68,7 @@
             // 
             // CB_Stats
             // 
+            CB_Stats.AccessibleName = "Trainer Record";
             CB_Stats.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Stats.DropDownHeight = 256;
             CB_Stats.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
