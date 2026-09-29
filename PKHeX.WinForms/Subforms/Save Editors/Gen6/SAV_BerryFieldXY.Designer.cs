@@ -53,6 +53,7 @@
             // 
             // listBox1
             // 
+            listBox1.AccessibleName = "Berry Plot";
             listBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
@@ -111,6 +112,7 @@
             // 
             // TB_Berry
             // 
+            TB_Berry.AccessibleName = "Berry";
             TB_Berry.Location = new System.Drawing.Point(114, 14);
             TB_Berry.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_Berry.Name = "TB_Berry";
@@ -160,6 +162,7 @@
             // 
             // TB_u1
             // 
+            TB_u1.AccessibleName = "Unknown Value 1";
             TB_u1.Location = new System.Drawing.Point(115, 44);
             TB_u1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_u1.Name = "TB_u1";
@@ -169,6 +172,7 @@
             // 
             // TB_u2
             // 
+            TB_u2.AccessibleName = "Unknown Value 2";
             TB_u2.Location = new System.Drawing.Point(114, 74);
             TB_u2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_u2.Name = "TB_u2";
@@ -178,6 +182,7 @@
             // 
             // TB_u3
             // 
+            TB_u3.AccessibleName = "Unknown Value 3";
             TB_u3.Location = new System.Drawing.Point(114, 104);
             TB_u3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_u3.Name = "TB_u3";
@@ -187,6 +192,7 @@
             // 
             // TB_u7
             // 
+            TB_u7.AccessibleName = "Unknown Value 7";
             TB_u7.Location = new System.Drawing.Point(114, 224);
             TB_u7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_u7.Name = "TB_u7";
@@ -196,6 +202,7 @@
             // 
             // TB_u6
             // 
+            TB_u6.AccessibleName = "Unknown Value 6";
             TB_u6.Location = new System.Drawing.Point(114, 194);
             TB_u6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_u6.Name = "TB_u6";
@@ -205,6 +212,7 @@
             // 
             // TB_u5
             // 
+            TB_u5.AccessibleName = "Unknown Value 5";
             TB_u5.Location = new System.Drawing.Point(115, 164);
             TB_u5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_u5.Name = "TB_u5";
@@ -254,6 +262,7 @@
             // 
             // TB_u4
             // 
+            TB_u4.AccessibleName = "Unknown Value 4";
             TB_u4.Location = new System.Drawing.Point(114, 134);
             TB_u4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_u4.Name = "TB_u4";
