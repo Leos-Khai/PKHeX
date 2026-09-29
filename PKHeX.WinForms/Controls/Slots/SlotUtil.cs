@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 using PKHeX.Core;
 using PKHeX.Drawing.PokeSprite;
@@ -50,7 +51,8 @@ public static class SlotUtil
         {
             pb.Image = null;
             pb.BackColor = GoodDataColor;
-            pb.AccessibleDescription = AppendNotes($"{pb.AccessibleName}: Empty", GetSlotNotes(info, pk, sav, flags));
+            pb.AccessibleDescription = AppendNotes($"{pb.AccessibleName}: Empty", GetSlotNotes(info, sav));
+            SetPendingLegality(pb, null);
             return;
         }
         if (!pk.Valid) // Invalid
@@ -58,7 +60,8 @@ public static class SlotUtil
             // Bad Egg present in slot.
             pb.Image = null;
             pb.BackColor = BadDataColor;
-            pb.AccessibleDescription = AppendNotes($"{pb.AccessibleName}: Invalid data", GetSlotNotes(info, pk, sav, flags)); // otherwise only the background colour differs
+            pb.AccessibleDescription = AppendNotes($"{pb.AccessibleName}: Invalid data", GetSlotNotes(info, sav)); // otherwise only the background colour differs
+            SetPendingLegality(pb, null);
             return;
         }
 
@@ -70,7 +73,43 @@ public static class SlotUtil
         var programLanguage = Language.GetLanguageValue(x.Startup.Language);
         var cfg = x.BattleTemplate;
         var settings = SummaryPreviewer.WithFirstLine(cfg.Hover.GetSettings(programLanguage, pk.Context));
-        pb.AccessibleDescription = AppendNotes(ShowdownParsing.GetLocalizedPreviewText(pk, settings), GetSlotNotes(info, pk, sav, flags));
+        pb.AccessibleDescription = AppendNotes(ShowdownParsing.GetLocalizedPreviewText(pk, settings), GetSlotNotes(info, sav));
+        SetPendingLegality(pb, flags.HasFlag(SlotVisibilityType.CheckLegalityIndicate) ? new(pk, sav, info.Type) : null);
+    }
+
+    // Legality analysis is costly and the sprite overlay already runs it on every redraw, so the spoken
+    // legality note is only computed once a keyboard user actually focuses the slot.
+    private sealed record PendingLegality(PKM Entity, SaveFile SAV, StorageSlotType Type);
+    private static readonly ConditionalWeakTable<PictureBox, PendingLegality> Pending = new();
+    private static readonly ConditionalWeakTable<PictureBox, object> Hooked = new();
+
+    private static void SetPendingLegality(PictureBox pb, PendingLegality? pending)
+    {
+        if (pending is null)
+        {
+            Pending.Remove(pb);
+            return;
+        }
+        Pending.AddOrUpdate(pb, pending);
+        if (Hooked.TryAdd(pb, pending))
+            pb.Enter += AppendLegalityNote; // runs before SelectablePictureBox narrates the description
+    }
+
+    private static void AppendLegalityNote(object? sender, EventArgs e)
+    {
+        if (sender is not PictureBox pb || !Pending.TryGetValue(pb, out var p))
+            return;
+        Pending.Remove(pb);
+
+        var (pk, sav, type) = p;
+        var la = pk.GetType() == sav.PKMType // same choice as the sprite overlay
+            ? new LegalityAnalysis(pk, sav.Personal, type)
+            : new LegalityAnalysis(pk, pk.PersonalInfo, type);
+        var note = !la.Valid ? "Illegal"
+            : pk.Format >= 8 && MoveInfo.IsDummiedMoveAny(pk) ? "Has unusable moves"
+            : null;
+        if (note is not null)
+            pb.AccessibleDescription = AppendNotes(pb.AccessibleDescription ?? string.Empty, note);
     }
 
     /// <summary>
@@ -85,21 +124,11 @@ public static class SlotUtil
     }
 
     /// <summary>
-    /// Spells out the state that <see cref="GetImage"/> only shows as sprite overlays (legality, lock, party and team markers).
+    /// Spells out the lock, party and team markers that <see cref="GetImage"/> only shows as sprite overlays; legality is added on focus.
     /// </summary>
-    private static string GetSlotNotes(ISlotInfo info, PKM pk, SaveFile sav, SlotVisibilityType flags)
+    private static string GetSlotNotes(ISlotInfo info, SaveFile sav)
     {
         var notes = new List<string>(3);
-        if (pk.Species != 0 && pk.Valid && flags.HasFlag(SlotVisibilityType.CheckLegalityIndicate))
-        {
-            var la = pk.GetType() == sav.PKMType // same choice as the sprite overlay
-                ? new LegalityAnalysis(pk, sav.Personal, info.Type)
-                : new LegalityAnalysis(pk, pk.PersonalInfo, info.Type);
-            if (!la.Valid)
-                notes.Add("Illegal");
-            else if (pk.Format >= 8 && MoveInfo.IsDummiedMoveAny(pk))
-                notes.Add("Has unusable moves");
-        }
         if (info is SlotInfoBox b)
         {
             var slot = sav.GetBoxSlotFlags(b.Box, b.Slot);
