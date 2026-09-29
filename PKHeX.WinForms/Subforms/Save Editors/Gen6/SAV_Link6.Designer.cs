@@ -78,6 +78,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PKM1
             // 
+            TB_PKM1.AccessibleName = "Pokémon 1 Species";
             TB_PKM1.Location = new System.Drawing.Point(57, 6);
             TB_PKM1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_PKM1.Name = "TB_PKM1";
@@ -87,6 +88,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PKM2
             // 
+            TB_PKM2.AccessibleName = "Pokémon 2 Species";
             TB_PKM2.Location = new System.Drawing.Point(57, 31);
             TB_PKM2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_PKM2.Name = "TB_PKM2";
@@ -96,6 +98,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PKM3
             // 
+            TB_PKM3.AccessibleName = "Pokémon 3 Species";
             TB_PKM3.Location = new System.Drawing.Point(57, 57);
             TB_PKM3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_PKM3.Name = "TB_PKM3";
@@ -165,6 +168,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PKM6
             // 
+            TB_PKM6.AccessibleName = "Pokémon 6 Species";
             TB_PKM6.Location = new System.Drawing.Point(57, 133);
             TB_PKM6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_PKM6.Name = "TB_PKM6";
@@ -174,6 +178,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PKM5
             // 
+            TB_PKM5.AccessibleName = "Pokémon 5 Species";
             TB_PKM5.Location = new System.Drawing.Point(57, 107);
             TB_PKM5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_PKM5.Name = "TB_PKM5";
@@ -183,6 +188,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PKM4
             // 
+            TB_PKM4.AccessibleName = "Pokémon 4 Species";
             TB_PKM4.Location = new System.Drawing.Point(57, 82);
             TB_PKM4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_PKM4.Name = "TB_PKM4";
@@ -260,6 +266,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_LinkSource
             // 
+            RTB_LinkSource.AccessibleName = "Link Source";
             RTB_LinkSource.Enabled = false;
             RTB_LinkSource.Location = new System.Drawing.Point(7, 7);
             RTB_LinkSource.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -291,6 +298,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Pokemiles
             // 
+            NUD_Pokemiles.AccessibleName = "PokéMiles";
             NUD_Pokemiles.Enabled = false;
             NUD_Pokemiles.Location = new System.Drawing.Point(99, 104);
             NUD_Pokemiles.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -301,6 +309,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BP
             // 
+            NUD_BP.AccessibleName = "Battle Points";
             NUD_BP.Enabled = false;
             NUD_BP.Location = new System.Drawing.Point(99, 74);
             NUD_BP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -362,6 +371,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Item6
             // 
+            CB_Item6.AccessibleName = "Item 6";
             CB_Item6.Enabled = false;
             CB_Item6.FormattingEnabled = true;
             CB_Item6.Location = new System.Drawing.Point(80, 135);
@@ -372,6 +382,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Item6
             // 
+            NUD_Item6.AccessibleName = "Item 6 Quantity";
             NUD_Item6.Enabled = false;
             NUD_Item6.Location = new System.Drawing.Point(250, 135);
             NUD_Item6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -392,6 +403,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Item5
             // 
+            CB_Item5.AccessibleName = "Item 5";
             CB_Item5.Enabled = false;
             CB_Item5.FormattingEnabled = true;
             CB_Item5.Location = new System.Drawing.Point(80, 108);
@@ -402,6 +414,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Item5
             // 
+            NUD_Item5.AccessibleName = "Item 5 Quantity";
             NUD_Item5.Enabled = false;
             NUD_Item5.Location = new System.Drawing.Point(250, 108);
             NUD_Item5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -422,6 +435,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Item4
             // 
+            CB_Item4.AccessibleName = "Item 4";
             CB_Item4.Enabled = false;
             CB_Item4.FormattingEnabled = true;
             CB_Item4.Location = new System.Drawing.Point(80, 82);
@@ -432,6 +446,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Item4
             // 
+            NUD_Item4.AccessibleName = "Item 4 Quantity";
             NUD_Item4.Enabled = false;
             NUD_Item4.Location = new System.Drawing.Point(250, 82);
             NUD_Item4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -452,6 +467,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Item3
             // 
+            CB_Item3.AccessibleName = "Item 3";
             CB_Item3.Enabled = false;
             CB_Item3.FormattingEnabled = true;
             CB_Item3.Location = new System.Drawing.Point(80, 55);
@@ -462,6 +478,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Item3
             // 
+            NUD_Item3.AccessibleName = "Item 3 Quantity";
             NUD_Item3.Enabled = false;
             NUD_Item3.Location = new System.Drawing.Point(250, 55);
             NUD_Item3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -482,6 +499,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Item2
             // 
+            CB_Item2.AccessibleName = "Item 2";
             CB_Item2.Enabled = false;
             CB_Item2.FormattingEnabled = true;
             CB_Item2.Location = new System.Drawing.Point(80, 29);
@@ -492,6 +510,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Item2
             // 
+            NUD_Item2.AccessibleName = "Item 2 Quantity";
             NUD_Item2.Enabled = false;
             NUD_Item2.Location = new System.Drawing.Point(250, 29);
             NUD_Item2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -512,6 +531,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Item1
             // 
+            CB_Item1.AccessibleName = "Item 1";
             CB_Item1.Enabled = false;
             CB_Item1.FormattingEnabled = true;
             CB_Item1.Location = new System.Drawing.Point(80, 2);
@@ -522,6 +542,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Item1
             // 
+            NUD_Item1.AccessibleName = "Item 1 Quantity";
             NUD_Item1.Enabled = false;
             NUD_Item1.Location = new System.Drawing.Point(250, 2);
             NUD_Item1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
