@@ -103,9 +103,16 @@ public sealed partial class SAV_Inventory : Form
     {
         tabControl1.SizeMode = TabSizeMode.Fixed;
         tabControl1.ItemSize = new Size(IL_Pouch.Images[0].Width + 4, IL_Pouch.Images[0].Height + 4);
+        // Screen readers only announce a tab's Text, so give each pouch tab its name and owner-draw just the icon to keep the compact strip.
+        tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
+        tabControl1.DrawItem += DrawPouchTab;
         foreach (var pouch in Bag.Pouches)
         {
-            var tab = new TabPage { ImageIndex = InventoryTypeImageUtil.GetImageIndex(pouch.Type) };
+            var tab = new TabPage
+            {
+                ImageIndex = InventoryTypeImageUtil.GetImageIndex(pouch.Type),
+                Text = WinFormsTranslator.TranslateEnum(pouch.Type, Main.CurrentLanguage),
+            };
             var dgv = GetDGV(pouch);
             ControlGrids.Add(pouch.Type, dgv);
             tab.Controls.Add(dgv);
@@ -113,6 +120,14 @@ public sealed partial class SAV_Inventory : Form
             tabControl1.ShowToolTips = true;
             tab.ToolTipText = pouch.Type.ToString();
         }
+    }
+
+    private void DrawPouchTab(object? sender, DrawItemEventArgs e)
+    {
+        var bounds = e.Bounds;
+        var size = IL_Pouch.ImageSize;
+        var index = tabControl1.TabPages[e.Index].ImageIndex;
+        IL_Pouch.Draw(e.Graphics, bounds.X + ((bounds.Width - size.Width) / 2), bounds.Y + ((bounds.Height - size.Height) / 2), index);
     }
 
     private DoubleBufferedDataGridView GetDGV(InventoryPouch pouch)

@@ -156,6 +156,7 @@ public static class DevUtil
         typeof(PokeSizeDetailed),
 
         typeof(BattleTemplateToken),
+        typeof(InventoryType),
 
         typeof(PokeathlonStat4),
         typeof(PokeathlonEvent4),
