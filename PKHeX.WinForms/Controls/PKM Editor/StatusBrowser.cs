@@ -84,7 +84,7 @@ public partial class StatusBrowser : Form
             Name = name,
             AccessibleDescription = name,
             AccessibleName = name,
-            AccessibleRole = AccessibleRole.Graphic,
+            AccessibleRole = AccessibleRole.PushButton,
             Margin = Padding.Empty,
             Padding = Padding.Empty,
             Width = StatusWidth,
@@ -100,7 +100,7 @@ public partial class StatusBrowser : Form
         };
         pb.KeyDown += (_, e) =>
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode is Keys.Enter or Keys.Space)
                 SelectValue(value);
         };
         return pb;
