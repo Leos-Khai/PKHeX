@@ -68,7 +68,7 @@ public static class SlotUtil
         var x = Main.Settings;
         var programLanguage = Language.GetLanguageValue(x.Startup.Language);
         var cfg = x.BattleTemplate;
-        var settings = cfg.Hover.GetSettings(programLanguage, pk.Context);
+        var settings = SummaryPreviewer.WithFirstLine(cfg.Hover.GetSettings(programLanguage, pk.Context));
         pb.AccessibleDescription = ShowdownParsing.GetLocalizedPreviewText(pk, settings);
     }
 
