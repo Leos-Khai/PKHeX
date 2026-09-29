@@ -135,6 +135,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PlayersMet
             // 
+            NUD_PlayersMet.AccessibleName = "People Met";
             NUD_PlayersMet.Location = new System.Drawing.Point(138, 17);
             NUD_PlayersMet.Margin = new System.Windows.Forms.Padding(2);
             NUD_PlayersMet.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -154,6 +155,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_GiftsGiven
             // 
+            NUD_GiftsGiven.AccessibleName = "Gifts Given";
             NUD_GiftsGiven.Location = new System.Drawing.Point(138, 42);
             NUD_GiftsGiven.Margin = new System.Windows.Forms.Padding(2);
             NUD_GiftsGiven.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -173,6 +175,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Spheres
             // 
+            NUD_Spheres.AccessibleName = "Spheres Dug";
             NUD_Spheres.Location = new System.Drawing.Point(138, 92);
             NUD_Spheres.Margin = new System.Windows.Forms.Padding(2);
             NUD_Spheres.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -192,6 +195,7 @@ namespace PKHeX.WinForms
             // 
             // U_Fossils
             // 
+            NUD_Fossils.AccessibleName = "Fossils Dug";
             NUD_Fossils.Location = new System.Drawing.Point(138, 117);
             NUD_Fossils.Margin = new System.Windows.Forms.Padding(2);
             NUD_Fossils.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -211,6 +215,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_TrapPlayers
             // 
+            NUD_TrapPlayers.AccessibleName = "Trap Hits (Players)";
             NUD_TrapPlayers.Location = new System.Drawing.Point(138, 142);
             NUD_TrapPlayers.Margin = new System.Windows.Forms.Padding(2);
             NUD_TrapPlayers.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -230,6 +235,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_TrapSelf
             // 
+            NUD_TrapSelf.AccessibleName = "Trap Hits (Self)";
             NUD_TrapSelf.Location = new System.Drawing.Point(138, 167);
             NUD_TrapSelf.Margin = new System.Windows.Forms.Padding(2);
             NUD_TrapSelf.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -249,6 +255,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FlagsObtained
             // 
+            NUD_FlagsObtained.AccessibleName = "Flags Obtained";
             NUD_FlagsObtained.Location = new System.Drawing.Point(138, 67);
             NUD_FlagsObtained.Margin = new System.Windows.Forms.Padding(2);
             NUD_FlagsObtained.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -322,6 +329,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_UGGoods
             // 
+            DGV_UGGoods.AccessibleName = "Underground Goods";
             DGV_UGGoods.AllowUserToAddRows = false;
             DGV_UGGoods.AllowUserToDeleteRows = false;
             DGV_UGGoods.AllowUserToResizeColumns = false;
@@ -370,6 +378,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_UGSpheres
             // 
+            DGV_UGSpheres.AccessibleName = "Underground Spheres";
             DGV_UGSpheres.AllowUserToAddRows = false;
             DGV_UGSpheres.AllowUserToDeleteRows = false;
             DGV_UGSpheres.AllowUserToResizeColumns = false;
@@ -431,6 +440,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_UGTraps
             // 
+            DGV_UGTraps.AccessibleName = "Underground Traps";
             DGV_UGTraps.AllowUserToAddRows = false;
             DGV_UGTraps.AllowUserToDeleteRows = false;
             DGV_UGTraps.AllowUserToResizeColumns = false;
@@ -479,6 +489,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_UGTreasures
             // 
+            DGV_UGTreasures.AccessibleName = "Underground Treasures";
             DGV_UGTreasures.AllowUserToAddRows = false;
             DGV_UGTreasures.AllowUserToDeleteRows = false;
             DGV_UGTreasures.AllowUserToResizeColumns = false;
@@ -515,6 +526,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MyFlagRecovered
             // 
+            NUD_MyFlagRecovered.AccessibleName = "Recovered Flags";
             NUD_MyFlagRecovered.Location = new System.Drawing.Point(138, 267);
             NUD_MyFlagRecovered.Margin = new System.Windows.Forms.Padding(2);
             NUD_MyFlagRecovered.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -534,6 +546,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MyBaseMoved
             // 
+            NUD_MyBaseMoved.AccessibleName = "Moved My Base";
             NUD_MyBaseMoved.Location = new System.Drawing.Point(138, 292);
             NUD_MyBaseMoved.Margin = new System.Windows.Forms.Padding(2);
             NUD_MyBaseMoved.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -553,6 +566,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FlagsCaptured
             // 
+            NUD_FlagsCaptured.AccessibleName = "Captured Flags";
             NUD_FlagsCaptured.Location = new System.Drawing.Point(138, 317);
             NUD_FlagsCaptured.Margin = new System.Windows.Forms.Padding(2);
             NUD_FlagsCaptured.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -572,6 +586,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MyFlagTaken
             // 
+            NUD_MyFlagTaken.AccessibleName = "My Flag Taken";
             NUD_MyFlagTaken.Location = new System.Drawing.Point(138, 242);
             NUD_MyFlagTaken.Margin = new System.Windows.Forms.Padding(2);
             NUD_MyFlagTaken.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -591,6 +606,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_GiftsReceived
             // 
+            NUD_GiftsReceived.AccessibleName = "Gifts Received";
             NUD_GiftsReceived.Location = new System.Drawing.Point(138, 217);
             NUD_GiftsReceived.Margin = new System.Windows.Forms.Padding(2);
             NUD_GiftsReceived.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
@@ -610,6 +626,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_HelpedOthers
             // 
+            NUD_HelpedOthers.AccessibleName = "Others Helped";
             NUD_HelpedOthers.Location = new System.Drawing.Point(138, 192);
             NUD_HelpedOthers.Margin = new System.Windows.Forms.Padding(2);
             NUD_HelpedOthers.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
