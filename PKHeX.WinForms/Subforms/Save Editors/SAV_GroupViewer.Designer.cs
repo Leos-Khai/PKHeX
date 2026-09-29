@@ -40,6 +40,7 @@ namespace PKHeX.WinForms
             // 
             // B_BoxRight
             // 
+            B_BoxRight.AccessibleName = "Next Group";
             B_BoxRight.Image = Properties.Resources.right;
             B_BoxRight.Location = new System.Drawing.Point(239, 4);
             B_BoxRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -51,6 +52,7 @@ namespace PKHeX.WinForms
             // 
             // B_BoxLeft
             // 
+            B_BoxLeft.AccessibleName = "Previous Group";
             B_BoxLeft.Image = Properties.Resources.left;
             B_BoxLeft.Location = new System.Drawing.Point(22, 4);
             B_BoxLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -62,6 +64,7 @@ namespace PKHeX.WinForms
             // 
             // CB_BoxSelect
             // 
+            CB_BoxSelect.AccessibleName = "Current Group";
             CB_BoxSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BoxSelect.DropDownWidth = 252;
             CB_BoxSelect.FormattingEnabled = true;

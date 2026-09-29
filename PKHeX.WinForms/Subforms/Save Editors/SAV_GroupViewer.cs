@@ -52,6 +52,15 @@ public sealed partial class SAV_GroupViewer : Form
         foreach (PictureBox pb in Box.Entries)
         {
             pb.Click += (_, args) => OmniClick(pb, args);
+            // A plain click does nothing here (Ctrl+click views), so the keyboard action is view.
+            pb.KeyDown += (_, args) =>
+            {
+                if (args.KeyCode is not (Keys.Enter or Keys.Space))
+                    return;
+                ClickView(pb, args);
+                args.Handled = true;
+            };
+            pb.Enter += (_, _) => DescribeSlot(pb);
             pb.ContextMenuStrip = mnu;
             pb.MouseMove += (_, args) => Preview.UpdatePreviewPosition(args.Location);
             pb.MouseEnter += (_, _) => HoverSlot(pb);
@@ -71,6 +80,19 @@ public sealed partial class SAV_GroupViewer : Form
         var slot = group.Slots[index];
         Preview.Show(pb, slot, group.Type);
         Hover = pb;
+    }
+
+    private void DescribeSlot(PictureBox pb)
+    {
+        var pk = Groups[CurrentGroup].Slots[Box.Entries.IndexOf(pb)];
+        if (pk.Species == 0)
+        {
+            pb.AccessibleDescription = null;
+            return;
+        }
+        var programLanguage = Language.GetLanguageValue(Main.Settings.Startup.Language);
+        var settings = SummaryPreviewer.WithFirstLine(Main.Settings.BattleTemplate.Hover.GetSettings(programLanguage, pk.Context));
+        pb.AccessibleDescription = ShowdownParsing.GetLocalizedPreviewText(pk, settings);
     }
 
     private void OmniClick(object sender, EventArgs e)
@@ -137,7 +159,11 @@ public sealed partial class SAV_GroupViewer : Form
 
         var sav = SAV;
         for (int i = 0; i < slots.Length; i++)
+        {
             Box.Entries[i].Image = slots[i].Sprite(sav, visibility: GetFlags(slots[i]), storage: type);
+            // The grid's generated name (row/column) is meaningless when narrated.
+            Box.Entries[i].AccessibleName = $"{Groups[index].GroupName} Slot {i + 1}";
+        }
 
         if (slotSelected != -1 && (uint)slotSelected < Box.Entries.Count)
             Box.Entries[slotSelected].BackgroundImage = groupSelected != index ? null : SpriteUtil.Spriter.View;
