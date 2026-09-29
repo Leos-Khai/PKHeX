@@ -99,6 +99,7 @@ namespace PKHeX.WinForms
             // 
             // DGV_Gear
             // 
+            DGV_Gear.AccessibleName = "Gear Unlocks";
             DGV_Gear.AllowUserToAddRows = false;
             DGV_Gear.AllowUserToDeleteRows = false;
             DGV_Gear.AllowUserToResizeColumns = false;
@@ -172,6 +173,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Groudon
             // 
+            CHK_Groudon.AccessibleName = "Shiny Groudon Outfit";
             CHK_Groudon.AutoSize = true;
             CHK_Groudon.Location = new System.Drawing.Point(7, 18);
             CHK_Groudon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -183,6 +185,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Lucario
             // 
+            CHK_Lucario.AccessibleName = "Shiny Lucario Outfit";
             CHK_Lucario.AutoSize = true;
             CHK_Lucario.Location = new System.Drawing.Point(106, 18);
             CHK_Lucario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -194,6 +197,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Electivire
             // 
+            CHK_Electivire.AccessibleName = "Shiny Electivire Outfit";
             CHK_Electivire.AutoSize = true;
             CHK_Electivire.Location = new System.Drawing.Point(205, 18);
             CHK_Electivire.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -205,6 +209,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Kyogre
             // 
+            CHK_Kyogre.AccessibleName = "Shiny Kyogre Outfit";
             CHK_Kyogre.AutoSize = true;
             CHK_Kyogre.Location = new System.Drawing.Point(7, 42);
             CHK_Kyogre.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -216,6 +221,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Roserade
             // 
+            CHK_Roserade.AccessibleName = "Shiny Roserade Outfit";
             CHK_Roserade.AutoSize = true;
             CHK_Roserade.Location = new System.Drawing.Point(106, 42);
             CHK_Roserade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -227,6 +233,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Pachirisu
             // 
+            CHK_Pachirisu.AccessibleName = "Shiny Pachirisu Outfit";
             CHK_Pachirisu.AutoSize = true;
             CHK_Pachirisu.Location = new System.Drawing.Point(205, 42);
             CHK_Pachirisu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
