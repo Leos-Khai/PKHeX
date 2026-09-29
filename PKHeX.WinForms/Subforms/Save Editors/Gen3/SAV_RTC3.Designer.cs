@@ -167,6 +167,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ESecond
             // 
+            NUD_ESecond.AccessibleName = "Time Elapsed Seconds";
             NUD_ESecond.Location = new System.Drawing.Point(7, 112);
             NUD_ESecond.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_ESecond.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
@@ -177,6 +178,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_EMinute
             // 
+            NUD_EMinute.AccessibleName = "Time Elapsed Minutes";
             NUD_EMinute.Location = new System.Drawing.Point(7, 82);
             NUD_EMinute.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_EMinute.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
@@ -187,6 +189,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_EHour
             // 
+            NUD_EHour.AccessibleName = "Time Elapsed Hours";
             NUD_EHour.Location = new System.Drawing.Point(7, 52);
             NUD_EHour.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_EHour.Maximum = new decimal(new int[] { 23, 0, 0, 0 });
@@ -197,6 +200,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_EDay
             // 
+            NUD_EDay.AccessibleName = "Time Elapsed Days";
             NUD_EDay.Location = new System.Drawing.Point(7, 22);
             NUD_EDay.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_EDay.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -274,6 +278,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ISecond
             // 
+            NUD_ISecond.AccessibleName = "Initial Time Seconds";
             NUD_ISecond.Location = new System.Drawing.Point(8, 112);
             NUD_ISecond.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_ISecond.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
@@ -284,6 +289,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_IMinute
             // 
+            NUD_IMinute.AccessibleName = "Initial Time Minutes";
             NUD_IMinute.Location = new System.Drawing.Point(8, 82);
             NUD_IMinute.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_IMinute.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
@@ -294,6 +300,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_IHour
             // 
+            NUD_IHour.AccessibleName = "Initial Time Hours";
             NUD_IHour.Location = new System.Drawing.Point(8, 52);
             NUD_IHour.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_IHour.Maximum = new decimal(new int[] { 23, 0, 0, 0 });
@@ -304,6 +311,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_IDay
             // 
+            NUD_IDay.AccessibleName = "Initial Time Days";
             NUD_IDay.Location = new System.Drawing.Point(8, 22);
             NUD_IDay.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_IDay.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
