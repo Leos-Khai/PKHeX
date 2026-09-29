@@ -38,6 +38,7 @@ namespace PKHeX.WinForms
             // 
             // PG_Settings
             // 
+            PG_Settings.AccessibleName = "Export Settings";
             PG_Settings.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_Settings.BackColor = System.Drawing.SystemColors.Control;
             PG_Settings.CommandsVisibleIfAvailable = false;
@@ -82,6 +83,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Namer
             // 
+            CB_Namer.AccessibleName = "Namer";
             CB_Namer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Namer.FormattingEnabled = true;
             CB_Namer.Location = new System.Drawing.Point(59, 4);
