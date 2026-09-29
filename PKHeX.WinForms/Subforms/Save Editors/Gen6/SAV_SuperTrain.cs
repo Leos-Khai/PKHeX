@@ -57,6 +57,7 @@ public partial class SAV_SuperTrain : Form
         DataGridViewComboBoxColumn dgvBag = new()
         {
             DisplayStyle = DataGridViewComboBoxDisplayStyle.Nothing,
+            HeaderText = "Training Bag", // headers are hidden; screen readers still narrate them for each cell
         };
         {
             foreach (string t in trba)

@@ -75,6 +75,7 @@ namespace PKHeX.WinForms
             // 
             // dataGridView1
             // 
+            dataGridView1.AccessibleName = "Training Bags";
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToResizeColumns = false;
@@ -98,6 +99,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species2
             // 
+            CB_Species2.AccessibleName = "Record Holder 2 Species";
             CB_Species2.FormattingEnabled = true;
             CB_Species2.Location = new System.Drawing.Point(330, 47);
             CB_Species2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -108,6 +110,7 @@ namespace PKHeX.WinForms
             // 
             // listBox1
             // 
+            listBox1.AccessibleName = "Super Training Stage";
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
             listBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" });
@@ -120,6 +123,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Time1
             // 
+            TB_Time1.AccessibleName = "Record Holder 1 Time";
             TB_Time1.Location = new System.Drawing.Point(203, 136);
             TB_Time1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_Time1.Name = "TB_Time1";
@@ -129,6 +133,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species1
             // 
+            CB_Species1.AccessibleName = "Record Holder 1 Species";
             CB_Species1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species1.FormattingEnabled = true;
@@ -141,6 +146,7 @@ namespace PKHeX.WinForms
             // 
             // MTB_Form1
             // 
+            MTB_Form1.AccessibleName = "Record Holder 1 Form";
             MTB_Form1.Location = new System.Drawing.Point(276, 78);
             MTB_Form1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MTB_Form1.Name = "MTB_Form1";
@@ -191,6 +197,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Time2
             // 
+            TB_Time2.AccessibleName = "Record Holder 2 Time";
             TB_Time2.Location = new System.Drawing.Point(331, 136);
             TB_Time2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             TB_Time2.Name = "TB_Time2";
@@ -200,6 +207,7 @@ namespace PKHeX.WinForms
             // 
             // MTB_Gender1
             // 
+            MTB_Gender1.AccessibleName = "Record Holder 1 Gender";
             MTB_Gender1.Location = new System.Drawing.Point(229, 78);
             MTB_Gender1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MTB_Gender1.Name = "MTB_Gender1";
@@ -209,6 +217,7 @@ namespace PKHeX.WinForms
             // 
             // MTB_Gender2
             // 
+            MTB_Gender2.AccessibleName = "Record Holder 2 Gender";
             MTB_Gender2.Location = new System.Drawing.Point(357, 78);
             MTB_Gender2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MTB_Gender2.Name = "MTB_Gender2";
@@ -218,6 +227,7 @@ namespace PKHeX.WinForms
             // 
             // MTB_Form2
             // 
+            MTB_Form2.AccessibleName = "Record Holder 2 Form";
             MTB_Form2.Location = new System.Drawing.Point(405, 78);
             MTB_Form2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MTB_Form2.Name = "MTB_Form2";
