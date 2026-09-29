@@ -50,7 +50,7 @@ namespace PKHeX.WinForms
             Label_HeldItem = new System.Windows.Forms.Label();
             CB_HeldItem = new System.Windows.Forms.ComboBox();
             GB_OT = new System.Windows.Forms.GroupBox();
-            Label_OTGender = new System.Windows.Forms.Label();
+            Label_OTGender = new PKHeX.WinForms.Controls.SelectableLabel();
             TB_OT = new PKHeX.WinForms.Controls.RenderedString();
             TB_SID = new System.Windows.Forms.MaskedTextBox();
             TB_TID = new System.Windows.Forms.MaskedTextBox();
@@ -62,7 +62,7 @@ namespace PKHeX.WinForms
             CAL_MetDate = new System.Windows.Forms.DateTimePicker();
             Label_MetDate = new System.Windows.Forms.Label();
             B_Cancel = new System.Windows.Forms.Button();
-            Label_Gender = new System.Windows.Forms.Label();
+            Label_Gender = new PKHeX.WinForms.Controls.SelectableLabel();
             CB_Form = new System.Windows.Forms.ComboBox();
             Label_Form = new System.Windows.Forms.Label();
             CHK_Shiny = new System.Windows.Forms.CheckBox();
@@ -338,6 +338,7 @@ namespace PKHeX.WinForms
             // 
             // Label_OTGender
             // 
+            Label_OTGender.AccessibleDescription = "Press to change gender.";
             Label_OTGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Label_OTGender.Location = new System.Drawing.Point(159, 55);
             Label_OTGender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -483,6 +484,7 @@ namespace PKHeX.WinForms
             // 
             // Label_Gender
             // 
+            Label_Gender.AccessibleDescription = "Press to change gender.";
             Label_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             Label_Gender.Location = new System.Drawing.Point(82, 171);
             Label_Gender.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -684,7 +686,7 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.DateTimePicker CAL_MetDate;
         private System.Windows.Forms.Label Label_MetDate;
         private System.Windows.Forms.Button B_Cancel;
-        private System.Windows.Forms.Label Label_Gender;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_Gender;
         private System.Windows.Forms.ComboBox CB_Form;
         private System.Windows.Forms.Label Label_Form;
         private System.Windows.Forms.CheckBox CHK_Shiny;
@@ -694,6 +696,6 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.Button B_CopyText;
         private System.Windows.Forms.Button B_Delete;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label Label_OTGender;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_OTGender;
     }
 }
