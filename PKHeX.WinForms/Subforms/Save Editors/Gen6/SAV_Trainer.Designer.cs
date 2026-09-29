@@ -228,6 +228,7 @@ namespace PKHeX.WinForms
             // 
             // PG_CurrentAppearance
             // 
+            PG_CurrentAppearance.AccessibleName = "Current Appearance";
             PG_CurrentAppearance.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_CurrentAppearance.BackColor = System.Drawing.SystemColors.Control;
             PG_CurrentAppearance.HelpVisible = false;
@@ -251,6 +252,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TRNick
             // 
+            TB_TRNick.AccessibleName = "Trainer Nickname";
             TB_TRNick.DisplayContext = EntityContext.Gen6;
             TB_TRNick.Location = new System.Drawing.Point(338, 110);
             TB_TRNick.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1778,6 +1780,7 @@ namespace PKHeX.WinForms
             // 
             // CB_BattleChateauRank
             // 
+            CB_BattleChateauRank.AccessibleName = "Battle Chateau Rank";
             CB_BattleChateauRank.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_BattleChateauRank.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BattleChateauRank.FormattingEnabled = true;
@@ -1816,6 +1819,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BattleChateauPoints
             // 
+            NUD_BattleChateauPoints.AccessibleName = "Battle Chateau Points";
             NUD_BattleChateauPoints.Anchor = System.Windows.Forms.AnchorStyles.Left;
             NUD_BattleChateauPoints.Location = new System.Drawing.Point(102, 66);
             NUD_BattleChateauPoints.Maximum = new decimal(new int[] { 4095, 0, 0, 0 });
