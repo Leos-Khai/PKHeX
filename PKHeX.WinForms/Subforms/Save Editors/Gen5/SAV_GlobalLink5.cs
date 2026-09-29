@@ -141,6 +141,7 @@ public sealed partial class SAV_GlobalLink5 : Form
             HeaderText = string.Empty,
             AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells,
             ReadOnly = true,
+            CellTemplate = new PKHeX.WinForms.Controls.AccessibleImageCell(),
             ImageLayout = DataGridViewImageCellLayout.Zoom,
         };
 
