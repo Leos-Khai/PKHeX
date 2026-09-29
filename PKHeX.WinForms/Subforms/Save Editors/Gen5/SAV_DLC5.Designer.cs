@@ -88,6 +88,7 @@ namespace PKHeX.WinForms
             // 
             // PB_CGearBackground
             // 
+            PB_CGearBackground.AccessibleName = "C-Gear Skin Preview";
             PB_CGearBackground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             PB_CGearBackground.Location = new System.Drawing.Point(7, 6);
             PB_CGearBackground.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -122,6 +123,7 @@ namespace PKHeX.WinForms
             // 
             // B_ImportPNG
             // 
+            B_ImportPNG.AccessibleName = "Load C-Gear Skin Image";
             B_ImportPNG.Location = new System.Drawing.Point(273, 6);
             B_ImportPNG.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ImportPNG.Name = "B_ImportPNG";
@@ -133,6 +135,7 @@ namespace PKHeX.WinForms
             // 
             // B_ExportPNG
             // 
+            B_ExportPNG.AccessibleName = "Save C-Gear Skin Image";
             B_ExportPNG.Location = new System.Drawing.Point(273, 44);
             B_ExportPNG.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ExportPNG.Name = "B_ExportPNG";
@@ -144,6 +147,7 @@ namespace PKHeX.WinForms
             // 
             // B_ExportCGB
             // 
+            B_ExportCGB.AccessibleName = "Export C-Gear Skin";
             B_ExportCGB.Location = new System.Drawing.Point(273, 168);
             B_ExportCGB.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ExportCGB.Name = "B_ExportCGB";
@@ -155,6 +159,7 @@ namespace PKHeX.WinForms
             // 
             // B_ImportCGB
             // 
+            B_ImportCGB.AccessibleName = "Import C-Gear Skin";
             B_ImportCGB.Location = new System.Drawing.Point(273, 130);
             B_ImportCGB.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ImportCGB.Name = "B_ImportCGB";
@@ -223,6 +228,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokeDexBackgroundLoad
             // 
+            B_PokeDexBackgroundLoad.AccessibleName = "Load Pokédex Skin Background Image";
             B_PokeDexBackgroundLoad.Location = new System.Drawing.Point(403, 200);
             B_PokeDexBackgroundLoad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_PokeDexBackgroundLoad.Name = "B_PokeDexBackgroundLoad";
@@ -233,6 +239,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokeDexBackgroundSave
             // 
+            B_PokeDexBackgroundSave.AccessibleName = "Save Pokédex Skin Background Image";
             B_PokeDexBackgroundSave.Location = new System.Drawing.Point(403, 238);
             B_PokeDexBackgroundSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_PokeDexBackgroundSave.Name = "B_PokeDexBackgroundSave";
@@ -243,6 +250,7 @@ namespace PKHeX.WinForms
             // 
             // PB_PokeDexBackground
             // 
+            PB_PokeDexBackground.AccessibleName = "Pokédex Skin Background Preview";
             PB_PokeDexBackground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             PB_PokeDexBackground.Location = new System.Drawing.Point(265, 0);
             PB_PokeDexBackground.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -253,6 +261,7 @@ namespace PKHeX.WinForms
             // 
             // PB_PokeDexForeground
             // 
+            PB_PokeDexForeground.AccessibleName = "Pokédex Skin Foreground Preview";
             PB_PokeDexForeground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             PB_PokeDexForeground.Location = new System.Drawing.Point(0, 0);
             PB_PokeDexForeground.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -263,6 +272,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokeDexSkinSave
             // 
+            B_PokeDexSkinSave.AccessibleName = "Export Pokédex Skin";
             B_PokeDexSkinSave.Location = new System.Drawing.Point(265, 293);
             B_PokeDexSkinSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_PokeDexSkinSave.Name = "B_PokeDexSkinSave";
@@ -274,6 +284,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokeDexForegroundLoad
             // 
+            B_PokeDexForegroundLoad.AccessibleName = "Load Pokédex Skin Foreground Image";
             B_PokeDexForegroundLoad.Location = new System.Drawing.Point(7, 200);
             B_PokeDexForegroundLoad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_PokeDexForegroundLoad.Name = "B_PokeDexForegroundLoad";
@@ -284,6 +295,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokeDexSkinLoad
             // 
+            B_PokeDexSkinLoad.AccessibleName = "Import Pokédex Skin";
             B_PokeDexSkinLoad.Location = new System.Drawing.Point(138, 293);
             B_PokeDexSkinLoad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_PokeDexSkinLoad.Name = "B_PokeDexSkinLoad";
@@ -295,6 +307,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokeDexForegroundSave
             // 
+            B_PokeDexForegroundSave.AccessibleName = "Save Pokédex Skin Foreground Image";
             B_PokeDexForegroundSave.Location = new System.Drawing.Point(7, 238);
             B_PokeDexForegroundSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_PokeDexForegroundSave.Name = "B_PokeDexForegroundSave";
@@ -316,6 +329,7 @@ namespace PKHeX.WinForms
             // 
             // B_MusicalExport
             // 
+            B_MusicalExport.AccessibleName = "Export Musical";
             B_MusicalExport.Location = new System.Drawing.Point(368, 3);
             B_MusicalExport.Name = "B_MusicalExport";
             B_MusicalExport.Size = new System.Drawing.Size(120, 48);
@@ -326,6 +340,7 @@ namespace PKHeX.WinForms
             // 
             // B_MusicalImport
             // 
+            B_MusicalImport.AccessibleName = "Import Musical";
             B_MusicalImport.Location = new System.Drawing.Point(243, 3);
             B_MusicalImport.Name = "B_MusicalImport";
             B_MusicalImport.Size = new System.Drawing.Size(120, 48);
@@ -349,6 +364,7 @@ namespace PKHeX.WinForms
             // 
             // B_BattleVideoExportDecrypted
             // 
+            B_BattleVideoExportDecrypted.AccessibleName = "Export Decrypted Battle Video";
             B_BattleVideoExportDecrypted.Location = new System.Drawing.Point(368, 111);
             B_BattleVideoExportDecrypted.Name = "B_BattleVideoExportDecrypted";
             B_BattleVideoExportDecrypted.Size = new System.Drawing.Size(120, 48);
@@ -359,6 +375,7 @@ namespace PKHeX.WinForms
             // 
             // B_BattleVideoExport
             // 
+            B_BattleVideoExport.AccessibleName = "Export Battle Video";
             B_BattleVideoExport.Location = new System.Drawing.Point(368, 3);
             B_BattleVideoExport.Name = "B_BattleVideoExport";
             B_BattleVideoExport.Size = new System.Drawing.Size(120, 48);
@@ -369,6 +386,7 @@ namespace PKHeX.WinForms
             // 
             // B_BattleVideoImport
             // 
+            B_BattleVideoImport.AccessibleName = "Import Battle Video";
             B_BattleVideoImport.Location = new System.Drawing.Point(243, 3);
             B_BattleVideoImport.Name = "B_BattleVideoImport";
             B_BattleVideoImport.Size = new System.Drawing.Size(120, 48);
@@ -379,6 +397,7 @@ namespace PKHeX.WinForms
             // 
             // LB_BattleVideo
             // 
+            LB_BattleVideo.AccessibleName = "Battle Videos";
             LB_BattleVideo.FormattingEnabled = true;
             LB_BattleVideo.ItemHeight = 15;
             LB_BattleVideo.Location = new System.Drawing.Point(3, 3);
@@ -401,6 +420,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokestarExport
             // 
+            B_PokestarExport.AccessibleName = "Export Pokéstar Studios Movie";
             B_PokestarExport.Location = new System.Drawing.Point(368, 3);
             B_PokestarExport.Name = "B_PokestarExport";
             B_PokestarExport.Size = new System.Drawing.Size(120, 48);
@@ -411,6 +431,7 @@ namespace PKHeX.WinForms
             // 
             // B_PokestarImport
             // 
+            B_PokestarImport.AccessibleName = "Import Pokéstar Studios Movie";
             B_PokestarImport.Location = new System.Drawing.Point(243, 3);
             B_PokestarImport.Name = "B_PokestarImport";
             B_PokestarImport.Size = new System.Drawing.Size(120, 48);
@@ -421,6 +442,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Pokestar
             // 
+            LB_Pokestar.AccessibleName = "Pokéstar Studios Movies";
             LB_Pokestar.FormattingEnabled = true;
             LB_Pokestar.ItemHeight = 15;
             LB_Pokestar.Location = new System.Drawing.Point(3, 3);
@@ -443,6 +465,7 @@ namespace PKHeX.WinForms
             // 
             // B_PWTExport
             // 
+            B_PWTExport.AccessibleName = "Export World Tournament";
             B_PWTExport.Location = new System.Drawing.Point(368, 3);
             B_PWTExport.Name = "B_PWTExport";
             B_PWTExport.Size = new System.Drawing.Size(120, 48);
@@ -453,6 +476,7 @@ namespace PKHeX.WinForms
             // 
             // B_PWTImport
             // 
+            B_PWTImport.AccessibleName = "Import World Tournament";
             B_PWTImport.Location = new System.Drawing.Point(243, 3);
             B_PWTImport.Name = "B_PWTImport";
             B_PWTImport.Size = new System.Drawing.Size(120, 48);
@@ -463,6 +487,7 @@ namespace PKHeX.WinForms
             // 
             // LB_PWT
             // 
+            LB_PWT.AccessibleName = "World Tournaments";
             LB_PWT.FormattingEnabled = true;
             LB_PWT.ItemHeight = 15;
             LB_PWT.Location = new System.Drawing.Point(3, 3);
@@ -487,6 +512,7 @@ namespace PKHeX.WinForms
             // 
             // B_Memory2Export
             // 
+            B_Memory2Export.AccessibleName = "Export Memory Link Slot 2";
             B_Memory2Export.Location = new System.Drawing.Point(368, 57);
             B_Memory2Export.Name = "B_Memory2Export";
             B_Memory2Export.Size = new System.Drawing.Size(120, 48);
@@ -497,6 +523,7 @@ namespace PKHeX.WinForms
             // 
             // B_Memory2Import
             // 
+            B_Memory2Import.AccessibleName = "Import Memory Link Slot 2";
             B_Memory2Import.Location = new System.Drawing.Point(243, 57);
             B_Memory2Import.Name = "B_Memory2Import";
             B_Memory2Import.Size = new System.Drawing.Size(120, 48);
@@ -507,6 +534,7 @@ namespace PKHeX.WinForms
             // 
             // B_Memory1Export
             // 
+            B_Memory1Export.AccessibleName = "Export Memory Link Slot 1";
             B_Memory1Export.Location = new System.Drawing.Point(368, 3);
             B_Memory1Export.Name = "B_Memory1Export";
             B_Memory1Export.Size = new System.Drawing.Size(120, 48);
@@ -517,6 +545,7 @@ namespace PKHeX.WinForms
             // 
             // B_Memory1Import
             // 
+            B_Memory1Import.AccessibleName = "Import Memory Link Slot 1";
             B_Memory1Import.Location = new System.Drawing.Point(243, 3);
             B_Memory1Import.Name = "B_Memory1Import";
             B_Memory1Import.Size = new System.Drawing.Size(120, 48);
@@ -539,6 +568,7 @@ namespace PKHeX.WinForms
             // 
             // B_BattleTestExport
             // 
+            B_BattleTestExport.AccessibleName = "Export Battle Test";
             B_BattleTestExport.Location = new System.Drawing.Point(368, 3);
             B_BattleTestExport.Name = "B_BattleTestExport";
             B_BattleTestExport.Size = new System.Drawing.Size(120, 48);
@@ -549,6 +579,7 @@ namespace PKHeX.WinForms
             // 
             // B_BattleTestImport
             // 
+            B_BattleTestImport.AccessibleName = "Import Battle Test";
             B_BattleTestImport.Location = new System.Drawing.Point(243, 3);
             B_BattleTestImport.Name = "B_BattleTestImport";
             B_BattleTestImport.Size = new System.Drawing.Size(120, 48);
