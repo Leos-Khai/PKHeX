@@ -1,6 +1,8 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System;
 using System.Windows.Forms;
+using System.Windows.Forms.Automation;
 using PKHeX.Drawing;
 using PKHeX.Drawing.PokeSprite;
 
@@ -54,6 +56,36 @@ public class VerticalTabControl : TabControl
     {
         base.ScaleControl(factor, specified);
         ItemSize = new((int)(ItemSize.Width * factor.Width), (int)(ItemSize.Height * factor.Height));
+    }
+
+    // Arrow keys don't switch the side-stacked tabs the way they do on a standard horizontal TabControl,
+    // so handle them explicitly and narrate the new tab for screen reader users.
+    protected override void OnKeyDown(KeyEventArgs e)
+    {
+        int index = e.KeyCode switch
+        {
+            Keys.Left or Keys.Up => SelectedIndex - 1,
+            Keys.Right or Keys.Down => SelectedIndex + 1,
+            Keys.Home => 0,
+            Keys.End => TabCount - 1,
+            _ => -1,
+        };
+        if ((uint)index < TabCount && !e.Modifiers.HasFlag(Keys.Control))
+        {
+            SelectedIndex = index;
+            e.Handled = true;
+        }
+        base.OnKeyDown(e);
+    }
+
+    protected override void OnSelectedIndexChanged(EventArgs e)
+    {
+        base.OnSelectedIndexChanged(e);
+        if (ContainsFocus && SelectedTab is { } tab)
+        {
+            AccessibilityObject.RaiseAutomationNotification(AutomationNotificationKind.Other,
+                AutomationNotificationProcessing.MostRecent, $"{tab.Text} tab, {SelectedIndex + 1} of {TabCount}");
+        }
     }
 }
 
