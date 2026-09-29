@@ -98,6 +98,7 @@
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species";
             LB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Species.FormattingEnabled = true;
             LB_Species.ItemHeight = 15;
@@ -208,6 +209,7 @@
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go To Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -365,6 +367,7 @@
             // 
             // NUD_Battled
             // 
+            NUD_Battled.AccessibleName = "Battled Count";
             NUD_Battled.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_Battled.Location = new System.Drawing.Point(704, 413);
             NUD_Battled.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -412,6 +415,7 @@
             // 
             // CB_Gender
             // 
+            CB_Gender.AccessibleName = "Displayed Gender";
             CB_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Gender.FormattingEnabled = true;
             CB_Gender.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -423,6 +427,7 @@
             // 
             // CHK_S
             // 
+            CHK_S.AccessibleName = "Displayed Shiny";
             CHK_S.AutoSize = true;
             CHK_S.Location = new System.Drawing.Point(6, 31);
             CHK_S.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -434,6 +439,7 @@
             // 
             // CHK_G
             // 
+            CHK_G.AccessibleName = "Displayed Gigantamax";
             CHK_G.AutoSize = true;
             CHK_G.Location = new System.Drawing.Point(6, 15);
             CHK_G.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -456,6 +462,7 @@
             // 
             // NUD_Form
             // 
+            NUD_Form.AccessibleName = "Displayed Form";
             NUD_Form.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_Form.Location = new System.Drawing.Point(704, 272);
             NUD_Form.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -540,6 +547,7 @@
             // 
             // CLB_3
             // 
+            CLB_3.AccessibleName = "Seen Shiny Male Forms";
             CLB_3.Dock = System.Windows.Forms.DockStyle.Fill;
             CLB_3.FormattingEnabled = true;
             CLB_3.Location = new System.Drawing.Point(243, 24);
@@ -550,6 +558,7 @@
             // 
             // CLB_4
             // 
+            CLB_4.AccessibleName = "Seen Shiny Female Forms";
             CLB_4.Dock = System.Windows.Forms.DockStyle.Fill;
             CLB_4.FormattingEnabled = true;
             CLB_4.Location = new System.Drawing.Point(364, 24);
@@ -560,6 +569,7 @@
             // 
             // CLB_1
             // 
+            CLB_1.AccessibleName = "Seen Male Forms";
             CLB_1.Dock = System.Windows.Forms.DockStyle.Fill;
             CLB_1.FormattingEnabled = true;
             CLB_1.Location = new System.Drawing.Point(1, 24);
@@ -570,6 +580,7 @@
             // 
             // CLB_2
             // 
+            CLB_2.AccessibleName = "Seen Female Forms";
             CLB_2.Dock = System.Windows.Forms.DockStyle.Fill;
             CLB_2.FormattingEnabled = true;
             CLB_2.Location = new System.Drawing.Point(122, 24);
