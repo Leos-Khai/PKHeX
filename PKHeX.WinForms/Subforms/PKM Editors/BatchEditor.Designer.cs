@@ -66,6 +66,7 @@ namespace PKHeX.WinForms
             // 
             // RB_Path
             // 
+            RB_Path.AccessibleName = "Select Folder";
             RB_Path.Anchor = System.Windows.Forms.AnchorStyles.Left;
             RB_Path.Appearance = System.Windows.Forms.Appearance.Button;
             RB_Path.AutoSize = true;
@@ -108,6 +109,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Folder
             // 
+            TB_Folder.AccessibleName = "Selected Folder";
             TB_Folder.Dock = System.Windows.Forms.DockStyle.Fill;
             TB_Folder.Location = new System.Drawing.Point(2, 29);
             TB_Folder.Margin = new System.Windows.Forms.Padding(2);
@@ -119,6 +121,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Instructions
             // 
+            RTB_Instructions.AccessibleName = "Batch Instructions";
             RTB_Instructions.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TLP_Bottom.SetColumnSpan(RTB_Instructions, 5);
             RTB_Instructions.Location = new System.Drawing.Point(4, 88);
