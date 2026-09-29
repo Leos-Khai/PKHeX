@@ -39,7 +39,7 @@ namespace PKHeX.WinForms
             L_Received = new System.Windows.Forms.Label();
             RTB = new System.Windows.Forms.RichTextBox();
             L_Details = new System.Windows.Forms.Label();
-            L_QR = new System.Windows.Forms.Label();
+            L_QR = new PKHeX.WinForms.Controls.SelectableLabel();
             PB_Preview = new System.Windows.Forms.PictureBox();
             mnuVSD = new System.Windows.Forms.ContextMenuStrip(components);
             mnuView = new System.Windows.Forms.ToolStripMenuItem();
@@ -164,6 +164,8 @@ namespace PKHeX.WinForms
             // 
             // L_QR
             // 
+            L_QR.AccessibleDescription = "Shows a QR code for the current gift. Hold Alt to import a QR link from the clipboard instead.";
+            L_QR.AccessibleName = "Show QR Code";
             L_QR.AutoSize = true;
             L_QR.Location = new System.Drawing.Point(302, 24);
             L_QR.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -293,7 +295,7 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.Label L_Received;
         private System.Windows.Forms.RichTextBox RTB;
         private System.Windows.Forms.Label L_Details;
-        private System.Windows.Forms.Label L_QR;
+        private PKHeX.WinForms.Controls.SelectableLabel L_QR;
         private System.Windows.Forms.PictureBox PB_Preview;
         private System.Windows.Forms.ContextMenuStrip mnuVSD;
         private System.Windows.Forms.ToolStripMenuItem mnuView;
