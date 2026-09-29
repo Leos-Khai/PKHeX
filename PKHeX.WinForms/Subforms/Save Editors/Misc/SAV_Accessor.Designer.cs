@@ -42,6 +42,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Key
             // 
+            CB_Key.AccessibleName = "Block";
             CB_Key.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Key.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Key.DropDownWidth = 270;
@@ -88,6 +89,7 @@ namespace PKHeX.WinForms
             // 
             // PG_BlockView
             // 
+            PG_BlockView.AccessibleName = "Block Properties";
             PG_BlockView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -110,6 +112,7 @@ namespace PKHeX.WinForms
             // 
             // propertyGrid1
             // 
+            propertyGrid1.AccessibleName = "Raw Properties";
             propertyGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             propertyGrid1.Location = new System.Drawing.Point(3, 3);
             propertyGrid1.Name = "propertyGrid1";
