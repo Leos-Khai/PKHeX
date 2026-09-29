@@ -315,6 +315,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Daycare2XP
             // 
+            TB_Daycare2XP.AccessibleName = "Daycare Slot 2 EXP Gained";
             TB_Daycare2XP.Location = new System.Drawing.Point(120, 104);
             TB_Daycare2XP.Name = "TB_Daycare2XP";
             TB_Daycare2XP.ReadOnly = true;
@@ -323,6 +324,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Daycare1XP
             // 
+            TB_Daycare1XP.AccessibleName = "Daycare Slot 1 EXP Gained";
             TB_Daycare1XP.Location = new System.Drawing.Point(120, 40);
             TB_Daycare1XP.Name = "TB_Daycare1XP";
             TB_Daycare1XP.ReadOnly = true;
@@ -358,6 +360,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_RNGSeed
             // 
+            TB_RNGSeed.AccessibleName = "Daycare Seed";
             TB_RNGSeed.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_RNGSeed.Location = new System.Drawing.Point(64, 168);
             TB_RNGSeed.MaxLength = 16;
@@ -369,6 +372,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // dcpkx2
             // 
+            dcpkx2.AccessibleName = "Daycare Slot 2";
             dcpkx2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             dcpkx2.Location = new System.Drawing.Point(8, 80);
             dcpkx2.Name = "dcpkx2";
@@ -379,6 +383,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // dcpkx1
             // 
+            dcpkx1.AccessibleName = "Daycare Slot 1";
             dcpkx1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             dcpkx1.Location = new System.Drawing.Point(8, 16);
             dcpkx1.Name = "dcpkx1";
