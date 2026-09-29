@@ -75,6 +75,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Shortcuts
             // 
+            RTB_Shortcuts.AccessibleName = "Keyboard and Mouse Shortcuts";
             RTB_Shortcuts.Dock = System.Windows.Forms.DockStyle.Fill;
             RTB_Shortcuts.Location = new System.Drawing.Point(0, 0);
             RTB_Shortcuts.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -98,6 +99,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Changelog
             // 
+            RTB_Changelog.AccessibleName = "Changelog";
             RTB_Changelog.Dock = System.Windows.Forms.DockStyle.Fill;
             RTB_Changelog.Location = new System.Drawing.Point(0, 0);
             RTB_Changelog.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
