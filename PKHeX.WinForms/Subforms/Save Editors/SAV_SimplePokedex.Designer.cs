@@ -126,6 +126,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_Caught
             // 
+            CLB_Caught.AccessibleName = "Caught Species";
             CLB_Caught.CheckOnClick = true;
             CLB_Caught.Dock = System.Windows.Forms.DockStyle.Fill;
             CLB_Caught.FormattingEnabled = true;
@@ -147,6 +148,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_Seen
             // 
+            CLB_Seen.AccessibleName = "Seen Species";
             CLB_Seen.CheckOnClick = true;
             CLB_Seen.Dock = System.Windows.Forms.DockStyle.Fill;
             CLB_Seen.FormattingEnabled = true;
