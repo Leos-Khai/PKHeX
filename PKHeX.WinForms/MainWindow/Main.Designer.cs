@@ -63,7 +63,7 @@ namespace PKHeX.WinForms
             toolTip = new System.Windows.Forms.ToolTip(components);
             splitContainer1 = new System.Windows.Forms.SplitContainer();
             dragout = new PKHeX.WinForms.Controls.SelectablePictureBox();
-            PB_Legal = new System.Windows.Forms.PictureBox();
+            PB_Legal = new PKHeX.WinForms.Controls.SelectablePictureBox();
             PKME_Tabs = new PKHeX.WinForms.Controls.PKMEditor();
             C_SAV = new PKHeX.WinForms.Controls.SAVEditor();
             splitContainer2 = new System.Windows.Forms.SplitContainer();
@@ -390,6 +390,8 @@ namespace PKHeX.WinForms
             // 
             // dragout
             // 
+            dragout.AccessibleName = "Pokémon Preview";
+            dragout.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             dragout.BackColor = System.Drawing.Color.Transparent;
             dragout.Location = new System.Drawing.Point(24, 0);
             dragout.Margin = new System.Windows.Forms.Padding(0);
@@ -397,7 +399,6 @@ namespace PKHeX.WinForms
             dragout.Size = new System.Drawing.Size(72, 56);
             dragout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             dragout.TabIndex = 107;
-            dragout.TabStop = false;
             dragout.DragDrop += DragoutDrop;
             dragout.DragOver += Dragout_DragOver;
             dragout.MouseDown += Dragout_MouseDown;
@@ -406,6 +407,8 @@ namespace PKHeX.WinForms
             // 
             // PB_Legal
             // 
+            PB_Legal.AccessibleName = "Legality";
+            PB_Legal.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             PB_Legal.Image = Properties.Resources.valid;
             PB_Legal.Location = new System.Drawing.Point(0, 0);
             PB_Legal.Margin = new System.Windows.Forms.Padding(0);
@@ -413,7 +416,6 @@ namespace PKHeX.WinForms
             PB_Legal.Size = new System.Drawing.Size(24, 24);
             PB_Legal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             PB_Legal.TabIndex = 108;
-            PB_Legal.TabStop = false;
             PB_Legal.Click += ClickLegality;
             // 
             // PKME_Tabs
@@ -590,7 +592,7 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private PKHeX.WinForms.Controls.SelectablePictureBox dragout;
-        private System.Windows.Forms.PictureBox PB_Legal;
+        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Legal;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
