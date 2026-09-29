@@ -103,6 +103,7 @@ partial class SAV_DLC4
         // 
         // LB_BattleVideos
         // 
+        LB_BattleVideos.AccessibleName = "Battle Videos";
         LB_BattleVideos.Dock = System.Windows.Forms.DockStyle.Fill;
         LB_BattleVideos.FormattingEnabled = true;
         LB_BattleVideos.IntegralHeight = false;
