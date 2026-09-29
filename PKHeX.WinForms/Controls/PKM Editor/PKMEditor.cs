@@ -1620,6 +1620,11 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
     {
         var changePID = Entity.Format >= 3 && (ModifierKeys & Keys.Alt) == 0;
         UpdateShiny(changePID);
+
+        // The button hides itself once shiny, which would drop keyboard focus onto an unrelated field.
+        // Move focus to the shiny indicator instead so screen readers announce the new state.
+        if (!BTN_Shinytize.Visible)
+            (PB_ShinyStar.Visible ? PB_ShinyStar : PB_ShinySquare).Focus();
     }
 
     private void UpdateShiny(bool changePID)
