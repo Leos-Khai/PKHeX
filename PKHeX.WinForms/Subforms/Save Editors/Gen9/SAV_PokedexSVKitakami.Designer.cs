@@ -102,6 +102,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species";
             LB_Species.FormattingEnabled = true;
             LB_Species.ItemHeight = 15;
             LB_Species.Location = new System.Drawing.Point(16, 54);
@@ -123,6 +124,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go to Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -229,6 +231,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PaldeaForm
             // 
+            CB_PaldeaForm.AccessibleName = "Displayed Paldea Form";
             CB_PaldeaForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PaldeaForm.FormattingEnabled = true;
             CB_PaldeaForm.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -254,6 +257,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PaldeaGender
             // 
+            CB_PaldeaGender.AccessibleName = "Displayed Paldea Gender";
             CB_PaldeaGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PaldeaGender.FormattingEnabled = true;
             CB_PaldeaGender.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -265,6 +269,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_PaldeaShiny
             // 
+            CHK_PaldeaShiny.AccessibleName = "Displayed Paldea Shiny";
             CHK_PaldeaShiny.AutoSize = true;
             CHK_PaldeaShiny.Location = new System.Drawing.Point(64, 18);
             CHK_PaldeaShiny.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -395,6 +400,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormSeen
             // 
+            CLB_FormSeen.AccessibleName = "Forms Seen";
             CLB_FormSeen.FormattingEnabled = true;
             CLB_FormSeen.Location = new System.Drawing.Point(184, 57);
             CLB_FormSeen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -404,6 +410,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SeenShiny
             // 
+            CHK_SeenShiny.AccessibleName = "Seen Shiny";
             CHK_SeenShiny.AutoSize = true;
             CHK_SeenShiny.Location = new System.Drawing.Point(6, 69);
             CHK_SeenShiny.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -430,6 +437,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SeenGenderless
             // 
+            CHK_SeenGenderless.AccessibleName = "Seen Genderless";
             CHK_SeenGenderless.AutoSize = true;
             CHK_SeenGenderless.Location = new System.Drawing.Point(6, 48);
             CHK_SeenGenderless.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -441,6 +449,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SeenFemale
             // 
+            CHK_SeenFemale.AccessibleName = "Seen Female";
             CHK_SeenFemale.AutoSize = true;
             CHK_SeenFemale.Location = new System.Drawing.Point(6, 32);
             CHK_SeenFemale.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -452,6 +461,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SeenMale
             // 
+            CHK_SeenMale.AccessibleName = "Seen Male";
             CHK_SeenMale.AutoSize = true;
             CHK_SeenMale.Location = new System.Drawing.Point(6, 16);
             CHK_SeenMale.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -477,6 +487,7 @@ namespace PKHeX.WinForms
             // 
             // CB_KitakamiGender
             // 
+            CB_KitakamiGender.AccessibleName = "Displayed Kitakami Gender";
             CB_KitakamiGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_KitakamiGender.FormattingEnabled = true;
             CB_KitakamiGender.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -488,6 +499,7 @@ namespace PKHeX.WinForms
             // 
             // CB_KitakamiForm
             // 
+            CB_KitakamiForm.AccessibleName = "Displayed Kitakami Form";
             CB_KitakamiForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_KitakamiForm.FormattingEnabled = true;
             CB_KitakamiForm.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -499,6 +511,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_KitakamiShiny
             // 
+            CHK_KitakamiShiny.AccessibleName = "Displayed Kitakami Shiny";
             CHK_KitakamiShiny.AutoSize = true;
             CHK_KitakamiShiny.Location = new System.Drawing.Point(64, 18);
             CHK_KitakamiShiny.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -524,6 +537,7 @@ namespace PKHeX.WinForms
             // 
             // CB_BlueberryGender
             // 
+            CB_BlueberryGender.AccessibleName = "Displayed Blueberry Gender";
             CB_BlueberryGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BlueberryGender.FormattingEnabled = true;
             CB_BlueberryGender.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -535,6 +549,7 @@ namespace PKHeX.WinForms
             // 
             // CB_BlueberryForm
             // 
+            CB_BlueberryForm.AccessibleName = "Displayed Blueberry Form";
             CB_BlueberryForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BlueberryForm.FormattingEnabled = true;
             CB_BlueberryForm.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -546,6 +561,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_BlueberryShiny
             // 
+            CHK_BlueberryShiny.AccessibleName = "Displayed Blueberry Shiny";
             CHK_BlueberryShiny.AutoSize = true;
             CHK_BlueberryShiny.Location = new System.Drawing.Point(64, 18);
             CHK_BlueberryShiny.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -557,6 +573,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormObtained
             // 
+            CLB_FormObtained.AccessibleName = "Forms Obtained";
             CLB_FormObtained.FormattingEnabled = true;
             CLB_FormObtained.Location = new System.Drawing.Point(306, 57);
             CLB_FormObtained.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -566,6 +583,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormHeard
             // 
+            CLB_FormHeard.AccessibleName = "Forms Heard Of";
             CLB_FormHeard.FormattingEnabled = true;
             CLB_FormHeard.Location = new System.Drawing.Point(428, 57);
             CLB_FormHeard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -575,6 +593,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormViewed
             // 
+            CLB_FormViewed.AccessibleName = "Forms Viewed";
             CLB_FormViewed.FormattingEnabled = true;
             CLB_FormViewed.Location = new System.Drawing.Point(550, 57);
             CLB_FormViewed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
