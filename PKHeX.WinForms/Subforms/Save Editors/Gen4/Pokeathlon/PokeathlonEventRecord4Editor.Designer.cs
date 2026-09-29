@@ -60,6 +60,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Record
             // 
+            NUD_Record.AccessibleName = "Record";
             NUD_Record.Location = new System.Drawing.Point(57, 0);
             NUD_Record.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             NUD_Record.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -69,6 +70,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Entry0
             // 
+            UC_Entry0.AccessibleName = "Pokémon 1";
+            UC_Entry0.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             TLP_Main.SetColumnSpan(UC_Entry0, 2);
             UC_Entry0.Anchor = System.Windows.Forms.AnchorStyles.Left;
             UC_Entry0.Location = new System.Drawing.Point(0, 28);
@@ -79,6 +82,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Entry1
             // 
+            UC_Entry1.AccessibleName = "Pokémon 2";
+            UC_Entry1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             TLP_Main.SetColumnSpan(UC_Entry1, 2);
             UC_Entry1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             UC_Entry1.Location = new System.Drawing.Point(0, 68);
@@ -89,6 +94,8 @@ namespace PKHeX.WinForms
             // 
             // UC_Entry2
             // 
+            UC_Entry2.AccessibleName = "Pokémon 3";
+            UC_Entry2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             TLP_Main.SetColumnSpan(UC_Entry2, 2);
             UC_Entry2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             UC_Entry2.Location = new System.Drawing.Point(0, 108);
