@@ -1829,11 +1829,13 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         {
             cb.ForeColor = Color.Black;
             cb.BackColor = Draw.InvalidSelection;
+            cb.AccessibleDescription = "Invalid selection";
         }
         else
         {
             cb.ResetForeColor();
             cb.ResetBackColor();
+            cb.AccessibleDescription = null;
         }
     }
 
