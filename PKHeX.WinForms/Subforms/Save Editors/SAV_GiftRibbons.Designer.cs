@@ -109,6 +109,7 @@ namespace PKHeX.WinForms
             // 
             // dgv
             // 
+            dgv.AccessibleName = "Gift Ribbons";
             dgv.AllowUserToAddRows = false;
             dgv.AllowUserToDeleteRows = false;
             dgv.AllowUserToResizeColumns = false;
