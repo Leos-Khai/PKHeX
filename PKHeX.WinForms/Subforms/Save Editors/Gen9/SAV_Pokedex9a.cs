@@ -206,6 +206,10 @@ public partial class SAV_Pokedex9a : Form
             CHK_SeenMega2.Visible = false;
         }
 
+        // Their text changes per species, so the spoken name is rebuilt to stay tied to the Seen group.
+        foreach (var chk in (CheckBox[])[CHK_SeenMega0, CHK_SeenMega1, CHK_SeenMega2])
+            chk.AccessibleName = $"Seen {chk.Text}";
+
         for (byte i = 0; i < forms.Length; i++)
         {
             CLB_FormCaught.Items[i] = CLB_FormSeen.Items[i] = CLB_FormShiny.Items[i] = forms[i];
