@@ -688,6 +688,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_H8
             // 
+            CHK_H8.AccessibleName = "Kanto Badge 8";
             CHK_H8.AutoSize = true;
             CHK_H8.Location = new System.Drawing.Point(152, 63);
             CHK_H8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -699,6 +700,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_H7
             // 
+            CHK_H7.AccessibleName = "Kanto Badge 7";
             CHK_H7.AutoSize = true;
             CHK_H7.Location = new System.Drawing.Point(132, 63);
             CHK_H7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -710,6 +712,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_H6
             // 
+            CHK_H6.AccessibleName = "Kanto Badge 6";
             CHK_H6.AutoSize = true;
             CHK_H6.Location = new System.Drawing.Point(112, 63);
             CHK_H6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -721,6 +724,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_H5
             // 
+            CHK_H5.AccessibleName = "Kanto Badge 5";
             CHK_H5.AutoSize = true;
             CHK_H5.Location = new System.Drawing.Point(92, 63);
             CHK_H5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -732,6 +736,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_H4
             // 
+            CHK_H4.AccessibleName = "Kanto Badge 4";
             CHK_H4.AutoSize = true;
             CHK_H4.Location = new System.Drawing.Point(72, 63);
             CHK_H4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -743,6 +748,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_H3
             // 
+            CHK_H3.AccessibleName = "Kanto Badge 3";
             CHK_H3.AutoSize = true;
             CHK_H3.Location = new System.Drawing.Point(52, 63);
             CHK_H3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -754,6 +760,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_H2
             // 
+            CHK_H2.AccessibleName = "Kanto Badge 2";
             CHK_H2.AutoSize = true;
             CHK_H2.Location = new System.Drawing.Point(33, 63);
             CHK_H2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -765,6 +772,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_H1
             // 
+            CHK_H1.AccessibleName = "Kanto Badge 1";
             CHK_H1.AutoSize = true;
             CHK_H1.Location = new System.Drawing.Point(13, 63);
             CHK_H1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -776,6 +784,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_8
             // 
+            CHK_8.AccessibleName = "Badge 8";
             CHK_8.AutoSize = true;
             CHK_8.Location = new System.Drawing.Point(152, 31);
             CHK_8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -787,6 +796,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_7
             // 
+            CHK_7.AccessibleName = "Badge 7";
             CHK_7.AutoSize = true;
             CHK_7.Location = new System.Drawing.Point(132, 31);
             CHK_7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -798,6 +808,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_6
             // 
+            CHK_6.AccessibleName = "Badge 6";
             CHK_6.AutoSize = true;
             CHK_6.Location = new System.Drawing.Point(112, 31);
             CHK_6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -809,6 +820,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_5
             // 
+            CHK_5.AccessibleName = "Badge 5";
             CHK_5.AutoSize = true;
             CHK_5.Location = new System.Drawing.Point(92, 31);
             CHK_5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -820,6 +832,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_4
             // 
+            CHK_4.AccessibleName = "Badge 4";
             CHK_4.AutoSize = true;
             CHK_4.Location = new System.Drawing.Point(72, 31);
             CHK_4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -831,6 +844,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_3
             // 
+            CHK_3.AccessibleName = "Badge 3";
             CHK_3.AutoSize = true;
             CHK_3.Location = new System.Drawing.Point(52, 31);
             CHK_3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -842,6 +856,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_2
             // 
+            CHK_2.AccessibleName = "Badge 2";
             CHK_2.AutoSize = true;
             CHK_2.Location = new System.Drawing.Point(33, 31);
             CHK_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -853,6 +868,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_1
             // 
+            CHK_1.AccessibleName = "Badge 1";
             CHK_1.AutoSize = true;
             CHK_1.Location = new System.Drawing.Point(13, 31);
             CHK_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
