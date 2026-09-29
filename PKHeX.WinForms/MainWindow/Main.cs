@@ -96,6 +96,22 @@ public partial class Main : Form
         // ToolTips for Drag&Drop
         toolTip.SetToolTip(dragout, "Drag to Save");
 
+        // Dragging is mouse-only, and its context menu holds the only QR option; open it from the keyboard instead.
+        dragout.KeyDown += (_, e) =>
+        {
+            if (e.KeyCode is not (Keys.Enter or Keys.Space))
+                return;
+            dragout.ContextMenuStrip?.Show(dragout, new Point(0, dragout.Height));
+            e.Handled = true;
+        };
+        PB_Legal.KeyDown += (_, e) =>
+        {
+            if (e.KeyCode is not (Keys.Enter or Keys.Space))
+                return;
+            ClickLegality(PB_Legal, e);
+            e.Handled = true;
+        };
+
         // Box to Tabs D&D
         dragout.AllowDrop = true;
 
@@ -1207,6 +1223,9 @@ public partial class Main : Form
             img = ImageUtil.LayerImage(img, layer, 0, 0);
         }
         pb.Image = img;
+        var species = pk.Species == 0 ? "Empty" : GameInfo.Strings.Species[pk.Species];
+        pb.AccessibleName = $"Pokémon Preview: {species}";
+        pb.AccessibleDescription = $"Pokémon Preview: {species}. Press Enter for legality, QR code and save options.";
         if (pb.BackColor == SlotUtil.BadDataColor)
             pb.BackColor = SlotUtil.GoodDataColor;
     }
@@ -1225,6 +1244,11 @@ public partial class Main : Form
         bool isValid = (sender as bool?) != false;
         PB_Legal.Image = SpriteUtil.GetLegalIndicator(isValid);
         toolTip.SetToolTip(PB_Legal, isValid ? MsgLegalityHoverValid : MsgLegalityHoverInvalid);
+
+        // The green tick or red cross is the only indicator.
+        var state = isValid ? "Legal" : "Illegal";
+        PB_Legal.AccessibleName = $"Legality: {state}";
+        PB_Legal.AccessibleDescription = $"Legality: {state}. Press Enter for the full report.";
     }
 
     private void PKME_Tabs_RequestShowdownExport(object sender, EventArgs e) => ClickShowdownExportPKM(sender, e);
