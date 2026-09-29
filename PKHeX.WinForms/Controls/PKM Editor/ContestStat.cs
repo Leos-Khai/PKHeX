@@ -67,6 +67,7 @@ public partial class ContestStat : UserControl, IContestStats
         bool smart = context.IsEraPre3DS;
         Label_Smart.Visible = smart; // show "Smart" for Gen3-5
         Label_Clever.Visible = !smart; // show "Clever" for Gen6+
+        TB_Smart.AccessibleName = smart ? "Smart" : "Clever";
     }
 
     private void ClickTextBox(object sender, EventArgs e)
