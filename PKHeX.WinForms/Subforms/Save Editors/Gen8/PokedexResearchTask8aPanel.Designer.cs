@@ -47,6 +47,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species";
             LB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Species.FormattingEnabled = true;
             LB_Species.ItemHeight = 15;
@@ -92,6 +93,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // NUP_CurrentValue
             // 
+            NUP_CurrentValue.AccessibleName = "Current Progress";
             NUP_CurrentValue.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUP_CurrentValue.Location = new System.Drawing.Point(404, 0);
             NUP_CurrentValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -119,6 +121,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // MTB_Threshold5
             // 
+            MTB_Threshold5.AccessibleName = "Threshold 5";
             MTB_Threshold5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MTB_Threshold5.Enabled = false;
             MTB_Threshold5.Location = new System.Drawing.Point(214, 0);
@@ -133,6 +136,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // MTB_Threshold4
             // 
+            MTB_Threshold4.AccessibleName = "Threshold 4";
             MTB_Threshold4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MTB_Threshold4.Enabled = false;
             MTB_Threshold4.Location = new System.Drawing.Point(162, 0);
@@ -147,6 +151,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // MTB_Threshold3
             // 
+            MTB_Threshold3.AccessibleName = "Threshold 3";
             MTB_Threshold3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MTB_Threshold3.Enabled = false;
             MTB_Threshold3.Location = new System.Drawing.Point(110, 0);
@@ -161,6 +166,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // MTB_Threshold2
             // 
+            MTB_Threshold2.AccessibleName = "Threshold 2";
             MTB_Threshold2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MTB_Threshold2.Enabled = false;
             MTB_Threshold2.Location = new System.Drawing.Point(58, 0);
@@ -175,6 +181,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // MTB_Threshold1
             // 
+            MTB_Threshold1.AccessibleName = "Threshold 1";
             MTB_Threshold1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             MTB_Threshold1.Enabled = false;
             MTB_Threshold1.Location = new System.Drawing.Point(6, 0);

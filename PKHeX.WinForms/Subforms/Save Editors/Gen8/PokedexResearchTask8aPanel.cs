@@ -52,7 +52,11 @@ public partial class PokedexResearchTask8aPanel : UserControl
         SuspendLayout();
 
         PB_Bonus.Image = Task.PointsBonus != 0 ? Resources.research_bonus_points : null;
-        Label_Task.Text = $"{TaskLabelString}:";
+        var label = TaskLabelString;
+        Label_Task.Text = $"{label}:";
+        PB_Bonus.AccessibleName = Task.PointsBonus != 0 ? "Bonus Points" : string.Empty;
+        // Every row shares the same generic control names, so the task text is what tells rows apart.
+        NUP_CurrentValue.AccessibleName = $"{label} Current Progress";
         NUP_CurrentValue.Enabled = CanSetCurrentValue;
 
         FLP_T1Right.Controls.Clear();
@@ -60,7 +64,10 @@ public partial class PokedexResearchTask8aPanel : UserControl
         ShadeBoxes();
 
         for (var t = 0; t < task.TaskThresholds.Length; t++)
+        {
             ThresholdBoxes[t].Text = $"{task.TaskThresholds[t]}";
+            ThresholdBoxes[t].AccessibleName = $"{label} Threshold {t + 1}";
+        }
 
         for (var t = 0; t < task.TaskThresholds.Length; t++)
             FLP_T1Right.Controls.Add(ThresholdBoxes[task.TaskThresholds.Length - 1 - t]);
