@@ -351,6 +351,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Record32V
             // 
+            NUD_Record32V.AccessibleName = "32-bit Record Value";
             NUD_Record32V.Location = new System.Drawing.Point(263, 279);
             NUD_Record32V.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
             NUD_Record32V.Name = "NUD_Record32V";
@@ -359,6 +360,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Record32
             // 
+            NUD_Record32.AccessibleName = "32-bit Record Number";
             NUD_Record32.Location = new System.Drawing.Point(263, 254);
             NUD_Record32.Name = "NUD_Record32";
             NUD_Record32.Size = new System.Drawing.Size(120, 25);
@@ -366,6 +368,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Record16V
             // 
+            NUD_Record16V.AccessibleName = "16-bit Record Value";
             NUD_Record16V.Location = new System.Drawing.Point(263, 225);
             NUD_Record16V.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_Record16V.Name = "NUD_Record16V";
@@ -374,6 +377,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Record16
             // 
+            NUD_Record16.AccessibleName = "16-bit Record Number";
             NUD_Record16.Location = new System.Drawing.Point(263, 200);
             NUD_Record16.Name = "NUD_Record16";
             NUD_Record16.Size = new System.Drawing.Size(120, 25);
@@ -395,6 +399,7 @@ namespace PKHeX.WinForms
             // 
             // B_AllKeys
             // 
+            B_AllKeys.AccessibleName = "Check All Keys";
             B_AllKeys.Location = new System.Drawing.Point(7, 23);
             B_AllKeys.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_AllKeys.Name = "B_AllKeys";
@@ -406,6 +411,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_KeySystem
             // 
+            CLB_KeySystem.AccessibleName = "Unlocked Keys";
             CLB_KeySystem.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CLB_KeySystem.CheckOnClick = true;
             CLB_KeySystem.FormattingEnabled = true;
@@ -447,6 +453,7 @@ namespace PKHeX.WinForms
             // 
             // CB_RoamStatus
             // 
+            CB_RoamStatus.AccessibleName = "Roam Status";
             CB_RoamStatus.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_RoamStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_RoamStatus.FormattingEnabled = true;
@@ -488,6 +495,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Roamer642
             // 
+            CB_Roamer642.AccessibleName = "Thundurus Status";
             CB_Roamer642.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Roamer642.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Roamer642.FormattingEnabled = true;
@@ -499,6 +507,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Roamer641
             // 
+            CB_Roamer641.AccessibleName = "Tornadus Status";
             CB_Roamer641.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Roamer641.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Roamer641.FormattingEnabled = true;
@@ -524,6 +533,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FlyDest
             // 
+            CLB_FlyDest.AccessibleName = "Fly Destinations";
             CLB_FlyDest.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CLB_FlyDest.CheckOnClick = true;
             CLB_FlyDest.FormattingEnabled = true;
@@ -535,6 +545,7 @@ namespace PKHeX.WinForms
             // 
             // B_AllFlyDest
             // 
+            B_AllFlyDest.AccessibleName = "Check All Fly Destinations";
             B_AllFlyDest.Location = new System.Drawing.Point(7, 23);
             B_AllFlyDest.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_AllFlyDest.Name = "B_AllFlyDest";
@@ -598,6 +609,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FMHosted
             // 
+            NUD_FMHosted.AccessibleName = "Funfest Missions Hosted";
             NUD_FMHosted.Location = new System.Drawing.Point(114, 6);
             NUD_FMHosted.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FMHosted.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -618,6 +630,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FMMostParticipants
             // 
+            NUD_FMMostParticipants.AccessibleName = "Funfest Missions Most Participants";
             NUD_FMMostParticipants.Location = new System.Drawing.Point(121, 106);
             NUD_FMMostParticipants.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FMMostParticipants.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -628,6 +641,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FMParticipated
             // 
+            NUD_FMParticipated.AccessibleName = "Funfest Missions Participated";
             NUD_FMParticipated.Location = new System.Drawing.Point(114, 30);
             NUD_FMParticipated.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FMParticipated.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -648,6 +662,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FMCompleted
             // 
+            NUD_FMCompleted.AccessibleName = "Funfest Missions Completed";
             NUD_FMCompleted.Location = new System.Drawing.Point(114, 54);
             NUD_FMCompleted.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FMCompleted.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -658,6 +673,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FMTopScores
             // 
+            NUD_FMTopScores.AccessibleName = "Funfest Missions Top Score";
             NUD_FMTopScores.Location = new System.Drawing.Point(114, 78);
             NUD_FMTopScores.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_FMTopScores.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
@@ -695,6 +711,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_EntreeWhiteEXP
             // 
+            NUD_EntreeWhiteEXP.AccessibleName = "Entree White Experience";
             NUD_EntreeWhiteEXP.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_EntreeWhiteEXP.Location = new System.Drawing.Point(106, 43);
             NUD_EntreeWhiteEXP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -707,6 +724,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_EntreeBlackEXP
             // 
+            NUD_EntreeBlackEXP.AccessibleName = "Entree Black Experience";
             NUD_EntreeBlackEXP.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_EntreeBlackEXP.Location = new System.Drawing.Point(106, 17);
             NUD_EntreeBlackEXP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -719,6 +737,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_EntreeBlackLV
             // 
+            NUD_EntreeBlackLV.AccessibleName = "Entree Black Level";
             NUD_EntreeBlackLV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_EntreeBlackLV.Location = new System.Drawing.Point(52, 17);
             NUD_EntreeBlackLV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -731,6 +750,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_EntreeWhiteLV
             // 
+            NUD_EntreeWhiteLV.AccessibleName = "Entree White Level";
             NUD_EntreeWhiteLV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_EntreeWhiteLV.Location = new System.Drawing.Point(52, 43);
             NUD_EntreeWhiteLV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -787,6 +807,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_FMNew
             // 
+            CHK_FMNew.AccessibleName = "Funfest Mission New";
             CHK_FMNew.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             CHK_FMNew.Location = new System.Drawing.Point(124, 219);
             CHK_FMNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -831,6 +852,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FMBestScore
             // 
+            NUD_FMBestScore.AccessibleName = "Funfest Mission Best Score";
             NUD_FMBestScore.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_FMBestScore.Location = new System.Drawing.Point(144, 195);
             NUD_FMBestScore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -842,6 +864,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FMBestTotal
             // 
+            NUD_FMBestTotal.AccessibleName = "Funfest Mission Best Records Total";
             NUD_FMBestTotal.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_FMBestTotal.Location = new System.Drawing.Point(144, 171);
             NUD_FMBestTotal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -853,6 +876,7 @@ namespace PKHeX.WinForms
             // 
             // CB_FMLevel
             // 
+            CB_FMLevel.AccessibleName = "Funfest Mission Level";
             CB_FMLevel.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_FMLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FMLevel.FormattingEnabled = true;
@@ -886,6 +910,7 @@ namespace PKHeX.WinForms
             // 
             // LB_FunfestMissions
             // 
+            LB_FunfestMissions.AccessibleName = "Funfest Missions";
             LB_FunfestMissions.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             LB_FunfestMissions.FormattingEnabled = true;
             LB_FunfestMissions.Location = new System.Drawing.Point(7, 47);
@@ -911,6 +936,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PassPower3
             // 
+            CB_PassPower3.AccessibleName = "Pass Power 3";
             CB_PassPower3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_PassPower3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PassPower3.FormattingEnabled = true;
@@ -922,6 +948,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PassPower2
             // 
+            CB_PassPower2.AccessibleName = "Pass Power 2";
             CB_PassPower2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_PassPower2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PassPower2.FormattingEnabled = true;
@@ -933,6 +960,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PassPower1
             // 
+            CB_PassPower1.AccessibleName = "Pass Power 1";
             CB_PassPower1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_PassPower1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_PassPower1.FormattingEnabled = true;
@@ -984,6 +1012,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unlocked
             // 
+            NUD_Unlocked.AccessibleName = "Areas 1 to 8 Unlocked";
             NUD_Unlocked.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_Unlocked.Location = new System.Drawing.Point(338, 38);
             NUD_Unlocked.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1020,6 +1049,7 @@ namespace PKHeX.WinForms
             // 
             // PB_SlotPreview
             // 
+            PB_SlotPreview.AccessibleName = "Slot Preview";
             PB_SlotPreview.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             PB_SlotPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             PB_SlotPreview.Location = new System.Drawing.Point(240, 127);
@@ -1042,6 +1072,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Animation
             // 
+            NUD_Animation.AccessibleName = "Slot Animation";
             NUD_Animation.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_Animation.Location = new System.Drawing.Point(240, 309);
             NUD_Animation.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1064,6 +1095,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Gender
             // 
+            CB_Gender.AccessibleName = "Slot Gender";
             CB_Gender.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Gender.FormattingEnabled = true;
@@ -1109,6 +1141,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move
             // 
+            CB_Move.AccessibleName = "Slot Move";
             CB_Move.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Move.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Move.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -1122,6 +1155,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Form
             // 
+            CB_Form.AccessibleName = "Slot Form";
             CB_Form.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Form.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Form.FormattingEnabled = true;
@@ -1134,6 +1168,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Slot Species";
             CB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -1147,6 +1182,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Areas
             // 
+            CB_Areas.AccessibleName = "Forest Area";
             CB_Areas.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Areas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Areas.FormattingEnabled = true;
@@ -1159,6 +1195,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Slots
             // 
+            LB_Slots.AccessibleName = "Forest Slots";
             LB_Slots.Dock = System.Windows.Forms.DockStyle.Left;
             LB_Slots.FormattingEnabled = true;
             LB_Slots.Location = new System.Drawing.Point(4, 3);
@@ -1348,6 +1385,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_CurrentType
             // 
+            NUD_CurrentType.AccessibleName = "Current Run Type";
             NUD_CurrentType.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_CurrentType.Location = new System.Drawing.Point(82, 21);
             NUD_CurrentType.Margin = new System.Windows.Forms.Padding(2);
@@ -1358,6 +1396,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_CurrentBattle
             // 
+            NUD_CurrentBattle.AccessibleName = "Current Run Battle Number";
             NUD_CurrentBattle.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_CurrentBattle.Location = new System.Drawing.Point(82, 45);
             NUD_CurrentBattle.Margin = new System.Windows.Forms.Padding(2);
@@ -1413,6 +1452,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SingleSet
             // 
+            CHK_SingleSet.AccessibleName = "Normal Single Run Active";
             CHK_SingleSet.AutoSize = true;
             CHK_SingleSet.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             CHK_SingleSet.Location = new System.Drawing.Point(16, 36);
@@ -1426,6 +1466,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DoubleSet
             // 
+            CHK_DoubleSet.AccessibleName = "Normal Double Run Active";
             CHK_DoubleSet.AutoSize = true;
             CHK_DoubleSet.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             CHK_DoubleSet.Location = new System.Drawing.Point(10, 53);
@@ -1439,6 +1480,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_MultiNPCSet
             // 
+            CHK_MultiNPCSet.AccessibleName = "Normal Multi NPC Run Active";
             CHK_MultiNPCSet.AutoSize = true;
             CHK_MultiNPCSet.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             CHK_MultiNPCSet.Location = new System.Drawing.Point(24, 70);
@@ -1452,6 +1494,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_MultiFriendsSet
             // 
+            CHK_MultiFriendsSet.AccessibleName = "Normal Multi Friends Run Active";
             CHK_MultiFriendsSet.AutoSize = true;
             CHK_MultiFriendsSet.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             CHK_MultiFriendsSet.Location = new System.Drawing.Point(10, 87);
@@ -1465,6 +1508,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SuperSingleSet
             // 
+            CHK_SuperSingleSet.AccessibleName = "Super Single Run Active";
             CHK_SuperSingleSet.AutoSize = true;
             CHK_SuperSingleSet.Location = new System.Drawing.Point(102, 38);
             CHK_SuperSingleSet.Margin = new System.Windows.Forms.Padding(2);
@@ -1476,6 +1520,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SuperDoubleSet
             // 
+            CHK_SuperDoubleSet.AccessibleName = "Super Double Run Active";
             CHK_SuperDoubleSet.AutoSize = true;
             CHK_SuperDoubleSet.Location = new System.Drawing.Point(102, 55);
             CHK_SuperDoubleSet.Margin = new System.Windows.Forms.Padding(2);
@@ -1487,6 +1532,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SuperMultiNPCSet
             // 
+            CHK_SuperMultiNPCSet.AccessibleName = "Super Multi NPC Run Active";
             CHK_SuperMultiNPCSet.AutoSize = true;
             CHK_SuperMultiNPCSet.Location = new System.Drawing.Point(102, 72);
             CHK_SuperMultiNPCSet.Margin = new System.Windows.Forms.Padding(2);
@@ -1498,6 +1544,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SuperMultiFriendsSet
             // 
+            CHK_SuperMultiFriendsSet.AccessibleName = "Super Multi Friends Run Active";
             CHK_SuperMultiFriendsSet.AutoSize = true;
             CHK_SuperMultiFriendsSet.Location = new System.Drawing.Point(102, 89);
             CHK_SuperMultiFriendsSet.Margin = new System.Windows.Forms.Padding(2);
@@ -1552,6 +1599,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SMultiFriendsRecord
             // 
+            NUD_SMultiFriendsRecord.AccessibleName = "Super Multi Friends Record";
             NUD_SMultiFriendsRecord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SMultiFriendsRecord.Location = new System.Drawing.Point(62, 133);
             NUD_SMultiFriendsRecord.Margin = new System.Windows.Forms.Padding(2);
@@ -1573,6 +1621,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SMultiFriendsPast
             // 
+            NUD_SMultiFriendsPast.AccessibleName = "Super Multi Friends Past";
             NUD_SMultiFriendsPast.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SMultiFriendsPast.Location = new System.Drawing.Point(62, 108);
             NUD_SMultiFriendsPast.Margin = new System.Windows.Forms.Padding(2);
@@ -1583,6 +1632,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SMultiNpcRecord
             // 
+            NUD_SMultiNpcRecord.AccessibleName = "Super Multi NPC Record";
             NUD_SMultiNpcRecord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SMultiNpcRecord.Location = new System.Drawing.Point(62, 62);
             NUD_SMultiNpcRecord.Margin = new System.Windows.Forms.Padding(2);
@@ -1604,6 +1654,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SMultiNpcPast
             // 
+            NUD_SMultiNpcPast.AccessibleName = "Super Multi NPC Past";
             NUD_SMultiNpcPast.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SMultiNpcPast.Location = new System.Drawing.Point(62, 38);
             NUD_SMultiNpcPast.Margin = new System.Windows.Forms.Padding(2);
@@ -1651,6 +1702,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SDoubleRecord
             // 
+            NUD_SDoubleRecord.AccessibleName = "Super Doubles Record";
             NUD_SDoubleRecord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SDoubleRecord.Location = new System.Drawing.Point(62, 44);
             NUD_SDoubleRecord.Margin = new System.Windows.Forms.Padding(2);
@@ -1672,6 +1724,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SDoublePast
             // 
+            NUD_SDoublePast.AccessibleName = "Super Doubles Past";
             NUD_SDoublePast.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SDoublePast.Location = new System.Drawing.Point(62, 21);
             NUD_SDoublePast.Margin = new System.Windows.Forms.Padding(2);
@@ -1708,6 +1761,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SSingleRecord
             // 
+            NUD_SSingleRecord.AccessibleName = "Super Singles Record";
             NUD_SSingleRecord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SSingleRecord.Location = new System.Drawing.Point(62, 45);
             NUD_SSingleRecord.Margin = new System.Windows.Forms.Padding(2);
@@ -1729,6 +1783,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SSinglePast
             // 
+            NUD_SSinglePast.AccessibleName = "Super Singles Past";
             NUD_SSinglePast.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SSinglePast.Location = new System.Drawing.Point(62, 21);
             NUD_SSinglePast.Margin = new System.Windows.Forms.Padding(2);
@@ -1793,6 +1848,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MultiFriendsRecord
             // 
+            NUD_MultiFriendsRecord.AccessibleName = "Multi Friends Record";
             NUD_MultiFriendsRecord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_MultiFriendsRecord.Location = new System.Drawing.Point(62, 133);
             NUD_MultiFriendsRecord.Margin = new System.Windows.Forms.Padding(2);
@@ -1814,6 +1870,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MultiFriendsPast
             // 
+            NUD_MultiFriendsPast.AccessibleName = "Multi Friends Past";
             NUD_MultiFriendsPast.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_MultiFriendsPast.Location = new System.Drawing.Point(62, 108);
             NUD_MultiFriendsPast.Margin = new System.Windows.Forms.Padding(2);
@@ -1824,6 +1881,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MultiNpcRecord
             // 
+            NUD_MultiNpcRecord.AccessibleName = "Multi NPC Record";
             NUD_MultiNpcRecord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_MultiNpcRecord.Location = new System.Drawing.Point(62, 62);
             NUD_MultiNpcRecord.Margin = new System.Windows.Forms.Padding(2);
@@ -1845,6 +1903,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MultiNpcPast
             // 
+            NUD_MultiNpcPast.AccessibleName = "Multi NPC Past";
             NUD_MultiNpcPast.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_MultiNpcPast.Location = new System.Drawing.Point(62, 38);
             NUD_MultiNpcPast.Margin = new System.Windows.Forms.Padding(2);
@@ -1892,6 +1951,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_DoubleRecord
             // 
+            NUD_DoubleRecord.AccessibleName = "Doubles Record";
             NUD_DoubleRecord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_DoubleRecord.Location = new System.Drawing.Point(62, 44);
             NUD_DoubleRecord.Margin = new System.Windows.Forms.Padding(2);
@@ -1913,6 +1973,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_DoublePast
             // 
+            NUD_DoublePast.AccessibleName = "Doubles Past";
             NUD_DoublePast.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_DoublePast.Location = new System.Drawing.Point(62, 21);
             NUD_DoublePast.Margin = new System.Windows.Forms.Padding(2);
@@ -1949,6 +2010,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SingleRecord
             // 
+            NUD_SingleRecord.AccessibleName = "Singles Record";
             NUD_SingleRecord.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SingleRecord.Location = new System.Drawing.Point(62, 45);
             NUD_SingleRecord.Margin = new System.Windows.Forms.Padding(2);
@@ -1970,6 +2032,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_SinglePast
             // 
+            NUD_SinglePast.AccessibleName = "Singles Past";
             NUD_SinglePast.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_SinglePast.Location = new System.Drawing.Point(62, 21);
             NUD_SinglePast.Margin = new System.Windows.Forms.Padding(2);
@@ -2048,6 +2111,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_MusicalProps
             // 
+            CLB_MusicalProps.AccessibleName = "Musical Props";
             CLB_MusicalProps.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             CLB_MusicalProps.FormattingEnabled = true;
             CLB_MusicalProps.Location = new System.Drawing.Point(6, 6);
