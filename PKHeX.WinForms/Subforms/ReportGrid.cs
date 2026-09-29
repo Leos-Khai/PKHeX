@@ -25,6 +25,13 @@ public partial class ReportGrid : Form
         InitializeComponent();
         CenterToParent();
         GetContextMenu();
+
+        // Auto-generated image columns use a plain image cell, which is narrated as "System.Drawing.Bitmap".
+        dgData.ColumnAdded += (_, e) =>
+        {
+            if (e.Column is DataGridViewImageColumn image)
+                image.CellTemplate = new PKHeX.WinForms.Controls.AccessibleImageCell();
+        };
     }
 
     private void GetContextMenu()
@@ -157,8 +164,15 @@ public partial class ReportGrid : Form
     private void Data_Sorted(object sender, EventArgs e)
     {
         int height = SpriteUtil.Spriter.Height + 1; // max height of a row, +1px
+        var sprite = dgData.Columns[nameof(EntitySummaryImage.Sprite)];
         for (int i = 0; i < dgData.Rows.Count; i++)
-            dgData.Rows[i].Height = height;
+        {
+            var row = dgData.Rows[i];
+            row.Height = height;
+            // Sorting recreates the cells, so the species name the sprite cell narrates is reapplied here.
+            if (sprite is not null && row.DataBoundItem is EntitySummary summary)
+                row.Cells[sprite.Index].Tag = summary.Species;
+        }
     }
 
     private void PromptSaveCSV(object sender, FormClosingEventArgs e)

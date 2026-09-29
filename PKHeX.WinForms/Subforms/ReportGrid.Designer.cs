@@ -34,6 +34,7 @@ namespace PKHeX.WinForms
             // 
             // dgData
             // 
+            dgData.AccessibleName = "Box Data Report";
             dgData.AllowUserToAddRows = false;
             dgData.AllowUserToDeleteRows = false;
             dgData.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
