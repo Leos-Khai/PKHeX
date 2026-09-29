@@ -79,6 +79,7 @@ namespace PKHeX.WinForms
             SCR_Box.Name = "SCR_Box";
             SCR_Box.Size = new System.Drawing.Size(24, 479);
             SCR_Box.TabIndex = 1;
+            SCR_Box.TabStop = true;
             SCR_Box.Scroll += UpdateScroll;
             // 
             // menuStrip1
