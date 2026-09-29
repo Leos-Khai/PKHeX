@@ -394,7 +394,10 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         {
             var relearn = info.Relearn;
             for (int i = 0; i < 4; i++)
+            {
                 relearnPB[i].Image = MoveDisplayState.GetMoveImage(!relearn[i].Valid, Entity, i);
+                relearnPB[i].AccessibleName = $"Relearn Move {i + 1} {MoveDisplayState.GetMoveStatus(!relearn[i].Valid, Entity, i)}";
+            }
         }
 
         if (args.HasFlag(UpdateLegalityArgs.SkipMoveRepopulation))
