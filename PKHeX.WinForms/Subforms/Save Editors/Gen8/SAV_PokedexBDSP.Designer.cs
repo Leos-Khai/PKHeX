@@ -88,6 +88,7 @@
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species";
             LB_Species.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Species.FormattingEnabled = true;
             LB_Species.ItemHeight = 15;
@@ -187,6 +188,7 @@
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go To Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -225,6 +227,7 @@
             // 
             // B_Modify
             // 
+            B_Modify.AccessibleName = "Modify All Species";
             B_Modify.Location = new System.Drawing.Point(272, 13);
             B_Modify.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Modify.Name = "B_Modify";
@@ -293,6 +296,7 @@
             // 
             // CHK_FS
             // 
+            CHK_FS.AccessibleName = "Seen Shiny Female";
             CHK_FS.AutoSize = true;
             CHK_FS.Location = new System.Drawing.Point(7, 63);
             CHK_FS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -304,6 +308,7 @@
             // 
             // CHK_MS
             // 
+            CHK_MS.AccessibleName = "Seen Shiny Male";
             CHK_MS.AutoSize = true;
             CHK_MS.Location = new System.Drawing.Point(7, 47);
             CHK_MS.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -315,6 +320,7 @@
             // 
             // CHK_F
             // 
+            CHK_F.AccessibleName = "Seen Female";
             CHK_F.AutoSize = true;
             CHK_F.Location = new System.Drawing.Point(7, 31);
             CHK_F.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -326,6 +332,7 @@
             // 
             // CHK_M
             // 
+            CHK_M.AccessibleName = "Seen Male";
             CHK_M.AutoSize = true;
             CHK_M.Location = new System.Drawing.Point(7, 15);
             CHK_M.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -378,6 +385,7 @@
             // 
             // CLB_FormRegular
             // 
+            CLB_FormRegular.AccessibleName = "Seen Forms";
             CLB_FormRegular.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             CLB_FormRegular.FormattingEnabled = true;
             CLB_FormRegular.Location = new System.Drawing.Point(315, 74);
@@ -398,6 +406,7 @@
             // 
             // CLB_FormShiny
             // 
+            CLB_FormShiny.AccessibleName = "Seen Shiny Forms";
             CLB_FormShiny.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             CLB_FormShiny.FormattingEnabled = true;
             CLB_FormShiny.Location = new System.Drawing.Point(461, 74);
@@ -445,6 +454,7 @@
             // 
             // CB_State
             // 
+            CB_State.AccessibleName = "Dex State";
             CB_State.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_State.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_State.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -459,6 +469,7 @@
             // 
             // B_ModifyForms
             // 
+            B_ModifyForms.AccessibleName = "Modify Forms";
             B_ModifyForms.Location = new System.Drawing.Point(530, 13);
             B_ModifyForms.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_ModifyForms.Name = "B_ModifyForms";
