@@ -89,6 +89,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Species
             // 
+            LB_Species.AccessibleName = "Species";
             LB_Species.FormattingEnabled = true;
             LB_Species.ItemHeight = 15;
             LB_Species.Location = new System.Drawing.Point(14, 46);
@@ -110,6 +111,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Go to Species";
             CB_Species.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Species.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Species.DropDownWidth = 95;
@@ -216,6 +218,7 @@ namespace PKHeX.WinForms
             // 
             // CB_DisplayForm
             // 
+            CB_DisplayForm.AccessibleName = "Displayed Form";
             CB_DisplayForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_DisplayForm.FormattingEnabled = true;
             CB_DisplayForm.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -254,6 +257,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Gender
             // 
+            CB_Gender.AccessibleName = "Displayed Gender";
             CB_Gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Gender.FormattingEnabled = true;
             CB_Gender.Items.AddRange(new object[] { "♂", "♀", "-" });
@@ -276,6 +280,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_DisplayShiny
             // 
+            CHK_DisplayShiny.AccessibleName = "Displayed Shiny";
             CHK_DisplayShiny.AutoSize = true;
             CHK_DisplayShiny.Location = new System.Drawing.Point(56, 24);
             CHK_DisplayShiny.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -287,6 +292,7 @@ namespace PKHeX.WinForms
             // 
             // CB_State
             // 
+            CB_State.AccessibleName = "Dex State";
             CB_State.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_State.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_State.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -420,6 +426,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_FormSeen
             // 
+            CLB_FormSeen.AccessibleName = "Forms Seen";
             CLB_FormSeen.FormattingEnabled = true;
             CLB_FormSeen.Location = new System.Drawing.Point(210, 153);
             CLB_FormSeen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -429,6 +436,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SeenShiny
             // 
+            CHK_SeenShiny.AccessibleName = "Seen Shiny";
             CHK_SeenShiny.AutoSize = true;
             CHK_SeenShiny.Location = new System.Drawing.Point(6, 75);
             CHK_SeenShiny.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -455,6 +463,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SeenGenderless
             // 
+            CHK_SeenGenderless.AccessibleName = "Seen Genderless";
             CHK_SeenGenderless.AutoSize = true;
             CHK_SeenGenderless.Location = new System.Drawing.Point(6, 48);
             CHK_SeenGenderless.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -466,6 +475,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SeenFemale
             // 
+            CHK_SeenFemale.AccessibleName = "Seen Female";
             CHK_SeenFemale.AutoSize = true;
             CHK_SeenFemale.Location = new System.Drawing.Point(6, 32);
             CHK_SeenFemale.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -477,6 +487,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_SeenMale
             // 
+            CHK_SeenMale.AccessibleName = "Seen Male";
             CHK_SeenMale.AutoSize = true;
             CHK_SeenMale.Location = new System.Drawing.Point(6, 16);
             CHK_SeenMale.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -488,6 +499,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_IsNew
             // 
+            CHK_IsNew.AccessibleName = "New Entry";
             CHK_IsNew.AutoSize = true;
             CHK_IsNew.Location = new System.Drawing.Point(414, 17);
             CHK_IsNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
