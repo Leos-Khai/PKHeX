@@ -66,12 +66,12 @@ namespace PKHeX.WinForms.Controls
             CB_Form = new System.Windows.Forms.ComboBox();
             Label_Form = new System.Windows.Forms.Label();
             CB_StatAlignment = new System.Windows.Forms.ComboBox();
-            L_StatAlignment = new System.Windows.Forms.Label();
+            L_StatAlignment = new PKHeX.WinForms.Controls.SelectableLabel();
             CB_Nature = new System.Windows.Forms.ComboBox();
-            Label_Nature = new System.Windows.Forms.Label();
+            Label_Nature = new PKHeX.WinForms.Controls.SelectableLabel();
             FLP_EXPLevelRight = new System.Windows.Forms.FlowLayoutPanel();
             TB_EXP = new System.Windows.Forms.MaskedTextBox();
-            Label_CurLevel = new System.Windows.Forms.Label();
+            Label_CurLevel = new PKHeX.WinForms.Controls.SelectableLabel();
             TB_Level = new System.Windows.Forms.MaskedTextBox();
             Label_EXP = new System.Windows.Forms.Label();
             FLP_NicknameLeft = new System.Windows.Forms.FlowLayoutPanel();
@@ -102,11 +102,11 @@ namespace PKHeX.WinForms.Controls
             L_BattleVersion = new System.Windows.Forms.Label();
             CB_BattleVersion = new System.Windows.Forms.ComboBox();
             FLP_MetLocation = new System.Windows.Forms.FlowLayoutPanel();
-            Label_MetLocation = new System.Windows.Forms.Label();
+            Label_MetLocation = new PKHeX.WinForms.Controls.SelectableLabel();
             CB_MetLocation = new System.Windows.Forms.ComboBox();
             FLP_Ball = new System.Windows.Forms.FlowLayoutPanel();
             FLP_BallLeft = new System.Windows.Forms.FlowLayoutPanel();
-            Label_Ball = new System.Windows.Forms.Label();
+            Label_Ball = new PKHeX.WinForms.Controls.SelectableLabel();
             PB_Ball = new SelectablePictureBox();
             CB_Ball = new System.Windows.Forms.ComboBox();
             FLP_MetDate = new System.Windows.Forms.FlowLayoutPanel();
@@ -117,7 +117,7 @@ namespace PKHeX.WinForms.Controls
             TB_MetLevel = new System.Windows.Forms.MaskedTextBox();
             CHK_Fateful = new System.Windows.Forms.CheckBox();
             FLP_ObedienceLevel = new System.Windows.Forms.FlowLayoutPanel();
-            L_ObedienceLevel = new System.Windows.Forms.Label();
+            L_ObedienceLevel = new PKHeX.WinForms.Controls.SelectableLabel();
             TB_ObedienceLevel = new System.Windows.Forms.MaskedTextBox();
             FLP_GroundTile = new System.Windows.Forms.FlowLayoutPanel();
             Label_GroundTile = new System.Windows.Forms.Label();
@@ -137,8 +137,8 @@ namespace PKHeX.WinForms.Controls
             FLP_Moves = new System.Windows.Forms.FlowLayoutPanel();
             GB_CurrentMoves = new System.Windows.Forms.Label();
             FLP_PP = new System.Windows.Forms.FlowLayoutPanel();
-            Label_CurPP = new System.Windows.Forms.Label();
-            Label_PPups = new System.Windows.Forms.Label();
+            Label_CurPP = new PKHeX.WinForms.Controls.SelectableLabel();
+            Label_PPups = new PKHeX.WinForms.Controls.SelectableLabel();
             MC_Move1 = new MoveChoice();
             MC_Move2 = new MoveChoice();
             MC_Move3 = new MoveChoice();
@@ -212,11 +212,11 @@ namespace PKHeX.WinForms.Controls
             FLP_EncryptionConstant = new System.Windows.Forms.FlowLayoutPanel();
             TB_EC = new System.Windows.Forms.TextBox();
             BTN_RerollEC = new System.Windows.Forms.Button();
-            Label_PrevOT = new System.Windows.Forms.Label();
+            Label_PrevOT = new PKHeX.WinForms.Controls.SelectableLabel();
             TB_Friendship = new System.Windows.Forms.MaskedTextBox();
             FLP_FriendshipLeft = new System.Windows.Forms.FlowLayoutPanel();
-            Label_Friendship = new System.Windows.Forms.Label();
-            Label_HatchCounter = new System.Windows.Forms.Label();
+            Label_Friendship = new PKHeX.WinForms.Controls.SelectableLabel();
+            Label_HatchCounter = new PKHeX.WinForms.Controls.SelectableLabel();
             FLP_HT = new System.Windows.Forms.FlowLayoutPanel();
             TB_HT = new PKHeX.WinForms.Controls.RenderedString();
             UC_HTGender = new GenderToggle();
@@ -230,7 +230,7 @@ namespace PKHeX.WinForms.Controls
             TB_OT = new PKHeX.WinForms.Controls.RenderedString();
             UC_OTGender = new GenderToggle();
             BTN_OTNameWarn = new System.Windows.Forms.Button();
-            Label_OT = new System.Windows.Forms.Label();
+            Label_OT = new PKHeX.WinForms.Controls.SelectableLabel();
             GB_OT = new System.Windows.Forms.Label();
             TID_Trainer = new TrainerID();
             FLP_ExtraBytes = new System.Windows.Forms.FlowLayoutPanel();
@@ -850,6 +850,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // L_StatAlignment
             // 
+            L_StatAlignment.AccessibleName = "Set Stat Alignment from Nature";
             L_StatAlignment.Anchor = System.Windows.Forms.AnchorStyles.Right;
             L_StatAlignment.AutoSize = true;
             L_StatAlignment.Location = new System.Drawing.Point(25, 161);
@@ -877,6 +878,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_Nature
             // 
+            Label_Nature.AccessibleName = "Set Nature from Stat Alignment";
             Label_Nature.Anchor = System.Windows.Forms.AnchorStyles.Right;
             Label_Nature.AutoSize = true;
             Label_Nature.Location = new System.Drawing.Point(69, 135);
@@ -915,6 +917,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_CurLevel
             // 
+            Label_CurLevel.AccessibleDescription = "Fills in a legal met location if the current one is invalid.";
+            Label_CurLevel.AccessibleName = "Suggest Met Location";
             Label_CurLevel.Location = new System.Drawing.Point(56, 0);
             Label_CurLevel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
             Label_CurLevel.Name = "Label_CurLevel";
@@ -1324,6 +1328,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_MetLocation
             // 
+            Label_MetLocation.AccessibleDescription = "Fills in a legal met location if the current one is invalid.";
+            Label_MetLocation.AccessibleName = "Suggest Met Location";
             Label_MetLocation.Location = new System.Drawing.Point(0, 0);
             Label_MetLocation.Margin = new System.Windows.Forms.Padding(0);
             Label_MetLocation.Name = "Label_MetLocation";
@@ -1375,6 +1381,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_Ball
             // 
+            Label_Ball.AccessibleDescription = "Opens the ball browser. Hold Shift to pick a legal ball by color, or Alt to reset to Poké Ball.";
+            Label_Ball.AccessibleName = "Choose Ball";
             Label_Ball.Anchor = System.Windows.Forms.AnchorStyles.Right;
             Label_Ball.AutoSize = true;
             Label_Ball.Location = new System.Drawing.Point(89, 0);
@@ -1513,6 +1521,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // L_ObedienceLevel
             // 
+            L_ObedienceLevel.AccessibleName = "Suggest Obedience Level";
             L_ObedienceLevel.Location = new System.Drawing.Point(0, 0);
             L_ObedienceLevel.Margin = new System.Windows.Forms.Padding(0);
             L_ObedienceLevel.Name = "L_ObedienceLevel";
@@ -1756,6 +1765,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_CurPP
             // 
+            Label_CurPP.AccessibleName = "Restore All PP";
             Label_CurPP.Location = new System.Drawing.Point(0, 0);
             Label_CurPP.Margin = new System.Windows.Forms.Padding(0);
             Label_CurPP.Name = "Label_CurPP";
@@ -1767,6 +1777,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_PPups
             // 
+            Label_PPups.AccessibleDescription = "Hold Control to clear all PP Ups.";
+            Label_PPups.AccessibleName = "Max All PP Ups";
             Label_PPups.Location = new System.Drawing.Point(24, 0);
             Label_PPups.Margin = new System.Windows.Forms.Padding(0);
             Label_PPups.Name = "Label_PPups";
@@ -2783,6 +2795,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_PrevOT
             // 
+            Label_PrevOT.AccessibleName = "Set Handling Trainer from Save File";
             Label_PrevOT.Anchor = System.Windows.Forms.AnchorStyles.Right;
             Label_PrevOT.AutoSize = true;
             Label_PrevOT.Location = new System.Drawing.Point(109, 262);
@@ -2822,6 +2835,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_Friendship
             // 
+            Label_Friendship.AccessibleDescription = "Toggles maximum friendship, or the maximum hatch counter for eggs. Hold Control for the minimum.";
+            Label_Friendship.AccessibleName = "Max Friendship";
             Label_Friendship.Anchor = System.Windows.Forms.AnchorStyles.Right;
             Label_Friendship.AutoSize = true;
             Label_Friendship.Location = new System.Drawing.Point(65, 0);
@@ -2835,6 +2850,8 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_HatchCounter
             // 
+            Label_HatchCounter.AccessibleDescription = "Sets the maximum hatch counter. Hold Control for the minimum.";
+            Label_HatchCounter.AccessibleName = "Max Hatch Counter";
             Label_HatchCounter.Anchor = System.Windows.Forms.AnchorStyles.Right;
             Label_HatchCounter.AutoSize = true;
             Label_HatchCounter.Location = new System.Drawing.Point(42, 19);
@@ -3017,6 +3034,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // Label_OT
             // 
+            Label_OT.AccessibleName = "Set Original Trainer from Save File";
             Label_OT.Anchor = System.Windows.Forms.AnchorStyles.Right;
             Label_OT.AutoSize = true;
             Label_OT.Location = new System.Drawing.Point(109, 62);
@@ -3412,15 +3430,15 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.Label Label_EXP;
         private System.Windows.Forms.FlowLayoutPanel FLP_EXPLevelRight;
         private System.Windows.Forms.MaskedTextBox TB_EXP;
-        private System.Windows.Forms.Label Label_CurLevel;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_CurLevel;
         private System.Windows.Forms.MaskedTextBox TB_Level;
-        private System.Windows.Forms.Label Label_Nature;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_Nature;
         private System.Windows.Forms.ComboBox CB_Nature;
         private System.Windows.Forms.Label Label_HeldItem;
         private System.Windows.Forms.ComboBox CB_HeldItem;
         private System.Windows.Forms.FlowLayoutPanel FLP_FriendshipLeft;
-        private System.Windows.Forms.Label Label_Friendship;
-        private System.Windows.Forms.Label Label_HatchCounter;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_Friendship;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_HatchCounter;
         private System.Windows.Forms.MaskedTextBox TB_Friendship;
         private System.Windows.Forms.Label Label_Form;
         private System.Windows.Forms.Label Label_Ability;
@@ -3468,7 +3486,7 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.ComboBox CB_MetLocation;
         private System.Windows.Forms.FlowLayoutPanel FLP_Ball;
         private System.Windows.Forms.FlowLayoutPanel FLP_BallLeft;
-        private System.Windows.Forms.Label Label_Ball;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_Ball;
         private PKHeX.WinForms.Controls.SelectablePictureBox PB_Ball;
         private System.Windows.Forms.ComboBox CB_Ball;
         private System.Windows.Forms.FlowLayoutPanel FLP_MetLevel;
@@ -3494,8 +3512,8 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.ComboBox CB_RelearnMove3;
         private System.Windows.Forms.ComboBox CB_RelearnMove2;
         private System.Windows.Forms.ComboBox CB_RelearnMove1;
-        private System.Windows.Forms.Label Label_CurPP;
-        private System.Windows.Forms.Label Label_PPups;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_CurPP;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_PPups;
         private System.Windows.Forms.TabPage Hidden_OTMisc;
         private System.Windows.Forms.FlowLayoutPanel FLP_PKMEditors;
         private System.Windows.Forms.Button BTN_Ribbons;
@@ -3503,7 +3521,7 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.Button BTN_History;
         private System.Windows.Forms.TextBox TB_EC;
         private PKHeX.WinForms.Controls.RenderedString TB_HT;
-        private System.Windows.Forms.Label Label_PrevOT;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_PrevOT;
         private System.Windows.Forms.Button BTN_RerollEC;
         private System.Windows.Forms.GroupBox GB_Markings;
         private PKHeX.WinForms.Controls.SelectablePictureBox PB_Mark6;
@@ -3517,14 +3535,14 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.MaskedTextBox TB_ExtraByte;
         private System.Windows.Forms.ComboBox CB_ExtraBytes;
         private PKHeX.WinForms.Controls.RenderedString TB_OT;
-        private System.Windows.Forms.Label Label_OT;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_OT;
         private System.Windows.Forms.Label Label_EncryptionConstant;
         private Controls.ShinyLeaf ShinyLeaf;
         private System.Windows.Forms.Label L_CatchRate;
         private CatchRate CR_PK1;
         public SizeCP SizeCP;
         private PKHeX.WinForms.Controls.SelectablePictureBox PB_Favorite;
-        private System.Windows.Forms.Label L_StatAlignment;
+        private PKHeX.WinForms.Controls.SelectableLabel L_StatAlignment;
         private System.Windows.Forms.ComboBox CB_StatAlignment;
         private PKHeX.WinForms.Controls.SelectablePictureBox PB_Origin;
         private System.Windows.Forms.ComboBox CB_HTLanguage;
@@ -3543,10 +3561,10 @@ namespace PKHeX.WinForms.Controls
         private GenderToggle UC_HTGender;
         private GenderToggle UC_OTGender;
         private System.Windows.Forms.FlowLayoutPanel FLP_ObedienceLevel;
-        private System.Windows.Forms.Label L_ObedienceLevel;
+        private PKHeX.WinForms.Controls.SelectableLabel L_ObedienceLevel;
         private System.Windows.Forms.MaskedTextBox TB_ObedienceLevel;
         private System.Windows.Forms.Label L_FormArgument;
-        private System.Windows.Forms.Label Label_MetLocation;
+        private PKHeX.WinForms.Controls.SelectableLabel Label_MetLocation;
         private MoveChoice MC_Move1;
         private MoveChoice MC_Move2;
         private MoveChoice MC_Move3;
