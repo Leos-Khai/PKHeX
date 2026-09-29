@@ -283,6 +283,7 @@ namespace PKHeX.WinForms
             // 
             // CB_ShopType
             // 
+            CB_ShopType.AccessibleName = "Shop Type";
             CB_ShopType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_ShopType.FormattingEnabled = true;
             CB_ShopType.Location = new System.Drawing.Point(0, 0);
@@ -293,6 +294,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ShopTypeLevel
             // 
+            NUD_ShopTypeLevel.AccessibleName = "Shop Type Level";
             NUD_ShopTypeLevel.Location = new System.Drawing.Point(121, 0);
             NUD_ShopTypeLevel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_ShopTypeLevel.Maximum = new decimal(new int[] { 9, 0, 0, 0 });
@@ -302,6 +304,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ShopTypeVersion
             // 
+            NUD_ShopTypeVersion.AccessibleName = "Shop Type Version";
             NUD_ShopTypeVersion.Location = new System.Drawing.Point(169, 0);
             NUD_ShopTypeVersion.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_ShopTypeVersion.Maximum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -322,6 +325,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_IsFlag2C
             // 
+            CHK_IsFlag2C.AccessibleName = "Flag 0x2C";
             CHK_IsFlag2C.Location = new System.Drawing.Point(126, 11);
             CHK_IsFlag2C.Name = "CHK_IsFlag2C";
             CHK_IsFlag2C.Size = new System.Drawing.Size(104, 24);
@@ -340,6 +344,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_AvenueLevel
             // 
+            NUD_AvenueLevel.AccessibleName = "Avenue Level";
             NUD_AvenueLevel.Location = new System.Drawing.Point(123, 38);
             NUD_AvenueLevel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_AvenueLevel.Maximum = new decimal(new int[] { 127, 0, 0, 0 });
@@ -382,6 +387,7 @@ namespace PKHeX.WinForms
             // 
             // TB_ShopCounts
             // 
+            TB_ShopCounts.AccessibleName = "Shop Counts";
             TB_ShopCounts.Location = new System.Drawing.Point(123, 116);
             TB_ShopCounts.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_ShopCounts.Name = "TB_ShopCounts";
@@ -401,6 +407,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_DexSeen
             // 
+            NUD_DexSeen.AccessibleName = "Dex Seen";
             NUD_DexSeen.Location = new System.Drawing.Point(123, 142);
             NUD_DexSeen.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_DexSeen.Maximum = new decimal(new int[] { 1023, 0, 0, 0 });
@@ -421,6 +428,7 @@ namespace PKHeX.WinForms
             // 
             // CB_FavoriteSpecies
             // 
+            CB_FavoriteSpecies.AccessibleName = "Starter Species";
             CB_FavoriteSpecies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_FavoriteSpecies.FormattingEnabled = true;
             CB_FavoriteSpecies.Location = new System.Drawing.Point(123, 168);
@@ -442,6 +450,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MedalRank
             // 
+            NUD_MedalRank.AccessibleName = "Medal Rank";
             NUD_MedalRank.Location = new System.Drawing.Point(123, 194);
             NUD_MedalRank.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_MedalRank.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -462,6 +471,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MedalHint
             // 
+            NUD_MedalHint.AccessibleName = "Medal Hint";
             NUD_MedalHint.Location = new System.Drawing.Point(123, 220);
             NUD_MedalHint.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_MedalHint.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -482,6 +492,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MedalCount
             // 
+            NUD_MedalCount.AccessibleName = "Medal Count";
             NUD_MedalCount.Location = new System.Drawing.Point(123, 246);
             NUD_MedalCount.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_MedalCount.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -502,6 +513,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Date1
             // 
+            TB_Date1.AccessibleName = "Date 1";
             TB_Date1.Location = new System.Drawing.Point(123, 272);
             TB_Date1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_Date1.Name = "TB_Date1";
@@ -521,6 +533,7 @@ namespace PKHeX.WinForms
             // 
             // TB_DateStart
             // 
+            TB_DateStart.AccessibleName = "Adventure Start Date";
             TB_DateStart.Location = new System.Drawing.Point(123, 298);
             TB_DateStart.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_DateStart.Name = "TB_DateStart";
@@ -540,6 +553,7 @@ namespace PKHeX.WinForms
             // 
             // TB_DateHall
             // 
+            TB_DateHall.AccessibleName = "Hall of Fame Date";
             TB_DateHall.Location = new System.Drawing.Point(123, 324);
             TB_DateHall.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_DateHall.Name = "TB_DateHall";
@@ -559,6 +573,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Records
             // 
+            TB_Records.AccessibleName = "Records";
             TB_Records.Location = new System.Drawing.Point(123, 350);
             TB_Records.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_Records.Multiline = true;
@@ -580,6 +595,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Trivia
             // 
+            TB_Trivia.AccessibleName = "Trivia";
             TB_Trivia.Location = new System.Drawing.Point(123, 411);
             TB_Trivia.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_Trivia.Name = "TB_Trivia";
@@ -599,6 +615,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Activities
             // 
+            TB_Activities.AccessibleName = "Activities";
             TB_Activities.Location = new System.Drawing.Point(123, 437);
             TB_Activities.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_Activities.Name = "TB_Activities";
@@ -618,6 +635,7 @@ namespace PKHeX.WinForms
             // 
             // TB_ActivityDates
             // 
+            TB_ActivityDates.AccessibleName = "Activity Dates";
             TB_ActivityDates.Location = new System.Drawing.Point(123, 463);
             TB_ActivityDates.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             TB_ActivityDates.Multiline = true;
@@ -639,6 +657,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Origin
             // 
+            CB_Origin.AccessibleName = "Origin";
             CB_Origin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Origin.FormattingEnabled = true;
             CB_Origin.Location = new System.Drawing.Point(123, 514);
@@ -660,6 +679,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MetHour
             // 
+            NUD_MetHour.AccessibleName = "Met Hour";
             NUD_MetHour.Location = new System.Drawing.Point(123, 540);
             NUD_MetHour.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_MetHour.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -680,6 +700,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_MetMinute
             // 
+            NUD_MetMinute.AccessibleName = "Met Minute";
             NUD_MetMinute.Location = new System.Drawing.Point(123, 566);
             NUD_MetMinute.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_MetMinute.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -700,6 +721,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UnknownA8
             // 
+            NUD_UnknownA8.AccessibleName = "Unknown 0xA8";
             NUD_UnknownA8.Location = new System.Drawing.Point(123, 592);
             NUD_UnknownA8.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_UnknownA8.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -720,6 +742,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_IsShopChangeAllowed
             // 
+            CHK_IsShopChangeAllowed.AccessibleName = "Can Change Shop";
             CHK_IsShopChangeAllowed.AutoSize = true;
             CHK_IsShopChangeAllowed.Location = new System.Drawing.Point(126, 621);
             CHK_IsShopChangeAllowed.Name = "CHK_IsShopChangeAllowed";
@@ -739,6 +762,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_IsFlagA9_1
             // 
+            CHK_IsFlagA9_1.AccessibleName = "Flag 0xA9 Bit 1";
             CHK_IsFlagA9_1.AutoSize = true;
             CHK_IsFlagA9_1.Location = new System.Drawing.Point(126, 641);
             CHK_IsFlagA9_1.Name = "CHK_IsFlagA9_1";
@@ -758,6 +782,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_IsFlagA9_2
             // 
+            CHK_IsFlagA9_2.AccessibleName = "Flag 0xA9 Bit 2";
             CHK_IsFlagA9_2.AutoSize = true;
             CHK_IsFlagA9_2.Location = new System.Drawing.Point(126, 661);
             CHK_IsFlagA9_2.Name = "CHK_IsFlagA9_2";
@@ -777,6 +802,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_InteractedToday
             // 
+            CHK_InteractedToday.AccessibleName = "Interacted Today";
             CHK_InteractedToday.AutoSize = true;
             CHK_InteractedToday.Location = new System.Drawing.Point(126, 681);
             CHK_InteractedToday.Name = "CHK_InteractedToday";
@@ -796,6 +822,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_IsFlagAA
             // 
+            CHK_IsFlagAA.AccessibleName = "Flag 0xAA";
             CHK_IsFlagAA.AutoSize = true;
             CHK_IsFlagAA.Location = new System.Drawing.Point(126, 701);
             CHK_IsFlagAA.Name = "CHK_IsFlagAA";
@@ -815,6 +842,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_JoinAvenueRank
             // 
+            NUD_JoinAvenueRank.AccessibleName = "Avenue Rank";
             NUD_JoinAvenueRank.Location = new System.Drawing.Point(123, 718);
             NUD_JoinAvenueRank.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_JoinAvenueRank.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -835,6 +863,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UnknownAC
             // 
+            NUD_UnknownAC.AccessibleName = "Unknown 0xAC";
             NUD_UnknownAC.Location = new System.Drawing.Point(123, 744);
             NUD_UnknownAC.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_UnknownAC.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -855,6 +884,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ShopRank
             // 
+            NUD_ShopRank.AccessibleName = "Shop Rank";
             NUD_ShopRank.Location = new System.Drawing.Point(123, 770);
             NUD_ShopRank.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_ShopRank.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
@@ -875,6 +905,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ShopExperience
             // 
+            NUD_ShopExperience.AccessibleName = "Shop Experience";
             NUD_ShopExperience.Location = new System.Drawing.Point(123, 796);
             NUD_ShopExperience.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_ShopExperience.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -895,6 +926,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_IsInventory
             // 
+            NUD_IsInventory.AccessibleName = "Is Inventory";
             NUD_IsInventory.Location = new System.Drawing.Point(123, 822);
             NUD_IsInventory.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_IsInventory.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -926,6 +958,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_ShopWork
             // 
+            NUD_ShopWork.AccessibleName = "Shop Work";
             NUD_ShopWork.Location = new System.Drawing.Point(123, 874);
             NUD_ShopWork.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_ShopWork.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -946,6 +979,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UnusedB8
             // 
+            NUD_UnusedB8.AccessibleName = "Unused 0xB8";
             NUD_UnusedB8.Location = new System.Drawing.Point(123, 900);
             NUD_UnusedB8.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_UnusedB8.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -966,6 +1000,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UnknownBits0_8
             // 
+            NUD_UnknownBits0_8.AccessibleName = "Unknown Bits 0 to 8";
             NUD_UnknownBits0_8.Location = new System.Drawing.Point(123, 926);
             NUD_UnknownBits0_8.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_UnknownBits0_8.Maximum = new decimal(new int[] { 511, 0, 0, 0 });
@@ -986,6 +1021,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_UnknownBit9
             // 
+            CHK_UnknownBit9.AccessibleName = "Unknown Bit 9";
             CHK_UnknownBit9.AutoSize = true;
             CHK_UnknownBit9.Location = new System.Drawing.Point(126, 955);
             CHK_UnknownBit9.Name = "CHK_UnknownBit9";
@@ -1005,6 +1041,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UnknownBits10
             // 
+            NUD_UnknownBits10.AccessibleName = "Unknown Bits 10 to 12";
             NUD_UnknownBits10.Location = new System.Drawing.Point(123, 972);
             NUD_UnknownBits10.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_UnknownBits10.Maximum = new decimal(new int[] { 7, 0, 0, 0 });
@@ -1025,6 +1062,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UnknownBits13_20
             // 
+            NUD_UnknownBits13_20.AccessibleName = "Unknown Bits 13 to 20";
             NUD_UnknownBits13_20.Location = new System.Drawing.Point(123, 998);
             NUD_UnknownBits13_20.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_UnknownBits13_20.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -1045,6 +1083,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UnknownBits21_27
             // 
+            NUD_UnknownBits21_27.AccessibleName = "Unknown Bits 21 to 27";
             NUD_UnknownBits21_27.Location = new System.Drawing.Point(123, 1024);
             NUD_UnknownBits21_27.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_UnknownBits21_27.Maximum = new decimal(new int[] { 127, 0, 0, 0 });
@@ -1065,6 +1104,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_UnknownBits28_31
             // 
+            NUD_UnknownBits28_31.AccessibleName = "Unknown Bits 28 to 31";
             NUD_UnknownBits28_31.Location = new System.Drawing.Point(123, 1050);
             NUD_UnknownBits28_31.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_UnknownBits28_31.Maximum = new decimal(new int[] { 15, 0, 0, 0 });
@@ -1074,6 +1114,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unused2D
             // 
+            NUD_Unused2D.AccessibleName = "Unused 0x2D";
             NUD_Unused2D.Location = new System.Drawing.Point(123, 64);
             NUD_Unused2D.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Unused2D.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -1096,6 +1137,7 @@ namespace PKHeX.WinForms
             // 
             // CB_DesiredShopType
             // 
+            CB_DesiredShopType.AccessibleName = "Desired Shop";
             CB_DesiredShopType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_DesiredShopType.FormattingEnabled = true;
             CB_DesiredShopType.Location = new System.Drawing.Point(0, 0);
@@ -1106,6 +1148,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_DesiredShopLevel
             // 
+            NUD_DesiredShopLevel.AccessibleName = "Desired Shop Level";
             NUD_DesiredShopLevel.Location = new System.Drawing.Point(121, 0);
             NUD_DesiredShopLevel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_DesiredShopLevel.Maximum = new decimal(new int[] { 9, 0, 0, 0 });
@@ -1115,6 +1158,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_DesiredShopVersion
             // 
+            NUD_DesiredShopVersion.AccessibleName = "Desired Shop Version";
             NUD_DesiredShopVersion.Location = new System.Drawing.Point(169, 0);
             NUD_DesiredShopVersion.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_DesiredShopVersion.Maximum = new decimal(new int[] { 3, 0, 0, 0 });

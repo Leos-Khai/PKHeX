@@ -102,6 +102,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown4C
             // 
+            NUD_Unknown4C.AccessibleName = "Unknown 0x4C";
             NUD_Unknown4C.Location = new System.Drawing.Point(125, 0);
             NUD_Unknown4C.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Unknown4C.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -121,6 +122,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown4D
             // 
+            NUD_Unknown4D.AccessibleName = "Unknown 0x4D";
             NUD_Unknown4D.Location = new System.Drawing.Point(125, 26);
             NUD_Unknown4D.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Unknown4D.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -140,6 +142,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown4E
             // 
+            NUD_Unknown4E.AccessibleName = "Unknown 0x4E";
             NUD_Unknown4E.Location = new System.Drawing.Point(125, 52);
             NUD_Unknown4E.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Unknown4E.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -159,6 +162,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_InteractedToday
             // 
+            CHK_InteractedToday.AccessibleName = "Interacted Today";
             CHK_InteractedToday.AutoSize = true;
             CHK_InteractedToday.Location = new System.Drawing.Point(128, 81);
             CHK_InteractedToday.Name = "CHK_InteractedToday";
@@ -177,6 +181,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Species.FormattingEnabled = true;
             CB_Species.Location = new System.Drawing.Point(125, 98);
@@ -197,6 +202,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown52
             // 
+            NUD_Unknown52.AccessibleName = "Unknown 0x52";
             NUD_Unknown52.Location = new System.Drawing.Point(125, 124);
             NUD_Unknown52.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Unknown52.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
@@ -216,6 +222,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown54
             // 
+            NUD_Unknown54.AccessibleName = "Unknown 0x54";
             NUD_Unknown54.Location = new System.Drawing.Point(125, 150);
             NUD_Unknown54.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Unknown54.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -235,6 +242,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_BubbleTarget
             // 
+            NUD_BubbleTarget.AccessibleName = "Text Bubble Target";
             NUD_BubbleTarget.Location = new System.Drawing.Point(125, 176);
             NUD_BubbleTarget.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_BubbleTarget.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -254,6 +262,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown56
             // 
+            NUD_Unknown56.AccessibleName = "Unknown 0x56";
             NUD_Unknown56.Location = new System.Drawing.Point(125, 202);
             NUD_Unknown56.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Unknown56.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -273,6 +282,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Unknown5A
             // 
+            NUD_Unknown5A.AccessibleName = "Unknown 0x5A";
             NUD_Unknown5A.Location = new System.Drawing.Point(125, 228);
             NUD_Unknown5A.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             NUD_Unknown5A.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });

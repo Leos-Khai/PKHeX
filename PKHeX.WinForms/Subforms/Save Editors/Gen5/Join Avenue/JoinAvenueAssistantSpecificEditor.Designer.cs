@@ -75,6 +75,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Position0
             // 
+            NUD_Position0.AccessibleName = "Position 0";
             NUD_Position0.Location = new System.Drawing.Point(114, 0);
             NUD_Position0.Margin = new Padding(0, 0, 0, 1);
             NUD_Position0.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -94,6 +95,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Position1
             // 
+            NUD_Position1.AccessibleName = "Position 1";
             NUD_Position1.Location = new System.Drawing.Point(114, 26);
             NUD_Position1.Margin = new Padding(0, 0, 0, 1);
             NUD_Position1.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -113,6 +115,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Position2
             // 
+            NUD_Position2.AccessibleName = "Position 2";
             NUD_Position2.Location = new System.Drawing.Point(114, 52);
             NUD_Position2.Margin = new Padding(0, 0, 0, 1);
             NUD_Position2.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -132,6 +135,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PositionUnused
             // 
+            NUD_PositionUnused.AccessibleName = "Unused Position";
             NUD_PositionUnused.Location = new System.Drawing.Point(114, 78);
             NUD_PositionUnused.Margin = new Padding(0, 0, 0, 1);
             NUD_PositionUnused.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -151,6 +155,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_InteractedToday
             // 
+            CHK_InteractedToday.AccessibleName = "Interacted Today";
             CHK_InteractedToday.AutoSize = true;
             CHK_InteractedToday.Location = new System.Drawing.Point(117, 107);
             CHK_InteractedToday.Name = "CHK_InteractedToday";

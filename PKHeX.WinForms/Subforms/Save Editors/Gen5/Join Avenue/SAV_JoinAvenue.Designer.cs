@@ -138,6 +138,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_VisitorCount
             // 
+            NUD_VisitorCount.AccessibleName = "Visitor Count";
             NUD_VisitorCount.Location = new System.Drawing.Point(94, 35);
             NUD_VisitorCount.Margin = new System.Windows.Forms.Padding(0);
             NUD_VisitorCount.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -158,6 +159,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_FanCount
             // 
+            NUD_FanCount.AccessibleName = "Fan Count";
             NUD_FanCount.Location = new System.Drawing.Point(94, 60);
             NUD_FanCount.Margin = new System.Windows.Forms.Padding(0);
             NUD_FanCount.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
