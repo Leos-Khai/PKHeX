@@ -127,6 +127,7 @@ namespace PKHeX.WinForms
             // 
             // M_OT_Friendship
             // 
+            M_OT_Friendship.AccessibleName = "OT Friendship";
             M_OT_Friendship.Location = new System.Drawing.Point(100, 18);
             M_OT_Friendship.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             M_OT_Friendship.Mask = "000";
@@ -286,6 +287,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_OT
             // 
+            RTB_OT.AccessibleName = "OT Memory Description";
             RTB_OT.Location = new System.Drawing.Point(0, 163);
             RTB_OT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             RTB_OT.Name = "RTB_OT";
@@ -296,6 +298,7 @@ namespace PKHeX.WinForms
             // 
             // CB_OTVar
             // 
+            CB_OTVar.AccessibleName = "OT Memory Variable";
             CB_OTVar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_OTVar.FormattingEnabled = true;
             CB_OTVar.Location = new System.Drawing.Point(100, 70);
@@ -307,6 +310,7 @@ namespace PKHeX.WinForms
             // 
             // CB_OTMemory
             // 
+            CB_OTMemory.AccessibleName = "OT Memory Type";
             CB_OTMemory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_OTMemory.DropDownWidth = 440;
             CB_OTMemory.FormattingEnabled = true;
@@ -319,6 +323,7 @@ namespace PKHeX.WinForms
             // 
             // CB_OTQual
             // 
+            CB_OTQual.AccessibleName = "OT Memory Intensity";
             CB_OTQual.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_OTQual.FormattingEnabled = true;
             CB_OTQual.Location = new System.Drawing.Point(100, 102);
@@ -330,6 +335,7 @@ namespace PKHeX.WinForms
             // 
             // CB_OTFeel
             // 
+            CB_OTFeel.AccessibleName = "OT Memory Feeling";
             CB_OTFeel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_OTFeel.FormattingEnabled = true;
             CB_OTFeel.Location = new System.Drawing.Point(100, 128);
@@ -351,6 +357,7 @@ namespace PKHeX.WinForms
             // 
             // M_OT_Affection
             // 
+            M_OT_Affection.AccessibleName = "OT Affection";
             M_OT_Affection.Location = new System.Drawing.Point(265, 18);
             M_OT_Affection.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             M_OT_Affection.Mask = "000";
@@ -401,6 +408,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Region4
             // 
+            CB_Region4.AccessibleName = "Past 4 Residence Region";
             CB_Region4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Region4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Region4.DropDownWidth = 180;
@@ -413,6 +421,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Region3
             // 
+            CB_Region3.AccessibleName = "Past 3 Residence Region";
             CB_Region3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Region3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Region3.DropDownWidth = 180;
@@ -425,6 +434,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Region2
             // 
+            CB_Region2.AccessibleName = "Past 2 Residence Region";
             CB_Region2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Region2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Region2.DropDownWidth = 180;
@@ -437,6 +447,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Region1
             // 
+            CB_Region1.AccessibleName = "Past 1 Residence Region";
             CB_Region1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Region1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Region1.DropDownWidth = 180;
@@ -449,6 +460,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Region0
             // 
+            CB_Region0.AccessibleName = "Latest Residence Region";
             CB_Region0.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Region0.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Region0.DropDownWidth = 180;
@@ -461,6 +473,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Country4
             // 
+            CB_Country4.AccessibleName = "Past 4 Residence Country";
             CB_Country4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Country4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Country4.DropDownWidth = 180;
@@ -475,6 +488,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Country3
             // 
+            CB_Country3.AccessibleName = "Past 3 Residence Country";
             CB_Country3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Country3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Country3.DropDownWidth = 180;
@@ -489,6 +503,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Country2
             // 
+            CB_Country2.AccessibleName = "Past 2 Residence Country";
             CB_Country2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Country2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Country2.DropDownWidth = 180;
@@ -503,6 +518,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Country1
             // 
+            CB_Country1.AccessibleName = "Past 1 Residence Country";
             CB_Country1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Country1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Country1.DropDownWidth = 180;
@@ -517,6 +533,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Country0
             // 
+            CB_Country0.AccessibleName = "Latest Residence Country";
             CB_Country0.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Country0.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Country0.DropDownWidth = 180;
@@ -551,6 +568,7 @@ namespace PKHeX.WinForms
             // 
             // M_Enjoyment
             // 
+            M_Enjoyment.AccessibleName = "Enjoyment";
             M_Enjoyment.Location = new System.Drawing.Point(203, 91);
             M_Enjoyment.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             M_Enjoyment.Mask = "000";
@@ -562,6 +580,7 @@ namespace PKHeX.WinForms
             // 
             // M_Fullness
             // 
+            M_Fullness.AccessibleName = "Fullness";
             M_Fullness.Location = new System.Drawing.Point(203, 61);
             M_Fullness.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             M_Fullness.Mask = "000";
@@ -635,6 +654,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_CT
             // 
+            RTB_CT.AccessibleName = "Handler Memory Description";
             RTB_CT.Location = new System.Drawing.Point(0, 163);
             RTB_CT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             RTB_CT.Name = "RTB_CT";
@@ -645,6 +665,7 @@ namespace PKHeX.WinForms
             // 
             // CB_CTVar
             // 
+            CB_CTVar.AccessibleName = "Handler Memory Variable";
             CB_CTVar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_CTVar.FormattingEnabled = true;
             CB_CTVar.Location = new System.Drawing.Point(100, 70);
@@ -656,6 +677,7 @@ namespace PKHeX.WinForms
             // 
             // CB_CTMemory
             // 
+            CB_CTMemory.AccessibleName = "Handler Memory Type";
             CB_CTMemory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_CTMemory.DropDownWidth = 440;
             CB_CTMemory.FormattingEnabled = true;
@@ -668,6 +690,7 @@ namespace PKHeX.WinForms
             // 
             // CB_CTQual
             // 
+            CB_CTQual.AccessibleName = "Handler Memory Intensity";
             CB_CTQual.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_CTQual.FormattingEnabled = true;
             CB_CTQual.Location = new System.Drawing.Point(100, 102);
@@ -679,6 +702,7 @@ namespace PKHeX.WinForms
             // 
             // CB_CTFeel
             // 
+            CB_CTFeel.AccessibleName = "Handler Memory Feeling";
             CB_CTFeel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_CTFeel.FormattingEnabled = true;
             CB_CTFeel.Location = new System.Drawing.Point(100, 128);
@@ -710,6 +734,7 @@ namespace PKHeX.WinForms
             // 
             // M_CT_Affection
             // 
+            M_CT_Affection.AccessibleName = "Handler Affection";
             M_CT_Affection.Location = new System.Drawing.Point(265, 18);
             M_CT_Affection.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             M_CT_Affection.Mask = "000";
@@ -720,6 +745,7 @@ namespace PKHeX.WinForms
             // 
             // M_CT_Friendship
             // 
+            M_CT_Friendship.AccessibleName = "Handler Friendship";
             M_CT_Friendship.Location = new System.Drawing.Point(100, 18);
             M_CT_Friendship.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             M_CT_Friendship.Mask = "000";
@@ -801,6 +827,7 @@ namespace PKHeX.WinForms
             // 
             // MT_Sociability
             // 
+            MT_Sociability.AccessibleName = "Sociability";
             MT_Sociability.Location = new System.Drawing.Point(203, 121);
             MT_Sociability.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             MT_Sociability.Mask = "000";
@@ -831,6 +858,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Handler
             // 
+            CB_Handler.AccessibleName = "Current Handler";
             CB_Handler.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_Handler.Enabled = false;
             CB_Handler.FormattingEnabled = true;

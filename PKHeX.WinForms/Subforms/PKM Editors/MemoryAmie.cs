@@ -266,6 +266,7 @@ public partial class MemoryAmie : Form
             CB_OTVar.InitializeBinding();
             CB_OTVar.DataSource = new BindingSource(args, string.Empty);
             LOTV.Text = TextArgs.GetMemoryCategory(memIndex, memoryGen);
+            CB_OTVar.AccessibleName = GetVariableName("OT", LOTV.Text);
             LOTV.Visible = CB_OTVar.Visible = CB_OTVar.Enabled = args.Count > 1;
         }
         else
@@ -277,8 +278,16 @@ public partial class MemoryAmie : Form
             CB_CTVar.InitializeBinding();
             CB_CTVar.DataSource = new BindingSource(argvals, string.Empty);
             LCTV.Text = TextArgs.GetMemoryCategory(memIndex, memoryGen);
+            CB_CTVar.AccessibleName = GetVariableName("Handler", LCTV.Text);
             LCTV.Visible = CB_CTVar.Visible = CB_CTVar.Enabled = argvals.Count > 1;
         }
+    }
+
+    // The visible label changes per memory (Species, Item, Move...); a fixed name would hide what the combo box holds.
+    private static string GetVariableName(string trainer, string category)
+    {
+        category = category.TrimEnd(':');
+        return category.Length == 0 ? $"{trainer} Memory Variable" : $"{trainer} Memory {category}";
     }
 
     private string GetMemoryString(ComboBox m, Control arg, Control q, Control f, string tr)
