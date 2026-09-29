@@ -40,7 +40,6 @@ namespace PKHeX.WinForms
             B_BoxSwap.Name = "B_BoxSwap";
             B_BoxSwap.Size = new System.Drawing.Size(24, 24);
             B_BoxSwap.TabIndex = 67;
-            B_BoxSwap.TabStop = false;
             B_BoxSwap.Click += new System.EventHandler(PB_BoxSwap_Click);
             // 
             // Box
