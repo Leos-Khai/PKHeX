@@ -21,6 +21,11 @@ public partial class StatusConditionView : UserControl
     {
         InitializeComponent();
         PB_Status.MouseHover += (_, _) => PB_Status.Cursor = Cursors.Hand;
+        PB_Status.KeyDown += (_, e) =>
+        {
+            if (e.KeyCode is Keys.Enter or Keys.Space)
+                PB_Status_Click(PB_Status, e);
+        };
     }
 
     public void LoadPKM(PKM entity)
@@ -47,12 +52,14 @@ public partial class StatusConditionView : UserControl
     {
         PB_Status.Image = Drawing.PokeSprite.Properties.Resources.sickfaint;
         Hover.RemoveAll();
+        SetAccessibleStatus("Fainted");
     }
 
     private void ClearStatus()
     {
         PB_Status.Image = null;
         Hover.RemoveAll();
+        SetAccessibleStatus("None");
     }
 
     private void SetStatus(int value, int generation)
@@ -64,6 +71,7 @@ public partial class StatusConditionView : UserControl
 
             var text = WinFormsTranslator.TranslateEnum(status, Main.CurrentLanguage);
             Hover.SetToolTip(PB_Status, $"Status Condition: {text}");
+            SetAccessibleStatus(text);
         }
         else
         {
@@ -72,7 +80,14 @@ public partial class StatusConditionView : UserControl
 
             var text = WinFormsTranslator.TranslateEnum(status, Main.CurrentLanguage);
             Hover.SetToolTip(PB_Status, $"Status Condition: {text}");
+            SetAccessibleStatus(text);
         }
+    }
+
+    private void SetAccessibleStatus(string text)
+    {
+        PB_Status.AccessibleName = $"Status Condition: {text}";
+        PB_Status.AccessibleDescription = $"Status Condition: {text}. Press Enter to change.";
     }
 
     private void PB_Status_Click(object sender, EventArgs e)
