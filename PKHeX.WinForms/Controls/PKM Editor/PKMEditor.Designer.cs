@@ -1259,6 +1259,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_GameOrigin
             // 
+            CB_GameOrigin.AccessibleName = "Origin Game";
             CB_GameOrigin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_GameOrigin.FormattingEnabled = true;
             CB_GameOrigin.Location = new System.Drawing.Point(120, 0);
@@ -1293,6 +1294,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_BattleVersion
             // 
+            CB_BattleVersion.AccessibleName = "Battle Version";
             CB_BattleVersion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_BattleVersion.FormattingEnabled = true;
             CB_BattleVersion.Location = new System.Drawing.Point(120, 0);
@@ -1328,6 +1330,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_MetLocation
             // 
+            CB_MetLocation.AccessibleName = "Met Location";
             CB_MetLocation.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_MetLocation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_MetLocation.FormattingEnabled = true;
@@ -1392,6 +1395,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_Ball
             // 
+            CB_Ball.AccessibleName = "Ball";
             CB_Ball.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Ball.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Ball.FormattingEnabled = true;
@@ -1429,6 +1433,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CAL_MetDate
             // 
+            CAL_MetDate.AccessibleName = "Met Date";
             CAL_MetDate.CustomFormat = "MM/dd/yyyy";
             CAL_MetDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_MetDate.Location = new System.Drawing.Point(120, 0);
@@ -1466,6 +1471,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_MetLevel
             // 
+            TB_MetLevel.AccessibleName = "Met Level";
             TB_MetLevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_MetLevel.Location = new System.Drawing.Point(120, 0);
             TB_MetLevel.Margin = new System.Windows.Forms.Padding(0);
@@ -1512,6 +1518,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_ObedienceLevel
             // 
+            TB_ObedienceLevel.AccessibleName = "Obedience Level";
             TB_ObedienceLevel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_ObedienceLevel.Location = new System.Drawing.Point(120, 0);
             TB_ObedienceLevel.Margin = new System.Windows.Forms.Padding(0, 0, 120, 0);
@@ -1545,6 +1552,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_GroundTile
             // 
+            CB_GroundTile.AccessibleName = "Encounter Type";
             CB_GroundTile.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_GroundTile.DropDownWidth = 160;
             CB_GroundTile.FormattingEnabled = true;
@@ -1579,6 +1587,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_MetTimeOfDay
             // 
+            CB_MetTimeOfDay.AccessibleName = "Met Time of Day";
             CB_MetTimeOfDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_MetTimeOfDay.DropDownWidth = 150;
             CB_MetTimeOfDay.FormattingEnabled = true;
@@ -1619,6 +1628,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_EggLocation
             // 
+            CB_EggLocation.AccessibleName = "Egg Met Location";
             CB_EggLocation.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_EggLocation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_EggLocation.FormattingEnabled = true;
@@ -1631,6 +1641,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CAL_EggDate
             // 
+            CAL_EggDate.AccessibleName = "Egg Met Date";
             CAL_EggDate.CustomFormat = "MM/dd/yyyy";
             CAL_EggDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             CAL_EggDate.Location = new System.Drawing.Point(100, 45);
