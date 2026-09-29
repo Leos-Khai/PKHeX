@@ -51,6 +51,7 @@ namespace PKHeX.WinForms
             // 
             // CLB_Flavors
             // 
+            CLB_Flavors.AccessibleName = "Flavor Pool";
             CLB_Flavors.CheckOnClick = true;
             CLB_Flavors.FormattingEnabled = true;
             CLB_Flavors.Location = new System.Drawing.Point(12, 30);
@@ -69,6 +70,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Start
             // 
+            NUD_Start.AccessibleName = "Range Start";
             NUD_Start.Location = new System.Drawing.Point(328, 126);
             NUD_Start.Name = "NUD_Start";
             NUD_Start.Size = new System.Drawing.Size(80, 25);
@@ -76,6 +78,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_End
             // 
+            NUD_End.AccessibleName = "Range End";
             NUD_End.Location = new System.Drawing.Point(444, 126);
             NUD_End.Maximum = new decimal(new int[] { 999, 0, 0, 0 });
             NUD_End.Name = "NUD_End";
