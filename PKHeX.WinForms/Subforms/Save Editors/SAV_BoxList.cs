@@ -65,7 +65,13 @@ public sealed partial class SAV_BoxList : Form
             boxEditor.InitializeGrid();
             boxEditor.Reset();
             foreach (var pb in boxEditor.SlotPictureBoxes)
+            {
                 pb.ContextMenuStrip = p.SlotPictureBoxes[0].ContextMenuStrip;
+                // Every box shares the same generated slot names; prefix the box so narration says which box a slot is in.
+                pb.AccessibleName = $"Box {i + 1} {pb.AccessibleName}";
+            }
+            boxEditor.B_BoxLeft.AccessibleName = $"Swap Box {i + 1} With Previous Box";
+            boxEditor.B_BoxRight.AccessibleName = $"Swap Box {i + 1} With Next Box";
             boxEditor.CurrentBox = i;
             boxEditor.CB_BoxSelect.Enabled = false;
             Boxes[i] = boxEditor;
