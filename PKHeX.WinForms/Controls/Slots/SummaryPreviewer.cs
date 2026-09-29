@@ -37,13 +37,7 @@ public sealed class SummaryPreviewer
         }
         else if (Settings.HoverSlotShowText)
         {
-            if (!settings.Order.Contains(BattleTemplateToken.FirstLine))
-            {
-                var temp = new BattleTemplateToken[settings.Order.Length + 1];
-                settings.Order.CopyTo(temp.AsSpan(1));
-                temp[0] = BattleTemplateToken.FirstLine;
-                settings = settings with { Order = temp };
-            }
+            settings = WithFirstLine(settings);
             var text = GetPreviewText(pk, settings);
             PokePreview.TryAppendOtherStats(pk, ref text, settings);
             if (Settings.HoverSlotShowEncounter)
@@ -157,6 +151,19 @@ public sealed class SummaryPreviewer
     }
 
     public static string GetPreviewText(PKM pk, BattleTemplateExportSettings settings) => ShowdownParsing.GetLocalizedPreviewText(pk, settings);
+
+    /// <summary>
+    /// Ensures the nickname/species line leads the text; the brief hover order omits it because the preview card draws it as a header.
+    /// </summary>
+    public static BattleTemplateExportSettings WithFirstLine(BattleTemplateExportSettings settings)
+    {
+        if (settings.Order.Contains(BattleTemplateToken.FirstLine))
+            return settings;
+        var temp = new BattleTemplateToken[settings.Order.Length + 1];
+        settings.Order.CopyTo(temp.AsSpan(1));
+        temp[0] = BattleTemplateToken.FirstLine;
+        return settings with { Order = temp };
+    }
 
     public static string AppendEncounterInfo(LegalityLocalizationContext la, string text)
     {
