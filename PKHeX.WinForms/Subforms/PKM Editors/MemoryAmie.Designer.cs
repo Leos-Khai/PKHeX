@@ -32,13 +32,13 @@ namespace PKHeX.WinForms
             BTN_Cancel = new System.Windows.Forms.Button();
             M_OT_Friendship = new System.Windows.Forms.MaskedTextBox();
             L_OT_Friendship = new System.Windows.Forms.Label();
-            L_Geo0 = new System.Windows.Forms.Label();
-            L_Geo1 = new System.Windows.Forms.Label();
+            L_Geo0 = new PKHeX.WinForms.Controls.SelectableLabel();
+            L_Geo1 = new PKHeX.WinForms.Controls.SelectableLabel();
             L_Region = new System.Windows.Forms.Label();
             L_Country = new System.Windows.Forms.Label();
-            L_Geo2 = new System.Windows.Forms.Label();
-            L_Geo3 = new System.Windows.Forms.Label();
-            L_Geo4 = new System.Windows.Forms.Label();
+            L_Geo2 = new PKHeX.WinForms.Controls.SelectableLabel();
+            L_Geo3 = new PKHeX.WinForms.Controls.SelectableLabel();
+            L_Geo4 = new PKHeX.WinForms.Controls.SelectableLabel();
             L_OT_Quality = new System.Windows.Forms.Label();
             L_OT_TextLine = new System.Windows.Forms.Label();
             LOTV = new System.Windows.Forms.Label();
@@ -148,6 +148,8 @@ namespace PKHeX.WinForms
             // 
             // L_Geo0
             // 
+            L_Geo0.AccessibleDescription = "Clears the latest residence country and region.";
+            L_Geo0.AccessibleName = "Reset Latest Residence";
             L_Geo0.Location = new System.Drawing.Point(-1, 36);
             L_Geo0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_Geo0.Name = "L_Geo0";
@@ -159,6 +161,8 @@ namespace PKHeX.WinForms
             // 
             // L_Geo1
             // 
+            L_Geo1.AccessibleDescription = "Clears this residence country and region.";
+            L_Geo1.AccessibleName = "Reset Past 1 Residence";
             L_Geo1.Location = new System.Drawing.Point(0, 66);
             L_Geo1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_Geo1.Name = "L_Geo1";
@@ -190,6 +194,8 @@ namespace PKHeX.WinForms
             // 
             // L_Geo2
             // 
+            L_Geo2.AccessibleDescription = "Clears this residence country and region.";
+            L_Geo2.AccessibleName = "Reset Past 2 Residence";
             L_Geo2.Location = new System.Drawing.Point(0, 96);
             L_Geo2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_Geo2.Name = "L_Geo2";
@@ -201,6 +207,8 @@ namespace PKHeX.WinForms
             // 
             // L_Geo3
             // 
+            L_Geo3.AccessibleDescription = "Clears this residence country and region.";
+            L_Geo3.AccessibleName = "Reset Past 3 Residence";
             L_Geo3.Location = new System.Drawing.Point(0, 126);
             L_Geo3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_Geo3.Name = "L_Geo3";
@@ -212,6 +220,8 @@ namespace PKHeX.WinForms
             // 
             // L_Geo4
             // 
+            L_Geo4.AccessibleDescription = "Clears this residence country and region.";
+            L_Geo4.AccessibleName = "Reset Past 4 Residence";
             L_Geo4.Location = new System.Drawing.Point(-1, 155);
             L_Geo4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             L_Geo4.Name = "L_Geo4";
@@ -918,13 +928,13 @@ namespace PKHeX.WinForms
         private System.Windows.Forms.Button BTN_Cancel;
         private System.Windows.Forms.MaskedTextBox M_OT_Friendship;
         private System.Windows.Forms.Label L_OT_Friendship;
-        private System.Windows.Forms.Label L_Geo0;
-        private System.Windows.Forms.Label L_Geo1;
+        private PKHeX.WinForms.Controls.SelectableLabel L_Geo0;
+        private PKHeX.WinForms.Controls.SelectableLabel L_Geo1;
         private System.Windows.Forms.Label L_Region;
         private System.Windows.Forms.Label L_Country;
-        private System.Windows.Forms.Label L_Geo2;
-        private System.Windows.Forms.Label L_Geo3;
-        private System.Windows.Forms.Label L_Geo4;
+        private PKHeX.WinForms.Controls.SelectableLabel L_Geo2;
+        private PKHeX.WinForms.Controls.SelectableLabel L_Geo3;
+        private PKHeX.WinForms.Controls.SelectableLabel L_Geo4;
         private System.Windows.Forms.Label L_OT_Quality;
         private System.Windows.Forms.Label L_OT_TextLine;
         private System.Windows.Forms.Label LOTV;
