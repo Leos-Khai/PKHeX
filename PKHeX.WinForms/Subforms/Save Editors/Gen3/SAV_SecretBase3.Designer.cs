@@ -73,6 +73,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Bases
             // 
+            LB_Bases.AccessibleName = "Secret Base Trainers";
             LB_Bases.FormattingEnabled = true;
             LB_Bases.ItemHeight = 15;
             LB_Bases.Location = new System.Drawing.Point(12, 26);
@@ -91,6 +92,7 @@ namespace PKHeX.WinForms
             // 
             // T_TrainerGender
             // 
+            T_TrainerGender.AccessibleName = "Trainer Gender";
             T_TrainerGender.AllowClick = true;
             T_TrainerGender.Gender = 2;
             T_TrainerGender.Location = new System.Drawing.Point(282, 31);
@@ -100,6 +102,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Name
             // 
+            TB_Name.AccessibleName = "Trainer Name";
             TB_Name.Location = new System.Drawing.Point(154, 26);
             TB_Name.Name = "TB_Name";
             TB_Name.Size = new System.Drawing.Size(122, 23);
@@ -127,6 +130,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Entered
             // 
+            TB_Entered.AccessibleName = "Number of Entrances";
             TB_Entered.Location = new System.Drawing.Point(154, 218);
             TB_Entered.Name = "TB_Entered";
             TB_Entered.Size = new System.Drawing.Size(74, 23);
@@ -143,6 +147,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Class
             // 
+            TB_Class.AccessibleName = "Trainer Class";
             TB_Class.Location = new System.Drawing.Point(154, 283);
             TB_Class.Name = "TB_Class";
             TB_Class.ReadOnly = true;
@@ -160,6 +165,7 @@ namespace PKHeX.WinForms
             // 
             // TB_TID
             // 
+            TB_TID.AccessibleName = "Trainer ID";
             TB_TID.Location = new System.Drawing.Point(191, 127);
             TB_TID.Name = "TB_TID";
             TB_TID.Size = new System.Drawing.Size(74, 23);
@@ -167,6 +173,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SID
             // 
+            TB_SID.AccessibleName = "Secret ID";
             TB_SID.Location = new System.Drawing.Point(191, 156);
             TB_SID.Name = "TB_SID";
             TB_SID.Size = new System.Drawing.Size(74, 23);
@@ -192,6 +199,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_TeamMember
             // 
+            NUD_TeamMember.AccessibleName = "Team Member";
             NUD_TeamMember.Location = new System.Drawing.Point(476, 32);
             NUD_TeamMember.Maximum = new decimal(new int[] { 6, 0, 0, 0 });
             NUD_TeamMember.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
@@ -202,6 +210,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Species
             // 
+            CB_Species.AccessibleName = "Species";
             CB_Species.FormattingEnabled = true;
             CB_Species.Location = new System.Drawing.Point(384, 74);
             CB_Species.Name = "CB_Species";
@@ -219,6 +228,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Form
             // 
+            CB_Form.AccessibleName = "Unown Form";
             CB_Form.Enabled = false;
             CB_Form.FormattingEnabled = true;
             CB_Form.Location = new System.Drawing.Point(529, 74);
@@ -238,6 +248,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Item
             // 
+            CB_Item.AccessibleName = "Held Item";
             CB_Item.FormattingEnabled = true;
             CB_Item.Location = new System.Drawing.Point(384, 191);
             CB_Item.Name = "CB_Item";
@@ -255,6 +266,7 @@ namespace PKHeX.WinForms
             // 
             // TB_PID
             // 
+            TB_PID.AccessibleName = "PID";
             TB_PID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             TB_PID.Location = new System.Drawing.Point(384, 132);
             TB_PID.Name = "TB_PID";
@@ -263,6 +275,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Level
             // 
+            NUD_Level.AccessibleName = "Level";
             NUD_Level.Location = new System.Drawing.Point(412, 235);
             NUD_Level.Name = "NUD_Level";
             NUD_Level.Size = new System.Drawing.Size(46, 23);
@@ -270,6 +283,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_EVs
             // 
+            NUD_EVs.AccessibleName = "Effort Values";
             NUD_EVs.Location = new System.Drawing.Point(510, 235);
             NUD_EVs.Maximum = new decimal(new int[] { 85, 0, 0, 0 });
             NUD_EVs.Name = "NUD_EVs";
@@ -296,6 +310,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move1
             // 
+            CB_Move1.AccessibleName = "Move 1";
             CB_Move1.FormattingEnabled = true;
             CB_Move1.Location = new System.Drawing.Point(439, 283);
             CB_Move1.Name = "CB_Move1";
@@ -304,6 +319,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move2
             // 
+            CB_Move2.AccessibleName = "Move 2";
             CB_Move2.FormattingEnabled = true;
             CB_Move2.Location = new System.Drawing.Point(439, 312);
             CB_Move2.Name = "CB_Move2";
@@ -312,6 +328,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move3
             // 
+            CB_Move3.AccessibleName = "Move 3";
             CB_Move3.FormattingEnabled = true;
             CB_Move3.Location = new System.Drawing.Point(439, 341);
             CB_Move3.Name = "CB_Move3";
@@ -320,6 +337,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Move4
             // 
+            CB_Move4.AccessibleName = "Move 4";
             CB_Move4.FormattingEnabled = true;
             CB_Move4.Location = new System.Drawing.Point(439, 370);
             CB_Move4.Name = "CB_Move4";
