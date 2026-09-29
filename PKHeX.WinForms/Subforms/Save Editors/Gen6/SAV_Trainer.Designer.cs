@@ -518,6 +518,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_R
             // 
+            NUD_R.AccessibleName = "Rotation";
             NUD_R.Location = new System.Drawing.Point(108, 138);
             NUD_R.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_R.Maximum = new decimal(new int[] { 7, 0, 0, 0 });
@@ -538,6 +539,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Z
             // 
+            NUD_Z.AccessibleName = "Z Coordinate";
             NUD_Z.DecimalPlaces = 6;
             NUD_Z.Location = new System.Drawing.Point(108, 78);
             NUD_Z.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -550,6 +552,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_M
             // 
+            NUD_M.AccessibleName = "Current Map";
             NUD_M.Location = new System.Drawing.Point(108, 18);
             NUD_M.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             NUD_M.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
@@ -560,6 +563,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Y
             // 
+            NUD_Y.AccessibleName = "Y Coordinate";
             NUD_Y.DecimalPlaces = 6;
             NUD_Y.Location = new System.Drawing.Point(108, 108);
             NUD_Y.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -571,6 +575,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_X
             // 
+            NUD_X.AccessibleName = "X Coordinate";
             NUD_X.DecimalPlaces = 6;
             NUD_X.Location = new System.Drawing.Point(108, 48);
             NUD_X.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -622,6 +627,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Badge7
             // 
+            CHK_Badge7.AccessibleName = "Badge 7";
             CHK_Badge7.AutoSize = true;
             CHK_Badge7.Location = new System.Drawing.Point(351, 76);
             CHK_Badge7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -633,6 +639,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Badge5
             // 
+            CHK_Badge5.AccessibleName = "Badge 5";
             CHK_Badge5.AutoSize = true;
             CHK_Badge5.Location = new System.Drawing.Point(351, 23);
             CHK_Badge5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -644,6 +651,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Badge4
             // 
+            CHK_Badge4.AccessibleName = "Badge 4";
             CHK_Badge4.AutoSize = true;
             CHK_Badge4.Location = new System.Drawing.Point(307, 103);
             CHK_Badge4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -655,6 +663,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Badge8
             // 
+            CHK_Badge8.AccessibleName = "Badge 8";
             CHK_Badge8.AutoSize = true;
             CHK_Badge8.Location = new System.Drawing.Point(351, 103);
             CHK_Badge8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -666,6 +675,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Badge3
             // 
+            CHK_Badge3.AccessibleName = "Badge 3";
             CHK_Badge3.AutoSize = true;
             CHK_Badge3.Location = new System.Drawing.Point(307, 76);
             CHK_Badge3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -677,6 +687,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Badge1
             // 
+            CHK_Badge1.AccessibleName = "Badge 1";
             CHK_Badge1.AutoSize = true;
             CHK_Badge1.Location = new System.Drawing.Point(307, 23);
             CHK_Badge1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -688,6 +699,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Badge6
             // 
+            CHK_Badge6.AccessibleName = "Badge 6";
             CHK_Badge6.AutoSize = true;
             CHK_Badge6.Location = new System.Drawing.Point(351, 50);
             CHK_Badge6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -699,6 +711,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_Badge2
             // 
+            CHK_Badge2.AccessibleName = "Badge 2";
             CHK_Badge2.AutoSize = true;
             CHK_Badge2.Location = new System.Drawing.Point(307, 50);
             CHK_Badge2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
