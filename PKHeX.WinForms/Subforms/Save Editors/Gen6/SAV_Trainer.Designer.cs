@@ -395,6 +395,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Saying5
             // 
+            TB_Saying5.AccessibleName = "Saved Saying 5";
             TB_Saying5.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_Saying5.Location = new System.Drawing.Point(62, 111);
             TB_Saying5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -407,6 +408,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Saying4
             // 
+            TB_Saying4.AccessibleName = "Saved Saying 4";
             TB_Saying4.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_Saying4.Location = new System.Drawing.Point(62, 88);
             TB_Saying4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -419,6 +421,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Saying3
             // 
+            TB_Saying3.AccessibleName = "Saved Saying 3";
             TB_Saying3.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_Saying3.Location = new System.Drawing.Point(62, 65);
             TB_Saying3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -431,6 +434,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Saying2
             // 
+            TB_Saying2.AccessibleName = "Saved Saying 2";
             TB_Saying2.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_Saying2.Location = new System.Drawing.Point(62, 42);
             TB_Saying2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -443,6 +447,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Saying1
             // 
+            TB_Saying1.AccessibleName = "Saved Saying 1";
             TB_Saying1.Font = new System.Drawing.Font("Courier New", 8.25F);
             TB_Saying1.Location = new System.Drawing.Point(62, 18);
             TB_Saying1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -466,6 +471,7 @@ namespace PKHeX.WinForms
             // 
             // CB_MultiplayerSprite
             // 
+            CB_MultiplayerSprite.AccessibleName = "Multiplayer Sprite";
             CB_MultiplayerSprite.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_MultiplayerSprite.Enabled = false;
             CB_MultiplayerSprite.FormattingEnabled = true;
