@@ -54,8 +54,8 @@ namespace PKHeX.WinForms.Controls
             L_DC1 = new System.Windows.Forms.Label();
             L_DaycareSeed = new System.Windows.Forms.Label();
             TB_RNGSeed = new System.Windows.Forms.TextBox();
-            dcpkx2 = new System.Windows.Forms.PictureBox();
-            dcpkx1 = new System.Windows.Forms.PictureBox();
+            dcpkx2 = new PKHeX.WinForms.Controls.SelectablePictureBox();
+            dcpkx1 = new PKHeX.WinForms.Controls.SelectablePictureBox();
             DayCare_HasEgg = new System.Windows.Forms.CheckBox();
             L_ReadOnlyOther = new System.Windows.Forms.Label();
             Tab_SAV = new System.Windows.Forms.TabPage();
@@ -134,6 +134,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // tabBoxMulti
             // 
+            tabBoxMulti.AccessibleName = "Save Editor Sections";
             tabBoxMulti.AllowDrop = true;
             tabBoxMulti.Controls.Add(Tab_Box);
             tabBoxMulti.Controls.Add(Tab_PartyBattle);
@@ -379,7 +380,6 @@ namespace PKHeX.WinForms.Controls
             dcpkx2.Size = new System.Drawing.Size(70, 58);
             dcpkx2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             dcpkx2.TabIndex = 11;
-            dcpkx2.TabStop = false;
             // 
             // dcpkx1
             // 
@@ -390,7 +390,6 @@ namespace PKHeX.WinForms.Controls
             dcpkx1.Size = new System.Drawing.Size(70, 58);
             dcpkx1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             dcpkx1.TabIndex = 10;
-            dcpkx1.TabStop = false;
             // 
             // DayCare_HasEgg
             // 
@@ -1145,6 +1144,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // CB_SaveSlot
             // 
+            CB_SaveSlot.AccessibleName = "Save Slot";
             CB_SaveSlot.Anchor = System.Windows.Forms.AnchorStyles.Left;
             CB_SaveSlot.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_SaveSlot.FormattingEnabled = true;
@@ -1195,8 +1195,8 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.Label L_DC1;
         private System.Windows.Forms.Label L_DaycareSeed;
         private System.Windows.Forms.TextBox TB_RNGSeed;
-        private System.Windows.Forms.PictureBox dcpkx2;
-        private System.Windows.Forms.PictureBox dcpkx1;
+        private PKHeX.WinForms.Controls.SelectablePictureBox dcpkx2;
+        private PKHeX.WinForms.Controls.SelectablePictureBox dcpkx1;
         private System.Windows.Forms.CheckBox DayCare_HasEgg;
         private System.Windows.Forms.Label L_ReadOnlyOther;
         private System.Windows.Forms.TabPage Tab_SAV;
