@@ -209,9 +209,20 @@ public partial class SAV_BattlePass : Form
     {
         Box.InitializeGrid(3, 2, SpriteUtil.Spriter);
         Box.HorizontallyCenter(f_PKM);
-        foreach (PictureBox pb in Box.Entries)
+        for (int i = 0; i < Box.Entries.Count; i++)
         {
+            var pb = Box.Entries[i];
+            pb.AccessibleName = $"Party Pokémon {i + 1}";
+            pb.AccessibleRole = AccessibleRole.PushButton;
             pb.Click += (_, args) => OmniClick(pb, args);
+            // Set and Delete need Shift/Alt plus a click; keyboard users reach them through the context menu (Menu key).
+            pb.KeyDown += (_, args) =>
+            {
+                if (args.KeyCode is not (Keys.Enter or Keys.Space))
+                    return;
+                args.Handled = args.SuppressKeyPress = true;
+                ClickView(pb, args);
+            };
             pb.ContextMenuStrip = mnu;
             pb.MouseMove += (_, args) => Preview.UpdatePreviewPosition(args.Location);
             pb.MouseEnter += (_, _) => HoverSlot(pb);
@@ -446,11 +457,13 @@ public partial class SAV_BattlePass : Form
             if (!pdata.GetPartySlotPresent(i))
             {
                 pb.Image = SpriteUtil.Spriter.None;
+                pb.AccessibleDescription = $"{pb.AccessibleName}, empty";
                 continue;
             }
 
             var pk = pdata.GetPartySlotAtIndex(i);
             pb.Image = pk.Sprite(SAV, visibility: GetFlags(pk));
+            pb.AccessibleDescription = $"{pb.AccessibleName}, {GameInfo.Strings.specieslist[pk.Species]}";
         }
 
         if (slotSelected != -1 && (uint)slotSelected < Box.Entries.Count)
