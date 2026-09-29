@@ -62,6 +62,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Key
             // 
+            CB_Key.AccessibleName = "Block Key";
             CB_Key.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             CB_Key.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             CB_Key.DropDownWidth = 270;
@@ -249,6 +250,7 @@ namespace PKHeX.WinForms
             // 
             // PG_BlockView
             // 
+            PG_BlockView.AccessibleName = "Block Properties";
             PG_BlockView.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             PG_BlockView.Location = new System.Drawing.Point(316, 10);
             PG_BlockView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -259,6 +261,7 @@ namespace PKHeX.WinForms
             // 
             // RTB_Hex
             // 
+            RTB_Hex.AccessibleName = "Block Hex Data";
             RTB_Hex.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             RTB_Hex.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             RTB_Hex.Location = new System.Drawing.Point(316, 10);
@@ -272,6 +275,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TypeToggle
             // 
+            CB_TypeToggle.AccessibleName = "Block Boolean Type";
             CB_TypeToggle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             CB_TypeToggle.FormattingEnabled = true;
             CB_TypeToggle.Location = new System.Drawing.Point(97, 43);
@@ -295,6 +299,7 @@ namespace PKHeX.WinForms
             // 
             // richTextBox1
             // 
+            richTextBox1.AccessibleName = "Save Comparison Differences";
             richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             richTextBox1.Location = new System.Drawing.Point(0, 88);
             richTextBox1.Margin = new System.Windows.Forms.Padding(0);
@@ -322,6 +327,7 @@ namespace PKHeX.WinForms
             // 
             // TB_NewSAV
             // 
+            TB_NewSAV.AccessibleName = "New Save File Path";
             TB_NewSAV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_NewSAV.Location = new System.Drawing.Point(108, 54);
             TB_NewSAV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -332,6 +338,7 @@ namespace PKHeX.WinForms
             // 
             // TB_OldSAV
             // 
+            TB_OldSAV.AccessibleName = "Old Save File Path";
             TB_OldSAV.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_OldSAV.Location = new System.Drawing.Point(108, 24);
             TB_OldSAV.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
