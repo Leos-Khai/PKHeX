@@ -50,6 +50,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Sheen
             // 
+            TB_Sheen.AccessibleName = "Sheen";
             TB_Sheen.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_Sheen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Sheen.Location = new System.Drawing.Point(248, 17);
@@ -65,6 +66,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Tough
             // 
+            TB_Tough.AccessibleName = "Tough";
             TB_Tough.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_Tough.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Tough.Location = new System.Drawing.Point(200, 17);
@@ -80,6 +82,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Smart
             // 
+            TB_Smart.AccessibleName = "Clever";
             TB_Smart.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_Smart.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Smart.Location = new System.Drawing.Point(152, 17);
@@ -95,6 +98,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Cute
             // 
+            TB_Cute.AccessibleName = "Cute";
             TB_Cute.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_Cute.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Cute.Location = new System.Drawing.Point(104, 17);
@@ -110,6 +114,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Beauty
             // 
+            TB_Beauty.AccessibleName = "Beauty";
             TB_Beauty.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_Beauty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Beauty.Location = new System.Drawing.Point(56, 17);
@@ -125,6 +130,7 @@ namespace PKHeX.WinForms.Controls
             // 
             // TB_Cool
             // 
+            TB_Cool.AccessibleName = "Cool";
             TB_Cool.Anchor = System.Windows.Forms.AnchorStyles.None;
             TB_Cool.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             TB_Cool.Location = new System.Drawing.Point(8, 17);
