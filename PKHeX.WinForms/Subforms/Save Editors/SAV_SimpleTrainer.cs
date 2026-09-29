@@ -188,6 +188,13 @@ public partial class SAV_SimpleTrainer : Form
             TB_OTName.Click += (_, _) => ClickOT(s.PlayerData.OriginalTrainerTrash, TB_OTName);
         }
 
+        // Only Gen 2 and HGSS show a second (Kanto) row, so the first row is the Johto set there.
+        if (cba.Length > 8)
+        {
+            foreach (var chk in cba.Take(8))
+                chk.AccessibleName = $"Johto {chk.AccessibleName}";
+        }
+
         for (int i = 0; i < cba.Length; i++)
         {
             cba[i].Visible = true;
