@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using PKHeX.Core;
+using PKHeX.WinForms.Controls;
 
 namespace PKHeX.WinForms;
 
@@ -105,7 +106,7 @@ public sealed partial class TrashEditor : Form
         FLP_Characters.Visible = true;
         foreach (ushort c in chars)
         {
-            var l = GetLabel(((char)c).ToString());
+            var l = GetLabel<SelectableLabel>(((char)c).ToString());
             l.Font = f;
             l.AutoSize = true;
             l.Click += (_, _) => { if (TB_Text.Text.Length < TB_Text.MaxLength) TB_Text.AppendText(l.Text); };
@@ -123,7 +124,7 @@ public sealed partial class TrashEditor : Form
         NUD_Generation.Value = generation;
         for (int i = 0; i < count; i++)
         {
-            var l = GetLabel($"${i:X2}");
+            var l = GetLabel<Label>($"${i:X2}");
             l.Font = NUD_Generation.Font;
             var n = GetNUD(min: 0, max: 255, hex: true);
             n.AccessibleName = $"Byte {i:X2}";
@@ -232,7 +233,7 @@ public sealed partial class TrashEditor : Form
     private string GetString() => Converter.GetString(Raw);
 
     // Helpers
-    private static Label GetLabel(string str) => new() { Text = str, AutoSize = false, Size = new Size(40, 24), TextAlign = ContentAlignment.MiddleRight };
+    private static T GetLabel<T>(string str) where T : Label, new() => new() { Text = str, AutoSize = false, Size = new Size(40, 24), TextAlign = ContentAlignment.MiddleRight };
 
     private static NumericUpDown GetNUD(byte min, byte max, bool hex) => new()
     {
