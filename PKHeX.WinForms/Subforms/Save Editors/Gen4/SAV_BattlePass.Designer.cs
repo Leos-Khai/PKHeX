@@ -290,6 +290,7 @@ namespace PKHeX.WinForms
             // 
             // LB_Passes
             // 
+            LB_Passes.AccessibleName = "Battle Passes";
             LB_Passes.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             LB_Passes.FormattingEnabled = true;
             LB_Passes.Location = new System.Drawing.Point(16, 30);
@@ -361,6 +362,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordStargazerColosseumClears
             // 
+            NUD_RecordStargazerColosseumClears.AccessibleName = "Stargazer Colosseum Clears";
             NUD_RecordStargazerColosseumClears.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_RecordStargazerColosseumClears.Location = new System.Drawing.Point(413, 165);
             NUD_RecordStargazerColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -381,6 +383,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordCourtyardColosseumClears
             // 
+            NUD_RecordCourtyardColosseumClears.AccessibleName = "Courtyard Colosseum Clears";
             NUD_RecordCourtyardColosseumClears.Location = new System.Drawing.Point(166, 165);
             NUD_RecordCourtyardColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_RecordCourtyardColosseumClears.Name = "NUD_RecordCourtyardColosseumClears";
@@ -399,6 +402,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordSunsetColosseumClears
             // 
+            NUD_RecordSunsetColosseumClears.AccessibleName = "Sunset Colosseum Clears";
             NUD_RecordSunsetColosseumClears.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_RecordSunsetColosseumClears.Location = new System.Drawing.Point(413, 141);
             NUD_RecordSunsetColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -419,6 +423,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_Battles
             // 
+            NUD_Battles.AccessibleName = "Battles";
             NUD_Battles.Location = new System.Drawing.Point(166, 21);
             NUD_Battles.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             NUD_Battles.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -429,6 +434,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordSunnyParkColosseumClears
             // 
+            NUD_RecordSunnyParkColosseumClears.AccessibleName = "Sunny Park Colosseum Clears";
             NUD_RecordSunnyParkColosseumClears.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_RecordSunnyParkColosseumClears.Location = new System.Drawing.Point(413, 117);
             NUD_RecordSunnyParkColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -449,6 +455,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordNeonColosseumClears
             // 
+            NUD_RecordNeonColosseumClears.AccessibleName = "Neon Colosseum Clears";
             NUD_RecordNeonColosseumClears.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_RecordNeonColosseumClears.Location = new System.Drawing.Point(413, 93);
             NUD_RecordNeonColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -469,6 +476,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordMagmaColosseumClears
             // 
+            NUD_RecordMagmaColosseumClears.AccessibleName = "Magma Colosseum Clears";
             NUD_RecordMagmaColosseumClears.Location = new System.Drawing.Point(166, 141);
             NUD_RecordMagmaColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_RecordMagmaColosseumClears.Name = "NUD_RecordMagmaColosseumClears";
@@ -487,6 +495,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordCrystalColosseumClears
             // 
+            NUD_RecordCrystalColosseumClears.AccessibleName = "Crystal Colosseum Clears";
             NUD_RecordCrystalColosseumClears.Location = new System.Drawing.Point(166, 117);
             NUD_RecordCrystalColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_RecordCrystalColosseumClears.Name = "NUD_RecordCrystalColosseumClears";
@@ -514,6 +523,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordWaterfallColosseumClears
             // 
+            NUD_RecordWaterfallColosseumClears.AccessibleName = "Waterfall Colosseum Clears";
             NUD_RecordWaterfallColosseumClears.Location = new System.Drawing.Point(166, 93);
             NUD_RecordWaterfallColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_RecordWaterfallColosseumClears.Name = "NUD_RecordWaterfallColosseumClears";
@@ -532,6 +542,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordMainStreetColosseumClears
             // 
+            NUD_RecordMainStreetColosseumClears.AccessibleName = "Main Street Colosseum Clears";
             NUD_RecordMainStreetColosseumClears.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_RecordMainStreetColosseumClears.Location = new System.Drawing.Point(413, 69);
             NUD_RecordMainStreetColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
@@ -552,6 +563,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordFreeBattles
             // 
+            NUD_RecordFreeBattles.AccessibleName = "Free Battles";
             NUD_RecordFreeBattles.Location = new System.Drawing.Point(166, 45);
             NUD_RecordFreeBattles.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             NUD_RecordFreeBattles.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -571,6 +583,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordGatewayColosseumClears
             // 
+            NUD_RecordGatewayColosseumClears.AccessibleName = "Gateway Colosseum Clears";
             NUD_RecordGatewayColosseumClears.Location = new System.Drawing.Point(166, 69);
             NUD_RecordGatewayColosseumClears.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_RecordGatewayColosseumClears.Name = "NUD_RecordGatewayColosseumClears";
@@ -589,6 +602,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordWiFiBattles
             // 
+            NUD_RecordWiFiBattles.AccessibleName = "Wi-Fi Battles";
             NUD_RecordWiFiBattles.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_RecordWiFiBattles.Location = new System.Drawing.Point(413, 45);
             NUD_RecordWiFiBattles.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
@@ -610,6 +624,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_RecordColosseumBattles
             // 
+            NUD_RecordColosseumBattles.AccessibleName = "Colosseum Battles";
             NUD_RecordColosseumBattles.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             NUD_RecordColosseumBattles.Location = new System.Drawing.Point(413, 21);
             NUD_RecordColosseumBattles.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
@@ -659,6 +674,7 @@ namespace PKHeX.WinForms
             // 
             // MT_PlayerID
             // 
+            MT_PlayerID.AccessibleName = "Player ID";
             MT_PlayerID.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             MT_PlayerID.Font = new System.Drawing.Font("Courier New", 10F);
             MT_PlayerID.Location = new System.Drawing.Point(118, 135);
@@ -682,6 +698,7 @@ namespace PKHeX.WinForms
             // 
             // TB_RegionCode
             // 
+            TB_RegionCode.AccessibleName = "Region Code";
             TB_RegionCode.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             TB_RegionCode.Location = new System.Drawing.Point(443, 72);
             TB_RegionCode.MaxLength = 4;
@@ -721,6 +738,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Language
             // 
+            CB_Language.AccessibleName = "Language";
             CB_Language.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Language.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Language.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -735,6 +753,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SelfIntroduction
             // 
+            TB_SelfIntroduction.AccessibleName = "Self-Introduction";
             TB_SelfIntroduction.AcceptsReturn = true;
             TB_SelfIntroduction.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_SelfIntroduction.Location = new System.Drawing.Point(118, 96);
@@ -749,6 +768,7 @@ namespace PKHeX.WinForms
             // 
             // TB_BirthDay
             // 
+            TB_BirthDay.AccessibleName = "Birth Day";
             TB_BirthDay.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             TB_BirthDay.Location = new System.Drawing.Point(443, 48);
             TB_BirthDay.MaxLength = 4;
@@ -758,6 +778,7 @@ namespace PKHeX.WinForms
             // 
             // TB_BirthMonth
             // 
+            TB_BirthMonth.AccessibleName = "Birth Month";
             TB_BirthMonth.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             TB_BirthMonth.Location = new System.Drawing.Point(443, 24);
             TB_BirthMonth.MaxLength = 4;
@@ -777,6 +798,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Country
             // 
+            CB_Country.AccessibleName = "Country";
             CB_Country.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Country.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Country.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -801,6 +823,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Region
             // 
+            CB_Region.AccessibleName = "Sub Region";
             CB_Region.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_Region.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             CB_Region.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -823,6 +846,7 @@ namespace PKHeX.WinForms
             // 
             // TB_CreatorName
             // 
+            TB_CreatorName.AccessibleName = "Created By";
             TB_CreatorName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_CreatorName.Location = new System.Drawing.Point(118, 24);
             TB_CreatorName.MaxLength = 11;
@@ -928,6 +952,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PassDesign
             // 
+            CB_PassDesign.AccessibleName = "Pass Design";
             CB_PassDesign.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_PassDesign.FormattingEnabled = true;
             CB_PassDesign.Location = new System.Drawing.Point(150, 312);
@@ -946,6 +971,7 @@ namespace PKHeX.WinForms
             // 
             // CB_PictureType
             // 
+            CB_PictureType.AccessibleName = "Picture Type";
             CB_PictureType.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_PictureType.FormattingEnabled = true;
             CB_PictureType.Location = new System.Drawing.Point(150, 288);
@@ -1007,6 +1033,7 @@ namespace PKHeX.WinForms
             // 
             // CB_SkinColor
             // 
+            CB_SkinColor.AccessibleName = "Skin Color";
             CB_SkinColor.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_SkinColor.FormattingEnabled = true;
             CB_SkinColor.Location = new System.Drawing.Point(342, 22);
@@ -1016,6 +1043,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Model
             // 
+            CB_Model.AccessibleName = "Character";
             CB_Model.FormattingEnabled = true;
             CB_Model.Location = new System.Drawing.Point(90, 23);
             CB_Model.Name = "CB_Model";
@@ -1035,6 +1063,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Bag
             // 
+            CB_Bag.AccessibleName = "Bag";
             CB_Bag.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Bag.FormattingEnabled = true;
             CB_Bag.Location = new System.Drawing.Point(342, 142);
@@ -1053,6 +1082,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Badge
             // 
+            CB_Badge.AccessibleName = "Badge";
             CB_Badge.FormattingEnabled = true;
             CB_Badge.Location = new System.Drawing.Point(90, 143);
             CB_Badge.Name = "CB_Badge";
@@ -1071,6 +1101,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Shoes
             // 
+            CB_Shoes.AccessibleName = "Shoes";
             CB_Shoes.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Shoes.FormattingEnabled = true;
             CB_Shoes.Location = new System.Drawing.Point(342, 118);
@@ -1089,6 +1120,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Bottom
             // 
+            CB_Bottom.AccessibleName = "Bottom";
             CB_Bottom.FormattingEnabled = true;
             CB_Bottom.Location = new System.Drawing.Point(90, 119);
             CB_Bottom.Name = "CB_Bottom";
@@ -1107,6 +1139,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Hands
             // 
+            CB_Hands.AccessibleName = "Hands";
             CB_Hands.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Hands.FormattingEnabled = true;
             CB_Hands.Location = new System.Drawing.Point(342, 94);
@@ -1126,6 +1159,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Top
             // 
+            CB_Top.AccessibleName = "Top";
             CB_Top.FormattingEnabled = true;
             CB_Top.Location = new System.Drawing.Point(90, 95);
             CB_Top.Name = "CB_Top";
@@ -1144,6 +1178,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Glasses
             // 
+            CB_Glasses.AccessibleName = "Glasses";
             CB_Glasses.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Glasses.FormattingEnabled = true;
             CB_Glasses.Location = new System.Drawing.Point(342, 70);
@@ -1162,6 +1197,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Face
             // 
+            CB_Face.AccessibleName = "Face";
             CB_Face.FormattingEnabled = true;
             CB_Face.Location = new System.Drawing.Point(90, 71);
             CB_Face.Name = "CB_Face";
@@ -1180,6 +1216,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Hair
             // 
+            CB_Hair.AccessibleName = "Hair";
             CB_Hair.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CB_Hair.FormattingEnabled = true;
             CB_Hair.Location = new System.Drawing.Point(342, 46);
@@ -1198,6 +1235,7 @@ namespace PKHeX.WinForms
             // 
             // CB_Head
             // 
+            CB_Head.AccessibleName = "Head";
             CB_Head.FormattingEnabled = true;
             CB_Head.Location = new System.Drawing.Point(90, 47);
             CB_Head.Name = "CB_Head";
@@ -1233,6 +1271,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Name
             // 
+            TB_Name.AccessibleName = "Trainer Name";
             TB_Name.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_Name.Location = new System.Drawing.Point(143, 23);
             TB_Name.MaxLength = 11;
@@ -1242,6 +1281,7 @@ namespace PKHeX.WinForms
             // 
             // MT_SID
             // 
+            MT_SID.AccessibleName = "Secret ID";
             MT_SID.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             MT_SID.Location = new System.Drawing.Point(450, 47);
             MT_SID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1264,6 +1304,7 @@ namespace PKHeX.WinForms
             // 
             // MT_TID
             // 
+            MT_TID.AccessibleName = "Trainer ID";
             MT_TID.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             MT_TID.Location = new System.Drawing.Point(450, 23);
             MT_TID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1286,6 +1327,7 @@ namespace PKHeX.WinForms
             // 
             // CB_TrainerTitle
             // 
+            CB_TrainerTitle.AccessibleName = "Trainer Title";
             CB_TrainerTitle.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             CB_TrainerTitle.FormattingEnabled = true;
             CB_TrainerTitle.Location = new System.Drawing.Point(143, 47);
@@ -1360,6 +1402,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM6Flags
             // 
+            NUD_PKM6Flags.AccessibleName = "Pokémon 6 Flags";
             NUD_PKM6Flags.Location = new System.Drawing.Point(86, 74);
             NUD_PKM6Flags.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PKM6Flags.Name = "NUD_PKM6Flags";
@@ -1378,6 +1421,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM6Slot
             // 
+            NUD_PKM6Slot.AccessibleName = "Pokémon 6 Slot";
             NUD_PKM6Slot.Location = new System.Drawing.Point(86, 50);
             NUD_PKM6Slot.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM6Slot.Name = "NUD_PKM6Slot";
@@ -1396,6 +1440,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM6Box
             // 
+            NUD_PKM6Box.AccessibleName = "Pokémon 6 Box";
             NUD_PKM6Box.Location = new System.Drawing.Point(86, 26);
             NUD_PKM6Box.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM6Box.Name = "NUD_PKM6Box";
@@ -1430,6 +1475,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM5Flags
             // 
+            NUD_PKM5Flags.AccessibleName = "Pokémon 5 Flags";
             NUD_PKM5Flags.Location = new System.Drawing.Point(86, 74);
             NUD_PKM5Flags.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PKM5Flags.Name = "NUD_PKM5Flags";
@@ -1448,6 +1494,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM5Slot
             // 
+            NUD_PKM5Slot.AccessibleName = "Pokémon 5 Slot";
             NUD_PKM5Slot.Location = new System.Drawing.Point(86, 50);
             NUD_PKM5Slot.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM5Slot.Name = "NUD_PKM5Slot";
@@ -1466,6 +1513,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM5Box
             // 
+            NUD_PKM5Box.AccessibleName = "Pokémon 5 Box";
             NUD_PKM5Box.Location = new System.Drawing.Point(86, 26);
             NUD_PKM5Box.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM5Box.Name = "NUD_PKM5Box";
@@ -1500,6 +1548,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM4Flags
             // 
+            NUD_PKM4Flags.AccessibleName = "Pokémon 4 Flags";
             NUD_PKM4Flags.Location = new System.Drawing.Point(86, 74);
             NUD_PKM4Flags.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PKM4Flags.Name = "NUD_PKM4Flags";
@@ -1518,6 +1567,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM4Slot
             // 
+            NUD_PKM4Slot.AccessibleName = "Pokémon 4 Slot";
             NUD_PKM4Slot.Location = new System.Drawing.Point(86, 50);
             NUD_PKM4Slot.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM4Slot.Name = "NUD_PKM4Slot";
@@ -1536,6 +1586,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM4Box
             // 
+            NUD_PKM4Box.AccessibleName = "Pokémon 4 Box";
             NUD_PKM4Box.Location = new System.Drawing.Point(86, 26);
             NUD_PKM4Box.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM4Box.Name = "NUD_PKM4Box";
@@ -1570,6 +1621,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM3Flags
             // 
+            NUD_PKM3Flags.AccessibleName = "Pokémon 3 Flags";
             NUD_PKM3Flags.Location = new System.Drawing.Point(86, 74);
             NUD_PKM3Flags.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PKM3Flags.Name = "NUD_PKM3Flags";
@@ -1588,6 +1640,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM3Slot
             // 
+            NUD_PKM3Slot.AccessibleName = "Pokémon 3 Slot";
             NUD_PKM3Slot.Location = new System.Drawing.Point(86, 50);
             NUD_PKM3Slot.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM3Slot.Name = "NUD_PKM3Slot";
@@ -1606,6 +1659,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM3Box
             // 
+            NUD_PKM3Box.AccessibleName = "Pokémon 3 Box";
             NUD_PKM3Box.Location = new System.Drawing.Point(86, 26);
             NUD_PKM3Box.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM3Box.Name = "NUD_PKM3Box";
@@ -1640,6 +1694,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM2Flags
             // 
+            NUD_PKM2Flags.AccessibleName = "Pokémon 2 Flags";
             NUD_PKM2Flags.Location = new System.Drawing.Point(86, 74);
             NUD_PKM2Flags.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PKM2Flags.Name = "NUD_PKM2Flags";
@@ -1658,6 +1713,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM2Slot
             // 
+            NUD_PKM2Slot.AccessibleName = "Pokémon 2 Slot";
             NUD_PKM2Slot.Location = new System.Drawing.Point(86, 50);
             NUD_PKM2Slot.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM2Slot.Name = "NUD_PKM2Slot";
@@ -1676,6 +1732,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM2Box
             // 
+            NUD_PKM2Box.AccessibleName = "Pokémon 2 Box";
             NUD_PKM2Box.Location = new System.Drawing.Point(86, 26);
             NUD_PKM2Box.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM2Box.Name = "NUD_PKM2Box";
@@ -1710,6 +1767,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM1Flags
             // 
+            NUD_PKM1Flags.AccessibleName = "Pokémon 1 Flags";
             NUD_PKM1Flags.Location = new System.Drawing.Point(86, 74);
             NUD_PKM1Flags.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PKM1Flags.Name = "NUD_PKM1Flags";
@@ -1728,6 +1786,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM1Slot
             // 
+            NUD_PKM1Slot.AccessibleName = "Pokémon 1 Slot";
             NUD_PKM1Slot.Location = new System.Drawing.Point(86, 50);
             NUD_PKM1Slot.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM1Slot.Name = "NUD_PKM1Slot";
@@ -1746,6 +1805,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PKM1Box
             // 
+            NUD_PKM1Box.AccessibleName = "Pokémon 1 Box";
             NUD_PKM1Box.Location = new System.Drawing.Point(86, 26);
             NUD_PKM1Box.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
             NUD_PKM1Box.Name = "NUD_PKM1Box";
@@ -1755,6 +1815,7 @@ namespace PKHeX.WinForms
             // 
             // Box
             // 
+            Box.AccessibleName = "Party Pokémon";
             Box.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             Box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Box.Location = new System.Drawing.Point(159, 14);
@@ -1799,6 +1860,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PresetLoseIndex
             // 
+            NUD_PresetLoseIndex.AccessibleName = "Lose Preset Index";
             NUD_PresetLoseIndex.Location = new System.Drawing.Point(423, 318);
             NUD_PresetLoseIndex.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PresetLoseIndex.Name = "NUD_PresetLoseIndex";
@@ -1808,6 +1870,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PresetWinIndex
             // 
+            NUD_PresetWinIndex.AccessibleName = "Win Preset Index";
             NUD_PresetWinIndex.Location = new System.Drawing.Point(423, 247);
             NUD_PresetWinIndex.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PresetWinIndex.Name = "NUD_PresetWinIndex";
@@ -1817,6 +1880,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PresetShift2Index
             // 
+            NUD_PresetShift2Index.AccessibleName = "Pokémon Shift 2 Preset Index";
             NUD_PresetShift2Index.Location = new System.Drawing.Point(423, 191);
             NUD_PresetShift2Index.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PresetShift2Index.Name = "NUD_PresetShift2Index";
@@ -1826,6 +1890,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PresetShift1Index
             // 
+            NUD_PresetShift1Index.AccessibleName = "Pokémon Shift 1 Preset Index";
             NUD_PresetShift1Index.Location = new System.Drawing.Point(423, 135);
             NUD_PresetShift1Index.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PresetShift1Index.Name = "NUD_PresetShift1Index";
@@ -1835,6 +1900,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PresetSentOutIndex
             // 
+            NUD_PresetSentOutIndex.AccessibleName = "Pokémon Sent Out Preset Index";
             NUD_PresetSentOutIndex.Location = new System.Drawing.Point(423, 64);
             NUD_PresetSentOutIndex.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PresetSentOutIndex.Name = "NUD_PresetSentOutIndex";
@@ -1844,6 +1910,7 @@ namespace PKHeX.WinForms
             // 
             // NUD_PresetGreetingIndex
             // 
+            NUD_PresetGreetingIndex.AccessibleName = "Greeting Preset Index";
             NUD_PresetGreetingIndex.Location = new System.Drawing.Point(423, 8);
             NUD_PresetGreetingIndex.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
             NUD_PresetGreetingIndex.Name = "NUD_PresetGreetingIndex";
@@ -1853,6 +1920,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_PresetLose
             // 
+            CHK_PresetLose.AccessibleName = "Preset Lose Catchphrase";
             CHK_PresetLose.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CHK_PresetLose.AutoSize = true;
             CHK_PresetLose.Location = new System.Drawing.Point(290, 319);
@@ -1875,6 +1943,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_PresetWin
             // 
+            CHK_PresetWin.AccessibleName = "Preset Win Catchphrase";
             CHK_PresetWin.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CHK_PresetWin.AutoSize = true;
             CHK_PresetWin.Location = new System.Drawing.Point(290, 248);
@@ -1897,6 +1966,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_PresetShift2
             // 
+            CHK_PresetShift2.AccessibleName = "Preset Pokémon Shift 2 Catchphrase";
             CHK_PresetShift2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CHK_PresetShift2.AutoSize = true;
             CHK_PresetShift2.Location = new System.Drawing.Point(290, 192);
@@ -1919,6 +1989,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_PresetShift1
             // 
+            CHK_PresetShift1.AccessibleName = "Preset Pokémon Shift 1 Catchphrase";
             CHK_PresetShift1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CHK_PresetShift1.AutoSize = true;
             CHK_PresetShift1.Location = new System.Drawing.Point(290, 136);
@@ -1941,6 +2012,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_PresetSentOut
             // 
+            CHK_PresetSentOut.AccessibleName = "Preset Pokémon Sent Out Catchphrase";
             CHK_PresetSentOut.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CHK_PresetSentOut.AutoSize = true;
             CHK_PresetSentOut.Location = new System.Drawing.Point(290, 65);
@@ -1973,6 +2045,7 @@ namespace PKHeX.WinForms
             // 
             // CHK_PresetGreeting
             // 
+            CHK_PresetGreeting.AccessibleName = "Preset Greeting Catchphrase";
             CHK_PresetGreeting.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             CHK_PresetGreeting.AutoSize = true;
             CHK_PresetGreeting.Location = new System.Drawing.Point(290, 9);
@@ -1985,6 +2058,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Lose
             // 
+            TB_Lose.AccessibleName = "Lose";
             TB_Lose.AcceptsReturn = true;
             TB_Lose.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_Lose.Location = new System.Drawing.Point(11, 342);
@@ -1999,6 +2073,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Win
             // 
+            TB_Win.AccessibleName = "Win";
             TB_Win.AcceptsReturn = true;
             TB_Win.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_Win.Location = new System.Drawing.Point(11, 271);
@@ -2013,6 +2088,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Shift2
             // 
+            TB_Shift2.AccessibleName = "Pokémon Shift 2";
             TB_Shift2.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_Shift2.Location = new System.Drawing.Point(11, 215);
             TB_Shift2.MaxLength = 25;
@@ -2024,6 +2100,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Shift1
             // 
+            TB_Shift1.AccessibleName = "Pokémon Shift 1";
             TB_Shift1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_Shift1.Location = new System.Drawing.Point(11, 159);
             TB_Shift1.MaxLength = 25;
@@ -2035,6 +2112,7 @@ namespace PKHeX.WinForms
             // 
             // TB_SentOut
             // 
+            TB_SentOut.AccessibleName = "Pokémon Sent Out";
             TB_SentOut.AcceptsReturn = true;
             TB_SentOut.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_SentOut.Location = new System.Drawing.Point(11, 88);
@@ -2049,6 +2127,7 @@ namespace PKHeX.WinForms
             // 
             // TB_Greeting
             // 
+            TB_Greeting.AccessibleName = "Greeting";
             TB_Greeting.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             TB_Greeting.Location = new System.Drawing.Point(11, 32);
             TB_Greeting.MaxLength = 25;
@@ -2060,6 +2139,7 @@ namespace PKHeX.WinForms
             // 
             // B_FDelete
             // 
+            B_FDelete.AccessibleName = "Delete Battle Pass";
             B_FDelete.Location = new System.Drawing.Point(202, 88);
             B_FDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_FDelete.Name = "B_FDelete";
@@ -2095,6 +2175,7 @@ namespace PKHeX.WinForms
             // 
             // B_Down
             // 
+            B_Down.AccessibleName = "Move Battle Pass Down";
             B_Down.Location = new System.Drawing.Point(202, 55);
             B_Down.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Down.Name = "B_Down";
@@ -2106,6 +2187,7 @@ namespace PKHeX.WinForms
             // 
             // B_Up
             // 
+            B_Up.AccessibleName = "Move Battle Pass Up";
             B_Up.Location = new System.Drawing.Point(202, 30);
             B_Up.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Up.Name = "B_Up";
