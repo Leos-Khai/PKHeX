@@ -75,6 +75,7 @@ public partial class PlusRecordEditor : Form
 
             row.Cells[ColumnIndex].Value = i.ToString("000");
             row.Cells[ColumnTypeIcon].Value = TypeSpriteUtil.GetTypeSpriteIconSmall(type);
+            row.Cells[ColumnTypeIcon].Tag = GameInfo.Strings.types[type];
             row.Cells[ColumnType].Value = type.ToString("00") + (isValid ? 0 : 1) + names[move]; // type -> valid -> name sorting
             row.Cells[ColumnName].Value = names[move];
         }

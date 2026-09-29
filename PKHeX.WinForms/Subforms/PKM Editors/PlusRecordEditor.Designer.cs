@@ -93,6 +93,7 @@ namespace PKHeX.WinForms
             // 
             // dgv
             // 
+            dgv.AccessibleName = "Plus Moves";
             dgv.AllowUserToAddRows = false;
             dgv.AllowUserToDeleteRows = false;
             dgv.AllowUserToResizeColumns = false;
@@ -136,6 +137,7 @@ namespace PKHeX.WinForms
             // Type
             // 
             Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader;
+            Type.CellTemplate = new PKHeX.WinForms.Controls.AccessibleImageCell();
             Type.HeaderText = "";
             Type.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             Type.Name = "Type";
