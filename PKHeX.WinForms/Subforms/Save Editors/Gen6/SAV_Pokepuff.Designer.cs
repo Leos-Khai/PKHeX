@@ -44,6 +44,7 @@ namespace PKHeX.WinForms
             // 
             // dgv
             // 
+            dgv.AccessibleName = "Pokepuffs";
             dgv.AllowUserToAddRows = false;
             dgv.AllowUserToDeleteRows = false;
             dgv.AllowUserToResizeColumns = false;
@@ -92,6 +93,7 @@ namespace PKHeX.WinForms
             // 
             // B_All
             // 
+            B_All.AccessibleName = "Give All Pokepuffs";
             B_All.Location = new System.Drawing.Point(14, 16);
             B_All.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_All.Name = "B_All";
@@ -103,6 +105,7 @@ namespace PKHeX.WinForms
             // 
             // B_Sort
             // 
+            B_Sort.AccessibleName = "Sort Pokepuffs";
             B_Sort.Location = new System.Drawing.Point(177, 16);
             B_Sort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_Sort.Name = "B_Sort";
@@ -114,6 +117,7 @@ namespace PKHeX.WinForms
             // 
             // B_None
             // 
+            B_None.AccessibleName = "Remove All Pokepuffs";
             B_None.Location = new System.Drawing.Point(96, 16);
             B_None.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             B_None.Name = "B_None";
