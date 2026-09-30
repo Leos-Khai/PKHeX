@@ -19,6 +19,7 @@ public partial class PokeGrid : UserControl
 
     private int sizeW = 68;
     private int sizeH = 56;
+    private int columns;
 
     public bool InitializeGrid(int width, int height, SpriteBuilder info)
     {
@@ -67,6 +68,7 @@ public partial class PokeGrid : UserControl
         int colWidth = sizeW;
         int rowHeight = sizeH;
 
+        columns = width;
         Location = Location with { X = 0 }; // prevent auto-expanding parent if position changes (centered)
         for (int row = 0; row < height; row++)
         {
@@ -78,6 +80,11 @@ public partial class PokeGrid : UserControl
                 var pb = GetControl(sizeW, sizeH, name);
                 pb.AccessibleName = $"Slot {(row * width) + column + 1}, row {row + 1}, column {column + 1}";
                 pb.Location = new Point(x, y);
+                // The grid is a single tab stop (the last focused slot) so Tab skips past it; arrow keys move between slots.
+                pb.TabStop = Entries.Count == 0;
+                pb.Enter += (_, _) => { foreach (var e in Entries) e.TabStop = e == pb; };
+                pb.PreviewKeyDown += (_, e) => e.IsInputKey |= e.KeyCode is Keys.Left or Keys.Right or Keys.Up or Keys.Down;
+                pb.KeyDown += MoveFocus;
                 Entries.Add(pb);
             }
         }
@@ -85,6 +92,25 @@ public partial class PokeGrid : UserControl
         Size = GetGridSize(width, height, colWidth, rowHeight);
         Controls.AddRange(Entries.Cast<Control>().ToArray());
         ResumeLayout();
+    }
+
+    // Left/Right step through slots in order (wrapping between rows); Up/Down move a whole row.
+    private void MoveFocus(object? sender, KeyEventArgs e)
+    {
+        var step = e.KeyCode switch
+        {
+            Keys.Left => -1,
+            Keys.Right => 1,
+            Keys.Up => -columns,
+            Keys.Down => columns,
+            _ => 0,
+        };
+        if (step == 0 || sender is not PictureBox pb)
+            return;
+        var next = Entries.IndexOf(pb) + step;
+        if ((uint)next < (uint)Entries.Count)
+            Entries[next].Focus();
+        e.Handled = true;
     }
 
     public void SetBackground(Bitmap img)
