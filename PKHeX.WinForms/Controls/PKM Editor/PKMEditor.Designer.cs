@@ -107,7 +107,7 @@ namespace PKHeX.WinForms.Controls
             FLP_Ball = new System.Windows.Forms.FlowLayoutPanel();
             FLP_BallLeft = new System.Windows.Forms.FlowLayoutPanel();
             Label_Ball = new PKHeX.WinForms.Controls.SelectableLabel();
-            PB_Ball = new SelectablePictureBox();
+            PB_Ball = new System.Windows.Forms.PictureBox();
             CB_Ball = new System.Windows.Forms.ComboBox();
             FLP_MetDate = new System.Windows.Forms.FlowLayoutPanel();
             Label_MetDate = new System.Windows.Forms.Label();
@@ -1382,7 +1382,7 @@ namespace PKHeX.WinForms.Controls
             // Label_Ball
             // 
             Label_Ball.AccessibleDescription = "Opens the ball browser. Hold Shift to pick a legal ball by color, or Alt to reset to Poké Ball.";
-            Label_Ball.AccessibleName = "Choose Ball";
+            Label_Ball.AccessibleName = "Open Ball Browser";
             Label_Ball.Anchor = System.Windows.Forms.AnchorStyles.Right;
             Label_Ball.AutoSize = true;
             Label_Ball.Location = new System.Drawing.Point(89, 0);
@@ -1397,14 +1397,14 @@ namespace PKHeX.WinForms.Controls
             // 
             // PB_Ball
             // 
-            PB_Ball.AccessibleName = "Open ball browser";
-            PB_Ball.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            PB_Ball.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             PB_Ball.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             PB_Ball.Location = new System.Drawing.Point(62, 0);
             PB_Ball.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
             PB_Ball.Name = "PB_Ball";
             PB_Ball.Size = new System.Drawing.Size(24, 24);
             PB_Ball.TabIndex = 3;
+            PB_Ball.TabStop = false;
             PB_Ball.Click += ClickBall;
             // 
             // CB_Ball
@@ -3487,7 +3487,7 @@ namespace PKHeX.WinForms.Controls
         private System.Windows.Forms.FlowLayoutPanel FLP_Ball;
         private System.Windows.Forms.FlowLayoutPanel FLP_BallLeft;
         private PKHeX.WinForms.Controls.SelectableLabel Label_Ball;
-        private PKHeX.WinForms.Controls.SelectablePictureBox PB_Ball;
+        private System.Windows.Forms.PictureBox PB_Ball;
         private System.Windows.Forms.ComboBox CB_Ball;
         private System.Windows.Forms.FlowLayoutPanel FLP_MetLevel;
         private System.Windows.Forms.Label Label_MetLevel;
