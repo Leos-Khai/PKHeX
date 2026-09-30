@@ -228,7 +228,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
     private readonly MoveChoice[] Moves;
     private readonly ComboBox[] Relearn;
     private readonly ValidationRequiredSet[] ValidatedControls;
-    private readonly SelectablePictureBox[] Markings;
+    private readonly CheckPictureBox[] Markings;
 
     private bool forceValidation;
 
@@ -560,18 +560,17 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
     private static void Announce(Control c, string text) => c.AccessibilityObject.RaiseAutomationNotification(
         AutomationNotificationKind.Other, AutomationNotificationProcessing.MostRecent, text);
 
+    private static void AnnounceCheck(CheckPictureBox pb) => Announce(pb, $"{pb.AccessibleName} {(pb.Checked ? "checked" : "not checked")}");
+
     private void SetMarkings()
     {
         var shiny = !BTN_Shinytize.Enabled;
-        PB_MarkShiny.Image = GetMarkSprite(PB_MarkShiny, shiny);
-        PB_MarkShiny.AccessibleName = $"Shiny: {(shiny ? "Yes" : "No")}";
+        PB_MarkShiny.Image = GetMarkSprite(PB_MarkShiny, PB_MarkShiny.Checked = shiny);
         var cured = CHK_Cured.Checked;
-        PB_MarkCured.Image = GetMarkSprite(PB_MarkCured, cured);
-        PB_MarkCured.AccessibleName = $"Pokérus Cured: {(cured ? "Yes" : "No")}";
+        PB_MarkCured.Image = GetMarkSprite(PB_MarkCured, PB_MarkCured.Checked = cured);
 
         var favorite = Entity is IFavorite { IsFavorite: true };
-        PB_Favorite.Image = GetMarkSprite(PB_Favorite, favorite);
-        PB_Favorite.AccessibleName = $"Favorite: {(favorite ? "On" : "Off")}";
+        PB_Favorite.Image = GetMarkSprite(PB_Favorite, PB_Favorite.Checked = favorite);
         UpdateOriginMark();
 
         var pba = Markings;
@@ -579,8 +578,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         {
             for (int i = 0; i < b.MarkingCount; i++)
             {
-                var active = b.GetMarking(i);
-                SetMarkingImage(pba[i], Draw.MarkDefault, active, active ? "On" : "Off");
+                SetMarkingImage(pba[i], Draw.MarkDefault, b.GetMarking(i), null);
             }
         }
         else if (Entity is IAppliedMarkings<MarkingColor> c)
@@ -589,12 +587,13 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             {
                 var state = c.GetMarking(i);
                 _ = Draw.GetMarkingColor(state, out var color);
-                SetMarkingImage(pba[i], color, state != MarkingColor.None, state == MarkingColor.None ? "Off" : state.ToString());
+                var active = state != MarkingColor.None;
+                SetMarkingImage(pba[i], color, active, active ? state.ToString() : null);
             }
         }
         return;
 
-        static void SetMarkingImage(SelectablePictureBox pb, Color color, bool active, string state)
+        static void SetMarkingImage(CheckPictureBox pb, Color color, bool active, string? colorName)
         {
             var bmp = pb.InitialImage as Bitmap;
             ArgumentNullException.ThrowIfNull(bmp);
@@ -605,9 +604,10 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
                 bmp = ImageUtil.CopyChangeOpacity(bmp, 1 / 8f);
             pb.Image = bmp;
 
-            // Opacity and colour are the only visual difference between states; spell them out.
+            // Colour is the only visual difference between the two active states; spell it out.
+            pb.Checked = active;
             var index = pb.Name[^1] - '1';
-            pb.AccessibleName = $"Marking {MarkingNames[index]}: {state}";
+            pb.AccessibleName = colorName is null ? $"Marking {MarkingNames[index]}" : $"Marking {MarkingNames[index]}: {colorName}";
         }
     }
 
@@ -742,10 +742,10 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
 
     private void ClickMarking(object sender, EventArgs e)
     {
-        int index = Markings.IndexOf((SelectablePictureBox)sender);
+        int index = Markings.IndexOf((CheckPictureBox)sender);
         Entity.ToggleMarking(index);
         SetMarkings();
-        Announce(Markings[index], Markings[index].AccessibleName!);
+        AnnounceCheck(Markings[index]);
     }
 
     private void ClickFavorite(object sender, EventArgs e)
@@ -753,7 +753,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         if (Entity is IFavorite pb7)
             pb7.IsFavorite ^= true;
         SetMarkings();
-        Announce(PB_Favorite, PB_Favorite.AccessibleName!);
+        AnnounceCheck(PB_Favorite);
     }
 
     private void ClickOT(object sender, EventArgs e) => SetDetailsOT(SaveFileRequested.Invoke(this, e));
