@@ -101,8 +101,9 @@ public partial class SAV_MysteryGiftDB : Form
                     return;
                 }
 
-                var enc = Results[index];
-                slot.AccessibleDescription = string.Join(Environment.NewLine, enc.GetTextLines());
+                // The encounter type line reads alike for every gift, so it goes last (next to the result number) to let each gift's own details lead.
+                var lines = Results[index].GetTextLines();
+                slot.AccessibleDescription = string.Join(Environment.NewLine, lines.Skip(1).Append(lines[0]));
             };
         }
 
