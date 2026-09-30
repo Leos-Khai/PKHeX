@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using System.Windows.Forms.Automation;
 using PKHeX.Core;
 using PKHeX.Drawing.PokeSprite;
 
@@ -21,11 +22,36 @@ public partial class StatusConditionView : UserControl
     {
         InitializeComponent();
         PB_Status.MouseHover += (_, _) => PB_Status.Cursor = Cursors.Hand;
+        PB_Status.PreviewKeyDown += (_, e) => e.IsInputKey |= e.KeyCode is Keys.Up or Keys.Down;
         PB_Status.KeyDown += (_, e) =>
         {
             if (e.KeyCode is Keys.Enter or Keys.Space)
                 PB_Status_Click(PB_Status, e);
+            else if (e.KeyCode is Keys.Up or Keys.Down)
+                StepStatus(e.KeyCode == Keys.Down ? 1 : -1);
         };
+    }
+
+    // Arrow keys change the status in place, like a combo box, without opening the browser.
+    // Same choices and order as the browser; Sleep picks 1 turn (the browser can set more).
+    private void StepStatus(int delta)
+    {
+        if (pk is null)
+            return;
+        var generation = pk.Format;
+        StatusCondition[] choices = generation is 3 or 4
+            ? [StatusCondition.None, StatusCondition.Sleep1, StatusCondition.Poison, StatusCondition.Burn, StatusCondition.Paralysis, StatusCondition.Freeze, StatusCondition.PoisonBad]
+            : [StatusCondition.None, StatusCondition.Sleep1, StatusCondition.Poison, StatusCondition.Burn, StatusCondition.Paralysis, StatusCondition.Freeze];
+        var current = pk.Status_Condition & 0xFF;
+        var index = Array.FindIndex(choices, c => generation <= 4
+            ? c == (StatusCondition)current || (c == StatusCondition.Sleep1 && ((StatusCondition)current).GetStatusType() == StatusType.Sleep)
+            : c.GetStatusType() == (StatusType)current);
+        var next = Math.Clamp(index + delta, 0, choices.Length - 1);
+        if (next == index)
+            return;
+        SetChoice(choices[next], generation);
+        PB_Status.AccessibilityObject.RaiseAutomationNotification(AutomationNotificationKind.Other,
+            AutomationNotificationProcessing.MostRecent, PB_Status.AccessibleName ?? string.Empty);
     }
 
     public void LoadPKM(PKM entity)
@@ -87,7 +113,7 @@ public partial class StatusConditionView : UserControl
     private void SetAccessibleStatus(string text)
     {
         PB_Status.AccessibleName = $"Status Condition: {text}";
-        PB_Status.AccessibleDescription = $"Status Condition: {text}. Press Enter to change.";
+        PB_Status.AccessibleDescription = $"Status Condition: {text}. Use Up and Down to change, or press Enter to open the status browser.";
     }
 
     private void PB_Status_Click(object sender, EventArgs e)
@@ -99,9 +125,15 @@ public partial class StatusConditionView : UserControl
         form.ShowDialog();
         if (!form.WasChosen)
             return;
+        SetChoice(form.Choice, generation);
+    }
+
+    private void SetChoice(StatusCondition choice, int generation)
+    {
+        ArgumentNullException.ThrowIfNull(pk);
         var current = pk.Status_Condition;
         current &= ~0xFF;
-        current |= generation <= 4 ? (int)form.Choice : (int)form.Choice.GetStatusType();
+        current |= generation <= 4 ? (int)choice : (int)choice.GetStatusType();
         pk.Status_Condition = current;
         LoadStoredValues();
     }
