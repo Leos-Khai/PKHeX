@@ -12,6 +12,15 @@ public partial class BallBrowser : Form
 {
     public BallBrowser() => InitializeComponent();
 
+    // There is no Cancel button, so Escape is the keyboard way to leave without choosing a ball.
+    protected override bool ProcessDialogKey(Keys keyData)
+    {
+        if (keyData != Keys.Escape)
+            return base.ProcessDialogKey(keyData);
+        Close();
+        return true;
+    }
+
     public bool WasBallChosen { get; private set; }
     public byte BallChoice { get; private set; }
 
