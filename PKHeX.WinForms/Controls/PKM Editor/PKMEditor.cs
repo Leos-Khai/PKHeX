@@ -1697,7 +1697,7 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             (PB_ShinyStar.Visible ? PB_ShinyStar : PB_ShinySquare).Focus();
     }
 
-    private void UpdateShiny(bool changePID)
+    private void UpdateShiny(bool changePID, bool shiny = true)
     {
         Entity.PID = Util.GetHexValue(TB_PID.Text);
         Entity.Nature = (Nature)WinFormsUtil.GetIndex(CB_Nature);
@@ -1715,7 +1715,10 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
             };
             if (changePID)
             {
-                Entity.SetShiny(type);
+                if (shiny)
+                    Entity.SetShiny(type);
+                else
+                    Entity.SetPIDGender(Entity.Gender);
                 TB_PID.Text = Entity.PID.ToString("X8");
 
                 var gen = Entity.Generation;
@@ -2490,32 +2493,18 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
 
     private void CHK_Nicknamed_Click(object? sender, EventArgs e) => CHK_NicknamedFlag.Checked ^= true;
 
+    // Both marks toggle in place instead of jumping to another tab, which lost the keyboard user's place.
+    // The markings are hidden before Gen 3, so the shiny state always comes from the PID here.
     private void PB_MarkShiny_Click(object sender, EventArgs e)
     {
-        if (Entity.Format <= 2)
-        {
-            TC_Editor.SelectedTab = Tab_Stats;
-            Stats.Focus();
-            return;
-        }
-        TC_Editor.SelectedTab = Tab_Main;
-        TB_PID.Focus();
+        UpdateShiny(changePID: true, shiny: BTN_Shinytize.Enabled);
+        AnnounceCheck(PB_MarkShiny);
     }
 
     private void PB_MarkCured_Click(object sender, EventArgs e)
     {
-        // Toggle Pokérus cured state.
-        if (!CHK_Cured.Checked)
-        {
-            CHK_Infected.Checked = true;
-            if (CB_PKRSDays.SelectedIndex != 0)
-                CB_PKRSDays.SelectedIndex = 0;
-        }
-        else
-        {
-            CHK_Cured.Checked = false;
-        }
-        TC_Editor.SelectedTab = Tab_Main;
-        CB_PKRSStrain.DroppedDown = true;
+        // Curing picks a strain if there was none; it can be changed on the Main tab.
+        CHK_Cured.Checked ^= true;
+        AnnounceCheck(PB_MarkCured);
     }
 }
