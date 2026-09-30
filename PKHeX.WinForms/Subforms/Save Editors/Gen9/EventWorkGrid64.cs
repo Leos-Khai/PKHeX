@@ -221,6 +221,7 @@ public sealed record EventWorkGrid64<T> : EventWorkGridBase where T : struct, IE
         {
             AccessibleName = host.Text,
             StandardTab = true, // Tab leaves the table; the arrow keys move between cells.
+            WrapRows = true,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
@@ -248,6 +249,7 @@ public sealed record EventWorkGrid64<T> : EventWorkGridBase where T : struct, IE
         {
             AccessibleName = host.Text,
             StandardTab = true, // Tab leaves the table; the arrow keys move between cells.
+            WrapRows = true,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
@@ -377,6 +379,7 @@ public sealed record EventWorkGridTuple : EventWorkGridBase
         {
             AccessibleName = host.Text,
             StandardTab = true, // Tab leaves the table; the arrow keys move between cells.
+            WrapRows = true,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
@@ -532,6 +535,7 @@ public sealed record EventWorkGrid128 : EventWorkGridBase
         {
             AccessibleName = host.Text,
             StandardTab = true, // Tab leaves the table; the arrow keys move between cells.
+            WrapRows = true,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
@@ -683,6 +687,7 @@ public sealed record EventWorkGrid192 : EventWorkGridBase
         {
             AccessibleName = host.Text,
             StandardTab = true, // Tab leaves the table; the arrow keys move between cells.
+            WrapRows = true,
             AllowUserToAddRows = false,
             AllowUserToDeleteRows = false,
             AllowUserToOrderColumns = true,
