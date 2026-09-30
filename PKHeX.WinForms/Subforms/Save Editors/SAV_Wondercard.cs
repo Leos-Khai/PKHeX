@@ -36,6 +36,7 @@ public partial class SAV_Wondercard : Form
         pba = GetGiftPictureBoxes(SAV.Generation);
         foreach (var pb in pba)
         {
+            GridNavigation.Join(pb, pba);
             pb.AllowDrop = true;
             pb.DragDrop += BoxSlot_DragDrop;
             pb.DragEnter += BoxSlot_DragEnter;
