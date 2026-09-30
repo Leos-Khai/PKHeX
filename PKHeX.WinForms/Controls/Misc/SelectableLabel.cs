@@ -47,4 +47,28 @@ public class SelectableLabel : Label
         if (Focused && ShowFocusCues)
             ControlPaint.DrawFocusRectangle(e.Graphics, ClientRectangle);
     }
+
+    protected override AccessibleObject CreateAccessibilityInstance() => new SelectableLabelAccessibleObject(this);
+
+    /// <summary>
+    /// Reports the label as a focusable button.
+    /// </summary>
+    /// <remarks>
+    /// The underlying Win32 Static window always reports itself as read-only and never focused,
+    /// so screen readers like NVDA ignore its focus events and the label is never announced.
+    /// </remarks>
+    private sealed class SelectableLabelAccessibleObject(SelectableLabel owner) : ControlAccessibleObject(owner)
+    {
+        public override AccessibleStates State
+        {
+            get
+            {
+                var state = (base.State & ~AccessibleStates.ReadOnly) | AccessibleStates.Focusable;
+                return owner.Focused ? state | AccessibleStates.Focused : state;
+            }
+        }
+
+        public override string DefaultAction => "Press";
+        public override void DoDefaultAction() => owner.OnClick(EventArgs.Empty);
+    }
 }
