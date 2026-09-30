@@ -51,7 +51,7 @@ public static class SlotUtil
         {
             pb.Image = null;
             pb.BackColor = GoodDataColor;
-            pb.AccessibleDescription = AppendNotes($"{pb.AccessibleName}: Empty", GetSlotNotes(info, sav));
+            pb.AccessibleDescription = AppendNotes("Empty", GetSlotNotes(info, sav));
             SetPendingLegality(pb, null);
             return;
         }
@@ -60,7 +60,7 @@ public static class SlotUtil
             // Bad Egg present in slot.
             pb.Image = null;
             pb.BackColor = BadDataColor;
-            pb.AccessibleDescription = AppendNotes($"{pb.AccessibleName}: Invalid data", GetSlotNotes(info, sav)); // otherwise only the background colour differs
+            pb.AccessibleDescription = AppendNotes("Invalid data", GetSlotNotes(info, sav)); // otherwise only the background colour differs
             SetPendingLegality(pb, null);
             return;
         }

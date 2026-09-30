@@ -30,7 +30,8 @@ public class SelectablePictureBox : PictureBox
             AutomationNotificationProcessing.All, GetNarration());
     }
 
-    // Lead with the name (e.g. the slot position) unless the description already starts with it.
+    // Contents first, then the name (e.g. the slot position), so moving through slots hears what's in each one sooner.
+    // Skip the name if the description already starts with it.
     private string GetNarration()
     {
         var name = AccessibleName;
@@ -39,7 +40,7 @@ public class SelectablePictureBox : PictureBox
             return name ?? string.Empty;
         if (string.IsNullOrEmpty(name) || description.StartsWith(name, StringComparison.Ordinal))
             return description;
-        return $"{name}: {description}";
+        return $"{description}{Environment.NewLine}{name}";
     }
     protected override void OnLeave(EventArgs e)
     {
