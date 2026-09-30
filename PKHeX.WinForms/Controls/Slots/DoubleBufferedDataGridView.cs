@@ -31,6 +31,11 @@ internal class DoubleBufferedDataGridView : DataGridView
 
     protected override bool ProcessDataGridViewKey(KeyEventArgs e)
     {
+        // The grid claims these to move between cells, even while a combo box is being edited;
+        // leave them to the combo box, so they pick its first, last or a page of items instead.
+        if (EditingControl is ComboBox && e.Modifiers == 0 && e.KeyCode is (Keys.Home or Keys.End or Keys.PageUp or Keys.PageDown))
+            return false;
+
         if (WrapRows && e.Modifiers == 0 && e.KeyCode is (Keys.Up or Keys.Down) && CurrentCell is { } cell)
         {
             const DataGridViewElementStates visible = DataGridViewElementStates.Visible;
