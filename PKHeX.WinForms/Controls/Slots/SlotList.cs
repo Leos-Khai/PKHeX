@@ -122,6 +122,9 @@ public partial class SlotList : UserControl, ISlotViewer<PictureBox>
         }
         AddSlots(count, enableDragDropContext);
         AddControls(count);
+        // Slots are pooled; the last focused one may now be hidden, which would leave the list without a tab stop.
+        foreach (var slot in slots)
+            slot.TabStop = slot == slots[0];
         SlotCount = count;
     }
 
@@ -162,6 +165,7 @@ public partial class SlotList : UserControl, ISlotViewer<PictureBox>
             var slot = GetPictureBox(SpriteUtil.Spriter, name);
             enableDragDropContext(slot);
             slots.Add(slot);
+            GridNavigation.Join(slot, slots);
         }
     }
 
