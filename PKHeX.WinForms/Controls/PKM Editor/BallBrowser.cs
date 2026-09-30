@@ -55,6 +55,7 @@ public partial class BallBrowser : Form
         foreach (var pb in controls)
         {
             container.Add(pb);
+            GridNavigation.Join(pb, controls);
             const int width = 5; // balls wide
             if (++countInRow != width)
                 continue;
