@@ -43,7 +43,6 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
         ActivateOnKey(PB_Origin, ClickVersionMarking);
         ActivateOnKey(PB_BattleVersion, ClickVersionMarking);
         ActivateOnKey(PB_Affixed, OpenRibbons);
-        ActivateOnKey(PB_Ball, ClickBall);
 
         // Legality Indicators
         relearnPB = [PB_WarnRelearn1, PB_WarnRelearn2, PB_WarnRelearn3, PB_WarnRelearn4];
@@ -1020,6 +1019,8 @@ public sealed partial class PKMEditor : UserControl, IMainEditor
     private void UpdateBall(object sender, EventArgs e)
     {
         PB_Ball.Image = SpriteUtil.GetBallSprite((byte)WinFormsUtil.GetIndex(CB_Ball));
+        // The picture is decorative (the label is the button); name it so it doesn't read as an unlabeled graphic.
+        PB_Ball.AccessibleName = CB_Ball.Text;
     }
 
     private void UpdateEXPLevel(object sender, EventArgs e)
