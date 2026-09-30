@@ -97,6 +97,7 @@ namespace PKHeX.WinForms
             PG_BlockView.Name = "PG_BlockView";
             PG_BlockView.Size = new System.Drawing.Size(320, 275);
             PG_BlockView.TabIndex = 14;
+            PG_BlockView.ToolbarVisible = false;
             PG_BlockView.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(PG_BlockView_PropertyValueChanged);
             // 
             // Raw
@@ -118,6 +119,7 @@ namespace PKHeX.WinForms
             propertyGrid1.Name = "propertyGrid1";
             propertyGrid1.Size = new System.Drawing.Size(320, 309);
             propertyGrid1.TabIndex = 15;
+            propertyGrid1.ToolbarVisible = false;
             // 
             // SAV_Accessor
             // 

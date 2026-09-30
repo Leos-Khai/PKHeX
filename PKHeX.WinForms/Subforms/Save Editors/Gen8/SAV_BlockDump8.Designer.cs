@@ -257,6 +257,7 @@ namespace PKHeX.WinForms
             PG_BlockView.Name = "PG_BlockView";
             PG_BlockView.Size = new System.Drawing.Size(133, 150);
             PG_BlockView.TabIndex = 14;
+            PG_BlockView.ToolbarVisible = false;
             PG_BlockView.PropertyValueChanged += PG_BlockView_PropertyValueChanged;
             // 
             // RTB_Hex
