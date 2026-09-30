@@ -101,7 +101,11 @@ public partial class Main : Form
         {
             if (e.KeyCode is not (Keys.Enter or Keys.Space))
                 return;
-            dragout.ContextMenuStrip?.Show(dragout, new Point(0, dragout.Height));
+            if (dragout.ContextMenuStrip is not { } menu)
+                return;
+            menu.Show(dragout, new Point(0, dragout.Height));
+            // Otherwise nothing is selected, and screen readers only announce the menu opening.
+            menu.Items[0].Select();
             e.Handled = true;
         };
         PB_Legal.KeyDown += (_, e) =>
