@@ -216,6 +216,7 @@ public sealed partial class SAV_EventFlags : Form
         RowHeadersVisible = false,
         SelectionMode = DataGridViewSelectionMode.CellSelect,
         ShowEditingIcon = false,
+        WrapRows = true,
     };
 
     private void AddConstList(EventLabelCollection list, ushort[] values)
