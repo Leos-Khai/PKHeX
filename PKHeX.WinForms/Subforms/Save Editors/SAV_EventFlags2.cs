@@ -219,6 +219,8 @@ public sealed partial class SAV_EventFlags2 : Form
         RowHeadersVisible = false,
         SelectionMode = DataGridViewSelectionMode.CellSelect,
         ShowEditingIcon = false,
+        // Tab leaves the table; the arrow keys move between flags.
+        StandardTab = true,
         WrapRows = true,
     };
 
