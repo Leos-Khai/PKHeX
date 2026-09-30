@@ -103,6 +103,10 @@ public partial class Main : Form
                 return;
             if (dragout.ContextMenuStrip is not { } menu)
                 return;
+            // WinForms only raises the accessibility events for these once their accessible objects exist,
+            // which they don't the first time a context menu opens; without them the menu opens silently.
+            _ = menu.AccessibilityObject;
+            _ = menu.Items[0].AccessibilityObject;
             menu.Show(dragout, new Point(0, dragout.Height));
             // Otherwise nothing is selected, and screen readers only announce the menu opening.
             menu.Items[0].Select();
