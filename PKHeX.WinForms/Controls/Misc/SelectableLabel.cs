@@ -33,6 +33,7 @@ public class SelectableLabel : Label
     {
         Invalidate();
         base.OnGotFocus(e);
+        UiaFocusEvent.Raise(this);
     }
 
     protected override void OnLostFocus(EventArgs e)
@@ -68,6 +69,8 @@ public class SelectableLabel : Label
             }
         }
 
+        // NVDA reads UIA HelpText as the description; WinForms only exposes AccessibleDescription through MSAA.
+        public override string? Help => owner.AccessibleDescription;
         public override string DefaultAction => "Press";
         public override void DoDefaultAction() => owner.OnClick(EventArgs.Empty);
     }
