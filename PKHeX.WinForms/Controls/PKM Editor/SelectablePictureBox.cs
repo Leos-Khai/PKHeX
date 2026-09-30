@@ -1,13 +1,12 @@
 using System;
 using System.Windows.Forms;
-using System.Windows.Forms.Automation;
 
 namespace PKHeX.WinForms.Controls;
 
 /// <summary>
 /// PictureBox control that can be focused and selected.
 /// </summary>
-/// <remarks>Draws a focus rectangle, and can be tabbed between, raising events for screen readers.</remarks>
+/// <remarks>Draws a focus rectangle, and can be tabbed between, raising focus events for screen readers.</remarks>
 public class SelectablePictureBox : PictureBox
 {
     public SelectablePictureBox() => SetStyle(ControlStyles.Selectable, TabStop = true);
@@ -26,8 +25,23 @@ public class SelectablePictureBox : PictureBox
     {
         Invalidate();
         base.OnEnter(e);
-        AccessibilityObject.RaiseAutomationNotification(AutomationNotificationKind.Other,
-            AutomationNotificationProcessing.All, GetNarration());
+    }
+
+    // Enter handlers (which fill in slot descriptions) have run by now, so the event carries the full narration.
+    protected override void OnGotFocus(EventArgs e)
+    {
+        base.OnGotFocus(e);
+        UiaFocusEvent.Raise(this);
+    }
+
+    protected override AccessibleObject CreateAccessibilityInstance() => new SelectablePictureBoxAccessibleObject(this);
+
+    /// <summary>
+    /// Reports the narration as the name, as NVDA reads a UIA element's name but not its <see cref="Control.AccessibleDescription"/>.
+    /// </summary>
+    protected class SelectablePictureBoxAccessibleObject(SelectablePictureBox owner) : ControlAccessibleObject(owner)
+    {
+        public override string? Name => owner.GetNarration() is { Length: not 0 } narration ? narration : base.Name;
     }
 
     // Contents first, then the name (e.g. the slot position), so moving through slots hears what's in each one sooner.

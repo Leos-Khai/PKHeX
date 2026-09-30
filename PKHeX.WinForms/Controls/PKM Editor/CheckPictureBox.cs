@@ -15,10 +15,12 @@ public sealed class CheckPictureBox : SelectablePictureBox
 
     protected override AccessibleObject CreateAccessibilityInstance() => new CheckPictureBoxAccessibleObject(this);
 
-    private sealed class CheckPictureBoxAccessibleObject(CheckPictureBox owner) : ControlAccessibleObject(owner)
+    private sealed class CheckPictureBoxAccessibleObject(CheckPictureBox owner) : SelectablePictureBoxAccessibleObject(owner)
     {
         public override AccessibleRole Role => AccessibleRole.CheckButton;
         public override AccessibleStates State => owner.Checked ? base.State | AccessibleStates.Checked : base.State;
+        // NVDA reads a check box's state from UIA's toggle pattern, which WinForms doesn't let a custom control provide; read it as help text instead.
+        public override string Help => owner.Checked ? "checked" : "not checked";
         public override string DefaultAction => owner.Checked ? "Uncheck" : "Check";
         public override void DoDefaultAction() => owner.OnClick(EventArgs.Empty);
     }
