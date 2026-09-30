@@ -89,8 +89,11 @@ public partial class SAV_Encounters : Form
                     return;
                 }
 
+                // The encounter type line reads alike across results, so it goes last (next to the result number) to let each encounter's own details lead.
+                // It's also the only line naming the species, so lead with that instead.
                 var enc = Results[index];
-                slot.AccessibleDescription = string.Join(Environment.NewLine, enc.GetTextLines());
+                var lines = enc.GetTextLines();
+                slot.AccessibleDescription = string.Join(Environment.NewLine, lines.Skip(1).Prepend(GameInfo.Strings.Species[enc.Species]).Append(lines[0]));
             };
             // A plain click does nothing here (Ctrl+click views), so the keyboard action is view.
             slot.KeyDown += (_, e) =>
