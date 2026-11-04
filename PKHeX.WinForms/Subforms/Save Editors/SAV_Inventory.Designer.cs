@@ -63,7 +63,7 @@ namespace PKHeX.WinForms
             B_Cancel.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
             B_Cancel.Name = "B_Cancel";
             B_Cancel.Size = new System.Drawing.Size(88, 27);
-            B_Cancel.TabIndex = 14;
+            B_Cancel.TabIndex = 5;
             B_Cancel.Text = "Cancel";
             B_Cancel.UseVisualStyleBackColor = true;
             B_Cancel.Click += B_Cancel_Click;
@@ -75,13 +75,14 @@ namespace PKHeX.WinForms
             B_Save.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
             B_Save.Name = "B_Save";
             B_Save.Size = new System.Drawing.Size(88, 27);
-            B_Save.TabIndex = 15;
+            B_Save.TabIndex = 4;
             B_Save.Text = "Save";
             B_Save.UseVisualStyleBackColor = true;
             B_Save.Click += B_Save_Click;
             // 
             // tabControl1
             // 
+            tabControl1.AccessibleName = "Pouches";
             tabControl1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             tabControl1.Location = new System.Drawing.Point(0, 0);
             tabControl1.Margin = new System.Windows.Forms.Padding(0);
@@ -89,7 +90,7 @@ namespace PKHeX.WinForms
             tabControl1.Padding = new System.Drawing.Point(0, 0);
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new System.Drawing.Size(346, 293);
-            tabControl1.TabIndex = 17;
+            tabControl1.TabIndex = 0;
             tabControl1.SelectedIndexChanged += SwitchBag;
             // 
             // B_GiveAll
@@ -100,7 +101,7 @@ namespace PKHeX.WinForms
             B_GiveAll.Margin = new System.Windows.Forms.Padding(4, 0, 0, 0);
             B_GiveAll.Name = "B_GiveAll";
             B_GiveAll.Size = new System.Drawing.Size(104, 27);
-            B_GiveAll.TabIndex = 18;
+            B_GiveAll.TabIndex = 3;
             B_GiveAll.Text = "Give All";
             B_GiveAll.UseVisualStyleBackColor = true;
             B_GiveAll.Click += B_GiveAll_Click;
@@ -114,7 +115,7 @@ namespace PKHeX.WinForms
             B_Sort.Margin = new System.Windows.Forms.Padding(4, 0, 0, 0);
             B_Sort.Name = "B_Sort";
             B_Sort.Size = new System.Drawing.Size(104, 27);
-            B_Sort.TabIndex = 19;
+            B_Sort.TabIndex = 0;
             B_Sort.Text = "Sort";
             B_Sort.UseVisualStyleBackColor = true;
             B_Sort.Click += B_Sort_Click;
@@ -210,7 +211,7 @@ namespace PKHeX.WinForms
             L_Count.Location = new System.Drawing.Point(111, 17);
             L_Count.Name = "L_Count";
             L_Count.Size = new System.Drawing.Size(45, 17);
-            L_Count.TabIndex = 20;
+            L_Count.TabIndex = 1;
             L_Count.Text = "Count:";
             // 
             // NUD_Count
@@ -221,7 +222,7 @@ namespace PKHeX.WinForms
             NUD_Count.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             NUD_Count.Name = "NUD_Count";
             NUD_Count.Size = new System.Drawing.Size(49, 25);
-            NUD_Count.TabIndex = 21;
+            NUD_Count.TabIndex = 2;
             NUD_Count.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // tableLayoutPanel1
@@ -244,7 +245,7 @@ namespace PKHeX.WinForms
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             tableLayoutPanel1.Size = new System.Drawing.Size(344, 68);
-            tableLayoutPanel1.TabIndex = 22;
+            tableLayoutPanel1.TabIndex = 1;
             // 
             // toolStripSeparator1
             // 
@@ -259,6 +260,7 @@ namespace PKHeX.WinForms
             // SAV_Inventory
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            CancelButton = B_Cancel;
             ClientSize = new System.Drawing.Size(344, 361);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(tabControl1);

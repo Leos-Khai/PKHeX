@@ -463,6 +463,14 @@ public sealed partial class SAV_Inventory : Form
 
     protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
     {
+        // Escape would otherwise reach the Cancel button and discard every change; while a cell is being edited, it only stops editing.
+        if (keyData == Keys.Escape && GetGrid(CurrentPouch) is { IsCurrentCellInEditMode: true } grid)
+        {
+            grid.CancelEdit();
+            grid.EndEdit();
+            return true;
+        }
+
         // The table would take Ctrl+Tab to move between its cells; switch pouches from anywhere, as in other tabbed dialogs.
         int step = keyData switch
         {
