@@ -459,7 +459,14 @@ public sealed partial class SAV_Inventory : Form
     private void SortByCount(object sender, EventArgs e) => ModifyPouch(CurrentPouch, p => p.SortByCount(reverse: sender == mnuSortCountReverse));
     private void SortByIndex(object sender, EventArgs e) => ModifyPouch(CurrentPouch, p => p.SortByIndex(reverse: sender == mnuSortIndexReverse));
 
-    private static void ShowContextMenuBelow(ToolStripDropDown c, Control n) => c.Show(n.PointToScreen(new Point(0, n.Height)));
+    private static void ShowContextMenuBelow(ToolStripDropDown c, Control n)
+    {
+        // WinForms only raises the accessibility events once these exist; without them, and a selected item, the menu opens silently.
+        _ = c.AccessibilityObject;
+        _ = c.Items[0].AccessibilityObject;
+        c.Show(n.PointToScreen(new Point(0, n.Height)));
+        c.Items[0].Select();
+    }
 
     protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
     {
