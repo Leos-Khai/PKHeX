@@ -461,6 +461,26 @@ public sealed partial class SAV_Inventory : Form
 
     private static void ShowContextMenuBelow(ToolStripDropDown c, Control n) => c.Show(n.PointToScreen(new Point(0, n.Height)));
 
+    protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+    {
+        // The table would take Ctrl+Tab to move between its cells; switch pouches from anywhere, as in other tabbed dialogs.
+        int step = keyData switch
+        {
+            Keys.Control | Keys.Tab or Keys.Control | Keys.PageDown => 1,
+            Keys.Control | Keys.Shift | Keys.Tab or Keys.Control | Keys.PageUp => -1,
+            _ => 0,
+        };
+        if (step == 0)
+            return base.ProcessCmdKey(ref msg, keyData);
+
+        bool inTable = tabControl1.ContainsFocus && !tabControl1.Focused;
+        var count = tabControl1.TabCount;
+        tabControl1.SelectedIndex = (CurrentPouch + step + count) % count;
+        if (inTable)
+            GetGrid(CurrentPouch).Focus();
+        return true;
+    }
+
     private void GiveAllItems(object sender, EventArgs e)
     {
         var pouch = Bag.Pouches[CurrentPouch];
