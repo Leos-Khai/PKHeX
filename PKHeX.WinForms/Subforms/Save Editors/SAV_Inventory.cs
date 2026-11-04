@@ -134,7 +134,7 @@ public sealed partial class SAV_Inventory : Form
     {
         // Add DataGrid
         var dgv = GetBaseDataGrid(pouch);
-        dgv.CellMouseDown += Dgv_CellMouseDown;
+        dgv.CellMouseClick += Dgv_CellMouseClick;
         dgv.CellValueChanged += Dgv_CellValueChanged;
         dgv.EditingControlShowing += Dgv_EditingControlShowing;
         dgv.CurrentCellDirtyStateChanged += Dgv_CurrentCellDirtyStateChanged;
@@ -175,6 +175,7 @@ public sealed partial class SAV_Inventory : Form
         Dock = DockStyle.Fill,
         Text = $"{pouch.Type}",
         Name = $"DGV_{pouch.Type}",
+        AccessibleName = WinFormsTranslator.TranslateEnum(pouch.Type, Main.CurrentLanguage),
 
         AllowUserToAddRows = false,
         AllowUserToDeleteRows = false,
@@ -184,7 +185,9 @@ public sealed partial class SAV_Inventory : Form
         MultiSelect = false,
         ShowEditingIcon = false,
 
-        EditMode = DataGridViewEditMode.EditOnEnter,
+        // Arrow keys move between cells instead of changing the item or count; typing, F2 or F4 edits, and Tab leaves the table.
+        EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2,
+        StandardTab = true,
         ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single,
         ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize,
         SelectionMode = DataGridViewSelectionMode.FullRowSelect,
@@ -295,6 +298,9 @@ public sealed partial class SAV_Inventory : Form
                 cells[ColumnHeld].Value = g.IsHeld;
         }
 
+        // Start keyboard users on the item name rather than its picture.
+        if (dgv.Rows.Count != 0 && dgv.CurrentCell is null or { ColumnIndex: ColumnSprite })
+            dgv.CurrentCell = dgv[ColumnItem, dgv.CurrentCell?.RowIndex ?? 0];
         if (ItemColumnReadOnly) // Sort the column alphabetically.
         {
             dgv.Sort(dgv.Columns[ColumnItem], System.ComponentModel.ListSortDirection.Ascending);
@@ -333,15 +339,23 @@ public sealed partial class SAV_Inventory : Form
         IsCountValidationSuppressed = false;
     }
 
-    private void Dgv_CellMouseDown(object? sender, DataGridViewCellMouseEventArgs e)
+    private void Dgv_CellMouseClick(object? sender, DataGridViewCellMouseEventArgs e)
     {
-        DropDownNextComboEdit = sender is DataGridView dgv &&
-                                e is { Button: MouseButtons.Left, RowIndex: >= 0, ColumnIndex: >= 0 } &&
-                                dgv.Columns[e.ColumnIndex] is DataGridViewComboBoxColumn;
+        // Keyboard editing waits for a keystroke, but a click still edits straight away and opens the item list.
+        if (sender is not DataGridView { IsCurrentCellInEditMode: false } dgv || e is not { Button: MouseButtons.Left, RowIndex: >= 0, ColumnIndex: >= 0 })
+            return;
+        var column = dgv.Columns[e.ColumnIndex];
+        if (column is not (DataGridViewComboBoxColumn or DataGridViewTextBoxColumn))
+            return;
+        DropDownNextComboEdit = column is DataGridViewComboBoxColumn;
+        if (!dgv.BeginEdit(true))
+            DropDownNextComboEdit = false;
     }
 
     private void UpdateSprite(DataGridViewCellCollection cells, int itemID)
     {
+        // Read by screen readers when the picture cell is reached, instead of a blank cell.
+        cells[ColumnSprite].Tag = itemID > 0 && itemID < itemlist.Length ? itemlist[itemID] : null;
         var context = Origin.Context;
         itemID = ItemConverter.GetItemDisplay(itemID, context);
         cells[ColumnSprite].Value = itemID == 0 ? _none : SpriteUtil.Spriter.GetItemSprite(itemID, context);
